@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7ddd9ec1-1feb-4844-bf4b-21e0f6f00932">
+  <name>РаботаСТокеном</name>
+  <synonym>
+    <key>ru</key>
+    <value>Работа с токеном</value>
+  </synonym>
+  <group>NavigationPanelOrdinary</group>
+  <commandParameterType/>
+  <representation>Auto</representation>
+</mdclass:CommonCommand>

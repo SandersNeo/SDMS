@@ -1,0 +1,834 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfCharacteristicTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2d4369be-b37a-4a14-ab6e-41e523b92946">
+  <producedTypes>
+    <objectType typeId="05c5b06c-27d3-4d16-959d-3879ad3fe742" valueTypeId="28babf2d-7364-44e8-b729-026d60e8b3df"/>
+    <refType typeId="e844fa4e-779f-49a5-89e2-7bb904ec37bb" valueTypeId="db17b2e5-1388-458a-bc5b-c82a2c20a542"/>
+    <selectionType typeId="f7aa26b1-b1a9-49e2-821e-965303c4e2e2" valueTypeId="8af1c1bc-88c9-4f05-81bf-681141c41856"/>
+    <listType typeId="73b2e710-e3b1-46c2-aff5-fda03e2eb5a1" valueTypeId="91c25ebe-3587-4288-9fec-428e46327737"/>
+    <managerType typeId="9ab4fa40-1ef7-460b-a5cd-7fd9ba2fd65e" valueTypeId="7ec45800-3223-4cb1-8d57-3831709362d7"/>
+    <containerType typeId="838529ca-9c87-4fe4-aab4-a01d6d5e24c2" valueTypeId="fe01a382-8aa2-443d-8d57-dc31ac99bfea"/>
+  </producedTypes>
+  <name>ВидыНастроекФилиалов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды настроек филиалов</value>
+  </synonym>
+  <inputByString>ChartOfCharacteristicTypes.ВидыНастроекФилиалов.StandardAttribute.Description</inputByString>
+  <inputByString>ChartOfCharacteristicTypes.ВидыНастроекФилиалов.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>ValueType</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <type>
+    <types>CatalogRef.Филиалы</types>
+    <types>CatalogRef.ЮридическиеЛица</types>
+    <types>CatalogRef.ВидыЗадач</types>
+    <types>Boolean</types>
+    <types>CatalogRef.НаправленияРазработки</types>
+    <types>CatalogRef.Процессы</types>
+    <types>String</types>
+    <types>Date</types>
+    <types>Number</types>
+    <types>CatalogRef.СистемыУчета</types>
+    <types>CatalogRef.НазначенияЗадач</types>
+    <numberQualifiers>
+      <precision>15</precision>
+      <scale>2</scale>
+    </numberQualifiers>
+    <stringQualifiers>
+      <length>200</length>
+    </stringQualifiers>
+    <dateQualifiers/>
+  </type>
+  <hierarchical>true</hierarchical>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <descriptionLength>150</descriptionLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="9a931515-fd92-48b4-87cf-92c0bda842f9">
+      <name>КонтрольКачества</name>
+      <description>Настройки тестирования</description>
+      <isFolder>true</isFolder>
+      <code>000000028</code>
+      <type/>
+      <content id="ba1429e9-cc29-4b65-be77-44d17ccb591e">
+        <name>Автотесты</name>
+        <description>Автотесты</description>
+        <isFolder>true</isFolder>
+        <code>000000035</code>
+        <type/>
+        <content id="213771b0-be6a-49b0-9a90-b9660722bdea">
+          <name>ПрефиксЗадачиАвтотеста</name>
+          <description>Префикс задачи автотеста</description>
+          <code>000000037</code>
+          <type>
+            <types>String</types>
+            <stringQualifiers>
+              <length>200</length>
+            </stringQualifiers>
+          </type>
+        </content>
+        <content id="6eb9c15d-980f-44aa-b3bd-b8504d02222d">
+          <name>ТипДляЗадачиАвтотеста</name>
+          <description>Тип для задачи автотеста</description>
+          <code>000000036</code>
+          <type>
+            <types>CatalogRef.ВидыЗадач</types>
+          </type>
+        </content>
+      </content>
+      <content id="fd45371a-408b-453e-ac91-6d214d5cc54e">
+        <name>Документация</name>
+        <description>Документация</description>
+        <isFolder>true</isFolder>
+        <code>000000038</code>
+        <type/>
+        <content id="3e155101-dcee-435e-a87a-f8063a3614a3">
+          <name>ПрефиксЗадачиДокументации</name>
+          <description>Префикс задачи документации</description>
+          <code>000000040</code>
+          <type>
+            <types>String</types>
+            <stringQualifiers>
+              <length>200</length>
+            </stringQualifiers>
+          </type>
+        </content>
+        <content id="ac69a4a0-47d0-4b02-814a-0f2665352dec">
+          <name>ТипДляЗадачиДокументации</name>
+          <description>Тип для задачи документации</description>
+          <code>000000039</code>
+          <type>
+            <types>CatalogRef.ВидыЗадач</types>
+          </type>
+        </content>
+      </content>
+      <content id="7f2777c9-091e-452a-9d5b-9f5e3260e2b1">
+        <name>ЗаполнениеДополнительныхЗадач</name>
+        <description>Реквизиты дополнительных задач</description>
+        <isFolder>true</isFolder>
+        <code>000000043</code>
+        <type/>
+        <content id="1eab8d85-63a0-41c7-b625-a035c22d7266">
+          <name>НазначениеДополнительныхЗадач</name>
+          <description>Назначение дополнительных задач</description>
+          <code>000000032</code>
+          <type>
+            <types>CatalogRef.НазначенияЗадач</types>
+          </type>
+        </content>
+        <content id="45d27ebe-99c3-43fa-83a5-7d036d0437a0">
+          <name>НаправлениеДополнительныхЗадач</name>
+          <description>Направление дополнительных задач</description>
+          <code>000000033</code>
+          <type>
+            <types>CatalogRef.НаправленияРазработки</types>
+          </type>
+        </content>
+        <content id="7c4df2c0-9bcd-4333-a957-9ae87f7b747b">
+          <name>СистемаУчетаДополнительныхЗадач</name>
+          <description>Система учета дополнительных задач</description>
+          <code>000000034</code>
+          <type>
+            <types>CatalogRef.СистемыУчета</types>
+          </type>
+        </content>
+      </content>
+      <content id="89c1a9ce-ac6b-4ccb-9696-1bb76c5e3ca2">
+        <name>ТипыЗадач</name>
+        <description>Типы задач</description>
+        <isFolder>true</isFolder>
+        <code>000000077</code>
+        <type/>
+      </content>
+      <content id="60cb254f-047e-4eda-a30b-e023ae7e4818">
+        <name>ЗапросСозданияЗадачиАвтотеста</name>
+        <description>Запрос создания задачи автотеста</description>
+        <code>000000030</code>
+        <type>
+          <types>Boolean</types>
+        </type>
+      </content>
+      <content id="20468f9c-eb43-48bc-8534-ddcaac98c5bb">
+        <name>ИмеетПравоЗапускатьТестыTeamCity</name>
+        <description>Имеет право запускать тесты TeamCity</description>
+        <code>000000078</code>
+        <type>
+          <types>Boolean</types>
+        </type>
+      </content>
+      <content id="99c28320-eaac-4f5b-9018-ee5ba2e5e7b0">
+        <name>РазрешениеРаботатьСПуломЗадач</name>
+        <description>Разрешение работать с пулом задач</description>
+        <code>000000029</code>
+        <type>
+          <types>Boolean</types>
+        </type>
+      </content>
+      <content id="92eb521d-7fa6-4ea9-bbef-4b5f317656e2">
+        <name>УведомлятьОПереводеЗадач</name>
+        <description>Уведомлять о переводе задач</description>
+        <code>000000031</code>
+        <type>
+          <types>Boolean</types>
+        </type>
+      </content>
+    </items>
+    <items id="a2f328db-aff0-4c63-881d-0c6fd55a332c">
+      <name>Основное</name>
+      <description>Основное</description>
+      <isFolder>true</isFolder>
+      <code>000000053</code>
+      <type/>
+      <content id="d98ed85f-4d6b-459f-9baa-e92d787c680e">
+        <name>КомандыРазработчиков</name>
+        <description>Команды разработчиков</description>
+        <isFolder>true</isFolder>
+        <code>000000060</code>
+        <type/>
+      </content>
+      <content id="0d7845c2-16c7-480f-ba0c-47da7aadf22f">
+        <name>РазрабатываемыеСистемы</name>
+        <description>Разрабатываемые системы</description>
+        <isFolder>true</isFolder>
+        <code>000000065</code>
+        <type/>
+      </content>
+      <content id="3b449fa6-d0f9-4e87-bda2-b5a1ef58b624">
+        <name>СвязанныеФилиалы</name>
+        <description>Связанные филиалы</description>
+        <isFolder>true</isFolder>
+        <code>000000061</code>
+        <type/>
+      </content>
+      <content id="4a819330-2937-4f4d-b025-d9715f53cc87">
+        <name>КомандаТестирования</name>
+        <description>Команда тестирования</description>
+        <code>000000079</code>
+        <type>
+          <types>CatalogRef.Филиалы</types>
+        </type>
+      </content>
+      <content id="b422c8f8-abb1-4ff8-8935-a2eb2dc93d63">
+        <name>НаправлениеРазработки</name>
+        <description>Направление разработки</description>
+        <code>000000052</code>
+        <type>
+          <types>CatalogRef.НаправленияРазработки</types>
+        </type>
+      </content>
+      <content id="fc7ae7d2-c6d3-4008-98e7-0fd375035cf9">
+        <name>ФилиалТестирования</name>
+        <description>Филиал тестирования</description>
+        <code>000000071</code>
+        <type>
+          <types>CatalogRef.Филиалы</types>
+        </type>
+      </content>
+    </items>
+    <items id="b7a3fa07-7b6d-412b-a14e-6656fcfec35a">
+      <name>ПроцессРазработки</name>
+      <description>Процесс разработки</description>
+      <isFolder>true</isFolder>
+      <code>000000006</code>
+      <type/>
+      <content id="9d27a4eb-8e52-4a04-a395-71080b61fce3">
+        <name>CodeReview</name>
+        <description>Code review</description>
+        <isFolder>true</isFolder>
+        <code>000000044</code>
+        <type/>
+        <content id="620e4f13-c67e-4d83-bc7b-b13926075372">
+          <name>ИсполнителяCodeReviewНазначаетРуководитель</name>
+          <description>Исполнителя code review назначает руководитель</description>
+          <code>000000007</code>
+          <type>
+            <types>Boolean</types>
+          </type>
+        </content>
+      </content>
+      <content id="27ccb619-9427-4c0e-8f60-296340f461f5">
+        <name>АвтопулЗадач</name>
+        <description>Автопул задач</description>
+        <isFolder>true</isFolder>
+        <code>000000015</code>
+        <type/>
+        <content id="fa5c5290-0e92-45b3-83c6-162013264614">
+          <name>ИспользованиеАвтопулаЗадач</name>
+          <description>Использование автопула задач</description>
+          <code>000000016</code>
+          <type>
+            <types>Boolean</types>
+          </type>
+        </content>
+        <content id="a831c933-b9e1-4b99-b064-187c2a4e9d3b">
+          <name>ОтображатьСложностьЗадач</name>
+          <description>Отображать сложность задач</description>
+          <code>000000017</code>
+          <type>
+            <types>Boolean</types>
+          </type>
+        </content>
+      </content>
+      <content id="242d0d40-15a0-4a07-9da4-413b9b9e8521">
+        <name>ПодсветкаСрокаРеализации</name>
+        <description>Подсветка срока реализации</description>
+        <isFolder>true</isFolder>
+        <code>000000050</code>
+        <type/>
+        <content id="518f08f8-7f78-4ac9-8569-25006afd0ebd">
+          <name>КоличествоДнейДоСрокаРеализации</name>
+          <description>Количество дней до срока реализации</description>
+          <code>000000049</code>
+          <type>
+            <types>Number</types>
+            <numberQualifiers>
+              <precision>4</precision>
+              <nonNegative>true</nonNegative>
+            </numberQualifiers>
+          </type>
+        </content>
+        <content id="08db5776-9699-428e-a6af-14992a1090a6">
+          <name>ПодсвечиватьПриПриближенииСрокаРеализации</name>
+          <description>Подсвечивать задачи/заявки, если до даты реализации осталось дней, меньше</description>
+          <code>000000048</code>
+          <type>
+            <types>Boolean</types>
+          </type>
+        </content>
+      </content>
+      <content id="829036ba-3060-46cf-82d6-5981256cceb7">
+        <name>ГруппаПроцессУстановкиСтатусов</name>
+        <description>Процесс установки статусов</description>
+        <isFolder>true</isFolder>
+        <code>000000080</code>
+        <type/>
+        <content id="18743d32-811a-443f-ab45-66c6bd6eddc4">
+          <name>ПроцессУстановкиСтатусовВнутреннееЗадание</name>
+          <description>Процесс установки статусов (Внутреннее задание)</description>
+          <code>000000076</code>
+          <type>
+            <types>CatalogRef.Процессы</types>
+          </type>
+        </content>
+        <content id="388182ce-53ec-4752-b9b8-35b760d5cf74">
+          <name>ПроцессУстановкиСтатусов</name>
+          <description>Процесс установки статусов (Задача)</description>
+          <code>000000072</code>
+          <type>
+            <types>CatalogRef.Процессы</types>
+          </type>
+        </content>
+      </content>
+      <content id="4b6d13fc-34c5-46fd-9e27-cff859af2540">
+        <name>ОцениватьЗадачиВStoryPoint</name>
+        <description>Оценивать задачи в Story Point</description>
+        <code>000000058</code>
+        <type>
+          <types>Boolean</types>
+        </type>
+      </content>
+    </items>
+    <items id="d3d71bc3-a4c9-44bf-a686-b868ab0767d7">
+      <name>Прочее</name>
+      <description>Прочее</description>
+      <isFolder>true</isFolder>
+      <code>000000004</code>
+      <type/>
+      <content id="2a3304c0-c4f8-42e6-97bc-5d807cabf46d">
+        <name>СмещениеЧасовогоПоясаОтносительноВладивостока</name>
+        <description>Смещение часового пояса относительно владивостока</description>
+        <code>000000005</code>
+        <type>
+          <types>Number</types>
+          <numberQualifiers>
+            <precision>2</precision>
+          </numberQualifiers>
+        </type>
+      </content>
+      <content id="61772286-198b-4c1d-a8a2-55fc9837e7fd">
+        <name>ЭтоФилиалОбучения</name>
+        <description>Филиал обучения сотрудников</description>
+        <code>000000064</code>
+        <type>
+          <types>Boolean</types>
+        </type>
+      </content>
+    </items>
+    <items id="2f79456e-1dc8-4147-848d-777f5a434035">
+      <name>СотрудникиФилиала</name>
+      <description>Сотрудники филиала</description>
+      <isFolder>true</isFolder>
+      <code>000000047</code>
+      <type/>
+    </items>
+    <items id="2abe8929-28e4-4692-8e2d-2c90e7241168">
+      <name>Трудозатраты</name>
+      <description>Трудозатраты</description>
+      <isFolder>true</isFolder>
+      <code>000000001</code>
+      <type/>
+      <content id="549a9306-eb2c-4f47-bb07-434ed9e5ff12">
+        <name>ВидыДеятельности</name>
+        <description>Виды деятельности</description>
+        <isFolder>true</isFolder>
+        <code>000000068</code>
+        <type/>
+      </content>
+      <content id="482aaff3-59f4-45bb-9d84-61cc070eeb3b">
+        <name>ВнутренниеТрудозатраты</name>
+        <description>Внутренние трудозатраты</description>
+        <isFolder>true</isFolder>
+        <code>000000056</code>
+        <type/>
+        <content id="3dc73c25-9aba-4a61-aad9-ef71e1cfd5c4">
+          <name>СниматьАктивностьПриЗанесенииТрудозатрат</name>
+          <description>Снимать активность участника при занесении трудозатрат</description>
+          <code>000000057</code>
+          <type>
+            <types>Boolean</types>
+          </type>
+        </content>
+      </content>
+      <content id="775df99f-34ab-4a83-8b42-eb638697995b">
+        <name>НапоминанияОТрудозатратах</name>
+        <description>Напоминания о трудозатратах</description>
+        <isFolder>true</isFolder>
+        <code>000000069</code>
+        <type/>
+        <content id="a91deb56-4c6f-40a8-8c85-6ad24ec0ce3b">
+          <name>ВремяНапоминанияОТрудозатратах</name>
+          <description>Время напоминания о трудозатратах</description>
+          <code>000000003</code>
+          <type>
+            <types>Date</types>
+            <dateQualifiers>
+              <dateFractions>Time</dateFractions>
+            </dateQualifiers>
+          </type>
+        </content>
+        <content id="abb18f96-7bd4-4dfe-8e8d-f2ec18d2da0a">
+          <name>УведомлятьОТрудозатратах</name>
+          <description>Уведомлять о трудозатратах</description>
+          <code>000000002</code>
+          <type>
+            <types>Boolean</types>
+          </type>
+        </content>
+      </content>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>ChartOfCharacteristicTypes.ВидыНастроекФилиалов.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultFolderForm>ChartOfCharacteristicTypes.ВидыНастроекФилиалов.Form.ФормаГруппы</defaultFolderForm>
+  <defaultListForm>ChartOfCharacteristicTypes.ВидыНастроекФилиалов.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="1c49f2e5-d3e4-4d25-859e-09c2d1cc3da5">
+    <name>ВариантГруппировки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вариант группировки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Определяет вариант группировки элементов внутри формы</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <use>ForFolder</use>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="fd905d57-4eda-406d-9f8e-e3a2e2cfb836">
+    <name>ГлавныйРеквизит</name>
+    <synonym>
+      <key>ru</key>
+      <value>Главный реквизит</value>
+    </synonym>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.ВидыНастроекФилиалов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Ссылка на настройку, под которой будет выведена группа настроек или отдельная настройка</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <use>ForFolderAndItem</use>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ffcd8d6f-d9bf-448d-8f76-fb10d44a1f87">
+    <name>ИспользоватьСписокВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать список выбора</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Для элемента будет сгенерирован список выбора</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ce8f4b26-6ff2-4723-a0e7-47e6594d6383">
+    <name>Основной</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основной</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5b425fd8-2eaf-4d30-a0e7-678bad469c32">
+    <name>ОтображатьЗаголовок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отображать заголовок</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Переключатель. Отвечает за отображение заголовка группы настроек</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <use>ForFolderAndItem</use>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="50850dcc-de20-48fb-939b-e144658b905c">
+    <name>ОтображатьКакПодраздел</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отображать как подраздел</value>
+    </synonym>
+    <comment>Истина - будет группа будет представлена подразделом. Ложь - будетотображена как группа с заголовком на родительской странице</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Определяет, как будет отображаться группа. Истина - будет группа будет представлена подразделом основного раздела. Ложь - будет отображена как группа с заголовком на родительской странице.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <use>ForFolder</use>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8598a0ef-ace5-4a3e-84a5-6fae7731671e">
+    <name>Подсказка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подсказка</value>
+    </synonym>
+    <comment>Текст подсказки, которая будет отображаться в виде контекстной подсказки</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Настройке будет добавлена подсказка. Подсказка будет отображаться по кнопке.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f59ba240-511e-44f6-87ee-ba1bd8880e13">
+    <name>ПорядокСледования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порядок следования</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Порядок вывода настройки внутри группы</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <use>ForFolderAndItem</use>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ccc5e604-8c57-4f4c-92e0-e2022423a6f1">
+    <name>Скрытый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Скрытый</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Переключатель. Влияет на отображение элемента на форме настроек</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="410f79de-b5bb-4420-9506-6705270a2dd3">
+    <name>СохранятьИсториюИзменений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сохранять историю изменений</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="68a7a783-b87e-4e52-a547-16c5201b43bc">
+    <name>ТребуетсяПерезапуск</name>
+    <synonym>
+      <key>ru</key>
+      <value>Требуется перезапуск</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Применение настройки требует перезапуска сеанса</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="23c6c22c-abfe-4ccb-bedc-39259a53d2eb">
+    <producedTypes>
+      <objectType typeId="f886aaea-a381-49e2-b8b0-fc3d11bbbbae" valueTypeId="568d8435-a8ac-4e9a-9771-5ee21af1db85"/>
+      <rowType typeId="4b9d2c2d-38ff-411d-bc5d-b94eca70b088" valueTypeId="fc3e198c-8dc3-4a6a-91b2-b6432a31186f"/>
+    </producedTypes>
+    <name>СписокВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список выбора</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="7dac4dcf-caa1-4047-961d-f2ee51700a42">
+      <name>Значение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Значение</value>
+      </synonym>
+      <type>
+        <types>Characteristic.ВидыНастроекФилиалов</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+    </attributes>
+    <attributes uuid="371dcccf-bf68-45e9-945b-026ea1877437">
+      <name>Представление</name>
+      <synonym>
+        <key>ru</key>
+        <value>Представление</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>150</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="3b9441f5-3724-49c3-baee-f0adee421f7b">
+    <producedTypes>
+      <objectType typeId="e2701850-41d9-4cd6-9170-a44674c66832" valueTypeId="feb4ea8e-1b55-45b2-a9ad-c2b2cce4d031"/>
+      <rowType typeId="2621484c-0941-4586-b9a9-ed0815cd31bf" valueTypeId="2fb63d8a-87a6-4ad4-aec6-65778c7717b0"/>
+    </producedTypes>
+    <name>ТипыФилиалов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Типы филиалов</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="0453d9cb-7d11-4fc2-80a4-11f68829e6ea">
+      <name>ТипФилиала</name>
+      <synonym>
+        <key>ru</key>
+        <value>Тип филиала</value>
+      </synonym>
+      <type>
+        <types>EnumRef.ТипыФилиалов</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <use>ForFolderAndItem</use>
+  </tabularSections>
+  <forms uuid="0b39bb58-8d4a-4c14-a082-cb225e0b68e6">
+    <name>НастройкаТиповФилиалов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка типов филиалов</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8605e6e4-4681-4bc6-a653-a4623b5ebd60">
+    <name>ФормаГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма группы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c076fa08-eb4c-45fc-9f7d-8348dc479454">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8c110aac-1d82-43d4-b3c5-fd252ae4e10c">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:ChartOfCharacteristicTypes>

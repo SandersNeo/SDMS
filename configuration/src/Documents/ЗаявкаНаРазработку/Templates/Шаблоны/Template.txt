@@ -1,0 +1,36 @@
+////////////////////////////////////////////////////////////////////////////////
+// ОБЩИЕ ОБЛАСТИ ШАБЛОНА
+
+#Область ЗаголовокДокумента#
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="format-detection" content="telephone=no" />
+<style type="text/css">
+body{margin:0;padding:8px;}
+p{line-height:1.15;margin:0;}
+ol,ul{margin-top:0;margin-bottom:0;}
+img{border:none;}
+li>p{display:inline;}
+</style>
+</head>
+<body>
+#КонецОбласти ЗаголовокДокумента#
+
+#Область ПодвалДокумента#
+</body>
+</html>
+#КонецОбласти ПодвалДокумента#
+
+////////////////////////////////////////////////////////////////////////////////
+//// ОБЛАСТИ ШАБЛОНА ДЛЯ ОПИСАНИЯ ЗАЯВКИ HTML
+//// НОВАЯ ЗАЯВКА
+#Область ЗаявкаОписаниеHTML#
+<h3>Цель:</h3>
+<p>&nbsp;</p>
+<h3>Аббревиатуры, сокращения, термины и определения:</h3>
+<p>&nbsp;</p>
+<h3>Описание:</h3>
+<p>&nbsp;</p>
+#КонецОбласти ЗаявкаОписаниеHTML#

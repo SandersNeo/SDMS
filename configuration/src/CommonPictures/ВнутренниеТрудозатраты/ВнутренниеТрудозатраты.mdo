@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c0f936f8-eb5c-4d94-8eb1-394872ed0f7e">
+  <name>ВнутренниеТрудозатраты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Внутренние трудозатраты</value>
+  </synonym>
+</mdclass:CommonPicture>

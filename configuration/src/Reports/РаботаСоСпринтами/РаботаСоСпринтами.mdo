@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5f536d22-de2b-46b2-b381-cb88bfd4bca9">
+  <producedTypes>
+    <objectType typeId="87fd194a-ef50-4c1c-bd79-5af03feb372e" valueTypeId="1e24b07e-1b1b-47e1-81f7-f5c53dbb598d"/>
+    <managerType typeId="6013d340-ae53-4b68-86a1-b9dd23f1e425" valueTypeId="a0df0071-db72-4978-9ba3-ab788d683e77"/>
+  </producedTypes>
+  <name>РаботаСоСпринтами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Работа со спринтами</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.РаботаСоСпринтами.Form.ФормаОтчета</defaultForm>
+  <forms uuid="6d4b079d-e93b-459c-94ce-95752e569a0d">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8ecc2554-f46d-4bd0-b1cd-9aa9fedc2bd1">
+    <name>ФормаРасшифровки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма расшифровки</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="9313d6ab-1676-49fb-a88c-84dfe13e5473">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+  <templates uuid="32b976ad-9c3e-4c8c-8097-69e5511a89b1">
+    <name>РасшифровкаВозвраты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расшифровка возвраты</value>
+    </synonym>
+  </templates>
+  <templates uuid="c4265c59-d766-4c89-8ec2-a4f616d9277f">
+    <name>РасшифровкаКоличество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расшифровка количество</value>
+    </synonym>
+  </templates>
+  <templates uuid="d0ef8615-99b2-42ac-ac59-8b2dd7bc2593">
+    <name>РасшифровкаКоличествоСоСтатусом</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расшифровка количество со статусом</value>
+    </synonym>
+  </templates>
+  <templates uuid="69a417e1-f681-4ead-966d-a7865b9a81d7">
+    <name>РасшифровкаПланФактВремя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расшифровка план факт время</value>
+    </synonym>
+  </templates>
+  <templates uuid="41c8967d-4d54-4567-b663-8c1a7f946238">
+    <name>РасшифровкаПревышениеПлана</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расшифровка превышение плана</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2d9a512e-3265-468b-9978-465d87126fff">
+  <name>ИсторияИзменений</name>
+  <synonym>
+    <key>ru</key>
+    <value>История изменений</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>InformationRegister.ИсторияИзмененийОбъектовПоСобытиям</content>
+  <content>Enum.КатегорииСобытийИсторияИзменений</content>
+  <content>DefinedType.ОбъектИсторииИзменений</content>
+  <content>InformationRegister.ИсторияИзмененийЮрЛицОбъектов</content>
+  <parentSubsystem>Subsystem.БазоваяФункциональность</parentSubsystem>
+</mdclass:Subsystem>

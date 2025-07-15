@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e85becf7-0e02-4243-b5de-959e01478a1b">
+  <producedTypes>
+    <managerType typeId="2c9a10e0-b41d-46b1-a93b-75d7319dc450" valueTypeId="6ccb7a87-e7ee-4461-8401-4167222747bb"/>
+    <valueManagerType typeId="29e2ddb9-d5bd-4b6f-9105-1b02a37c76dc" valueTypeId="6aba8e67-e72c-40c8-ac26-c45da5749c8c"/>
+    <valueKeyType typeId="c7677d4c-1888-46fe-a939-80b4d66b8d0d" valueTypeId="b46884fe-951f-4f23-8167-6438be3cc077"/>
+  </producedTypes>
+  <name>ОсновнойМессенджер</name>
+  <synonym>
+    <key>ru</key>
+    <value>Основной мессенджер</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.Мессенджеры</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

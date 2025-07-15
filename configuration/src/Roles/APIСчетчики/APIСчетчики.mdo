@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4eba85fd-ea8b-4337-966e-d835dd0656b3">
+  <name>APIСчетчики</name>
+  <synonym>
+    <key>ru</key>
+    <value>API (счетчики)</value>
+  </synonym>
+</mdclass:Role>

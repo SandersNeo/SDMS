@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6a3bf730-4ead-428e-9c8b-e70222af11a4">
+  <producedTypes>
+    <containerType typeId="beb659f0-388e-4029-a266-5fa6ab4e50c4" valueTypeId="dc0469d5-8775-453d-a135-5d035f909330"/>
+  </producedTypes>
+  <name>ОбъектСемантическогоАнализа</name>
+  <synonym>
+    <key>ru</key>
+    <value>Объект семантического анализа</value>
+  </synonym>
+  <type>
+    <types>DocumentRef.ВнутреннееЗадание</types>
+    <types>DocumentRef.Задача</types>
+    <types>DocumentRef.ЗаявкаНаРазработку</types>
+  </type>
+</mdclass:DefinedType>

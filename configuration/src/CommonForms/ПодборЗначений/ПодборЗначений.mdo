@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonForm xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0095b600-c6b4-464e-972a-44c031ed7ff7">
+  <name>ПодборЗначений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подбор значений</value>
+  </synonym>
+  <usePurposes>PersonalComputer</usePurposes>
+</mdclass:CommonForm>

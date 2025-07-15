@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d4f3bacd-6795-46ae-a7f1-a4934f068acf">
+  <producedTypes>
+    <refType typeId="15717dc5-4232-4deb-a26e-5372a7dee3f3" valueTypeId="aa53820b-d439-4aeb-870c-46eebbf4c916"/>
+    <listType typeId="1f2426fe-d7c8-4da9-b67f-3fe1df22b93f" valueTypeId="13afe6c6-cd42-4780-9947-12804d8bc044"/>
+    <managerType typeId="6108092f-31f2-4e30-bb44-67a752a00264" valueTypeId="57c87819-e40b-41f0-a241-dd7c03e74e43"/>
+  </producedTypes>
+  <name>ВидыХранилищСистемУчета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды хранилищ систем учета</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="d6aa9f3e-45fe-47b9-a816-76f0ecb2bcf8">
+    <name>Хранилище1С</name>
+    <synonym>
+      <key>ru</key>
+      <value>1С</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="516d0cdc-70ee-4f57-a718-7a84d29f3bc2">
+    <name>Git</name>
+    <synonym>
+      <key>ru</key>
+      <value>Git</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0e9dd070-6668-45db-b5dc-71cf287b9fda">
+    <name>Mercurial</name>
+    <synonym>
+      <key>ru</key>
+      <value>Mercurial</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="7bef1ffd-1846-46a1-81f9-9c11b6b053bc">
+    <name>Хранилище1С_ConventionalCommits</name>
+    <synonym>
+      <key>ru</key>
+      <value>1С (conventional commits)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ebbb47e3-c962-4cf7-b5b5-5c0050ceaf55">
+    <name>Хранилище1С_MR</name>
+    <synonym>
+      <key>ru</key>
+      <value>1С MR</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

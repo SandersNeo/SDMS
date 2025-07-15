@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3c124632-fd52-42ef-bad3-06c0521b606e">
+  <producedTypes>
+    <refType typeId="99bd14b6-8979-41a0-a68b-c4adf6ab3fe7" valueTypeId="13ce510b-a229-4de7-b0ad-f0039fe5d4a2"/>
+    <listType typeId="d1a1c14b-9baa-46f0-ac63-087dca608e62" valueTypeId="6db982c9-52f6-4ba9-808d-9da53b4cf0a0"/>
+    <managerType typeId="cdc04c40-bdcb-400d-ab0b-3c4cfc981040" valueTypeId="429ddc99-642c-4527-9833-71a66824806c"/>
+  </producedTypes>
+  <name>ВидыПроцессов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды процессов</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="6537c1f9-9f8a-4a06-a63a-33d71fb1725e">
+    <name>Поддержка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поддержка</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="55fc874d-b57a-443f-87b2-eaa674b2413e">
+    <name>Развитие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Развитие</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

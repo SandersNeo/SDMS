@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="75811d40-0776-42fb-867b-203c4c39829a">
+  <producedTypes>
+    <containerType typeId="c6e25687-18cd-4d61-9feb-8e90561dd9c9" valueTypeId="e8fe987f-5a7c-4e7a-ab78-e0c2234b4b8c"/>
+  </producedTypes>
+  <name>ОбъектОграниченийДоступа</name>
+  <synonym>
+    <key>ru</key>
+    <value>Объект ограничений доступа</value>
+  </synonym>
+  <type>
+    <types>DocumentRef.Задача</types>
+    <types>DocumentRef.ЗаявкаНаРазработку</types>
+  </type>
+</mdclass:DefinedType>

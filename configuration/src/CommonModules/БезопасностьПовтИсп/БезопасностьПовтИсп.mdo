@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4de2d8e6-87a0-4374-a735-7c4d648fdd40">
+  <name>БезопасностьПовтИсп</name>
+  <synonym>
+    <key>ru</key>
+    <value>Безопасность повт исп</value>
+  </synonym>
+  <server>true</server>
+  <returnValuesReuse>DuringSession</returnValuesReuse>
+</mdclass:CommonModule>

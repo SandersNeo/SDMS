@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="11375ec9-97de-48f8-aa77-79dde02b28cf">
+  <producedTypes>
+    <containerType typeId="0bde75ff-f70e-4f34-825a-db3d969a522f" valueTypeId="881a5a45-ae72-4b6b-a8b9-8b1bdb060cab"/>
+  </producedTypes>
+  <name>ОбъектТрудозатрат</name>
+  <synonym>
+    <key>ru</key>
+    <value>Объект трудозатрат</value>
+  </synonym>
+  <comment>Объект, на который были потрачены ресурсы</comment>
+  <type>
+    <types>DocumentRef.ВнутреннееЗадание</types>
+    <types>DocumentRef.ВнутренниеТрудозатраты</types>
+    <types>CatalogRef.Проекты</types>
+    <types>DocumentRef.Задача</types>
+    <types>DocumentRef.ЗаявкаНаРазработку</types>
+  </type>
+</mdclass:DefinedType>

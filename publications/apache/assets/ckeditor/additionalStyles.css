@@ -1,0 +1,34 @@
+body { margin:0px }
+:root { /* Глобальные переменные редактора, влияют на размер командной панели */
+    --ck-spacing-unit: 0.2em;
+    --ck-line-height-base: 1.2;
+    --ck-font-size-base: 12px;
+}
+.ck.ck-icon { height: 1em; width: 1em; font-size: 16px; will-change: unset } /* Размер иконок на командной панели */
+.ck.ck-content { font-size: 12px; font-family: Verdana, sans-serif; color: #484848 } /* Настройки размера и шрифта по-умолчанию для редактора */
+.ck.ck-content hr { height: 2px; } /* Толщина горизонтальной линии */
+.ck.ck-content h4 { border-bottom: 1px dotted #bbb }
+.ck.ck-content p, .ck.ck-content ul, .ck.ck-content ol { margin: 0.3em 0px; }
+.ck.ck.ck-content img { border: 1px solid #ccced1 }
+/* Стили командной панели и области редактирования */
+table { font-size: inherit; } /* Для переопределения user agent stylesheet */
+.ck.ck-reset.ck-editor.ck-rounded-corners { height: 100%; width: 100%; display: flex; flex-direction: column; }
+.ck.ck-editor__main { flex: 1; position: relative; }
+.ck.ck-editor__editable { position: absolute; bottom: 0; right: 0; top: 0; left: 0; padding: 5px 2px 2px 8px; }
+.ck.ck-editor__editable.ck-focused:not(.ck-editor__nested-editable) { border: 0; box-shadow:none; }
+.ck.ck-editor__editable, .ck.ck-toolbar { border: 0; }
+.ck.ck-editor__top { border-bottom: 1px solid var(--ck-color-base-border); }
+.ck.ck-balloon-panel.ck-powered-by-balloon { display: none; }
+/* Стили для скроллбара */
+.ck.ck-editor__editable::-webkit-scrollbar { width: 12px; height: 12px }
+.ck.ck-editor__editable::-webkit-scrollbar-track, .ck.ck-editor__editable::-webkit-scrollbar-thumb { border-radius: 5px; border-style: solid; border-color: #fff; }
+.ck.ck-editor__editable::-webkit-scrollbar-track { background: #d6d6d6 }
+.ck.ck-editor__editable::-webkit-scrollbar-thumb { background: #9a9a9a }
+.ck.ck-editor__editable::-webkit-scrollbar-track:vertical, .ck.ck-editor__editable::-webkit-scrollbar-thumb:vertical { border-width: 0 2px; }
+.ck.ck-editor__editable::-webkit-scrollbar-thumb:hover { background: #757575 }
+.ck.ck-editor__editable::-webkit-scrollbar-button { background: url(_scrollTaxi.png) no-repeat 0 0; border: 2px solid #fff }
+.ck.ck-editor__editable::-webkit-scrollbar-button:vertical { height: 23px }
+.ck.ck-editor__editable::-webkit-scrollbar-button:vertical:start { background-position: -28px -1px }
+.ck.ck-editor__editable::-webkit-scrollbar-button:vertical:end { background-position: -6px -1px }
+.ck.ck-editor__editable::-webkit-scrollbar-button:vertical:start, .ck.ck-editor__editable::-webkit-scrollbar-button:vertical:end { background-color: #c2c2c2 }
+.ck.ck-editor__editable::-webkit-scrollbar-button:vertical:start:hover, .ck.ck-editor__editable::-webkit-scrollbar-button:vertical:end:hover { background-color: #202020 }

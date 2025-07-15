@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonForm xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d26075d0-2ced-4734-8d8c-0a7fc3b6e86f">
+  <name>КомментарийСтатуса</name>
+  <synonym>
+    <key>ru</key>
+    <value>Комментарий статуса</value>
+  </synonym>
+  <usePurposes>PersonalComputer</usePurposes>
+  <usePurposes>MobileDevice</usePurposes>
+  <useStandardCommands>true</useStandardCommands>
+</mdclass:CommonForm>

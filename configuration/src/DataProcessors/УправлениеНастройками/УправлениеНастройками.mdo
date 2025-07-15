@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0897e921-eccf-4566-bda6-62639a16f72f">
+  <producedTypes>
+    <objectType typeId="bbcbf8bd-a049-42e4-8d22-ceaacdabdc86" valueTypeId="37cbffa2-1a80-4adc-9389-ce71f34cde92"/>
+    <managerType typeId="ca7bdadd-721f-4824-b13b-26a9aa9e66c6" valueTypeId="5c9e169b-4b81-4d43-9524-830e6d7d45d4"/>
+  </producedTypes>
+  <name>УправлениеНастройками</name>
+  <synonym>
+    <key>ru</key>
+    <value>Управление настройками</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.УправлениеНастройками.Form.НастройкиФилиала</defaultForm>
+  <forms uuid="68bdb301-469e-4249-8e83-e66b35a2762e">
+    <name>Заглушка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заглушка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="98eeb8d5-f2d1-4210-9208-996211f6d5d0">
+    <name>НастройкиФилиала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки филиала</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

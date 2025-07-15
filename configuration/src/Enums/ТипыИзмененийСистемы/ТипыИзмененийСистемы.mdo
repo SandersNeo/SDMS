@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6e49557e-9923-474d-9216-7c1831148324">
+  <producedTypes>
+    <refType typeId="8c18a0ac-7d25-4b4b-87aa-ba61a26c5db8" valueTypeId="cd8bff31-1b40-4bed-a55f-b7d1177bc89a"/>
+    <listType typeId="b3d4aea2-0216-486d-a3fd-114b647df698" valueTypeId="bddc79be-a28a-4103-8717-89f6862a2888"/>
+    <managerType typeId="7e0dc484-424a-4015-9bf1-49b17145a002" valueTypeId="2f3416f6-a885-4e30-9f32-5111c4e23bd8"/>
+  </producedTypes>
+  <name>ТипыИзмененийСистемы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы изменений системы</value>
+  </synonym>
+  <comment>Перечень типов изменений системы для формирования описания</comment>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>QuickChoice</choiceMode>
+  <enumValues uuid="b72b757b-cbcc-4a04-b1c8-860939d3fa97">
+    <name>НовыеВозможности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Новые возможности</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="aaf1389f-79b8-48b9-a9ea-34d002539f21">
+    <name>Изменения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменения</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="5cdcc45d-af35-4c73-b5cc-3c2c47e35655">
+    <name>Исправления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исправления</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c6fc6e84-2c9b-43ee-a016-f1fab951bc11">
+    <name>Устарело</name>
+    <synonym>
+      <key>ru</key>
+      <value>Устарело</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="7d6abb2b-6ef6-4951-9c44-e9803edda71f">
+    <name>Удалено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удалено</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="bca67332-a396-4560-8d7a-8a08e1953756">
+    <name>Безопасность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Безопасность</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

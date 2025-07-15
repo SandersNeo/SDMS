@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonForm xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="064fa912-175e-49d0-a647-24446c5bea3f">
+  <name>НастройкаАватараСистемыВзаимодействия</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройка аватара системы взаимодействия</value>
+  </synonym>
+  <usePurposes>PersonalComputer</usePurposes>
+  <usePurposes>MobileDevice</usePurposes>
+</mdclass:CommonForm>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="160860d7-5afa-4d99-939f-19d10a6e69b9">
+  <name>АктуализацияСроковОкончанияПроектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Актуализация сроков окончания проектов</value>
+  </synonym>
+  <methodName>CommonModule.РегламентныеЗаданияСервер.АктуализацияСроковОкончанийПроектов</methodName>
+  <description>Актуализация сроков окончаний проектов</description>
+  <key>АктуализацияСроковОкончанийПроектов</key>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Спринт</dataPath>
+			<field>Спринт</field>
+			<attributeUseRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<role>
+				<dcscom:ignoreNullValues>true</dcscom:ignoreNullValues>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Автор</dataPath>
+			<field>Автор</field>
+			<attributeUseRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Проект</dataPath>
+			<field>Проект</field>
+			<attributeUseRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ссылка</dataPath>
+			<field>Ссылка</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задача</v8:content>
+				</v8:item>
+			</title>
+			<attributeUseRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Статус</dataPath>
+			<field>Статус</field>
+			<attributeUseRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Заказчик</dataPath>
+			<field>Заказчик</field>
+			<attributeUseRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Направление</dataPath>
+			<field>Направление</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Направление</v8:content>
+				</v8:item>
+			</title>
+			<attributeUseRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КомандаРазработчиков</dataPath>
+			<field>КомандаРазработчиков</field>
+			<attributeUseRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Назначена</dataPath>
+			<field>Назначена</field>
+			<attributeUseRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Основание</dataPath>
+			<field>Основание</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основание</v8:content>
+				</v8:item>
+			</title>
+			<attributeUseRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВсегоОчков</dataPath>
+			<field>ВсегоОчков</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОсталосьОчков</dataPath>
+			<field>ОсталосьОчков</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СистемаРазработки</dataPath>
+			<field>СистемаРазработки</field>
+			<attributeUseRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Филиал</dataPath>
+			<field>Филиал</field>
+			<attributeUseRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	СоставСпринтов.Спринт КАК Спринт,
+	ДокументЗадача.Ссылка КАК Ссылка,
+	ДокументЗадача.Автор КАК Автор,
+	ДокументЗадача.Заказчик КАК Заказчик,
+	ДокументЗадача.Направление КАК Направление,
+	ДокументЗадача.Статус КАК Статус,
+	ДокументЗадача.Назначена КАК Назначена,
+	ДокументЗадача.Проект КАК Проект,
+	ДокументЗадача.КомандаРазработчиков КАК КомандаРазработчиков,
+	ДокументЗадача.ОбъектОснование КАК Основание,
+	ДокументЗадача.СистемаУчета КАК СистемаРазработки,
+	ДокументЗадача.Филиал КАК Филиал,
+	ДокументЗадача.ОценкаStoryPoint КАК ОценкаStoryPoint,
+	ДокументЗадача.ПроцентВыполнения КАК ПроцентВыполнения,
+	ЕСТЬNULL(ВЫРАЗИТЬ(НастройкиФилиалов.Значение КАК БУЛЕВО), ЛОЖЬ) КАК ОцениватьЗадачиВStoryPoint
+ПОМЕСТИТЬ ЗадачиСпринтов
+ИЗ
+	РегистрСведений.СоставСпринтов КАК СоставСпринтов
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.Спринт КАК ДокументСпринт
+		ПО (ДокументСпринт.Ссылка = СоставСпринтов.Спринт)
+			И (НЕ ДокументСпринт.ПометкаУдаления)
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.Задача КАК ДокументЗадача
+		ПО СоставСпринтов.Объект = ДокументЗадача.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.НастройкиФилиалов КАК НастройкиФилиалов
+		ПО (ДокументЗадача.Филиал = НастройкиФилиалов.Филиал)
+			И (НастройкиФилиалов.Настройка = ЗНАЧЕНИЕ(ПланВидовХарактеристик.ВидыНастроекФилиалов.ОцениватьЗадачиВStoryPoint))
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	ЗадачиСпринтов.Ссылка КАК Задача
+ПОМЕСТИТЬ ЗадачиСпринтовБезПовторов
+ИЗ
+	ЗадачиСпринтов КАК ЗадачиСпринтов
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВЫРАЗИТЬ(Трудозатраты.Объект КАК Документ.Задача) КАК Задача,
+	СУММА(Трудозатраты.Затрата) КАК Затрата
+ПОМЕСТИТЬ ТрудозатратыЗадач
+ИЗ
+	ЗадачиСпринтовБезПовторов КАК ЗадачиСпринтовБезПовторов
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.Трудозатраты КАК Трудозатраты
+		ПО (ЗадачиСпринтовБезПовторов.Задача = (ВЫРАЗИТЬ(Трудозатраты.Объект КАК Документ.Задача)))
+			И (Трудозатраты.ITСтруктура)
+
+СГРУППИРОВАТЬ ПО
+	ВЫРАЗИТЬ(Трудозатраты.Объект КАК Документ.Задача)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ЗадачиСпринтов.Спринт КАК Спринт,
+	ЗадачиСпринтов.Ссылка КАК Ссылка,
+	ЗадачиСпринтов.Автор КАК Автор,
+	ЗадачиСпринтов.Заказчик КАК Заказчик,
+	ЗадачиСпринтов.Направление КАК Направление,
+	ЗадачиСпринтов.Статус КАК Статус,
+	ЗадачиСпринтов.Назначена КАК Назначена,
+	ЗадачиСпринтов.Проект КАК Проект,
+	ЗадачиСпринтов.КомандаРазработчиков КАК КомандаРазработчиков,
+	ЗадачиСпринтов.Основание КАК Основание,
+	ЗадачиСпринтов.СистемаРазработки КАК СистемаРазработки,
+	ЗадачиСпринтов.Филиал КАК Филиал,
+	ВЫБОР
+		КОГДА ЗадачиСпринтов.ОцениватьЗадачиВStoryPoint
+			ТОГДА ЗадачиСпринтов.ОценкаStoryPoint
+		ИНАЧЕ ЕСТЬNULL(ПланируемыеТрудозатраты.Трудозатраты, 0)
+	КОНЕЦ КАК ВсегоОчков,
+	ВЫБОР
+		КОГДА ЗадачиСпринтов.ОцениватьЗадачиВStoryPoint
+			ТОГДА ЗадачиСпринтов.ОценкаStoryPoint * (1 - ЗадачиСпринтов.ПроцентВыполнения / 100)
+		ИНАЧЕ ЕСТЬNULL(ПланируемыеТрудозатраты.Трудозатраты, 0) - ЕСТЬNULL(ТрудозатратыЗадач.Затрата, 0)
+	КОНЕЦ КАК ОсталосьОчков
+ИЗ
+	ЗадачиСпринтов КАК ЗадачиСпринтов
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ПланируемыеТрудозатраты КАК ПланируемыеТрудозатраты
+		ПО ЗадачиСпринтов.Ссылка = ПланируемыеТрудозатраты.Объект
+			И (ПланируемыеТрудозатраты.ТипТрудозатрат = ЗНАЧЕНИЕ(Перечисление.ТипыТрудозатрат.Разработка))
+		ЛЕВОЕ СОЕДИНЕНИЕ ТрудозатратыЗадач КАК ТрудозатратыЗадач
+		ПО ЗадачиСпринтов.Ссылка = ТрудозатратыЗадач.Задача</query>
+	</dataSet>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>126be86e-a083-4a71-8d1d-ef55954eb466</dcsset:userSettingID>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>45a3a6f8-1b46-48af-a1fd-41a02e8b80a8</dcsset:userSettingID>
+			</dcsset:filter>
+			<dcsset:order>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>c314992f-74a0-456e-8a6b-d8e8b708716c</dcsset:userSettingID>
+			</dcsset:order>
+			<dcsset:conditionalAppearance>
+				<dcsset:viewMode>Inaccessible</dcsset:viewMode>
+			</dcsset:conditionalAppearance>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ОсновнойМакетКомпоновкиНовый</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">Output</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Спринт</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Спринт</dcsset:left>
+						<dcsset:comparisonType>Filled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>МакетОформления</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">ОсновнойМакетКомпоновкиНовый</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+						<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Ссылка</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:outputParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>МакетОформления</dcscor:parameter>
+							<dcscor:value xsi:type="xs:string">ОсновнойМакетКомпоновкиНовый</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+							<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+						</dcscor:item>
+					</dcsset:outputParameters>
+				</dcsset:item>
+			</dcsset:item>
+			<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+			<dcsset:itemsUserSettingID>540cdfa9-cd17-405d-8eba-2816ecc6b97b</dcsset:itemsUserSettingID>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

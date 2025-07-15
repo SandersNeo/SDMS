@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5aeb97c8-c050-432b-aee8-33c2a08faf47">
+  <name>УдалениеПрикрепленныхФайлов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Удаление прикрепленных файлов</value>
+  </synonym>
+  <methodName>CommonModule.РегламентныеЗаданияСервер.УдалениеПрикрепленныхФайлов</methodName>
+  <description>Удаление прикрепленных файлов</description>
+  <key>УдалениеПрикрепленныхФайлов</key>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

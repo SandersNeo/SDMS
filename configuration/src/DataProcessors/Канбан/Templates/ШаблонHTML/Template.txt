@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Канбан</title>
+	<link crossorigin rel="stylesheet" href="<!-- url -->index.css<!-- version -->">
+</head> 
+
+<body style="position: relative;">
+	<div id="task-board-app"></div>
+
+	<script>
+		<!-- window_vars -->
+		const BRANCH_INPUT_ID = 'канбан-поле-филиал';
+		const TYPE_INPUT_ID = 'канбан-поле-тип';
+		const VARIANT_INPUT_ID = 'канбан-поле-вид';
+		const UPDATE_KANBAN_EVENT = 'UPDATE_KANBAN';
+		const TOGGLE_COLUMNS = 'TOGGLE_ALL_COLUMNS';
+
+		const createKanbanInput = (id) => {
+			const input = document.createElement('input');
+
+			input.style.display = 'none';
+			input.type = 'text';
+			input.id = id;
+
+			document.body.appendChild(input);
+		};
+
+		createKanbanInput(BRANCH_INPUT_ID);
+		createKanbanInput(TYPE_INPUT_ID);
+		createKanbanInput(VARIANT_INPUT_ID);
+
+		function updateKanbanFields(branch, type, variant) {
+			const branchInput = document.getElementById(BRANCH_INPUT_ID);
+			const typeInput = document.getElementById(TYPE_INPUT_ID);
+			const variantInput = document.getElementById(VARIANT_INPUT_ID);
+
+			branchInput.value = branch;
+			typeInput.value = type;
+			variantInput.value = variant;
+
+			const event = new Event('input');
+
+			branchInput.dispatchEvent(event);
+			typeInput.dispatchEvent(event);
+			variantInput.dispatchEvent(event);
+		};
+		
+		function collapseList() {
+			dispatchEvent(new CustomEvent(TOGGLE_COLUMNS, { 
+				detail: { 
+					isCollapse: true 
+				} 
+			}));
+		};
+		
+		function expandList() {
+			dispatchEvent(new CustomEvent(TOGGLE_COLUMNS, { 
+				detail: { 
+					isCollapse: false 
+				} 
+			}));
+		};
+
+		function updateKanban() {
+			dispatchEvent(new Event(UPDATE_KANBAN_EVENT));
+		}
+
+		<!-- script_template -->
+	</script>
+	<script type="module" crossorigin src="<!-- url -->index.js<!-- version -->"></script>
+</body>
+
+</html>

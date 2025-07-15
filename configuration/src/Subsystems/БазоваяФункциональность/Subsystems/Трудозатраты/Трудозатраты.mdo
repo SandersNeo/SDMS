@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7b74a002-af8c-4efd-9a37-bc47a7325ed0">
+  <name>Трудозатраты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Трудозатраты</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>CommonModule.УчетТрудозатрат</content>
+  <content>CommonModule.УчетТрудозатратВызовСервера</content>
+  <content>CommonModule.УчетТрудозатратКлиент</content>
+  <content>CommonModule.УчетТрудозатратКлиентСервер</content>
+  <content>Catalog.ВидыДеятельности</content>
+  <content>Catalog.ВидыДеятельностиУслуг</content>
+  <content>Catalog.Услуги</content>
+  <content>Document.ВнутренниеТрудозатраты</content>
+  <content>Document.Трудозатраты</content>
+  <content>Document.УстановкаСтоимостиУслуг</content>
+  <content>InformationRegister.ПланируемыеТрудозатраты</content>
+  <content>InformationRegister.Трудозатраты</content>
+  <content>InformationRegister.УчастникиВнутреннихТрудозатрат</content>
+  <content>InformationRegister.СтоимостьУслуг</content>
+  <content>Catalog.Контрагенты</content>
+  <content>DefinedType.ОбъектТрудозатрат</content>
+  <content>AccumulationRegister.ОказанныеУслуги</content>
+  <content>DefinedType.Трудозатрата</content>
+  <content>CommonPicture.ДобавитьЗатратыВремени</content>
+  <content>CommonPicture.ДобавитьЗатратыВремениГрупповые</content>
+  <content>CommonPicture.КартинкаЗаголовкаЗадачи</content>
+  <content>CommonPicture.НавигационнаяСсылка</content>
+  <content>CommonPicture.Отчет16</content>
+  <content>CommonPicture.Помощник16</content>
+  <content>CommonPicture.РаскрытьСписок</content>
+  <content>CommonPicture.СписокЗатраченногоВремени</content>
+  <content>CommonPicture.Трудозатраты</content>
+  <content>Enum.НазначенияВидовДеятельности</content>
+  <content>Enum.СпособыВыбораСтоимостиУслуг</content>
+  <content>Catalog.ЮридическиеЛица</content>
+  <content>Enum.УровниКвалификацииITДолжностей</content>
+  <content>Enum.ТипыТрудозатрат</content>
+  <content>CommonPicture.ВнутренниеТрудозатраты</content>
+  <content>InformationRegister.ИспользованиеЮридическихЛицНаправлений</content>
+  <content>Constant.ДатаЗапретаИзмененияДанных</content>
+  <content>Constant.КоэффициентМинимальногоВремениТрудозатрат</content>
+  <content>CommonPicture.ПустаяКартинка</content>
+  <parentSubsystem>Subsystem.БазоваяФункциональность</parentSubsystem>
+</mdclass:Subsystem>

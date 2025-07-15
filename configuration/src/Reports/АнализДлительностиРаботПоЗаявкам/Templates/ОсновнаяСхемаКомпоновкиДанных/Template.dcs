@@ -1,0 +1,809 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Заявка</dataPath>
+			<field>Заявка</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+			<presentationExpression>Номер + ". " + Наименование</presentationExpression>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Размещение</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">45</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Система</dataPath>
+			<field>Система</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Время</dataPath>
+			<field>Время</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Время</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>0</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>РастягиватьПоГоризонтали</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Статус</dataPath>
+			<field>Статус</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>РастягиватьПоГоризонтали</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество</dataPath>
+			<field>Количество</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кол-во переходов</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+					<dcscor:value xsi:type="v8ui:HorizontalAlign">Left</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>РастягиватьПоГоризонтали</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПорядокСортировки</dataPath>
+			<field>ПорядокСортировки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Порядок сортировки</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>АктуальныйСтатус</dataPath>
+			<field>АктуальныйСтатус</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Актуальный статус</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Создана</dataPath>
+			<field>Создана</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создана</v8:content>
+				</v8:item>
+			</title>
+			<presentationExpression>СтрШаблон("%1 дней", Создана)</presentationExpression>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СписокПродуктГруппаЗаказчиков</dataPath>
+			<field>СписокПродуктГруппаЗаказчиков</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список продукт группа заказчиков</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Направления</dataPath>
+			<field>Направления</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Направления</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Наименование</dataPath>
+			<field>Наименование</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номер</dataPath>
+			<field>Номер</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВремяЧислом</dataPath>
+			<field>ВремяЧислом</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Время числом</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ПроизводственныйКалендарь.ДатаКалендаря КАК ДатаКалендаря
+ПОМЕСТИТЬ ВыходныеДни
+ИЗ
+	РегистрСведений.ПроизводственныйКалендарь КАК ПроизводственныйКалендарь
+ГДЕ
+	ПроизводственныйКалендарь.ДатаКалендаря &lt; &amp;ТекущаяДата
+	И ПроизводственныйКалендарь.ВидДня = ЗНАЧЕНИЕ(Перечисление.ВидыДнейПроизводственногоКалендаря.Выходной)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ЗаявкаНаРазработку.Ссылка КАК Заявка,
+	ЗаявкаНаРазработкуСистемыРазработки.Система КАК Система
+ПОМЕСТИТЬ ОтобранныеЗаявкиИСистемы
+ИЗ
+	Документ.ЗаявкаНаРазработку КАК ЗаявкаНаРазработку
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.ЗаявкаНаРазработку.СистемыРазработки КАК ЗаявкаНаРазработкуСистемыРазработки
+		ПО ЗаявкаНаРазработку.Ссылка = ЗаявкаНаРазработкуСистемыРазработки.Ссылка
+ГДЕ
+	ЗаявкаНаРазработку.Дата МЕЖДУ &amp;ДатаНачала И &amp;ДатаОкончания
+{ГДЕ
+	(ЗаявкаНаРазработкуСистемыРазработки.Система В (&amp;Системы))}
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ИсторияСтатусовЗаявокПоСистемам.Заявка,
+	ИсторияСтатусовЗаявокПоСистемам.Система
+ИЗ
+	РегистрСведений.ИсторияСтатусовЗаявокПоСистемам.СрезПоследних({(&amp;ДатаНачала)}, ) КАК ИсторияСтатусовЗаявокПоСистемам
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ИсторияМинимальныхСтатусовЗаявок.СрезПоследних({(&amp;ДатаНачала)}, ) КАК ИсторияМинимальныхСтатусовЗаявокСрезПоследних
+		ПО ИсторияСтатусовЗаявокПоСистемам.Заявка = ИсторияМинимальныхСтатусовЗаявокСрезПоследних.Заявка
+			И (НЕ ИсторияМинимальныхСтатусовЗаявокСрезПоследних.Статус В (ЗНАЧЕНИЕ(Справочник.СтатусыОбъектов.Решен), ЗНАЧЕНИЕ(Справочник.СтатусыОбъектов.Отклонен)))
+ГДЕ
+	НЕ ИсторияСтатусовЗаявокПоСистемам.Статус В (ЗНАЧЕНИЕ(Справочник.СтатусыОбъектов.Решен), ЗНАЧЕНИЕ(Справочник.СтатусыОбъектов.Отклонен))
+{ГДЕ
+	(ИсторияСтатусовЗаявокПоСистемам.Система В (&amp;Системы))}
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	ОтобранныеЗаявкиИСистемы.Заявка КАК Заявка,
+	ОтобранныеЗаявкиИСистемы.Система КАК Система,
+	ЗаявкаНаРазработку.Направление КАК Направление,
+	ЗаявкаНаРазработку.Наименование КАК Наименование,
+	ЗаявкаНаРазработку.Номер КАК Номер,
+	РАЗНОСТЬДАТ(ЗаявкаНаРазработку.Дата, ЕСТЬNULL(ИсторияСтатусовЗаявокПоСистемам.Период, &amp;ТекущаяДата), ДЕНЬ) + 1 КАК ОбщееВремя,
+	РАЗНОСТЬДАТ(ЗаявкаНаРазработку.Дата, ЕСТЬNULL(ИсторияСтатусовЗаявокПоСистемам.Период, &amp;ТекущаяДата), ДЕНЬ) + 1 - КОЛИЧЕСТВО(ВыходныеДни.ДатаКалендаря) КАК ОбщееБезВыходных,
+	СтатусыЗаявокПоСистемам.Статус КАК Статус
+ПОМЕСТИТЬ ОтобранныеЗаявки
+ИЗ
+	ОтобранныеЗаявкиИСистемы КАК ОтобранныеЗаявкиИСистемы
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.ЗаявкаНаРазработку КАК ЗаявкаНаРазработку
+		ПО (ЗаявкаНаРазработку.Ссылка = ОтобранныеЗаявкиИСистемы.Заявка)
+			И (НЕ ЗаявкаНаРазработку.Черновик)
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.ЗаявкаНаРазработку.СистемыРазработки КАК ЗаявкаНаРазработкуСистемыРазработки
+		ПО ОтобранныеЗаявкиИСистемы.Заявка = ЗаявкаНаРазработкуСистемыРазработки.Ссылка
+			И ОтобранныеЗаявкиИСистемы.Система = ЗаявкаНаРазработкуСистемыРазработки.Система
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СтатусыЗаявокПоСистемам КАК СтатусыЗаявокПоСистемам
+		ПО ОтобранныеЗаявкиИСистемы.Заявка = СтатусыЗаявокПоСистемам.Заявка
+			И ОтобранныеЗаявкиИСистемы.Система = СтатусыЗаявокПоСистемам.Система
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ИсторияСтатусовЗаявокПоСистемам.СрезПоследних({(&amp;ТекущаяДата)}, ) КАК ИсторияСтатусовЗаявокПоСистемам
+		ПО ОтобранныеЗаявкиИСистемы.Заявка = ИсторияСтатусовЗаявокПоСистемам.Заявка
+			И ОтобранныеЗаявкиИСистемы.Система = ИсторияСтатусовЗаявокПоСистемам.Система
+			И (ИсторияСтатусовЗаявокПоСистемам.Статус В (ЗНАЧЕНИЕ(Справочник.СтатусыОбъектов.Решен), ЗНАЧЕНИЕ(Справочник.СтатусыОбъектов.Отклонен)))
+		ЛЕВОЕ СОЕДИНЕНИЕ ВыходныеДни КАК ВыходныеДни
+		ПО (ВыходныеДни.ДатаКалендаря МЕЖДУ ЗаявкаНаРазработку.Дата И ЕСТЬNULL(ИсторияСтатусовЗаявокПоСистемам.Период, &amp;ТекущаяДата))
+		{ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Продукты КАК Продукты
+		ПО (ЗаявкаНаРазработку.Продукт = Продукты.Ссылка)}
+{ГДЕ
+	ЗаявкаНаРазработку.Направление КАК Направления,
+	(ВЫБОР
+			КОГДА НЕ Продукты.Ссылка ЕСТЬ NULL
+				ТОГДА Продукты.Ссылка
+			ИНАЧЕ ЗаявкаНаРазработкуСистемыРазработки.ГруппаЗаказчиков
+		КОНЕЦ) КАК СписокПродуктГруппаЗаказчиков}
+
+СГРУППИРОВАТЬ ПО
+	ОтобранныеЗаявкиИСистемы.Заявка,
+	ОтобранныеЗаявкиИСистемы.Система,
+	ЗаявкаНаРазработку.Направление,
+	ЗаявкаНаРазработку.Наименование,
+	ЗаявкаНаРазработку.Номер,
+	СтатусыЗаявокПоСистемам.Статус,
+	ЗаявкаНаРазработку.Дата,
+	ИсторияСтатусовЗаявокПоСистемам.Период
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ИсторияСтатусовЗаявокПоСистемам.Заявка КАК Заявка,
+	ИсторияСтатусовЗаявокПоСистемам.Система КАК Система,
+	ИсторияСтатусовЗаявокПоСистемам.Период КАК Период,
+	ИсторияСтатусовЗаявокПоСистемам.Статус КАК Статус
+ПОМЕСТИТЬ СтатусыЗаявокПоПериодам
+ИЗ
+	ОтобранныеЗаявки КАК ОтобранныеЗаявки
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ИсторияСтатусовЗаявокПоСистемам КАК ИсторияСтатусовЗаявокПоСистемам
+		ПО ОтобранныеЗаявки.Заявка = ИсторияСтатусовЗаявокПоСистемам.Заявка
+			И ОтобранныеЗаявки.Система = ИсторияСтатусовЗаявокПоСистемам.Система
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	СтатусыЗаявокПоПериодам.Заявка КАК Заявка,
+	СтатусыЗаявокПоПериодам.Система КАК Система,
+	СтатусыЗаявокПоПериодам.Статус КАК Статус,
+	СтатусыЗаявокПоПериодам.Период КАК ДатаЗаписи,
+	МИНИМУМ(СтатусыЗаявокПоПериодам1.Период) КАК ДатаСледующейЗаписи
+ПОМЕСТИТЬ ПериодыПереходаЗаявкиВСледующийСтатус
+ИЗ
+	СтатусыЗаявокПоПериодам КАК СтатусыЗаявокПоПериодам
+		ЛЕВОЕ СОЕДИНЕНИЕ СтатусыЗаявокПоПериодам КАК СтатусыЗаявокПоПериодам1
+		ПО СтатусыЗаявокПоПериодам.Заявка = СтатусыЗаявокПоПериодам1.Заявка
+			И СтатусыЗаявокПоПериодам.Система = СтатусыЗаявокПоПериодам1.Система
+			И СтатусыЗаявокПоПериодам.Период &lt; СтатусыЗаявокПоПериодам1.Период
+			И СтатусыЗаявокПоПериодам.Статус &lt;&gt; СтатусыЗаявокПоПериодам1.Статус
+{ГДЕ
+	(СтатусыЗаявокПоПериодам.Статус В (&amp;Статусы))}
+
+СГРУППИРОВАТЬ ПО
+	СтатусыЗаявокПоПериодам.Заявка,
+	СтатусыЗаявокПоПериодам.Система,
+	СтатусыЗаявокПоПериодам.Период,
+	СтатусыЗаявокПоПериодам.Статус
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ПериодыПереходаЗаявкиВСледующийСтатус.Заявка КАК Объект,
+	ПериодыПереходаЗаявкиВСледующийСтатус.Система КАК Система,
+	МИНИМУМ(ПериодыПереходаЗаявкиВСледующийСтатус.ДатаЗаписи) КАК ДатаНачала,
+	ЕСТЬNULL(СтатусыЗаявокПоПериодам.Период, &amp;ТекущаяДата) КАК ДатаОкончания,
+	ПериодыПереходаЗаявкиВСледующийСтатус.Статус КАК Статус,
+	ЕСТЬNULL(СтатусыЗаявокПоПериодам.Статус, ПериодыПереходаЗаявкиВСледующийСтатус.Статус) КАК СледующийСтатус,
+	НачальныйСтатусЗаявки.Порядок КАК ПорядокСтатуса,
+	СледующийСтатусЗаявки.Порядок КАК ПорядокСледующегоСтатуса,
+	НачальныйСтатусЗаявки.Наименование КАК НаименованиеСтатуса,
+	СледующийСтатусЗаявки.Наименование КАК НаименованиеСледующегоСтатуса
+ПОМЕСТИТЬ ЧистыеПериодыНахожденияЗаявкиВСтатусе
+ИЗ
+	ПериодыПереходаЗаявкиВСледующийСтатус КАК ПериодыПереходаЗаявкиВСледующийСтатус
+		ЛЕВОЕ СОЕДИНЕНИЕ СтатусыЗаявокПоПериодам КАК СтатусыЗаявокПоПериодам
+		ПО ПериодыПереходаЗаявкиВСледующийСтатус.Заявка = СтатусыЗаявокПоПериодам.Заявка
+			И ПериодыПереходаЗаявкиВСледующийСтатус.Система = СтатусыЗаявокПоПериодам.Система
+			И ПериодыПереходаЗаявкиВСледующийСтатус.ДатаСледующейЗаписи = СтатусыЗаявокПоПериодам.Период
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.СтатусыОбъектов КАК НачальныйСтатусЗаявки
+		ПО ПериодыПереходаЗаявкиВСледующийСтатус.Статус = НачальныйСтатусЗаявки.Ссылка
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.СтатусыОбъектов КАК СледующийСтатусЗаявки
+		ПО (ЕСТЬNULL(СтатусыЗаявокПоПериодам.Статус, ПериодыПереходаЗаявкиВСледующийСтатус.Статус) = СледующийСтатусЗаявки.Ссылка)
+ГДЕ
+	НЕ ПериодыПереходаЗаявкиВСледующийСтатус.Статус В (ЗНАЧЕНИЕ(Справочник.СтатусыОбъектов.Решен), ЗНАЧЕНИЕ(Справочник.СтатусыОбъектов.Отклонен))
+
+СГРУППИРОВАТЬ ПО
+	ПериодыПереходаЗаявкиВСледующийСтатус.Заявка,
+	ПериодыПереходаЗаявкиВСледующийСтатус.Система,
+	ПериодыПереходаЗаявкиВСледующийСтатус.Статус,
+	ЕСТЬNULL(СтатусыЗаявокПоПериодам.Статус, ПериодыПереходаЗаявкиВСледующийСтатус.Статус),
+	ЕСТЬNULL(СтатусыЗаявокПоПериодам.Период, &amp;ТекущаяДата),
+	НачальныйСтатусЗаявки.Порядок,
+	СледующийСтатусЗаявки.Порядок,
+	НачальныйСтатусЗаявки.Наименование,
+	СледующийСтатусЗаявки.Наименование
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ЧистыеПериодыНахожденияЗаявкиВСтатусе.Объект КАК Заявка,
+	ЧистыеПериодыНахожденияЗаявкиВСтатусе.Система КАК Система,
+	ЧистыеПериодыНахожденияЗаявкиВСтатусе.Статус КАК Статус,
+	ЧистыеПериодыНахожденияЗаявкиВСтатусе.ПорядокСтатуса КАК ПорядокСортировки,
+	КОЛИЧЕСТВО(ЧистыеПериодыНахожденияЗаявкиВСтатусе.Статус) КАК Количество
+ПОМЕСТИТЬ ПромежуточныеДанныеНахождениеЗаявкиВСтатусе
+ИЗ
+	ЧистыеПериодыНахожденияЗаявкиВСтатусе КАК ЧистыеПериодыНахожденияЗаявкиВСтатусе
+
+СГРУППИРОВАТЬ ПО
+	ЧистыеПериодыНахожденияЗаявкиВСтатусе.Объект,
+	ЧистыеПериодыНахожденияЗаявкиВСтатусе.Система,
+	ЧистыеПериодыНахожденияЗаявкиВСтатусе.Статус,
+	ЧистыеПериодыНахожденияЗаявкиВСтатусе.ПорядокСтатуса
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ЧистыеПериодыНахожденияЗаявкиВСтатусе.Объект КАК Заявка,
+	ЧистыеПериодыНахожденияЗаявкиВСтатусе.Система КАК Система,
+	ЧистыеПериодыНахожденияЗаявкиВСтатусе.Статус КАК Статус,
+	РАЗНОСТЬДАТ(ЧистыеПериодыНахожденияЗаявкиВСтатусе.ДатаНачала, ЧистыеПериодыНахожденияЗаявкиВСтатусе.ДатаОкончания, СЕКУНДА) КАК ВремяПолное,
+	РАЗНОСТЬДАТ(ЧистыеПериодыНахожденияЗаявкиВСтатусе.ДатаНачала, ЧистыеПериодыНахожденияЗаявкиВСтатусе.ДатаОкончания, СЕКУНДА) - КОЛИЧЕСТВО(ВыходныеДни.ДатаКалендаря) * 86400 КАК Время
+ПОМЕСТИТЬ ВремяНахожденияЗаявкиВСтатусе
+ИЗ
+	ЧистыеПериодыНахожденияЗаявкиВСтатусе КАК ЧистыеПериодыНахожденияЗаявкиВСтатусе
+		ЛЕВОЕ СОЕДИНЕНИЕ ВыходныеДни КАК ВыходныеДни
+		ПО (ВыходныеДни.ДатаКалендаря МЕЖДУ ЧистыеПериодыНахожденияЗаявкиВСтатусе.ДатаНачала И ЧистыеПериодыНахожденияЗаявкиВСтатусе.ДатаОкончания)
+
+СГРУППИРОВАТЬ ПО
+	ЧистыеПериодыНахожденияЗаявкиВСтатусе.Объект,
+	ЧистыеПериодыНахожденияЗаявкиВСтатусе.Система,
+	ЧистыеПериодыНахожденияЗаявкиВСтатусе.Статус,
+	ЧистыеПериодыНахожденияЗаявкиВСтатусе.ДатаНачала,
+	ЧистыеПериодыНахожденияЗаявкиВСтатусе.ДатаОкончания
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВремяНахожденияЗаявкиВСтатусе.Заявка КАК Заявка,
+	ВремяНахожденияЗаявкиВСтатусе.Система КАК Система,
+	ВремяНахожденияЗаявкиВСтатусе.Статус КАК Статус,
+	ПромежуточныеДанныеНахождениеЗаявкиВСтатусе.Количество КАК Количество,
+	ПромежуточныеДанныеНахождениеЗаявкиВСтатусе.ПорядокСортировки КАК ПорядокСортировки,
+	СУММА(ВремяНахожденияЗаявкиВСтатусе.ВремяПолное) КАК ВремяПолное,
+	СУММА(ВремяНахожденияЗаявкиВСтатусе.Время) КАК Время
+ПОМЕСТИТЬ НахождениеЗаявкиВСтатусе
+ИЗ
+	ПромежуточныеДанныеНахождениеЗаявкиВСтатусе КАК ПромежуточныеДанныеНахождениеЗаявкиВСтатусе
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВремяНахожденияЗаявкиВСтатусе КАК ВремяНахожденияЗаявкиВСтатусе
+		ПО ПромежуточныеДанныеНахождениеЗаявкиВСтатусе.Заявка = ВремяНахожденияЗаявкиВСтатусе.Заявка
+			И ПромежуточныеДанныеНахождениеЗаявкиВСтатусе.Система = ВремяНахожденияЗаявкиВСтатусе.Система
+			И ПромежуточныеДанныеНахождениеЗаявкиВСтатусе.Статус = ВремяНахожденияЗаявкиВСтатусе.Статус
+
+СГРУППИРОВАТЬ ПО
+	ВремяНахожденияЗаявкиВСтатусе.Заявка,
+	ВремяНахожденияЗаявкиВСтатусе.Система,
+	ВремяНахожденияЗаявкиВСтатусе.Статус,
+	ПромежуточныеДанныеНахождениеЗаявкиВСтатусе.Количество,
+	ПромежуточныеДанныеНахождениеЗаявкиВСтатусе.ПорядокСортировки
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ОтобранныеЗаявки.Заявка КАК Заявка,
+	ОтобранныеЗаявки.Система КАК Система,
+	ОтобранныеЗаявки.Статус КАК АктуальныйСтатус,
+	ОтобранныеЗаявки.Номер КАК Номер,
+	ОтобранныеЗаявки.Наименование КАК Наименование,
+	ВЫБОР
+		КОГДА &amp;УчитыватьВыходныеДни
+			ТОГДА ОтобранныеЗаявки.ОбщееВремя
+		ИНАЧЕ ОтобранныеЗаявки.ОбщееБезВыходных
+	КОНЕЦ КАК Создана,
+	НахождениеЗаявкиВСтатусе.Статус КАК Статус,
+	НахождениеЗаявкиВСтатусе.ПорядокСортировки КАК ПорядокСортировки,
+	НахождениеЗаявкиВСтатусе.Количество КАК Количество,
+	ВЫБОР
+		КОГДА &amp;УчитыватьВыходныеДни
+			ТОГДА НахождениеЗаявкиВСтатусе.ВремяПолное
+		ИНАЧЕ НахождениеЗаявкиВСтатусе.Время
+	КОНЕЦ КАК Время,
+	ВЫБОР
+		КОГДА &amp;УчитыватьВыходныеДни
+			ТОГДА НахождениеЗаявкиВСтатусе.ВремяПолное
+		ИНАЧЕ НахождениеЗаявкиВСтатусе.Время
+	КОНЕЦ КАК ВремяЧислом
+ИЗ
+	ОтобранныеЗаявки КАК ОтобранныеЗаявки
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ НахождениеЗаявкиВСтатусе КАК НахождениеЗаявкиВСтатусе
+		ПО ОтобранныеЗаявки.Заявка = НахождениеЗаявкиВСтатусе.Заявка
+			И ОтобранныеЗаявки.Система = НахождениеЗаявкиВСтатусе.Система</query>
+	</dataSet>
+	<totalField>
+		<dataPath>Время</dataPath>
+		<expression>Отчеты.АнализДлительностиРаботПоЗаявкам.ПеревестиВремя(Сумма(Время))</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество</dataPath>
+		<expression>Сумма(Количество)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВремяЧислом</dataPath>
+		<expression>Сумма(ВремяЧислом)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Создана</dataPath>
+		<expression>СтрШаблон("%1 дней", Создана)</expression>
+	</totalField>
+	<parameter>
+		<name>ДатаОкончания</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата окончания</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+		<expression>&amp;Период.ДатаОкончания</expression>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>ДатаНачала</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата начала</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+		<expression>&amp;Период.ДатаНачала</expression>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>Системы</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Системы</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.СистемыУчета</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+		<valueListAllowed>true</valueListAllowed>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>ТекущаяДата</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Текущая дата</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+			<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+		</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>УчитыватьВыходныеДни</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Учитывать выходные дни</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:boolean</v8:Type>
+		</valueType>
+		<value xsi:type="xs:boolean">false</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Статусы</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Статусы</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.СтатусыОбъектов</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+		<valueListAllowed>true</valueListAllowed>
+	</parameter>
+	<template>
+		<name>Макет1</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Создана</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+	</template>
+	<groupHeaderTemplate>
+		<groupField>Создана</groupField>
+		<templateType>Header</templateType>
+		<template>Макет1</template>
+	</groupHeaderTemplate>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Время</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Количество</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Системы</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>453c9d35-5643-4ac9-b490-e18421d61d72</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ТекущаяДата</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>450c7081-8d51-4445-ad0c-4fa3688404e1</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>УчитыватьВыходныеДни</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Статусы</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>68dc5779-2da6-4ae3-900b-2ee97d9f21a4</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:conditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>Время</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ВремяЧислом</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">-1</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#FFE3E3</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+					<dcsset:userSettingID>e8042108-5e60-44d2-b92b-06f1c25b01b5</dcsset:userSettingID>
+					<dcsset:useInHierarchicalGroup>DontUse</dcsset:useInHierarchicalGroup>
+					<dcsset:useInOverall>DontUse</dcsset:useInOverall>
+					<dcsset:useInFieldsHeader>DontUse</dcsset:useInFieldsHeader>
+					<dcsset:useInHeader>DontUse</dcsset:useInHeader>
+					<dcsset:useInParameters>DontUse</dcsset:useInParameters>
+					<dcsset:useInFilter>DontUse</dcsset:useInFilter>
+					<dcsset:useInResourceFieldsHeader>DontUse</dcsset:useInResourceFieldsHeader>
+					<dcsset:useInOverallHeader>DontUse</dcsset:useInOverallHeader>
+					<dcsset:useInOverallResourceFieldsHeader>DontUse</dcsset:useInOverallResourceFieldsHeader>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>Количество</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Количество</dcsset:left>
+							<dcsset:comparisonType>Less</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#E3E3FF</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+					<dcsset:userSettingID>c4573469-2a65-4ec6-98be-aea1d0144eee</dcsset:userSettingID>
+					<dcsset:useInHierarchicalGroup>DontUse</dcsset:useInHierarchicalGroup>
+					<dcsset:useInOverall>DontUse</dcsset:useInOverall>
+					<dcsset:useInFieldsHeader>DontUse</dcsset:useInFieldsHeader>
+					<dcsset:useInHeader>DontUse</dcsset:useInHeader>
+					<dcsset:useInParameters>DontUse</dcsset:useInParameters>
+					<dcsset:useInFilter>DontUse</dcsset:useInFilter>
+					<dcsset:useInResourceFieldsHeader>DontUse</dcsset:useInResourceFieldsHeader>
+					<dcsset:useInOverallHeader>DontUse</dcsset:useInOverallHeader>
+					<dcsset:useInOverallResourceFieldsHeader>DontUse</dcsset:useInOverallResourceFieldsHeader>
+				</dcsset:item>
+			</dcsset:conditionalAppearance>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ОсновнойМакетКомпоновкиНовый</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>РасположениеИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">End</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemTable">
+				<dcsset:column>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto">
+							<dcsset:use>false</dcsset:use>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Создана</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+				</dcsset:column>
+				<dcsset:column>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Статус</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ПорядокСортировки</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>ПорядокСортировки</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Статус</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Время</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Количество</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+				</dcsset:column>
+				<dcsset:row>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Заявка</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Система</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>АктуальныйСтатус</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>Создана</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Заявка</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Система</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>АктуальныйСтатус</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Создана</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+				</dcsset:row>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

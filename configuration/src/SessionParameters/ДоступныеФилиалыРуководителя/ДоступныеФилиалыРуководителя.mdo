@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:SessionParameter xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bca00743-89b8-4038-b228-397a6165e84b">
+  <name>ДоступныеФилиалыРуководителя</name>
+  <synonym>
+    <key>ru</key>
+    <value>Доступные филиалы руководителя</value>
+  </synonym>
+  <type>
+    <types>FixedArray</types>
+  </type>
+</mdclass:SessionParameter>

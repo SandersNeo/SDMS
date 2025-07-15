@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7430f728-cdb7-4f2d-9550-bd2f2881fb22">
+  <name>ПовторноеИспользованиеВызовСервера</name>
+  <synonym>
+    <key>ru</key>
+    <value>Повторное использование вызов сервера</value>
+  </synonym>
+  <comment>Модуль для методов с повторным использованием значений и вызовом с клиента</comment>
+  <server>true</server>
+  <serverCall>true</serverCall>
+  <returnValuesReuse>DuringSession</returnValuesReuse>
+</mdclass:CommonModule>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6aae0467-c480-4946-bd0b-be6eeed45751">
+  <name>ВнешняяКомпонентаСклонения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Внешняя компонента склонения</value>
+  </synonym>
+  <templateType>AddIn</templateType>
+</mdclass:CommonTemplate>

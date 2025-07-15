@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConditionalAppearance xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+	<item>
+		<selection>
+			<item>
+				<field>ДеревоОбъектовСтатус</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ДеревоОбъектов.Статус</left>
+				<comparisonType>InList</comparisonType>
+				<right xsi:type="xs:string">Отклонен</right>
+				<right xsi:type="xs:string">Приостановлен</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">style:ЦветПроблемнойЗадачи</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ДеревоОбъектовСтатус</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ДеревоОбъектов.Статус</left>
+				<comparisonType>InList</comparisonType>
+				<right xsi:type="xs:string">Решен</right>
+				<right xsi:type="xs:string">Закрыто</right>
+				<right xsi:type="xs:string">Тестирование</right>
+				<right xsi:type="xs:string">Масштабирование</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:MediumGreen</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ДеревоОбъектовСтатус</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ДеревоОбъектов.Статус</left>
+				<comparisonType>InList</comparisonType>
+				<right xsi:type="xs:string">В работе</right>
+				<right xsi:type="xs:string">Внедрение</right>
+				<right xsi:type="xs:string">На рассмотрении</right>
+				<right xsi:type="xs:string">В реализацию</right>
+				<right xsi:type="xs:string">Протестирован</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:LemonChiffon</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ДеревоОбъектовПредставление</field>
+			</item>
+			<item>
+				<field>ДеревоОбъектовДатаСоздания</field>
+			</item>
+			<item>
+				<field>ДеревоОбъектовДатаНачала</field>
+			</item>
+			<item>
+				<field>ДеревоОбъектовДатаОкончания</field>
+			</item>
+			<item>
+				<field>ДеревоОбъектовДлительность</field>
+			</item>
+			<item>
+				<field>ДеревоОбъектовТрудозатраты</field>
+			</item>
+			<item>
+				<field>ДеревоОбъектовНазначена</field>
+			</item>
+			<item>
+				<field>ДеревоОбъектовЗаказчик</field>
+			</item>
+			<item>
+				<field>ДеревоОбъектовПроцентВыполнения</field>
+			</item>
+			<item>
+				<field>ДеревоОбъектовДлительностьПлан</field>
+			</item>
+			<item>
+				<field>ДеревоОбъектовПриоритет</field>
+			</item>
+			<item>
+				<field>ДеревоОбъектовНазначение</field>
+			</item>
+			<item>
+				<field>ДеревоОбъектовОтветственный</field>
+			</item>
+			<item>
+				<field>ДеревоОбъектовДатаПубликации</field>
+			</item>
+			<item>
+				<field>ДеревоОбъектовПолнотаДанных</field>
+			</item>
+			<item>
+				<field>ДеревоОбъектовВладелецПродукта</field>
+			</item>
+			<item>
+				<field>ДеревоОбъектовФилиал</field>
+			</item>
+			<item>
+				<field>ДеревоОбъектовСтатус</field>
+			</item>
+			<item>
+				<field>ДеревоОбъектовТеги</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ДеревоОбъектов.УровеньВложенности</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:decimal">0</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">#F7F7F7</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Шрифт</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Font" ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ДеревоОбъектовПредставление</field>
+			</item>
+			<item>
+				<field>ДеревоОбъектовДатаСоздания</field>
+			</item>
+			<item>
+				<field>ДеревоОбъектовДатаНачала</field>
+			</item>
+			<item>
+				<field>ДеревоОбъектовДатаОкончания</field>
+			</item>
+			<item>
+				<field>ДеревоОбъектовДлительность</field>
+			</item>
+			<item>
+				<field>ДеревоОбъектовТрудозатраты</field>
+			</item>
+			<item>
+				<field>ДеревоОбъектовНазначена</field>
+			</item>
+			<item>
+				<field>ДеревоОбъектовЗаказчик</field>
+			</item>
+			<item>
+				<field>ДеревоОбъектовПроцентВыполнения</field>
+			</item>
+			<item>
+				<field>ДеревоОбъектовДлительностьПлан</field>
+			</item>
+			<item>
+				<field>ДеревоОбъектовПриоритет</field>
+			</item>
+			<item>
+				<field>ДеревоОбъектовНазначение</field>
+			</item>
+			<item>
+				<field>ДеревоОбъектовОтветственный</field>
+			</item>
+			<item>
+				<field>ДеревоОбъектовДатаПубликации</field>
+			</item>
+			<item>
+				<field>ДеревоОбъектовПолнотаДанных</field>
+			</item>
+			<item>
+				<field>ДеревоОбъектовВладелецПродукта</field>
+			</item>
+			<item>
+				<field>ДеревоОбъектовФилиал</field>
+			</item>
+			<item>
+				<field>ДеревоОбъектовСтатус</field>
+			</item>
+			<item>
+				<field>ДеревоОбъектовТеги</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ДеревоОбъектов.УровеньВложенности</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:decimal">1</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">#FFFFFF</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Шрифт</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Font" ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ДеревоОбъектовДатаНачала</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ДеревоОбъектов.ФактическоеНачало</left>
+				<comparisonType>NotEqual</comparisonType>
+				<right xsi:type="v8:StandardBeginningDate">
+					<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
+					<v8:date>0001-01-01T00:00:00</v8:date>
+				</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">#000000</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ДеревоОбъектовДатаОкончания</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ДеревоОбъектов.ФактическоеОкончание</left>
+				<comparisonType>NotEqual</comparisonType>
+				<right xsi:type="v8:StandardBeginningDate">
+					<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
+					<v8:date>0001-01-01T00:00:00</v8:date>
+				</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">#000000</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ДеревоОбъектовСтатус</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ДеревоОбъектов.УровеньВложенности</left>
+				<comparisonType>InList</comparisonType>
+				<right xsi:type="xs:decimal">0</right>
+				<right xsi:type="xs:decimal">1</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Шрифт</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Font" ref="style:NormalTextFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			</dcscor:item>
+		</appearance>
+	</item>
+</ConditionalAppearance>

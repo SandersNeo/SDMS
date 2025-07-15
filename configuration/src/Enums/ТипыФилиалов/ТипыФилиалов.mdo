@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b8ff62c5-102e-453d-93cc-f7dd1852f5ca">
+  <producedTypes>
+    <refType typeId="f052b2bd-7ef6-46c6-a171-8c3a7252b2f7" valueTypeId="3a99cf1c-d966-4a9d-838a-21bfde360200"/>
+    <listType typeId="65d81b3f-07bc-4f5e-acb5-4bb3d2be7c40" valueTypeId="11076e25-2af8-40e7-b3aa-a7f3798dbe8b"/>
+    <managerType typeId="a0ceabe9-f368-4c8d-ba0b-5ec90136828b" valueTypeId="3b0ee967-f38e-4729-8d34-211eeacd5317"/>
+  </producedTypes>
+  <name>ТипыФилиалов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы филиалов</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="067c7778-06ee-4d95-9f57-4cf6036990b9">
+    <name>IT</name>
+    <synonym>
+      <key>ru</key>
+      <value>IT</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c99030a3-c3fc-4a23-84f7-2a2d6b03159d">
+    <name>НеIT</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не IT</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="94722501-4745-4efc-8fb7-3e9ce2b001da">
+    <name>QA</name>
+    <synonym>
+      <key>ru</key>
+      <value>QA</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2a6c4144-31cf-434b-b345-fc1f814fa591">
+  <producedTypes>
+    <objectType typeId="05b69163-cba2-40c0-bbc2-575c7d19984d" valueTypeId="c81cafd7-975a-4887-ba05-0dee1bd00ddf"/>
+    <managerType typeId="cbb8b92d-1c2c-4a6c-bd13-7377fe6f3f36" valueTypeId="bf04d11a-0e5c-4004-8b73-f0713d334290"/>
+  </producedTypes>
+  <name>ПланПроектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>План проектов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ПланПроектов.Form.ФормаОтчета</defaultForm>
+  <forms uuid="963e54f6-e586-4c36-ad95-6780f37502b2">
+    <name>ФормаВыбораОбъектов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора объектов</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="04887427-684d-4d60-8e67-5154b5dfb261">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="aa8be112-faac-4c65-9456-e25ee254f4c3">
+    <name>Основной</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основной</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

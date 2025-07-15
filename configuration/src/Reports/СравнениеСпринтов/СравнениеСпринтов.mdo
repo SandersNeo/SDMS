@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d5349480-e90a-4efe-8ef7-df101f4fc489">
+  <producedTypes>
+    <objectType typeId="3163a505-3c82-4d9a-8812-a777ebd393b8" valueTypeId="307a18ca-217c-4c35-8025-3ff206ca4997"/>
+    <managerType typeId="58945a62-2cd7-43aa-a4d8-9c2430a288aa" valueTypeId="d2504e68-a3e3-4ec1-b654-bbd4850744fd"/>
+  </producedTypes>
+  <name>СравнениеСпринтов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сравнение спринтов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.СравнениеСпринтов.Form.Форма</defaultForm>
+  <forms uuid="18f13a12-3712-418d-94e6-7222b21398dc">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="7c0ca246-8ad7-4e39-9c9c-6395aaea1872">
+    <name>ТаблицаПоказателей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица показателей</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

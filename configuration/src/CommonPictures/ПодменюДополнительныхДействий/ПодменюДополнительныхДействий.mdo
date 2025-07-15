@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e0d4d015-3f55-4124-ab8d-84253684a15e">
+  <name>ПодменюДополнительныхДействий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подменю дополнительных действий</value>
+  </synonym>
+</mdclass:CommonPicture>

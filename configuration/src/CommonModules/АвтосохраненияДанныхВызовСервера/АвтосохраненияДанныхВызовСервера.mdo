@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d68485f5-f56c-4113-8b1e-f48c24311865">
+  <name>АвтосохраненияДанныхВызовСервера</name>
+  <synonym>
+    <key>ru</key>
+    <value>Автосохранения данных вызов сервера</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

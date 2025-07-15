@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="eff0073e-96ca-49f2-9651-4be8b533d0d3">
+  <producedTypes>
+    <managerType typeId="abda34de-e85a-4453-aa97-3075c933778b" valueTypeId="53183827-0cc8-4bf8-9bc3-810b03a13ef3"/>
+    <valueManagerType typeId="62d39436-9965-4e53-9791-9c7eba036fbd" valueTypeId="49ab7643-2b3f-4938-8927-10adfa78b4c5"/>
+    <valueKeyType typeId="b49376a0-85d9-57cd-8738-cfe381e839c0" valueTypeId="f6f92733-850b-5caa-ab8c-22716eaff280"/>
+  </producedTypes>
+  <name>СписокЗапрещенныхРасширений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Список запрещенных расширений</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers/>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

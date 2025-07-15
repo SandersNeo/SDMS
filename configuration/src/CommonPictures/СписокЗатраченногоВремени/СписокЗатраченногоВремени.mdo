@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="36493583-3c0e-4d40-90d9-22659cec485e">
+  <name>СписокЗатраченногоВремени</name>
+  <synonym>
+    <key>ru</key>
+    <value>Список затраченного времени</value>
+  </synonym>
+</mdclass:CommonPicture>

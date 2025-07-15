@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="33a29694-ab10-41ee-8353-2454cbbf9b68">
+  <producedTypes>
+    <objectType typeId="dafb0cfb-71a0-4320-8fa5-d13e7d1ddc5e" valueTypeId="10287287-1c59-4362-bf4c-db8d7c6d7a49"/>
+    <managerType typeId="670d488e-ea8a-4048-9d40-b7d5d1aaed12" valueTypeId="af80b46d-b5f5-437b-b2d6-0f4d03fabafc"/>
+  </producedTypes>
+  <name>АктуализацияЗаявок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Актуализация заявок</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.АктуализацияЗаявок.Form.ФормаОбработки</defaultForm>
+  <explanation>
+    <key>ru</key>
+    <value>Позволяет либо актуализировать задачи, либо отклонить. Вызывается из рабочих столов руководителя(новый), заказчика, тестирование.</value>
+  </explanation>
+  <forms uuid="cccdc790-828c-404c-be1a-fe44e4592b2b">
+    <name>ФормаОбработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма обработки</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="55b114c8-8670-492d-afb4-cffd4536c6a8">
+    <name>ОткрытьФормуАктуализации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Открыть форму актуализации</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

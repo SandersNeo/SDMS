@@ -1,0 +1,190 @@
+:root {
+	--old-value-color: #ff6558;
+	--new-value-color: #30b25d;
+	--additional-color: #afafaf;
+}
+
+main > div.history-object:not(:last-child) {
+	margin-bottom: 8px;
+}
+
+main > div.history-object {
+	border: solid 1px var(--hover-color);
+	border-radius: 8px;
+	padding: 0;
+	margin: 0;
+}
+
+main > div.history-object > div.history-object-title {
+	cursor: pointer;
+	font-weight: bold;
+	padding: 16px;
+	border-radius: 7px 7px 0 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--main-color);
+	color: var(--text-color);
+	transition: border-radius 0.3s ease-in-out;
+}
+
+main > div.history-object.collapsed > div.history-object-title {
+	border-radius: 7px;
+}
+
+main > div.history-object > div.history-object-title:hover {
+	background-color: var(--hover-color);
+}
+
+main > div.history-object > div.history-object-title > div {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+main > div.history-object > div.history-object-title > div > img {
+	height: 20px;
+	width: 20px;
+	display: block;
+	padding-right: 10px;
+}
+
+main > div.history-object > div.history-object-title > .collapse-icon {
+	-webkit-mask-image: var(--collapse-icon);
+	mask-image: var(--collapse-icon);
+	transform: rotate(180deg);
+	transition: transform 0.3s ease-out;
+}
+
+main > div.history-object.collapsed > div.history-object-title > .collapse-icon {
+	transform: rotate(0deg);
+}
+
+main > div.history-object > div.collapsible {
+	overflow: hidden;
+	transition: max-height 0.3s ease-in-out;
+}
+
+main > div.history-object > div.collapsible > div.history-object-events {
+	display: flex;
+	flex-direction: column;
+	padding: 16px;
+}
+
+main.desc-sorting > div.history-object > div.collapsible > div.history-object-events {
+	flex-flow: column-reverse;
+}
+
+main > div.history-object.closed-object > div.collapsible > div.history-object-events > div.history-event:first-child,
+main.desc-sorting > div.history-object.closed-object > div.collapsible > div.history-object-events > div.history-event:nth-child(2) > div.history-event-timeline > div.line,
+main.desc-sorting > div.history-object > div.collapsible > div.history-object-events > div.history-event:first-child,
+main:not(.desc-sorting) > div.history-object > div.collapsible > div.history-object-events > div.history-event:last-child > div.history-event-timeline > div.line,
+main.only-main-changes > div.history-object > div.collapsible > div.history-object-events > div.history-event.additional-change,
+main.only-main-changes .event.additional-change {
+	display: none;
+}
+
+main > div.history-object > div.collapsible > div.history-object-events > div.history-event {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.history-event-timeline {
+	display: flex;
+	flex-direction: column;
+}
+
+.history-event-timeline .dot {
+	width: 17px;
+	height: 17px;
+	border-radius: 50%;
+	border: none;
+	margin-right: 10px;
+	background: linear-gradient(#D9D9D9, #A1A1A1);
+}
+
+.history-object > .collapsible > .history-object-events > div.history-event:last-child > div.history-event-timeline > .dot {
+	background: linear-gradient(#8DDA66, #4DB917);
+}
+
+.history-object.closed-object > .collapsible > .history-object-events > .history-event:nth-child(2) > .history-event-timeline > .dot {
+	background: linear-gradient(#FFB260, #FF6000);
+}
+
+.history-event-timeline > .line {
+	width: 0px;
+	flex-grow: 1;
+	margin: 4px 8px;
+	border-right: 1px dashed var(--additional-color);
+	min-height: 9px;
+}
+
+.history-event-title > .history-event-date {
+	font-weight: bold;
+}
+
+.history-event-title > .history-event-author {
+	text-decoration: none;
+	color: var(--href-color);
+}
+
+main .history-object-events > .history-event > .history-event-content > div:not(.history-event-title) {
+	padding-left: 10px;
+}
+
+main:not(.desc-sorting) .history-object-events > .history-event:not(:last-child) > .history-event-content,
+main.desc-sorting .history-object-events > .history-event:not(:first-child) > .history-event-content {
+	padding-bottom: 20px;
+}
+
+.history-event-content {
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.history-event-content > .event * {
+	vertical-align: middle;
+	line-height: 24px;
+	margin: 0;
+}
+
+.history-event-content > .event > ul {
+	list-style: circle;
+}
+
+.history-event-content > .event > span > a {
+	color: var(--href-color);
+}
+
+.history-event-content > .event .old-value {
+	text-decoration: line-through;
+	color: var(--old-value-color);
+}
+
+.history-event-content > .event .old-value-noneline {
+	color: var(--old-value-color);
+}
+
+.history-event-content > .event .new-value {
+	color: var(--new-value-color);
+}
+
+.history-event-content > .event > .arrow-icon::after {
+	-webkit-mask-image: var(--arrow-icon);
+	mask-image: var(--arrow-icon);
+	color: var(--additional-color);
+}
+
+nav > button > .icon.collapse-icon::after {
+	-webkit-mask-image: var(--collapse-icon);
+	mask-image: var(--collapse-icon);
+	transition: transform 0.3s ease-in-out;
+}
+
+nav > button.reversed > .icon.collapse-icon::after {
+	transform: rotate(180deg);
+}

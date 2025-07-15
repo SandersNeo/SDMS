@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c1a35771-8ece-4b39-8317-4acb85f9ad79">
+  <name>ДополнительныеРеквизиты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дополнительные реквизиты</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>CommonModule.ДополнительныеРеквизитыКлиентСервер</content>
+  <content>CommonModule.ДополнительныеРеквизитыКлиент</content>
+  <content>CommonModule.ДополнительныеРеквизитыВызовСервера</content>
+  <content>CommonModule.ДополнительныеРеквизиты</content>
+  <content>InformationRegister.ЗначенияДополнительныхРеквизитовОбъектов</content>
+  <content>ChartOfCharacteristicTypes.ВидыДополнительныхРеквизитов</content>
+  <content>Catalog.ДоступныеЗначенияРеквизитов</content>
+  <content>DefinedType.ВладелецДополнительныхРеквизитов</content>
+  <parentSubsystem>Subsystem.БазоваяФункциональность</parentSubsystem>
+</mdclass:Subsystem>

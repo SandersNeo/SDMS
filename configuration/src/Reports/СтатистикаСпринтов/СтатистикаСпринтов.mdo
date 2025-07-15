@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fde78f8c-51c7-4a68-bf31-d442be6386c1">
+  <producedTypes>
+    <objectType typeId="d05ce239-35c4-4ca8-ae98-771352a60b80" valueTypeId="e39d72b1-b6d7-45e6-97b7-bbf70a58ad35"/>
+    <managerType typeId="f66852e8-65d3-497d-9388-7117cc1d3990" valueTypeId="bfed163b-dfc4-435d-aca8-f44af1b86eea"/>
+  </producedTypes>
+  <name>СтатистикаСпринтов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статистика спринтов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.СтатистикаСпринтов.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.СтатистикаСпринтов.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="bf5eaa93-3aba-4a89-a405-ad5c2d778258">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="d7011e1d-5253-4ecc-bc2f-1230621ace1c">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

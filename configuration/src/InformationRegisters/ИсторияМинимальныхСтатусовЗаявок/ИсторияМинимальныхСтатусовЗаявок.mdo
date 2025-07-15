@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1a11cd63-c567-4b72-9d7e-52bf847d28e8">
+  <producedTypes>
+    <selectionType typeId="d736b725-ff48-47f0-ba4e-01beebc30159" valueTypeId="3e506f7d-345b-4249-949c-bd066585b91d"/>
+    <listType typeId="15a2028d-17c9-4e26-8f41-d42c7f25718d" valueTypeId="7419fc41-92d3-4e01-81ea-ecf596910701"/>
+    <managerType typeId="a834d129-3bcd-4c88-b551-49da7b3e45fa" valueTypeId="2d0a888b-1329-4c41-99fc-74b5a096b65c"/>
+    <recordSetType typeId="22c5ceac-8330-4a53-b5af-e0bb69046de3" valueTypeId="007919d2-5c86-44be-945e-6f017d313b76"/>
+    <recordKeyType typeId="3624d691-8697-4a46-a25a-e0560132fff7" valueTypeId="6c6c7d03-518d-498e-b7d7-d26fdfb49740"/>
+    <recordType typeId="b82e2f14-61f9-4aa3-9f0a-072666ff56e9" valueTypeId="2bd7f807-cc83-44b6-ab6a-44453d4961af"/>
+    <recordManagerType typeId="8437c66f-6321-4dd7-9db5-5d15d6f2f7ae" valueTypeId="14554c65-d713-4d13-9caf-3a19a0ca31cd"/>
+  </producedTypes>
+  <name>ИсторияМинимальныхСтатусовЗаявок</name>
+  <synonym>
+    <key>ru</key>
+    <value>История минимальных статусов заявок</value>
+  </synonym>
+  <comment>Хранит историю минимальных статусов заявок</comment>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="e2d13355-540c-4e44-8d24-7e05fd3e21dd">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтатусыОбъектов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="50ccbbc9-2603-40aa-a6be-e0704fa145ca">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="e33f3950-e3d9-425f-a59f-0abb7efa4d8e">
+    <name>Заявка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявка</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ЗаявкаНаРазработку</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

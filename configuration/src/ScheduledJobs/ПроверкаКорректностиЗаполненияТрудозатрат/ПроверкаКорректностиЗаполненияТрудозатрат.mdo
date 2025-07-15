@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="725de339-f1ac-4621-8f2d-775d2e4704e4">
+  <name>ПроверкаКорректностиЗаполненияТрудозатрат</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проверка корректности заполнения трудозатрат</value>
+  </synonym>
+  <methodName>CommonModule.РегламентныеЗаданияСервер.ПроверкаКорректностиЗаполненияТрудозатрат</methodName>
+  <description>Проверка корректности заполнения трудозатрат</description>
+  <key>ПроверкаКорректностиЗаполненияТрудозатрат</key>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

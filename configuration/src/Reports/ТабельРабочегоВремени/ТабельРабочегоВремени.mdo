@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="70206c22-9fc6-412c-88dd-ce6b3a6537bf">
+  <producedTypes>
+    <objectType typeId="86951c56-82f8-476d-9461-f6e686170494" valueTypeId="0939e62f-38f4-447d-8d05-773c5f8516c0"/>
+    <managerType typeId="d9d731b9-a2eb-47e0-8616-645bfe7754e6" valueTypeId="d2c7f46a-bdc5-4aa7-94b7-d4bcf5d1a623"/>
+  </producedTypes>
+  <name>ТабельРабочегоВремени</name>
+  <synonym>
+    <key>ru</key>
+    <value>Табель рабочего времени</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ТабельРабочегоВремени.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ТабельРабочегоВремени.Template.СхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="43631ad1-5241-4b20-974e-35fe94c3196c">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5275414f-b147-43a4-b097-3ae4513f0e19">
+    <name>ФормаРасшифровки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма расшифровки</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="75170a03-7a11-4506-9829-511c920ecab6">
+    <name>СхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="5b491791-38f8-488a-aafc-c4dbb81a231a">
+    <name>СхемаКомпоновкиДанныхРасшифровка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема компоновки данных расшифровка</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

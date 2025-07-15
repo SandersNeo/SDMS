@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="de7cb32d-5d55-49ed-ba4c-1f9664febfb0">
+  <producedTypes>
+    <refType typeId="41a93b32-aaf6-445e-acc7-c83199a6ac27" valueTypeId="00d2b9de-6e3f-4a7d-a3a4-ac4dd7f31d3c"/>
+    <listType typeId="edf7103a-842e-407e-b117-55bb9b62b09f" valueTypeId="5e1e8139-27b2-41de-9a40-200266061c50"/>
+    <managerType typeId="eac44f4d-e5ed-4f56-971e-c810f4ed236d" valueTypeId="507d114c-cb49-40ee-bd7f-f248a54d8aa0"/>
+  </producedTypes>
+  <name>ТипыСобытийОчереди</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы событий очереди</value>
+  </synonym>
+  <comment>Типы событий в очереди событий на обработку</comment>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="5372b89d-27e8-4d8a-b81b-93ace4f41b25">
+    <name>АктуализацияДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Актуализация данных</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="84427048-ec61-4a86-a97a-3bbb9c3f8a81">
+    <name>АктуализироватьВTrello</name>
+    <synonym>
+      <key>ru</key>
+      <value>Актуализировать в trello</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="7cc920cf-9095-4251-8b80-cd43a6305861">
+    <name>ВладелецПродукта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Владелец продукта</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b3e656f2-7c2d-4b20-9d62-985169f4ddc2">
+    <name>ЗакрытиеПрогоновTestRail</name>
+    <synonym>
+      <key>ru</key>
+      <value>Закрытие прогонов test rail</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="873a01bb-f221-47e2-a466-0db5d974becf">
+    <name>ЗаполнитьКоличествоПодчиненныхЗадач</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заполнить количество подчиненных задач</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e2c65a80-f414-4b95-97d3-02fcf3451b7c">
+    <name>ИзменениеОбъекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменение объекта</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="85ce37e9-f0a1-407c-b144-f1becb6ed5cb">
+    <name>ОбновитьВидРодительскогоПроекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обновить вид родительского проекта</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="fa70dcbe-ad70-4b78-8a6e-017fb926a025">
+    <name>ОбновитьОписаниеСвязаннойЗадачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обновить описание связанной задачи</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8ce9f2a3-ae31-4d92-b99d-8bae37f4dd41">
+    <name>ОбновитьПроектВОчередиЗаявок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обновить проект  в очереди</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1562246f-97b4-47f0-9808-fd3eb540f757">
+    <name>ОбновитьРолиУчастникаГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обновить роли участника группы</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4da7a59e-321b-4ebd-bc5d-3adae56f7fed">
+    <name>ОбработатьЗадачуГруппаТестирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обработать задачу группа тестирования</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="71d10ba2-a059-43a7-8bb3-61f45d6fb124">
+    <name>ОбработатьОбъектЭтапаКанбана</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обработать объект этапа канбана</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="de1f6c21-0520-4f4d-ab59-6a05dc2bec4b">
+    <name>ОбработкаЭскалацииОшибки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обработка эскалации ошибки</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="290dc6f8-0fa2-48c2-8bca-ae28032977fc">
+    <name>ОтметитьПросмотренным</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отметить просмотренным</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ae402c25-9bf1-4da6-9d55-db9391b51385">
+    <name>ОтправкаКомментарияВTrello</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправка комментария в trello</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1dcbdc01-581e-4ce4-80e1-8d0067c329bd">
+    <name>ОтправкаОповещения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправка оповещения</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1798f681-4cda-4627-8c16-96ea63b89000">
+    <name>ПереносНастроекПользователя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перенос настроек пользователя</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="30e5c248-0f0c-43f8-bac7-62e0f112363f">
+    <name>ПересчетПлановыхТрудозатрат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пересчет плановых трудозатрат</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="faab24c4-9671-4820-9b47-69f5ca199c5d">
+    <name>ПересчетФактическихТрудозатрат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пересчет фактических трудозатрат</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="101215f8-1dbf-4f12-ad4f-ba93e7e92509">
+    <name>ПересчитатьСтатусыЗаявок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пересчитать статусы заявок</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ef920d76-a3a3-4fb4-96e4-93351d543824">
+    <name>ПересчитатьФилиалыТестированияГабаритногоПланирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пересчитать филиалы тестирования габаритного планирования</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c854878f-5fc8-4272-8a2f-cb01258f00b9">
+    <name>ПроверитьДоступныеУслугиФилиала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проверить доступные услуги филиала</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c72f9358-517d-4419-95eb-f4919a4723f5">
+    <name>РассчитатьСтатусыПоФилиалам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рассчитать статусы по филиалам</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="742a4087-448c-4a0b-ba4b-20d5162309ff">
+    <name>СинхронизироватьСJira</name>
+    <synonym>
+      <key>ru</key>
+      <value>Синхронизировать с jira</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="01da2f12-d060-407a-a8b6-912c8d11ef9a">
+    <name>СозданиеПользователя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Создание пользователя</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="2fbc321d-0450-4f89-a4d7-77905210397b">
+    <name>СоздатьИнцидентJira</name>
+    <synonym>
+      <key>ru</key>
+      <value>Создать инцидент jira</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="aa6cf80a-0dc7-4749-875d-8323c2b5c288">
+    <name>УдалениеОповещение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удаление оповещение</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

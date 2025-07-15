@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="28633f28-bfd0-4c74-8101-7ac2c8c545e3">
+  <name>СписокВыбора_ВыбранЧастично</name>
+  <synonym>
+    <key>ru</key>
+    <value>Список выбора выбран частично</value>
+  </synonym>
+</mdclass:CommonPicture>

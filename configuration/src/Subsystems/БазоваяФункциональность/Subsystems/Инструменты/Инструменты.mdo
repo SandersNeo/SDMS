@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9ebf5db3-b1ba-4559-ba38-ca2b441fa435">
+  <name>Инструменты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Инструменты</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>Catalog.ИнструментыСистемы</content>
+  <content>InformationRegister.ИзбранныеИнструментыПользователей</content>
+  <content>CommonModule.ИнструментыСервер</content>
+  <content>CommonModule.ИнструментыКлиент</content>
+  <content>CommonModule.ИнструментыВызовСервера</content>
+  <content>Role.APIСчетчики</content>
+  <parentSubsystem>Subsystem.БазоваяФункциональность</parentSubsystem>
+</mdclass:Subsystem>

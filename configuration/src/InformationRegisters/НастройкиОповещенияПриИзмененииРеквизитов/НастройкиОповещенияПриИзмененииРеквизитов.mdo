@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e96a8b6b-0681-4d4e-8f7e-da07774c18cf">
+  <producedTypes>
+    <selectionType typeId="a97ed6e6-1e05-4316-9e83-36be99f56f31" valueTypeId="f7215839-d1eb-49c5-86ee-ee6b382d83e2"/>
+    <listType typeId="4258ee9b-cbf9-436c-9f62-380d3916f794" valueTypeId="85913c28-16ab-4514-833d-e45e2c20b9ad"/>
+    <managerType typeId="697f8bd8-b481-461c-9275-a510d15b769f" valueTypeId="af99aa28-1f85-4d86-a367-5a36ebba60f6"/>
+    <recordSetType typeId="2c3c88e2-a101-465e-a332-67c749d762f0" valueTypeId="d8400356-66ec-4c1e-8036-ed9943e5b561"/>
+    <recordKeyType typeId="5dddddf4-fda1-42f8-a68a-dc33a1e7f9d8" valueTypeId="13413432-1ef2-4aaf-a4fe-d56449af3ff3"/>
+    <recordType typeId="854abb84-99ee-414f-bbf1-36e7ed09f9b6" valueTypeId="0093aa3b-805e-4ea5-ae1c-37fdda27f47e"/>
+    <recordManagerType typeId="aa628f9c-22e1-4f5b-a596-e74b409c733a" valueTypeId="630b3f6a-b094-4071-8a35-30cf6afc20ed"/>
+  </producedTypes>
+  <name>НастройкиОповещенияПриИзмененииРеквизитов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки оповещения при изменении реквизитов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.НастройкиОповещенияПриИзмененииРеквизитов.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.НастройкиОповещенияПриИзмененииРеквизитов.Form.НастройкаКатегорийРеквизитов</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="0076beaa-2ce4-4b1d-8522-896f874f7415">
+    <name>КатегорияСообщения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Категория сообщения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.КатегорииСообщенийПользователя</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="3825a724-50fb-4635-9239-ecde8c1d6375">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="784d6d93-eae7-4fb1-8c3d-b9d0ca3b589f">
+    <name>ДатаИзменения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата изменения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="f4c4bafb-3ca4-4748-af9e-aa8730003223">
+    <name>ТипОбъекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип объекта</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ОбъектИсторииИзменений</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="4647f79b-3ece-4ff5-a165-fa4fed529318">
+    <name>Реквизит</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реквизит</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="74bae781-b005-4763-b485-ae846454b848">
+    <name>НастройкаКатегорийРеквизитов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка категорий реквизитов</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3b0d49a9-f791-4c06-879f-33c7ee48207b">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

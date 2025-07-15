@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f2a4e947-fe9a-446e-88bf-b44afe1250d6">
+  <producedTypes>
+    <refType typeId="bfebba9f-d90e-4f8f-b160-5bff435f687a" valueTypeId="7c6ffbb1-0af7-4110-b906-49a780530be4"/>
+    <listType typeId="b67c02ea-e60f-47ef-9d96-59aeca04b31f" valueTypeId="8995f4fc-84b0-4d8e-9e08-dd04707dd888"/>
+    <managerType typeId="42ad1ffc-1dc1-4681-997c-773c1e49492b" valueTypeId="64b07c61-8c2f-4c01-a6e0-a3d2741192ea"/>
+  </producedTypes>
+  <name>СтатусыОбработкиЭскалацииОшибок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы обработки эскалации ошибок</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="dfd26288-8e90-4b96-9935-3f3ed8e5ac80">
+    <name>Ожидание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ожидание</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="5fe818ed-93e1-403e-bd57-9db3e1b7d390">
+    <name>Отправлено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправлено</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f08b852f-e823-4279-97ea-9e9be17cf9d7">
+    <name>ЕстьРеакция</name>
+    <synonym>
+      <key>ru</key>
+      <value>Есть реакция</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="dfd3faed-747c-4bcd-9b1b-6a395262c5ee">
+    <name>НетРеакции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нет реакции</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="5d4feb37-2dc6-4b12-98b5-3abfbbe8743c">
+    <name>НеТребуетРеакции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не требует реакции</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

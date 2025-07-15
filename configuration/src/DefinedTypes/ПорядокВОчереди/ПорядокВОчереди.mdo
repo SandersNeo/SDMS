@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4571fbd2-76d9-4e6c-8ce9-68a5e5a4cc34">
+  <producedTypes>
+    <containerType typeId="db1678cb-b007-4a8b-8a37-882b86279a1c" valueTypeId="b9c79ba1-3c8e-4a07-864f-1e3a6a7877f6"/>
+  </producedTypes>
+  <name>ПорядокВОчереди</name>
+  <synonym>
+    <key>ru</key>
+    <value>Порядок в очереди</value>
+  </synonym>
+  <comment>Порядок задачи в очереди</comment>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>15</precision>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+</mdclass:DefinedType>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="36774b28-70b6-4c99-ab6e-c88155c28ad0">
+  <name>НастройкаАватараСистемыВзаимодействия</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройка аватара системы взаимодействия</value>
+  </synonym>
+  <group>ActionsPanelTools</group>
+  <commandParameterType/>
+  <representation>Auto</representation>
+</mdclass:CommonCommand>

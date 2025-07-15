@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8eed4798-c829-4e4d-bebb-f031565e3193">
+  <name>ОбновитьIDПользователейМессенджера</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обновить ID пользователей мессенджера</value>
+  </synonym>
+  <methodName>CommonModule.РегламентныеЗаданияСервер.ОбновитьIDПользователейМессенджера</methodName>
+  <description>Обновить IDПользователей мессенджера</description>
+  <key>ОбновитьIDПользователейМессенджера</key>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

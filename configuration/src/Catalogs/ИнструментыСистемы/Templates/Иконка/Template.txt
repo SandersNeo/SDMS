@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<style>
+			svg {
+				color: #afafaf;
+				fill: currentcolor;
+				height: 64px;
+				width: 64px;
+			}
+			svg:hover {
+				color: #0d61af;
+			}
+		</style>
+	</head>
+	<body>
+		%1
+	</body>
+</html>

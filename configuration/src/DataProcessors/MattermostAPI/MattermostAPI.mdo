@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="92dbfc8b-24d7-46f0-9839-932980d0403c">
+  <producedTypes>
+    <objectType typeId="b95abf85-f194-4e5d-afd9-556fcc269474" valueTypeId="d451e8f6-99cb-4730-9b69-b39b278b1d56"/>
+    <managerType typeId="c97e0847-ba49-4f6e-b3fb-b622179d17e4" valueTypeId="fed947d1-e57d-45a4-9c1b-d28a61c71c31"/>
+  </producedTypes>
+  <name>MattermostAPI</name>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.MattermostAPI.Form.ФормаОбработки</defaultForm>
+  <explanation>
+    <key>ru</key>
+    <value>Обработка-API для отправки сообщений в Mattermost</value>
+  </explanation>
+  <forms uuid="4cf4535a-968a-4ed9-b7c3-5d4dcc88d979">
+    <name>ФормаОбработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма обработки</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

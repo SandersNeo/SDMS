@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ba45a6e9-9cee-4cac-a63a-1bd9209bb446">
+  <name>ФайловыеОперации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Файловые операции</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>CommonModule.РаботаСФайламиСервер</content>
+  <content>CommonModule.РаботаСФайламиКлиентСервер</content>
+  <content>CommonModule.РаботаСФайламиКлиент</content>
+  <content>CommonModule.РаботаСФайламиВызовСервера</content>
+  <content>Catalog.Файлы</content>
+  <content>InformationRegister.ПрикрепленныеФайлы</content>
+  <content>Constant.КаталогФайловОбъектов</content>
+  <content>Constant.КаталогПубликацииФайлов</content>
+  <content>Constant.КаталогХраненияФайловНаСервере</content>
+  <content>Constant.МаксимальныйРазмерФайла</content>
+  <content>Constant.МаксимальныйРазмерИзображения</content>
+  <content>Constant.СписокЗапрещенныхРасширений</content>
+  <content>DefinedType.ВладелецПрисоединенныхФайлов</content>
+  <content>Enum.НазначенияФайлов</content>
+  <content>CommonPicture.Архив</content>
+  <content>CommonPicture.ИконкиФайлов</content>
+  <content>CommonPicture.Папка</content>
+  <content>CommonPicture.СкачатьФайл</content>
+  <content>Constant.КаталогХраненияАватаровПользователей</content>
+  <content>Constant.КаталогВременныхФайлов</content>
+  <content>Constant.ЗапрещатьЗагрузкуФайловПоРасширению</content>
+  <parentSubsystem>Subsystem.БазоваяФункциональность</parentSubsystem>
+</mdclass:Subsystem>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="02ddc9ef-24e6-4a51-b590-cfb688ff7e6e">
+  <producedTypes>
+    <selectionType typeId="fd3fd8dd-be56-4064-bc09-af31cda212fa" valueTypeId="34089a97-1e1a-414a-87da-6a92031ef7bc"/>
+    <listType typeId="f0a59008-f337-4e10-9253-4a26f19bff6b" valueTypeId="12466570-1c5f-4f5b-8667-74ba3515dfe5"/>
+    <managerType typeId="738ec386-fc6b-4ba4-a723-eb867bdd759a" valueTypeId="a8bac367-4777-4849-aa22-4e30e31a6797"/>
+    <recordSetType typeId="12a237b8-c3f5-46f6-bbb2-d7bf4ad01ca2" valueTypeId="cc5e051d-ad44-4ef5-a95e-301309991a4e"/>
+    <recordKeyType typeId="c3ad015a-66b6-45cb-8685-c443a30cfcc7" valueTypeId="f0de834c-0894-4a20-a96e-c308f9cd31af"/>
+    <recordType typeId="69f45eae-2272-4800-842f-602d51941bd5" valueTypeId="998ef664-e632-4173-9a8c-285d81442811"/>
+    <recordManagerType typeId="a5a3be92-e155-43a5-98c5-44a13e47bedb" valueTypeId="7f10c69d-e055-413d-b7b4-6a7a45a11071"/>
+  </producedTypes>
+  <name>СтруктураПодчиненности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Структура подчиненности</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="ec40dabf-c61b-49f7-bcdd-83e2085aaeba">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ОбъектСтруктурыПодчиненности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="8208a24e-4493-47af-bad2-bebb9edc4f26">
+    <name>Родитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Родитель</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ОбъектСтруктурыПодчиненности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <templates uuid="eb775b4c-41d0-4463-8dd0-6c8afe226671">
+    <name>ФормированиеСтруктурыПодчиненности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Формирование структуры подчиненности</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:InformationRegister>

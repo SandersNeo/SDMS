@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ee0b6c86-ddf3-42c8-98f5-63975a047a08">
+  <name>СконвертироватьПодписчиковВПользователей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сконвертировать подписчиков в пользователей</value>
+  </synonym>
+  <methodName>CommonModule.РегламентныеЗаданияСервер.СконвертироватьПодписчиковВПользователей</methodName>
+  <description>Сконвертировать подписчиков в пользователей</description>
+  <key>СконвертироватьПодписчиковВПользователей</key>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

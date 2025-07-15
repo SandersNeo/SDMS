@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e18b662c-a54e-4469-8f02-b3c5b5eac03d">
+  <producedTypes>
+    <objectType typeId="3fd8fc2a-b5d8-4295-9919-274c7ff8ee80" valueTypeId="69bae34d-0c78-4818-b042-3a48fbcc6a80"/>
+    <managerType typeId="cc6867d7-73f7-40ff-b083-e64338a71943" valueTypeId="73ba85b7-8892-4ff9-ab6c-d38034e66e8c"/>
+  </producedTypes>
+  <name>АнализДеятельности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Анализ деятельности</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.АнализДеятельности.Form.ФормаОтчета</defaultForm>
+  <forms uuid="aa8ac030-a1cf-4247-b0cc-a189c25941ca">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="73448b2a-998d-4338-a509-b115a419323a">
+    <name>ОсновнойМакет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основной макет</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

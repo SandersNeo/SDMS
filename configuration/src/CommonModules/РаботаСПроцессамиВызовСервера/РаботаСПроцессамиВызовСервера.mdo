@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1b1d13c8-a082-4392-b2ac-2157e1a45a82">
+  <name>РаботаСПроцессамиВызовСервера</name>
+  <synonym>
+    <key>ru</key>
+    <value>Работа с процессами вызов сервера</value>
+  </synonym>
+  <comment>Позволяет вызывать некоторые методы из модуля СменаСатуса</comment>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

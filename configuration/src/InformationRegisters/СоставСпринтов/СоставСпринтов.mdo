@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4be1d4ee-dc6f-442e-83f1-3109a68b325d">
+  <producedTypes>
+    <selectionType typeId="d4a7a26d-2ef0-4a09-ae05-e35934c7264b" valueTypeId="c20da33d-02a7-40c3-b6c9-6135e994ec37"/>
+    <listType typeId="bc6448be-b7bf-4aba-99b4-6280a2ffc1cb" valueTypeId="6db7eac0-41bb-4eae-9b17-d26c3b796a72"/>
+    <managerType typeId="10f6bf2e-9dfe-46b8-9cee-d735454292b0" valueTypeId="17877624-0e67-4f9e-948e-58d4e69f24c5"/>
+    <recordSetType typeId="827c8265-82c0-476a-9e2e-675d10e2a986" valueTypeId="f725e45a-efe9-4d62-a90a-213936f61503"/>
+    <recordKeyType typeId="688688ef-4e8b-478f-8a84-976705c99b7f" valueTypeId="50f6ff38-48db-430b-8561-bc5be90f20d3"/>
+    <recordType typeId="89c74d3f-b657-424b-928a-c7e3921b4b58" valueTypeId="36b533e4-acd1-451a-8ffd-235c0e98cddd"/>
+    <recordManagerType typeId="715c39fa-e018-4ed5-bec9-fb3a2d5d331e" valueTypeId="cb4d0d3a-e491-4a0d-945d-725c6929a0ae"/>
+  </producedTypes>
+  <name>СоставСпринтов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состав спринтов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="c1988824-248c-41de-9245-eff58723d27b">
+    <name>Спринт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спринт</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.Спринт</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="18f3b896-b12f-4acc-8d5e-2c5b06ade159">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ВнутреннееЗадание</types>
+      <types>DocumentRef.Задача</types>
+      <types>DocumentRef.ЗаявкаНаРазработку</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

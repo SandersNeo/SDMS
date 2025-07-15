@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c5380d75-fd3d-4676-b83c-1c11753da71d">
+  <name>СозданиеНапоминанийОЗанесенииТрудозатрат</name>
+  <synonym>
+    <key>ru</key>
+    <value>Создание напоминаний о занесении трудозатрат</value>
+  </synonym>
+  <methodName>CommonModule.РегламентныеЗаданияСервер.ПодготовитьНапоминанияОЗанесенииТрудозатрат</methodName>
+  <description>Создание напоминаний о занесении трудозатрат</description>
+  <key>СозданиеНапоминанийОЗанесенииТрудозатрат</key>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

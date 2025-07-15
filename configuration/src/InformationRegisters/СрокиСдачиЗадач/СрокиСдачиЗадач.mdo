@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9269f910-81e6-4c34-b65d-dd5322aaa31a">
+  <producedTypes>
+    <selectionType typeId="d534f485-057b-4a2f-9fe4-4c7cf7564033" valueTypeId="b4e72ba1-f551-4fa3-a0a5-51dbf4db759b"/>
+    <listType typeId="c446b9ba-2479-422b-bc1d-88b6ceb92663" valueTypeId="4026f2be-df32-47f3-815d-00df57b43304"/>
+    <managerType typeId="cf71ec70-b7f5-4e61-a56a-e5bc398468fc" valueTypeId="4632a5d6-3bdd-4e73-a8fb-5acd8f97d09e"/>
+    <recordSetType typeId="370c1449-e8d2-4193-8a8c-6f3a40dc066e" valueTypeId="46cfb752-d82f-43e6-bb33-98f069505adb"/>
+    <recordKeyType typeId="4d96da87-5fba-46b7-8d72-d86196badfcf" valueTypeId="c881e769-62e4-4b7f-86e9-17ba8ccd65ed"/>
+    <recordType typeId="3a60a341-499e-43f5-b6e6-ab5f05cb7333" valueTypeId="78dc3dad-b050-4e4e-85b3-c00b2a6b3de1"/>
+    <recordManagerType typeId="e88eb631-408a-44c1-8124-4128a55de997" valueTypeId="bf222dfd-e0f6-4bf7-9091-d69bf8142993"/>
+  </producedTypes>
+  <name>СрокиСдачиЗадач</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сроки сдачи задач</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="4d661fd5-c013-43cb-98a2-bf0cd1d0be3b">
+    <name>СрокСдачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срок сдачи</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата, до наступления которой задача должна быть выполнена</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="1a9a8a5e-edda-496c-89b3-8b7e1863c5f9">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="914c68c4-56f8-4a01-b2c7-dd88bf0c7a6a">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <dimensions uuid="e23c1ea3-c633-49f9-8987-60263964f7ef">
+    <name>Задача</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задача</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.Задача</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="c39f5ae9-5184-4f1e-9444-0eab0c6bc6ab">
+    <name>ИзменениеСрокаСдачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменение срока сдачи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

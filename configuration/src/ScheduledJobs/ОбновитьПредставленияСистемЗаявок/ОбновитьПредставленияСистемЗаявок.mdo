@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f66a532c-39f8-4343-9856-fc7dc5af34af">
+  <name>ОбновитьПредставленияСистемЗаявок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обновить представления систем заявок</value>
+  </synonym>
+  <methodName>CommonModule.РегламентныеЗаданияСервер.ОбновитьПредставленияСистемЗаявок</methodName>
+  <description>Обновить представления систем заявок</description>
+  <key>ОбновитьПредставленияСистемЗаявок</key>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="af46cbe4-654a-4d22-b60d-29fda2f78566">
+  <producedTypes>
+    <objectType typeId="fe942a1e-f3f5-48d1-9389-4bdbedbbbf59" valueTypeId="b502f55b-e9b1-42f7-9735-5dbfac1e741d"/>
+    <managerType typeId="b470d818-d851-4401-ba85-e0b673e2b02f" valueTypeId="7fcc35cb-abe3-4666-84be-9ddfba67df90"/>
+  </producedTypes>
+  <name>ПанельАдминистрирования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Панель администрирования</value>
+  </synonym>
+  <defaultForm>DataProcessor.ПанельАдминистрирования.Form.ФормаОбработки</defaultForm>
+  <forms uuid="f77cb766-6940-45b4-bc58-39460a5ad16a">
+    <name>БлокировкаСеансов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Блокировка сеансов</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+  </forms>
+  <forms uuid="2427cf05-568a-4850-bc33-e63bf1d6b614">
+    <name>МониторПоказателей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Монитор показателей</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="bc238413-4bd3-4cb5-80eb-217d571ce257">
+    <name>Обслуживание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обслуживание</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7cdef4d6-f35a-40c1-9057-cc52c1331eeb">
+    <name>ОбщиеНастройки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Общие настройки</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="bfdd3476-17ad-46f5-9d65-67e49db774f6">
+    <name>ФормаОбработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма обработки</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+  </forms>
+  <templates uuid="a11c535b-6fd4-4116-a56e-38d87992a347">
+    <name>ЧасовыеПояса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Часовые пояса</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <commands uuid="cf233331-06df-48cc-8936-23fe95703649">
+    <name>БлокировкаСеансов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Блокировка сеансов</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <toolTip>
+      <key>ru</key>
+      <value>Управление блокировкой сеансов с информационной базой</value>
+    </toolTip>
+  </commands>
+  <commands uuid="014979dd-3c9c-4324-9595-24eb095ba8a1">
+    <name>Обслуживание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обслуживание</value>
+    </synonym>
+    <group>NavigationPanelImportant</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <toolTip>
+      <key>ru</key>
+      <value>Контроль за состоянием программы, резервное копирование и восстановление, оптимизация быстродействия.</value>
+    </toolTip>
+  </commands>
+  <commands uuid="af7fa937-1315-4be4-ad98-be29e2130163">
+    <name>ОбщиеНастройки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Общие настройки</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="b6f26669-b859-433e-b15a-70d2a74696c8">
+    <name>УправлениеПолнотекстовымПоиском</name>
+    <synonym>
+      <key>ru</key>
+      <value>Управление полнотекстовым поиском</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

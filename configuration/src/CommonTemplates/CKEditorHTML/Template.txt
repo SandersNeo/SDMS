@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<base href="%1">
+		<script src="assets/ckeditor/ckeditor.js?%3" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="assets/ckeditor/styles.css?%3" type="text/css" charset="utf-8">
+		<link rel="stylesheet" href="assets/ckeditor/additionalStyles.css?%3" type="text/css" charset="utf-8">
+	</head>
+	<body>
+		<div id="editor">%2</div>
+		<a style='display: none' href='#modification' id='modificationEvent' onClick='return false;'></a>
+		<div style='display: none' id='timestamp'>%4</div>
+		<script type="text/javascript">
+			window.CKEDITOR_VERSION = '';
+			
+			function getData() {
+				return editor.getData();
+			};
+			
+			function getSelectedText() {
+				return window.getSelection().toString();
+			};
+			
+			ClassicEditor
+				.create(document.querySelector( '#editor' ), {
+					placeholder: '%5',
+					autosave: {
+						waitingTime: 1,
+						save( editor ) {
+	                    			document.getElementById('modificationEvent').click();
+						}
+					}%6%7
+				} )
+				.then(editor => {
+					window.editor = editor;
+					window.preventPasteFromOfficeNotification = true;
+					
+					editor.keystrokes.set( 'Tab', ( data, cancel ) => {
+						const command = editor.commands.get( 'indentBlock' );
+						command.execute();
+						cancel();
+					} );
+					
+					editor.keystrokes.set( 'Shift+Tab', ( data, cancel ) => {
+						const command = editor.commands.get( 'outdentBlock' );
+						command.execute();
+						cancel();
+					} );
+					
+					%8
+				} )
+				.catch(error => {
+					console.log(error);
+				} );
+		</script>
+	</body>
+</html>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0ee7ee6e-c489-4e38-aa8b-e8f19ac98753">
+  <producedTypes>
+    <managerType typeId="84ae779d-00a7-48ed-9afe-97509e3befbb" valueTypeId="ea92ca12-9732-4581-b195-efd0936c29b2"/>
+    <valueManagerType typeId="502749ae-1ab9-4a80-b1ec-807775e4cf66" valueTypeId="1045a362-99fb-41a7-9509-fa51d41e9e1a"/>
+    <valueKeyType typeId="fdd33b77-2993-5d19-af4e-67e80365771b" valueTypeId="60961899-ab78-5d6a-9d9f-99c08b510e42"/>
+  </producedTypes>
+  <name>КаталогПубликацииФайлов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Каталог публикации файлов</value>
+  </synonym>
+  <comment>Каталог на сервере, в котором располагаются файлы объектов</comment>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>100</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

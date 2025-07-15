@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfCharacteristicTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5d69bbae-5459-4a49-a574-d62839fa183b">
+  <producedTypes>
+    <objectType typeId="d17e9fd3-54c7-471c-a201-5a2f520496ef" valueTypeId="4f3b9fcf-920c-4d5e-b1a4-c02ffc67e16f"/>
+    <refType typeId="ccf13d40-b027-4c01-affa-ce568d3a13ec" valueTypeId="5733e1f8-7cae-4ea0-87a9-12f05567f5de"/>
+    <selectionType typeId="3e30b7ea-9cbb-4c8f-823c-4cf37ffc308f" valueTypeId="758b5e48-2a15-49d5-84ce-b07c8ddacf62"/>
+    <listType typeId="0fb85665-2538-4199-b127-95a671bf84c4" valueTypeId="73c4c3f5-ad3a-46fa-8771-c14c658b572c"/>
+    <managerType typeId="014e5e39-0997-46fa-b949-bd5c92752e23" valueTypeId="6589a3e5-f2d1-4f22-807e-cefc8132b4d7"/>
+    <containerType typeId="c98ac1a7-4950-4220-a468-c9628c03e6be" valueTypeId="90b0d035-a95c-46ed-8199-546072ad47c9"/>
+  </producedTypes>
+  <name>ВидыДополнительныхРеквизитов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды дополнительных реквизитов</value>
+  </synonym>
+  <inputByString>ChartOfCharacteristicTypes.ВидыДополнительныхРеквизитов.StandardAttribute.Description</inputByString>
+  <inputByString>ChartOfCharacteristicTypes.ВидыДополнительныхРеквизитов.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>ValueType</name>
+    <fillValue xsi:type="core:TypeDescriptionValue">
+      <value/>
+    </fillValue>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <type>
+    <types>CatalogRef.ДополнительныеОписанияОбъектов</types>
+    <types>CatalogRef.Пользователи</types>
+    <types>CatalogRef.ВидыЗадач</types>
+    <types>Boolean</types>
+    <types>CatalogRef.НаправленияРазработки</types>
+    <types>DocumentRef.Задача</types>
+    <types>String</types>
+    <types>CatalogRef.Услуги</types>
+    <types>Date</types>
+    <types>Number</types>
+    <types>CatalogRef.ДоступныеЗначенияРеквизитов</types>
+    <types>CatalogRef.СистемыУчета</types>
+    <types>CatalogRef.НазначенияЗадач</types>
+    <numberQualifiers>
+      <precision>12</precision>
+      <scale>2</scale>
+    </numberQualifiers>
+    <stringQualifiers>
+      <length>500</length>
+    </stringQualifiers>
+    <dateQualifiers/>
+  </type>
+  <hierarchical>true</hierarchical>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <descriptionLength>100</descriptionLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="b4791040-491d-49e5-be29-b5589b60be5b">
+      <name>НастройкиОповещенийУведомлений</name>
+      <description>Настройки оповещений уведомлений</description>
+      <isFolder>true</isFolder>
+      <code>000000061</code>
+      <type/>
+      <content id="3d1a5016-e45c-481c-a387-2e774a3e3d56">
+        <name>ГруппировкаСообщений</name>
+        <description>Группировка сообщений</description>
+        <isFolder>true</isFolder>
+        <code>000000063</code>
+        <type/>
+        <content id="927958a3-9d61-4f90-acf0-9bc1b202d03f">
+          <name>ВариантГруппировкиСообщений</name>
+          <description>Вариант группировки сообщений</description>
+          <code>000000037</code>
+          <type>
+            <types>Number</types>
+            <numberQualifiers>
+              <precision>10</precision>
+              <scale>2</scale>
+            </numberQualifiers>
+          </type>
+        </content>
+        <content id="313604cc-fdcf-4030-ae9d-aba0c5ac9c38">
+          <name>ГруппироватьСообщенияПоКатегориям</name>
+          <description>Группировать сообщения по категориям</description>
+          <code>000000060</code>
+          <type>
+            <types>Boolean</types>
+          </type>
+        </content>
+        <content id="2e5d594c-ad64-4947-ac32-29ed41c63708">
+          <name>ИспользоватьГруппировкуСообщений</name>
+          <description>Использовать группировку сообщений</description>
+          <code>000000036</code>
+          <type>
+            <types>Boolean</types>
+          </type>
+        </content>
+      </content>
+      <content id="21f3c9a5-aa30-4f5f-8b7c-486c669f4297">
+        <name>ОтправкаДайджеста</name>
+        <description>Отправка дайджеста</description>
+        <isFolder>true</isFolder>
+        <code>000000062</code>
+        <type/>
+        <content id="139ac648-aa3c-462c-aff2-0e29aaa8b9d7">
+          <name>ДеньОтправкиДайджестаПоПроектам</name>
+          <description>День отправки дайджеста по проектам</description>
+          <code>000000020</code>
+          <type>
+            <types>Number</types>
+            <numberQualifiers>
+              <precision>1</precision>
+              <nonNegative>true</nonNegative>
+            </numberQualifiers>
+          </type>
+        </content>
+        <content id="3c67a0ac-18bd-4dbf-904c-73a74518df9d">
+          <name>ОтправкаДайджестаЗаинтересованный</name>
+          <description>Отправка дайджеста (Заинтересованный)</description>
+          <code>000000024</code>
+          <type>
+            <types>Boolean</types>
+          </type>
+        </content>
+        <content id="27ecee54-c4c6-42de-a5a7-7db3a2e58a26">
+          <name>ОтправкаДайджестаЗаказчик</name>
+          <description>Отправка дайджеста (Заказчик)</description>
+          <code>000000026</code>
+          <type>
+            <types>Boolean</types>
+          </type>
+        </content>
+        <content id="a2c8df46-5761-4168-99cf-cea18b999169">
+          <name>ОтправкаДайджестаКУП</name>
+          <description>Отправка дайджеста (КУП)</description>
+          <code>000000022</code>
+          <type>
+            <types>Boolean</types>
+          </type>
+        </content>
+        <content id="2e5e700c-36ae-407f-a968-1f1d6def0da3">
+          <name>ОтправкаДайджестаНаблюдатель</name>
+          <description>Отправка дайджеста (Наблюдатель)</description>
+          <code>000000023</code>
+          <type>
+            <types>Boolean</types>
+          </type>
+        </content>
+        <content id="8d165789-9a05-4a9e-8e5d-f8b2b4cfced4">
+          <name>ОтправкаДайджестаРуководитель</name>
+          <description>Отправка дайджеста (Руководитель)</description>
+          <code>000000025</code>
+          <type>
+            <types>Boolean</types>
+          </type>
+        </content>
+        <content id="050964cc-131c-40fd-8389-f20d6fcacc35">
+          <name>ОтправкаДайджестаВладелецПродукта</name>
+          <description>Отправка дайджеста владелец продукта</description>
+          <code>000000086</code>
+          <type>
+            <types>Boolean</types>
+          </type>
+        </content>
+        <content id="2bc683c9-24b7-440f-a41a-951e9e1f681c">
+          <name>ОтправлятьДайджестПоПроектам</name>
+          <description>Отправлять дайджест по проектам</description>
+          <code>000000021</code>
+          <type>
+            <types>Boolean</types>
+          </type>
+        </content>
+      </content>
+      <content id="c5b6bd14-617a-45e1-a537-7072a8112a09">
+        <name>ВремяНапоминанияОТрудозатратах</name>
+        <description>Время напоминания о трудозатратах</description>
+        <code>000000108</code>
+        <type>
+          <types>Date</types>
+          <dateQualifiers>
+            <dateFractions>Time</dateFractions>
+          </dateQualifiers>
+        </type>
+      </content>
+      <content id="b449d0f2-79f9-4b00-a93c-25791dd8374d">
+        <name>ОповещениеПочта</name>
+        <description>Оповещение по почте</description>
+        <code>000000111</code>
+        <type>
+          <types>Boolean</types>
+        </type>
+      </content>
+      <content id="f37b89da-1d32-4378-967c-6c7f26516288">
+        <name>ОповещениеSDMS</name>
+        <description>Оповещение через SDMS</description>
+        <code>000000110</code>
+        <type>
+          <types>Boolean</types>
+        </type>
+      </content>
+      <content id="a961bcbf-dd05-4129-8ef6-1a80465d16f3">
+        <name>ОповещениеМессенджер</name>
+        <description>Оповещение через мессенджер</description>
+        <code>000000109</code>
+        <type>
+          <types>Boolean</types>
+        </type>
+      </content>
+      <content id="74728cef-ef08-4eef-ac0b-cabe0130a389">
+        <name>ОтправлятьЗадачиНаТестировании</name>
+        <description>Отправлять задачи на тестировании</description>
+        <code>000000071</code>
+        <type>
+          <types>Boolean</types>
+        </type>
+      </content>
+    </items>
+    <items id="951348d9-ac87-4e1f-9a6e-ca11de041e35">
+      <name>MarkdownОписаниеЗафиксировано</name>
+      <description>Markdown описание зафиксировано</description>
+      <code>000000112</code>
+      <type>
+        <types>Boolean</types>
+      </type>
+    </items>
+    <items id="dfb2fa30-5f58-4ef3-8809-4df37adf3aaf">
+      <name>АвтоматическоеИзменениеСтатусаПослеОбновления</name>
+      <description>Автоматическое изменение статуса после обновления</description>
+      <code>000000019</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="2febcc5b-0b05-40eb-aec3-eedd4523fb55">
+      <name>АвтоматическоеНазначениеФилиала</name>
+      <description>Автоматическое назначение филиала</description>
+      <code>000000091</code>
+      <type>
+        <types>Boolean</types>
+      </type>
+    </items>
+    <items id="9be069ec-8ea7-4249-9e15-8214d0977bd6">
+      <name>ДатаПоследнегоИзмененияОбъекта</name>
+      <description>Дата последнего изменения объекта</description>
+      <code>000000001</code>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+    </items>
+    <items id="3469f1d2-8df4-4998-8960-0f5d146efe6c">
+      <name>ДатаПоследнегоИзмененияПодчиненныхОбъектов</name>
+      <description>Дата последнего изменения подчиненных объектов</description>
+      <code>000000002</code>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+    </items>
+    <items id="04855906-cf3a-40d1-89e6-13bf34061485">
+      <name>ДатаПоследнейОтправкиОповещенийОЗанесенииТрудозатрат</name>
+      <description>Дата последней отправки оповещений о занесении трудозатрат</description>
+      <code>000000016</code>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+    </items>
+    <items id="5ec23a32-0b09-49a1-a52c-9d79522935c3">
+      <name>ЗадачаНаАвтотесты</name>
+      <description>Задача на автотесты</description>
+      <code>000000006</code>
+      <type>
+        <types>DocumentRef.Задача</types>
+      </type>
+    </items>
+    <items id="946b0175-1e65-42b1-93aa-b20f1b9f3399">
+      <name>ЗадачаНаДокументацию</name>
+      <description>Задача на документацию</description>
+      <code>000000007</code>
+      <type>
+        <types>DocumentRef.Задача</types>
+      </type>
+    </items>
+    <items id="d6baec71-96c1-4492-b495-9bbe487a4c0e">
+      <name>ЗапрещеноИзменениеОписанияЗаявки</name>
+      <description>Запрещено изменение описания</description>
+      <code>000000085</code>
+      <type>
+        <types>Boolean</types>
+      </type>
+    </items>
+    <items id="0c7309eb-26b7-458e-84f5-947897d3a4d8">
+      <name>КоличествоПодчиненныхЗадач</name>
+      <description>Количество подчиненных задач</description>
+      <code>000000092</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="c8919325-5a25-456b-8b8c-17f97a026abf">
+      <name>ОписаниеФорматаHTML</name>
+      <description>Описание формата HTML</description>
+      <code>000000096</code>
+      <type>
+        <types>Boolean</types>
+      </type>
+    </items>
+    <items id="ee39b8cf-5f20-42f8-a39e-a1a5ef2ec5b7">
+      <name>Куратор</name>
+      <description>Ответственный</description>
+      <code>000000101</code>
+      <type>
+        <types>CatalogRef.Пользователи</types>
+      </type>
+    </items>
+    <items id="d2b80519-8829-46a4-b675-12b56b08a16c">
+      <name>ПлановоеВремяТестирования</name>
+      <description>Плановое время тестирования</description>
+      <code>000000003</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="cc047908-fe70-42c7-8e56-5d503128bbdd">
+      <name>ПлановыеТрудозатраты</name>
+      <description>Плановые трудозатраты</description>
+      <code>000000087</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="72dce0f8-0e57-4b0e-aae5-bff84a268755">
+      <name>ПримечаниеРазработчиков</name>
+      <description>Примечание разработчиков</description>
+      <code>000000004</code>
+      <type>
+        <types>CatalogRef.ДополнительныеОписанияОбъектов</types>
+      </type>
+    </items>
+    <items id="5db3d128-5019-4e7a-bfa0-7133e35bd0f3">
+      <name>ПримечаниеТестировщиков</name>
+      <description>Примечание тестировщиков</description>
+      <code>000000009</code>
+      <type>
+        <types>CatalogRef.ДополнительныеОписанияОбъектов</types>
+      </type>
+    </items>
+    <items id="14dd8d35-e497-4757-a8ef-2cddc677458c">
+      <name>РевьюерОбъекта</name>
+      <description>Ревьюер объекта</description>
+      <code>000000080</code>
+      <type>
+        <types>CatalogRef.Пользователи</types>
+      </type>
+    </items>
+    <items id="2ee39ed0-27b8-44f4-80a1-6017c975641f">
+      <name>РезультатПоследнегоТестирования</name>
+      <description>Результат последнего тестирования</description>
+      <code>000000008</code>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>200</length>
+        </stringQualifiers>
+      </type>
+    </items>
+    <items id="ad347ec0-47ed-4f12-b33c-2ea16a9879bd">
+      <name>СмещениеВремени</name>
+      <description>Смещение времени</description>
+      <code>000000093</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>2</precision>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="d7ef2643-9ca9-49d6-b9d5-ce9c4de09cb2">
+      <name>СозданЧерезБыстроеСозданиеЗадачи</name>
+      <description>Создан через быстрое создание задачи</description>
+      <code>000000076</code>
+      <type>
+        <types>Boolean</types>
+      </type>
+    </items>
+    <items id="547d8c1e-868b-4919-8e8c-02a946cc63be">
+      <name>СозданЧерезГрупповоеВнесениеТрудозатрат</name>
+      <description>Создан через групповое внесение трудозатрат</description>
+      <code>000000072</code>
+      <type>
+        <types>Boolean</types>
+      </type>
+    </items>
+    <items id="641abe11-086c-45ce-96ca-a6eeb1558b11">
+      <name>СрокАктуальностиЗаявкиВСтатусеНаДоработку</name>
+      <description>Срок актуальности заявки в статусе &quot;На доработку&quot;</description>
+      <code>000000059</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="1d00c1e9-c98f-450c-ab12-d631cb8a5f20">
+      <name>ФактическаяСтоимостьРабот</name>
+      <description>Стоимость работ (Общие)</description>
+      <code>000000094</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>12</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="06107173-6c2f-4d74-afa8-48eda0a4329b">
+      <name>ФактическиеТрудозатратыЗадачи</name>
+      <description>Фактические трудозатраты (Задачи)</description>
+      <code>000000089</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="bdb19b6a-d34c-4ea6-956d-85c42a685ee1">
+      <name>ФактическиеТрудозатратыЗаявки</name>
+      <description>Фактические трудозатраты (Заявки)</description>
+      <code>000000090</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="da3d1590-aced-4e5b-b903-ce7931371299">
+      <name>ФактическиеТрудозатраты</name>
+      <description>Фактические трудозатраты (Общие)</description>
+      <code>000000088</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+    </items>
+    <items id="5d3f4370-8222-4820-98f3-8cd75aa1932b">
+      <name>ЦелеваяЗаявка</name>
+      <description>Целевая заявка</description>
+      <code>000000107</code>
+      <type>
+        <types>Boolean</types>
+      </type>
+    </items>
+    <items id="8c9771b6-2c7c-4624-98c2-f4ef13c45291">
+      <name>ЧекЛистТестирования</name>
+      <description>Чек лист тестирования</description>
+      <code>000000005</code>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>200</length>
+        </stringQualifiers>
+      </type>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>ChartOfCharacteristicTypes.ВидыДополнительныхРеквизитов.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="d5e49e6b-d6c0-4de1-b9cf-fb658c9cd91b">
+    <name>ОбязательноеЗаполнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обязательное заполнение</value>
+    </synonym>
+    <comment>Признак необходимости проверки заполненности значения характеристики</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="bbaaa277-503c-4dc8-86a0-38618e2ad3c2">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="061d1456-ba85-467a-a199-88175b47ab9f">
+    <name>Подсказка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подсказка</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>500</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="19104ed7-6c3e-489d-a480-0e8eb8fade57">
+    <name>ПорядокСледования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порядок следования</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b440e954-3e24-48a4-ab10-c96b449f40e6">
+    <name>Проверяемый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проверяемый</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="fe09a5a5-fefc-4ad8-87d7-c017f28f1a26">
+    <name>РедактированиеВИнтерфейсе</name>
+    <synonym>
+      <key>ru</key>
+      <value>Редактирование в интерфейсе</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="64d2e3f1-0804-45d6-9da4-190cc7182776">
+    <name>РедактированиеВФормеОбъекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Редактирование в форме объекта</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="6867a1ac-dd3b-4d2c-bd35-be84a1d9d1a4">
+    <producedTypes>
+      <objectType typeId="9fad0463-f1b6-4f42-ac67-9db5c1caf60a" valueTypeId="7095d00d-88c2-412b-9824-fb103d43d0dd"/>
+      <rowType typeId="c18f6f1f-d197-47ce-9e17-4180b1e0e7c2" valueTypeId="b9a9b4ad-cf66-4014-84aa-393cc65b182c"/>
+    </producedTypes>
+    <name>ИспользоватьВОбъектах</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать в объектах</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="8ef49d78-5359-4fe8-9fb6-0554b2a43351">
+      <name>Тип</name>
+      <synonym>
+        <key>ru</key>
+        <value>Тип</value>
+      </synonym>
+      <comment>Хранит пустую ссылку на тот объект, в котором используется этот вид реквизита</comment>
+      <type>
+        <types>DefinedType.ВладелецДополнительныхРеквизитов</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="df16dfa5-7480-458d-a6c5-1497eb303f98">
+      <name>Описание</name>
+      <synonym>
+        <key>ru</key>
+        <value>Описание</value>
+      </synonym>
+      <comment>Описание типа для администраторов</comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="94a4af86-018b-4f59-bb87-c7a88a116642">
+      <name>Филиал</name>
+      <synonym>
+        <key>ru</key>
+        <value>Филиал</value>
+      </synonym>
+      <comment>Если пустая ссылка - доступен всем, иначе только указанным филиалам</comment>
+      <type>
+        <types>CatalogRef.Филиалы</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="fa14a29a-5853-4647-80e3-d3af6c32308c">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:ChartOfCharacteristicTypes>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="14f01673-b04d-4639-a9d0-1ebc347c3e2f">
+  <producedTypes>
+    <managerType typeId="625eeed5-8225-424f-96cf-979b920eee72" valueTypeId="cf251a23-1eed-452b-8d91-17184b0f899a"/>
+    <valueManagerType typeId="a994b704-5826-46c4-8ff0-b48f95351538" valueTypeId="c12afd3f-4bdc-456b-88c1-72ad0090d5a8"/>
+    <valueKeyType typeId="deaa4b93-ae57-490b-a453-fc89a560b4fb" valueTypeId="59a52227-502e-4a7d-8360-71f46bb901d5"/>
+  </producedTypes>
+  <name>ВремяЗавершенияНеактивныхСеансов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Время завершения неактивных сеансов (минуты)</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>3</precision>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <toolTip>
+    <key>ru</key>
+    <value>Количество минут неактивности до завершения сеанса</value>
+  </toolTip>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

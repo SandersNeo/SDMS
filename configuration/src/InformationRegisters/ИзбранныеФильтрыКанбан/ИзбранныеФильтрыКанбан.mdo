@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1d0c8709-5621-496b-b840-e75f0c8699dc">
+  <producedTypes>
+    <selectionType typeId="02da64cb-a3d9-4732-867d-786496b4d2c9" valueTypeId="11cc566f-5972-4a72-af03-75a7d509e117"/>
+    <listType typeId="393e224c-a151-44e2-a6ca-8b59b4d955d2" valueTypeId="bca00ce8-6bf2-4af4-a5e4-19adc2a120fb"/>
+    <managerType typeId="4d91b608-486b-4539-9ac5-0807f82866b3" valueTypeId="7c74eb52-83ff-444a-b825-fa1d165f419f"/>
+    <recordSetType typeId="ee2fa015-f5cc-42a6-8ee7-1420822617ad" valueTypeId="0051b6cf-0a26-4961-a0e0-be42018222aa"/>
+    <recordKeyType typeId="ff9534db-c87f-4732-afb6-e21d5fa69bbe" valueTypeId="6fb4a05d-fd08-45a2-9768-a94beb44449b"/>
+    <recordType typeId="0b48eaa6-71fe-44a5-96ea-12c945ba1b56" valueTypeId="83f73931-e092-44e5-b416-fcb135c981c5"/>
+    <recordManagerType typeId="f17b027a-4d69-46de-b604-eac41aad932c" valueTypeId="b097713e-a233-4125-8dab-74e0c2bbf794"/>
+  </producedTypes>
+  <name>ИзбранныеФильтрыКанбан</name>
+  <synonym>
+    <key>ru</key>
+    <value>Избранные фильтры канбан</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="6b866773-b073-4587-89d3-d0f3e000a003">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a3a7fb9c-d142-4b3c-a217-e0ebefd4446c">
+    <name>Фильтр</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фильтр</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КлючОчереди</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

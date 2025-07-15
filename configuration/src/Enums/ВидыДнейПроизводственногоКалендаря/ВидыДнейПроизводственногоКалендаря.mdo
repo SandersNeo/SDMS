@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fe22a450-3085-461f-9468-af3069bdb39f">
+  <producedTypes>
+    <refType typeId="8597166b-68de-4166-b9a4-21a0a854d46c" valueTypeId="5998d828-5582-41d1-96f2-0471785ddac1"/>
+    <listType typeId="5892e0ae-f283-41e1-8a99-c399f067f722" valueTypeId="77d1e60f-7057-4671-a377-3846ebe8045e"/>
+    <managerType typeId="4b8afb8b-f09b-4bff-855c-a340c332584c" valueTypeId="86f483f2-8f13-46f3-8db9-317ee30cea1e"/>
+  </producedTypes>
+  <name>ВидыДнейПроизводственногоКалендаря</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды дней производственного календаря</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="6575a773-7acd-4d49-8dbf-2e8172653cb5">
+    <name>Предпраздничный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предпраздничный</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="5930ba30-c8b1-4aca-aadd-4e90266eb221">
+    <name>Выходной</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выходной</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="abbd86f4-e67d-477d-8ae4-565d023e55b1">
+    <name>Рабочий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рабочий</value>
+    </synonym>
+    <comment>(Общ) Рабочий день</comment>
+  </enumValues>
+</mdclass:Enum>

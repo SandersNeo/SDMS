@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b38b2b7b-9612-4f05-b66e-c9c41ad803a1">
+  <producedTypes>
+    <objectType typeId="0255fa0e-a386-478c-8695-7f6a469103c6" valueTypeId="5ed3aeb5-f321-47a8-9a8f-63728c92a93d"/>
+    <managerType typeId="1379a69e-6dce-4d36-8493-af6d989526e8" valueTypeId="d308c076-7fba-4292-a609-d0cd0de47d2d"/>
+  </producedTypes>
+  <name>ПолнотекстовыйПоиск</name>
+  <synonym>
+    <key>ru</key>
+    <value>Полнотекстовый поиск</value>
+  </synonym>
+  <comment>ВНИМАНИЕ! Обработку нельзя выгружать во внешний файл и загружать из внешнего, т.к. в этом случае теряется содержимое модуля менеджера!</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ПолнотекстовыйПоиск.Form.ФормаОбработки</defaultForm>
+  <explanation>
+    <key>ru</key>
+    <value>ВНИМАНИЕ! Обработку нельзя выгружать во внешний файл и загружать из внешнего, т.к. в этом случае теряется содержимое модуля менеджера!</value>
+  </explanation>
+  <forms uuid="98e83a8d-cffb-409b-9231-1400650c9776">
+    <name>ФормаОбработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма обработки</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

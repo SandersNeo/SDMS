@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d04118ca-b98a-4d21-8141-1c6ce3a92e5e">
+  <name>ОписанияОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Описания объектов</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>CommonModule.РедакторОписания</content>
+  <content>CommonModule.РедакторОписанияВызовСервера</content>
+  <content>CommonModule.РедакторОписанияКлиент</content>
+  <content>CommonModule.РедакторОписанияКлиентСервер</content>
+  <content>CommonModule.АвтосохраненияДанных</content>
+  <content>CommonModule.АвтосохраненияДанныхВызовСервера</content>
+  <content>CommonModule.АвтосохраненияДанныхКлиент</content>
+  <content>CommonModule.АвтосохраненияДанныхКлиентСервер</content>
+  <content>InformationRegister.ОчередьСравненияИзмененийОписанийОбъектов</content>
+  <content>InformationRegister.ИсторияИзмененийОписанийОбъектов</content>
+  <content>Constant.ПараметрыЗапускаУтилитыWinMerge</content>
+  <content>CommonTemplate.CKEditorHTML</content>
+  <content>InformationRegister.ШаблоныОписанияДляФилиалов</content>
+  <content>Catalog.ШаблоныОписанияДокументов</content>
+  <content>InformationRegister.АвтосохраненныеОписания</content>
+  <parentSubsystem>Subsystem.БазоваяФункциональность</parentSubsystem>
+</mdclass:Subsystem>

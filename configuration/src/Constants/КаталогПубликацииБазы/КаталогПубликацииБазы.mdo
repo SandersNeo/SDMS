@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="03f45eea-cc71-40fe-b9f6-5a4df98ae456">
+  <producedTypes>
+    <managerType typeId="bf526782-d41f-4161-a9c8-07380d47aea3" valueTypeId="7dfc981a-92e6-45f2-921c-f878fbe882a0"/>
+    <valueManagerType typeId="7a399aad-b508-4f0e-91e6-210ff560a981" valueTypeId="6b6364ef-fbcd-4c26-936d-a1c47b48fa80"/>
+    <valueKeyType typeId="de922855-d3c5-5790-a936-14834704341e" valueTypeId="17ef3acd-8b9e-52aa-9131-ac700692dcbb"/>
+  </producedTypes>
+  <name>КаталогПубликацииБазы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Каталог публикации базы</value>
+  </synonym>
+  <comment>Каталог, в котором опубликована база</comment>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>100</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

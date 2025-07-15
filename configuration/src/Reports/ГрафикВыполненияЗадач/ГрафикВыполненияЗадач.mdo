@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8c8a4a51-8adb-4d57-a3eb-65e68fb70d31">
+  <producedTypes>
+    <objectType typeId="3e63535a-2a9c-40d2-97ef-47c99e466ca7" valueTypeId="1c73a28e-2d9a-4436-a5d1-b28821331cef"/>
+    <managerType typeId="2ab85fac-ef59-4a6d-bf4f-f481dbdfde8a" valueTypeId="9109e358-0db9-4fde-9ada-8bbf312f1b29"/>
+  </producedTypes>
+  <name>ГрафикВыполненияЗадач</name>
+  <synonym>
+    <key>ru</key>
+    <value>График выполнения задач</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ГрафикВыполненияЗадач.Form.ФормаОтчета</defaultForm>
+  <forms uuid="8aaab986-84ed-4be6-9e6a-89ff5d0f0ae1">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Report>

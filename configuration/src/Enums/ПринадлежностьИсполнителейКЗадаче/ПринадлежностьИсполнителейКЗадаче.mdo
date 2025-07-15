@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3182552f-e8f2-4eb8-8cbd-f019c23e5181">
+  <producedTypes>
+    <refType typeId="8f49b3f0-e6cb-4f7c-84fd-63250fb3b633" valueTypeId="8ad350de-8364-498e-b24c-e44ae1c9e246"/>
+    <listType typeId="d7042c42-667e-4102-a912-0a11455eff78" valueTypeId="3a112d6a-2ebe-4753-8e13-319e3671e51c"/>
+    <managerType typeId="b79e31ee-2d2b-4667-b9ee-bd895e6d85c6" valueTypeId="914a5d29-bf1c-44e0-b626-18b6bb829227"/>
+  </producedTypes>
+  <name>ПринадлежностьИсполнителейКЗадаче</name>
+  <synonym>
+    <key>ru</key>
+    <value>Принадлежность исполнителей к задаче</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="787a040c-32a7-4a3b-9a7b-a09791746995">
+    <name>НеНазначен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не назначен</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f47c7d6d-ccc7-46f5-8a83-5e6f6cda4dea">
+    <name>Внутренний</name>
+    <synonym>
+      <key>ru</key>
+      <value>Внутренний</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="5f2d10fe-b93d-409e-a8a0-9a9bf3676a64">
+    <name>Внешний</name>
+    <synonym>
+      <key>ru</key>
+      <value>Внешний</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f7fd4b92-11d1-4099-b525-fcd6a0e2ee5d">
+    <name>Любой</name>
+    <synonym>
+      <key>ru</key>
+      <value>Любой</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

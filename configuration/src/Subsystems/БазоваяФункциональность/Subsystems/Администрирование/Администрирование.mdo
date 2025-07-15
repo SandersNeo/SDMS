@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="91e14f33-1d9e-45fb-89c2-3c2feaafc03c">
+  <name>Администрирование</name>
+  <synonym>
+    <key>ru</key>
+    <value>Администрирование</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>DataProcessor.РегламентныеФоновыеЗадания</content>
+  <content>Constant.РазрешитьЗапускРегламентныхЗаданий</content>
+  <content>DataProcessor.ПанельАдминистрирования</content>
+  <content>Catalog.СлужебныеФоновыеЗадания</content>
+  <content>DataProcessor.ПросмотрНастроекПользователей</content>
+  <parentSubsystem>Subsystem.БазоваяФункциональность</parentSubsystem>
+</mdclass:Subsystem>

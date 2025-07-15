@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2ffe25ec-ec28-4d1b-82dd-969528bab45a">
+  <producedTypes>
+    <managerType typeId="3cae84e1-e184-40c6-bf4b-d456929a47ae" valueTypeId="b57abef4-84ac-4eba-b162-6392c7672c4b"/>
+    <valueManagerType typeId="7b90c3d8-2f5c-4432-92ad-18716d64b9b6" valueTypeId="9bd272b3-baba-40df-bdca-a61c61e2d3a1"/>
+    <valueKeyType typeId="469cfe91-c0e8-5440-8a8e-24f01bca09ac" valueTypeId="854d17a2-f946-59d1-b545-c999d318549d"/>
+  </producedTypes>
+  <name>ПараметрыЗапускаУтилитыWinMerge</name>
+  <synonym>
+    <key>ru</key>
+    <value>Шаблон запуска WinMerge</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers/>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

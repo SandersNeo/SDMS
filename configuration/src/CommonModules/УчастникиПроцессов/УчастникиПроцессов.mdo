@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="20cec225-d097-42aa-8760-a6604c0daa7e">
+  <name>УчастникиПроцессов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Участники процессов</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+</mdclass:CommonModule>

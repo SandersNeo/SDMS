@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Направление</dataPath>
+			<field>Направление</field>
+			<attributeUseRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Система</dataPath>
+			<field>Система</field>
+			<attributeUseRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Филиал</dataPath>
+			<field>Филиал</field>
+			<attributeUseRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЮридическоеЛицо</dataPath>
+			<field>ЮридическоеЛицо</field>
+			<attributeUseRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВыбранныеОбъекты</dataPath>
+			<field>ВыбранныеОбъекты</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбранные объекты</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ссылка</dataPath>
+			<field>Ссылка</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+				<dcscom:required>true</dcscom:required>
+			</role>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	Задача.Ссылка КАК Ссылка,
+	Задача.Направление КАК Направление,
+	Задача.СистемаУчета КАК Система,
+	Задача.Филиал КАК Филиал,
+	ЗаявкаНаРазработку.ЮридическоеЛицо КАК ЮридическоеЛицо
+ИЗ
+	Документ.Задача КАК Задача
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.ЗаявкаНаРазработку КАК ЗаявкаНаРазработку
+		ПО ((ВЫРАЗИТЬ(Задача.ОбъектОснование КАК Документ.ЗаявкаНаРазработку)) = ЗаявкаНаРазработку.Ссылка)
+{ГДЕ
+	Задача.Ссылка КАК ВыбранныеОбъекты,
+	Задача.Направление КАК Направление,
+	Задача.СистемаУчета КАК Система,
+	Задача.Филиал КАК Филиал,
+	ЗаявкаНаРазработку.ЮридическоеЛицо КАК ЮридическоеЛицо}
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ЗаявкаНаРазработку.Ссылка,
+	ЗаявкаНаРазработку.Направление,
+	СистемыУчета.Система,
+	ЗНАЧЕНИЕ(Справочник.Филиалы.ПустаяСсылка),
+	ЗаявкаНаРазработку.ЮридическоеЛицо
+ИЗ
+	Документ.ЗаявкаНаРазработку КАК ЗаявкаНаРазработку
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.ЗаявкаНаРазработку.СистемыРазработки КАК СистемыУчета
+		ПО ЗаявкаНаРазработку.Ссылка = СистемыУчета.Ссылка
+{ГДЕ
+	ЗаявкаНаРазработку.Ссылка КАК ВыбранныеОбъекты,
+	ЗаявкаНаРазработку.Направление КАК Направление,
+	СистемыУчета.Система КАК Система,
+	ЗаявкаНаРазработку.ЮридическоеЛицо КАК ЮридическоеЛицо}
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ВнутреннееЗадание.Ссылка,
+	ВнутреннееЗадание.Направление,
+	ЗНАЧЕНИЕ(Справочник.СистемыУчета.ПустаяСсылка),
+	ВнутреннееЗадание.Филиал,
+	ВнутреннееЗадание.ЮридическоеЛицо
+ИЗ
+	Документ.ВнутреннееЗадание КАК ВнутреннееЗадание
+{ГДЕ
+	ВнутреннееЗадание.Ссылка КАК ВыбранныеОбъекты,
+	ВнутреннееЗадание.Направление КАК Направление,
+	ВнутреннееЗадание.Филиал КАК Филиал,
+	ВнутреннееЗадание.ЮридическоеЛицо КАК ЮридическоеЛицо}</query>
+	</dataSet>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Ссылка</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

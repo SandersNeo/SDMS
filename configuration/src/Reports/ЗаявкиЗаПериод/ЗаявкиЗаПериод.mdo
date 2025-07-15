@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1b473e6a-a9ff-47af-9488-20df466c7d07">
+  <producedTypes>
+    <objectType typeId="07e568ea-058b-4039-bd82-cc7029742dcd" valueTypeId="27aed542-a375-4bc4-92f8-63df383291aa"/>
+    <managerType typeId="f835eaab-6a8f-4c55-9f49-7ec8f1c45a22" valueTypeId="b9c94149-1ea4-4819-89af-b72bcbb6c790"/>
+  </producedTypes>
+  <name>ЗаявкиЗаПериод</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заявки за период</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ЗаявкиЗаПериод.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ЗаявкиЗаПериод.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="5e79d7bd-50c0-4747-a9dd-8e7519008ba5">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="53aa630e-a20c-4f62-9587-3698fdbcbe99">
+    <name>ФормаРасшифровки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма расшифровки</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="a488e478-b6f8-4e7d-a015-7669812b4dbd">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="fee7aee9-54ff-4611-9543-5d314a15622a">
+    <name>Расшифровка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расшифровка</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="16cfa687-a909-4c2c-8422-db77e25674fa">
+  <producedTypes>
+    <refType typeId="2349311b-be1c-4c53-a629-4594a367c975" valueTypeId="50fc32b2-560f-4d80-8f4a-c99e9eb81873"/>
+    <listType typeId="8e6c3ee3-332d-4131-ab34-f07f358333d7" valueTypeId="d376ceeb-58ce-4a1e-b026-a5d2aa982f93"/>
+    <managerType typeId="ad413cd2-366a-45b6-882b-ad2d7885a7e9" valueTypeId="1007d867-74c6-45f1-bf85-9bdff057eac3"/>
+  </producedTypes>
+  <name>ЧастотаОповещенийПользователя</name>
+  <synonym>
+    <key>ru</key>
+    <value>Частота оповещений пользователя</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="dc040b2b-1346-4657-b813-c6548df717d4">
+    <name>Незамедлительно</name>
+    <synonym>
+      <key>ru</key>
+      <value>Незамедлительно</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c3d69820-38bb-44b3-b3d3-5c0f056f49e3">
+    <name>ДесятьМинут</name>
+    <synonym>
+      <key>ru</key>
+      <value>10 минут</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6aa992aa-6976-40b4-9c56-75b844005eae">
+    <name>ТридцатьМинут</name>
+    <synonym>
+      <key>ru</key>
+      <value>30 минут</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="92c6cafa-2276-46ff-80dd-29246b0e8f96">
+    <name>Час</name>
+    <synonym>
+      <key>ru</key>
+      <value>Час</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="961c26a6-3e3c-4e21-bb3e-6f8a526bd39c">
+    <name>День</name>
+    <synonym>
+      <key>ru</key>
+      <value>День</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3fc41129-ea94-46fc-893c-e296782ac655">
+    <name>Неделя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Неделя</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

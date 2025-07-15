@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="201a192b-18ec-4b43-ac6a-2149d98e74da">
+  <name>RocketChat</name>
+  <synonym>
+    <key>ru</key>
+    <value>Rocket chat</value>
+  </synonym>
+</mdclass:CommonPicture>

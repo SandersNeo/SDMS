@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="259a6661-cfc3-47dd-89d7-cadc2507752c">
+  <producedTypes>
+    <refType typeId="a6f7d969-b991-4804-a61e-4c51230f5790" valueTypeId="d1eecc2d-bd0d-41e6-a8de-35f74e6722ee"/>
+    <listType typeId="732120c1-5ddb-49c6-be79-b3c063346f23" valueTypeId="83f37202-cdb7-429a-9d84-b1c2b1a2b8cb"/>
+    <managerType typeId="e85b35b9-1f60-4d30-88f4-a98aff902e33" valueTypeId="f20a902d-27b9-40a1-a8b6-acd310377afd"/>
+  </producedTypes>
+  <name>НазначенияФайлов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Назначения файлов</value>
+  </synonym>
+  <comment>Определяет нахождение файла к области отображения (форматированный документ или список пркрепленных файлов) </comment>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="7d1f64e9-93f7-4d15-a150-0ac8fc22dd21">
+    <name>ИзображениеКомментария</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изображение комментария</value>
+    </synonym>
+    <comment>Файл используется в комментарии (фактически тот же html)</comment>
+  </enumValues>
+  <enumValues uuid="45d937dd-ffa3-4d5e-9e18-8dbfdbfe6cae">
+    <name>ИзображениеОписанияДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изображение описания документа</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="bef9633e-8730-4b0d-b492-b89b4f9d3a3b">
+    <name>ИзображениеПримечанияРазработчика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изображение примечания разработчика</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0f23d5d5-a40d-421c-9eb6-6c1a48363a75">
+    <name>ИзображениеПримечанияТестировщика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изображение примечания тестировщика</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="51478227-a4f2-4c03-b227-ba3e199a40a0">
+    <name>ОбрезанныйАватарПользователя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обрезанный аватар пользователя</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c58c7e74-b7ab-43b0-bc81-683478defc9f">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <comment>Прикреплен непосредственно к объекту</comment>
+  </enumValues>
+  <enumValues uuid="89a7a710-3672-4650-b121-8e8fbc2b7982">
+    <name>ОписаниеИзмененийКЗадаче</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание изменений к задаче</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3b59838c-953d-4ad3-a0b5-6b20202b2200">
+    <name>ПолныйАватарПользователя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Полный аватар пользователя</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c572854d-3d96-4d7c-9b5c-250b978ce09b">
+    <name>ФайлыКомментария</name>
+    <synonym>
+      <key>ru</key>
+      <value>Файлы комментария</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="5f0ff5af-7447-4d04-a3a8-9ab6c3545fd9">
+    <name>ФорматированныйДокумент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форматированный документ</value>
+    </synonym>
+    <comment>Файл используется в html-документе</comment>
+  </enumValues>
+</mdclass:Enum>

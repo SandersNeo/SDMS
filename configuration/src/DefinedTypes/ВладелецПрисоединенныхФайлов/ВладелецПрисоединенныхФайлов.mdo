@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4b72ee23-d859-4a82-9c85-2b66d070627a">
+  <producedTypes>
+    <containerType typeId="99043022-2318-4eff-9bfb-e7b9c9c3764f" valueTypeId="76078f07-ead7-4bd9-bf51-fc6660fd7650"/>
+  </producedTypes>
+  <name>ВладелецПрисоединенныхФайлов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Владелец присоединенных файлов</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.Пользователи</types>
+    <types>DocumentRef.ВнутреннееЗадание</types>
+    <types>DocumentRef.ВнутренниеТрудозатраты</types>
+    <types>CatalogRef.Проекты</types>
+    <types>CatalogRef.ОписанияИзмененийСистемы</types>
+    <types>DocumentRef.Задача</types>
+    <types>String</types>
+    <types>DocumentRef.ЗаявкаНаРазработку</types>
+    <stringQualifiers>
+      <length>36</length>
+      <fixed>true</fixed>
+    </stringQualifiers>
+  </type>
+</mdclass:DefinedType>

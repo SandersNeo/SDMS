@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6e86e0c9-88c7-48c6-baff-33150a2405da">
+  <name>БезопасностьПереопределяемый</name>
+  <synonym>
+    <key>ru</key>
+    <value>Безопасность переопределяемый</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+</mdclass:CommonModule>

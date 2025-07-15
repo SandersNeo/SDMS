@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="44ced832-6119-4709-b535-30ba99d52d44">
+  <producedTypes>
+    <containerType typeId="e24733ad-49f8-45be-9370-0872331dc0b1" valueTypeId="e4d8ae73-c407-4b9e-be5f-23bcb59d4e67"/>
+  </producedTypes>
+  <name>ОбъектСтруктурыПодчиненности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Объект структуры подчиненности</value>
+  </synonym>
+  <type>
+    <types>DocumentRef.ВнутреннееЗадание</types>
+    <types>CatalogRef.Проекты</types>
+    <types>DocumentRef.Задача</types>
+    <types>DocumentRef.ЗаявкаНаРазработку</types>
+  </type>
+</mdclass:DefinedType>

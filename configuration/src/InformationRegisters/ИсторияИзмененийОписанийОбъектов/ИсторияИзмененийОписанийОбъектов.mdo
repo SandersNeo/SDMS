@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2d355a26-65a3-4373-b5d9-c7eb91308c6f">
+  <producedTypes>
+    <selectionType typeId="d3247a16-8a1c-4cf1-b46e-ff06bfcf2bb3" valueTypeId="87154815-55e3-4c06-b4c4-0259d8e97c92"/>
+    <listType typeId="8f9d5040-f855-4adc-9001-2cda1cb0f769" valueTypeId="e05a6ea0-c671-4d18-9140-aeb582085e47"/>
+    <managerType typeId="548983c8-dfd8-4756-9ca7-d129363f28ae" valueTypeId="f051b1af-d1b7-4cf6-b98e-1d52b20af5f9"/>
+    <recordSetType typeId="ec74b342-6f20-437e-8dca-b1ecb5f8a88c" valueTypeId="9bfe9a7e-c4d8-49c0-956b-83caeb6e361e"/>
+    <recordKeyType typeId="67307234-0078-48ea-a2e7-2ac015c38fd9" valueTypeId="e436be3f-adea-41de-8144-4cb384bda7d6"/>
+    <recordType typeId="779a4ba1-91b8-4538-8007-b5dd0ecb3269" valueTypeId="357165b1-a26a-407f-b4af-b4f47b9b74da"/>
+    <recordManagerType typeId="1466f666-bf43-4a6c-b153-e84698889dfa" valueTypeId="be5a85b9-1ea7-43b8-afc5-ea00fa42f9c9"/>
+  </producedTypes>
+  <name>ИсторияИзмененийОписанийОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>История изменений описаний объектов</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ИсторияИзмененийОписанийОбъектов.Form.ФормаЗаписи</defaultRecordForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="2d890f20-b031-4cf8-ac68-d4ef251f2a1b">
+    <name>ОписаниеИзменений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание изменений</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="3a7d66b6-02e1-40a6-abc0-5df6c9a0cd5c">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="5e7a2c4c-621c-4bb0-9f57-dfc4423bdcb5">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ОбъектИсторииИзменений</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="20121382-c970-472d-82d2-b9c4ccc67cdc">
+    <name>ВидОписания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид описания</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыОписания</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f63a249c-1f8b-46e6-b5b8-2a3d8f0d650f">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="4b4d0d76-a342-4712-89a6-8a47d109cbe1">
+    <name>ПросмотрИзмененияОписания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Просмотр изменения описания</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1beffab1-96d0-483e-b574-7001cd5057e4">
+    <name>ПросмотрИсторииИзменений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Просмотр истории изменений</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="500bd541-f33c-4117-9c8b-88f834154416">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

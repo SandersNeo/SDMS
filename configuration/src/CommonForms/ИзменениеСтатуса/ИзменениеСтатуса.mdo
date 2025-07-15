@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonForm xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="71ed483a-4a77-4bef-8bed-550ccd1d7c32">
+  <name>ИзменениеСтатуса</name>
+  <synonym>
+    <key>ru</key>
+    <value>Изменение статуса</value>
+  </synonym>
+  <usePurposes>PersonalComputer</usePurposes>
+  <usePurposes>MobileDevice</usePurposes>
+</mdclass:CommonForm>

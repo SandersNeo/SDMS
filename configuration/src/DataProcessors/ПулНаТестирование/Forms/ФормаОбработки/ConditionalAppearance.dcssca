@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConditionalAppearance xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+	<item>
+		<selection>
+			<item>
+				<field>Список_МоиЗадачи_ЗадачиНаМнеДеревоНаименование</field>
+			</item>
+			<item>
+				<field>Список_МоиЗадачи_ЗадачиНаМнеДеревоСистемаПредставление</field>
+			</item>
+			<item>
+				<field>Список_МоиЗадачи_ЗадачиНаМнеДеревоВремяНаМне</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Список_МоиЗадачи_ЗадачиНаМнеДерево.ЭтоГруппа</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">true</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">style:ЦветГруппВСписках</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Шрифт</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Font" ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>Список_НаРазработку_ДеревоНаименование</field>
+			</item>
+			<item>
+				<field>Список_НаРазработку_ДеревоТип</field>
+			</item>
+			<item>
+				<field>Список_НаРазработку_ДеревоОценкаТрудозатрат</field>
+			</item>
+			<item>
+				<field>Список_НаРазработку_ДеревоДатаСоздания</field>
+			</item>
+			<item>
+				<field>Список_НаРазработку_ДеревоПорядок</field>
+			</item>
+			<item>
+				<field>Список_НаРазработку_ДеревоОжидание</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Список_НаРазработку_Дерево.ЭтоГруппа</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">true</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">style:ЦветГруппВСписках</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Шрифт</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Font" ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>Список_УправлениеНагрузкой_Дерево</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Список_УправлениеНагрузкой_Дерево.ЭтоГруппа</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">true</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">style:ЦветГруппВСписках</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Шрифт</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Font" ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<use>false</use>
+		<selection>
+			<item>
+				<field>Список_ЗадачиЗаПериодЗадачаПредставление</field>
+			</item>
+			<item>
+				<field>Список_ЗадачиЗаПериодНазначена</field>
+			</item>
+			<item>
+				<field>Список_ЗадачиЗаПериодАвтор</field>
+			</item>
+			<item>
+				<field>Список_ЗадачиЗаПериодСистема</field>
+			</item>
+			<item>
+				<field>Список_ЗадачиЗаПериодСоздана</field>
+			</item>
+			<item>
+				<field>Список_ЗадачиЗаПериодИзменениеСтатуса</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Список_ЗадачиЗаПериод.Статус</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Справочник.СтатусыОбъектов.Тестирование</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:PowderBlue</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<use>false</use>
+		<selection>
+			<item>
+				<field>Список_ЗадачиЗаПериодЗадачаПредставление</field>
+			</item>
+			<item>
+				<field>Список_ЗадачиЗаПериодНазначена</field>
+			</item>
+			<item>
+				<field>Список_ЗадачиЗаПериодАвтор</field>
+			</item>
+			<item>
+				<field>Список_ЗадачиЗаПериодСистема</field>
+			</item>
+			<item>
+				<field>Список_ЗадачиЗаПериодСоздана</field>
+			</item>
+			<item>
+				<field>Список_ЗадачиЗаПериодИзменениеСтатуса</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Список_ЗадачиЗаПериод.Статус</left>
+				<comparisonType>InList</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Справочник.СтатусыОбъектов.CodeReview</right>
+				<right xsi:type="dcscor:DesignTimeValue">Справочник.СтатусыОбъектов.ВРаботе</right>
+				<right xsi:type="dcscor:DesignTimeValue">Справочник.СтатусыОбъектов.ВРеализацию</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">style:ЦветГруппировочнойСтрокиТаблицы</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<use>false</use>
+		<selection>
+			<item>
+				<field>Список_ЗадачиЗаПериодЗадачаПредставление</field>
+			</item>
+			<item>
+				<field>Список_ЗадачиЗаПериодНазначена</field>
+			</item>
+			<item>
+				<field>Список_ЗадачиЗаПериодАвтор</field>
+			</item>
+			<item>
+				<field>Список_ЗадачиЗаПериодСистема</field>
+			</item>
+			<item>
+				<field>Список_ЗадачиЗаПериодСоздана</field>
+			</item>
+			<item>
+				<field>Список_ЗадачиЗаПериодИзменениеСтатуса</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Список_ЗадачиЗаПериод.Статус</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Справочник.СтатусыОбъектов.НаДоработку</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">style:ЦветПроблемнойЗадачи</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>Список_НаРазработку_ДеревоТипЗадачиНаименование</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Список_НаРазработку_Дерево.ЭтоГруппа</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">true</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>Отображать</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<use>false</use>
+		<selection>
+			<item>
+				<field>Список_МоиЗадачи_ЗадачиНаМнеДеревоНаименование</field>
+			</item>
+			<item>
+				<field>Список_МоиЗадачи_ЗадачиНаМнеДеревоСтатус</field>
+			</item>
+			<item>
+				<field>Список_МоиЗадачи_ЗадачиНаМнеДеревоСистемаПредставление</field>
+			</item>
+			<item>
+				<field>Список_МоиЗадачи_ЗадачиНаМнеДеревоВремяНаМне</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Список_МоиЗадачи_ЗадачиНаМнеДерево.Статус</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Справочник.СтатусыОбъектов.Тестирование</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:PowderBlue</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<use>false</use>
+		<selection>
+			<item>
+				<field>Список_МоиЗадачи_ЗадачиНаМнеДеревоНаименование</field>
+			</item>
+			<item>
+				<field>Список_МоиЗадачи_ЗадачиНаМнеДеревоСтатус</field>
+			</item>
+			<item>
+				<field>Список_МоиЗадачи_ЗадачиНаМнеДеревоВремяНаМне</field>
+			</item>
+			<item>
+				<field>Список_МоиЗадачи_ЗадачиНаМнеДеревоСистемаПредставление</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Список_МоиЗадачи_ЗадачиНаМнеДерево.Статус</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Справочник.СтатусыОбъектов.НаДоработку</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">style:ЦветПроблемнойЗадачи</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<use>false</use>
+		<selection>
+			<item>
+				<field>Список_МоиЗадачи_ЗадачиНаМнеДеревоНаименование</field>
+			</item>
+			<item>
+				<field>Список_МоиЗадачи_ЗадачиНаМнеДеревоСтатус</field>
+			</item>
+			<item>
+				<field>Список_МоиЗадачи_ЗадачиНаМнеДеревоСистемаПредставление</field>
+			</item>
+			<item>
+				<field>Список_МоиЗадачи_ЗадачиНаМнеДеревоВремяНаМне</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Список_МоиЗадачи_ЗадачиНаМнеДерево.Статус</left>
+				<comparisonType>InList</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Справочник.СтатусыОбъектов.CodeReview</right>
+				<right xsi:type="dcscor:DesignTimeValue">Справочник.СтатусыОбъектов.ВРаботе</right>
+				<right xsi:type="dcscor:DesignTimeValue">Справочник.СтатусыОбъектов.ВРеализацию</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">style:ЦветГруппировочнойСтрокиТаблицы</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>Список_ЗаявкиНаДоработкуВремяНаДоработке</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Список_ЗаявкиНаДоработку.ВремяНаДоработке</left>
+				<comparisonType>NotFilled</comparisonType>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>ЧН=0</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>Список_МоиЗадачи_ЗаявкиНаДоработкуВремяНаДоработке</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Список_МоиЗадачи_ЗаявкиНаДоработку.ВремяНаДоработке</left>
+				<comparisonType>NotFilled</comparisonType>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>ЧН=0</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+</ConditionalAppearance>

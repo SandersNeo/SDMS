@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1cbdaa1f-fb95-4595-81f1-b84135fd30c3">
+  <producedTypes>
+    <containerType typeId="bc63455e-ac58-4ec6-833f-f0a789523466" valueTypeId="673c1efd-6d7b-4596-921a-cf7b640dac02"/>
+  </producedTypes>
+  <name>ОбъектНаблюдения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Объект наблюдения</value>
+  </synonym>
+  <type>
+    <types>DocumentRef.ВнутреннееЗадание</types>
+    <types>CatalogRef.Проекты</types>
+    <types>DocumentRef.Задача</types>
+    <types>DocumentRef.ЗаявкаНаРазработку</types>
+  </type>
+</mdclass:DefinedType>

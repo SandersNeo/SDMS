@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="10c63632-d704-4f9f-b66f-b55e62ccc690">
+  <name>СтатусыОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы объектов</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>Catalog.СтатусыОбъектов</content>
+  <content>InformationRegister.НастройкиПереходаСтатусовОбъектов</content>
+  <content>InformationRegister.МинимальныеСтатусыЗаявок</content>
+  <content>InformationRegister.ИсторияСтатусовЗаявокПоСистемам</content>
+  <content>InformationRegister.ИсторияМинимальныхСтатусовЗаявок</content>
+  <content>InformationRegister.СтатусыЗаявокПоСистемам</content>
+  <content>InformationRegister.СтатусыЗаявокПоГруппамРазработки</content>
+  <content>InformationRegister.СтатусыЗаявокПоСистемамФилиалов</content>
+  <content>Catalog.ПричиныИзмененияСтатусов</content>
+  <content>CommonPicture.СтатусыОбъектов</content>
+  <content>CommonPicture.СтатусCodeReview</content>
+  <content>CommonPicture.СтатусTestReview</content>
+  <content>CommonPicture.СтатусВнедрение</content>
+  <content>CommonPicture.СтатусВнутреннееТестирование</content>
+  <content>CommonPicture.СтатусВозвратВРаботу</content>
+  <content>CommonPicture.СтатусВРаботе</content>
+  <content>CommonPicture.СтатусВРеализацию</content>
+  <content>CommonPicture.СтатусГотовоКПубликации</content>
+  <content>CommonPicture.СтатусДокументирование</content>
+  <content>CommonPicture.СтатусМасштабирование</content>
+  <content>CommonPicture.СтатусНаДоработку</content>
+  <content>CommonPicture.СтатусОтклонен</content>
+  <content>CommonPicture.СтатусНовый</content>
+  <content>CommonPicture.СтатусОтложен</content>
+  <content>CommonPicture.СтатусПриостановлен</content>
+  <content>CommonPicture.СтатусПротестирован</content>
+  <content>CommonPicture.СтатусПубликация</content>
+  <content>CommonPicture.СтатусРассмотрение</content>
+  <content>CommonPicture.СтатусРассмотрен</content>
+  <content>CommonPicture.СтатусРевьюТребований</content>
+  <content>CommonPicture.СтатусРешен</content>
+  <content>CommonPicture.СтатусТестирование</content>
+  <content>CommonPicture.СтатусыОбъектов24</content>
+  <content>InformationRegister.СвойстваЗадач</content>
+  <content>InformationRegister.ПричиныИзмененияСтатусаОбъектов</content>
+  <content>CommonPicture.СтатусDesignReview</content>
+  <content>CommonPicture.СтатусЗапросТребований</content>
+  <content>CommonPicture.СтатусПроработка</content>
+  <content>CommonPicture.СтатусDocReview</content>
+  <content>CommonPicture.СтатусТехническоеОписание</content>
+  <content>CommonPicture.СтатусПользовательскоеОписание</content>
+  <parentSubsystem>Subsystem.БазоваяФункциональность</parentSubsystem>
+</mdclass:Subsystem>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="24f19944-f9d3-4942-8551-7768e2fdf8ea">
+  <producedTypes>
+    <refType typeId="bb5ab15d-9cff-497c-ac6c-39b39774446c" valueTypeId="eeaea1f6-47ea-4ed6-aa29-6800d6015ad3"/>
+    <listType typeId="fad2db1c-6ea3-4156-93d7-c901152fa934" valueTypeId="908a4c24-891a-44ee-b91d-25bcbd5575b1"/>
+    <managerType typeId="8df7a5bb-6864-4673-a378-60b588358ce8" valueTypeId="3c2a9888-f693-4cdc-9fe4-af5311a93136"/>
+  </producedTypes>
+  <name>ТипыИзбранныхОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы избранных объектов</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="e8788f04-0b25-40ed-8260-23b975bb3e5e">
+    <name>Пользователи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователи</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e80198fb-43db-413a-8c93-cbfe90a74c90">
+    <name>Направления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Направления</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="713c8cb8-5469-49db-a950-55a730f279d3">
+    <name>Системы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Системы</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ba9b15fb-526b-4311-93e9-d6d85ffe4216">
+    <name>Филиалы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Филиалы</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="061b5d9f-f5a4-4a49-9927-98602b4d2d7e">
+    <name>ГруппыЗаказчиков</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группы заказчиков</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="466a766c-e68e-4830-a0e6-93e3f2fa634e">
+    <name>Продукты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Продукты</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

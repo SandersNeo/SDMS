@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:StyleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="672353b0-8d3d-466e-a31c-e0fe2b883e94">
+  <name>ЦветГиперссылки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Цвет гиперссылки</value>
+  </synonym>
+  <value xsi:type="core:ColorValue">
+    <value xsi:type="core:ColorDef">
+      <red>13</red>
+      <green>97</green>
+      <blue>175</blue>
+    </value>
+  </value>
+</mdclass:StyleItem>

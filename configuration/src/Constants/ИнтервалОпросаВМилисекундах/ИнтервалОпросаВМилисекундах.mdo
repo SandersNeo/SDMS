@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9ff47dad-c93c-44c0-8c39-1542be8250e6">
+  <producedTypes>
+    <managerType typeId="aa30fae6-8257-4182-b3d3-847c31348f22" valueTypeId="8061ee2f-de23-4d40-96df-00677d77d5e8"/>
+    <valueManagerType typeId="74c3cece-bc74-4e4c-8df7-c0a10a77f7f5" valueTypeId="a0d5ba88-4ce0-4ba3-b33b-bbecba4e33c5"/>
+    <valueKeyType typeId="c8cb94a5-01a2-4c89-8a0d-7e01729420ba" valueTypeId="80d3f18e-458b-4ea6-8961-7a392b2e4806"/>
+  </producedTypes>
+  <name>ИнтервалОпросаВМилисекундах</name>
+  <synonym>
+    <key>ru</key>
+    <value>Интервал опроса в милисекундах</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>10</precision>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

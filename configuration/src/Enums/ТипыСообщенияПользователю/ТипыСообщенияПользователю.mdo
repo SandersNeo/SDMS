@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="302457a2-781c-456f-aab4-90d755616e4f">
+  <producedTypes>
+    <refType typeId="9aaadbaf-367d-44cf-9972-997e901b2ab9" valueTypeId="5c10d839-4ba8-4436-b4a3-b3a5d927dc66"/>
+    <listType typeId="bd4a6eac-5d07-41e3-a9b8-7afdd5733ee0" valueTypeId="66bf95ec-9c0a-45a1-8a00-cdd1e3838b01"/>
+    <managerType typeId="ebc14113-e3f5-42d5-9f2e-a8a3fe96be6c" valueTypeId="bf132b87-fc7c-43c3-9dd8-3ef84a473fc0"/>
+  </producedTypes>
+  <name>ТипыСообщенияПользователю</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы сообщения пользователю</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="af8577b1-ff60-45c5-ae8a-1e754864271f">
+    <name>ИзменениеОбъекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменение объекта</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c8346443-e22b-4b18-8a01-dc81269068e0">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

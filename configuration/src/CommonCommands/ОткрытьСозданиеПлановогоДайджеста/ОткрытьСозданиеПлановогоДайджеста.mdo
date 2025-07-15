@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="19c7a107-a3ee-4136-96aa-b95e3cf7f51b">
+  <name>ОткрытьСозданиеПлановогоДайджеста</name>
+  <synonym>
+    <key>ru</key>
+    <value>Открыть создание планового дайджеста</value>
+  </synonym>
+  <group>ActionsPanelTools</group>
+  <commandParameterType/>
+  <representation>Auto</representation>
+</mdclass:CommonCommand>

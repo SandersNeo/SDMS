@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<style:Style xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:style="http://g5.1c.ru/v8/dt/style">
+  <items xsi:type="style:ColorStyleItem">
+    <name>ActivityColor</name>
+    <color xsi:type="core:ColorDef">
+      <red>219</red>
+      <green>255</green>
+      <blue>231</blue>
+    </color>
+  </items>
+  <items xsi:type="style:ColorStyleItem">
+    <name>AccentColor</name>
+    <color xsi:type="core:ColorDef">
+      <red>35</red>
+      <green>189</green>
+      <blue>87</blue>
+    </color>
+  </items>
+  <items xsi:type="style:ColorStyleItem">
+    <name>NavigationColor</name>
+    <color xsi:type="core:ColorDef">
+      <red>247</red>
+      <green>247</green>
+      <blue>247</blue>
+    </color>
+  </items>
+  <items xsi:type="style:ColorStyleItem">
+    <name>AuxiliaryNavigationColor</name>
+    <color xsi:type="core:ColorDef">
+      <red>237</red>
+      <green>237</green>
+      <blue>237</blue>
+    </color>
+  </items>
+  <items xsi:type="style:ColorStyleItem">
+    <name>ImportantColor</name>
+    <color xsi:type="core:ColorDef">
+      <red>5</red>
+      <green>151</green>
+      <blue>253</blue>
+    </color>
+  </items>
+  <items xsi:type="style:ColorStyleItem">
+    <name>StyleItem.БыстрыеОтборыФонГруппы</name>
+    <color xsi:type="core:ColorRef">
+      <color>Style.БыстрыеОтборыФонГруппы</color>
+    </color>
+  </items>
+  <items xsi:type="style:ColorStyleItem">
+    <name>StyleItem.ЦветАктивнойГиперссылки</name>
+    <color xsi:type="core:ColorRef">
+      <color>Style.AccentColor</color>
+    </color>
+  </items>
+  <items xsi:type="style:ColorStyleItem">
+    <name>StyleItem.ЦветГруппВСписках</name>
+    <color xsi:type="core:ColorDef">
+      <red>247</red>
+      <green>247</green>
+      <blue>247</blue>
+    </color>
+  </items>
+  <items xsi:type="style:ColorStyleItem">
+    <name>StyleItem.ЦветГруппировочнойСтрокиТаблицы</name>
+    <color xsi:type="core:ColorRef">
+      <color>Style.ЦветГруппировочнойСтрокиТаблицы</color>
+    </color>
+  </items>
+  <items xsi:type="style:ColorStyleItem">
+    <name>StyleItem.ЦветЗаголовкаИнформационнойПанели</name>
+    <color xsi:type="core:ColorDef">
+      <red>35</red>
+      <green>189</green>
+      <blue>87</blue>
+    </color>
+  </items>
+  <items xsi:type="style:ColorStyleItem">
+    <name>StyleItem.ЦветПодложки</name>
+    <color xsi:type="core:ColorDef">
+      <red>247</red>
+      <green>247</green>
+      <blue>247</blue>
+    </color>
+  </items>
+  <items xsi:type="style:ColorStyleItem">
+    <name>StyleItem.ЦветПодсказкиОбязательногоПоля</name>
+    <color xsi:type="core:ColorDef">
+      <red>255</red>
+      <green>239</green>
+      <blue>239</blue>
+    </color>
+  </items>
+  <items xsi:type="style:ColorStyleItem">
+    <name>StyleItem.ЦветПроблемнойЗадачи</name>
+    <color xsi:type="core:ColorDef">
+      <red>255</red>
+      <green>131</green>
+      <blue>123</blue>
+    </color>
+  </items>
+  <items xsi:type="style:ColorStyleItem">
+    <name>StyleItem.ЦветТекстаВыходнойДень</name>
+    <color xsi:type="core:ColorDef">
+      <red>255</red>
+      <green>92</green>
+      <blue>82</blue>
+    </color>
+  </items>
+  <items xsi:type="style:ColorStyleItem">
+    <name>StyleItem.ЦветФонаБлоковИнформационнойПанели</name>
+    <color xsi:type="core:ColorRef">
+      <color>Style.ЦветФонаШапкиДокумента</color>
+    </color>
+  </items>
+  <items xsi:type="style:ColorStyleItem">
+    <name>StyleItem.ЦветФонаКорректногоЗначенияОтчета</name>
+    <color xsi:type="core:ColorDef">
+      <red>210</red>
+      <green>252</green>
+      <blue>194</blue>
+    </color>
+  </items>
+  <items xsi:type="style:ColorStyleItem">
+    <name>StyleItem.ЦветФонаПроблемногоЗначенияОтчета</name>
+    <color xsi:type="core:ColorDef">
+      <red>255</red>
+      <green>213</green>
+      <blue>210</blue>
+    </color>
+  </items>
+  <items xsi:type="style:ColorStyleItem">
+    <name>StyleItem.ЦветФонаШапкиДокумента</name>
+    <color xsi:type="core:ColorRef">
+      <color>Style.ЦветФонаШапкиДокумента</color>
+    </color>
+  </items>
+</style:Style>

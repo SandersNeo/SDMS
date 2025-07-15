@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="22e111df-bfc2-4d40-b2f4-b809ac0bfde6">
+  <producedTypes>
+    <refType typeId="18c06d14-9afe-4f0e-87f6-ad7c3f2c90df" valueTypeId="9f6a00fe-c743-47ef-8766-59ccd0964a50"/>
+    <listType typeId="75c75a15-8f83-4b36-8d72-f348437ed3ec" valueTypeId="59fe00c6-7ec0-44af-9657-284e8c05c5a6"/>
+    <managerType typeId="13b86848-ed79-48a9-8a08-7f675fde98e6" valueTypeId="eb7f44ab-297c-4801-b534-6dbca922bb48"/>
+  </producedTypes>
+  <name>ТипыКанбана</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы канбана</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="9d2c3b54-7617-4a88-bb37-4ca369e6f405">
+    <name>ЗадачаНовый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задача</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="745f38fd-40aa-423f-850e-a6204bdf6291">
+    <name>ЗаявкаНаРазработку</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявки моего филиала</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b371bff4-4e1c-4584-ab2c-47c3d892ef22">
+    <name>Проекты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проекты</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="2ad0a647-bb20-4f5d-98a9-df594d67463c">
+    <name>Кастомный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кастомный</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ec3b67e6-38c1-4fc6-9e9f-258e74489ce7">
+    <name>ВнутреннееЗаданиеНовый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Внутреннее задание</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="291159cc-b671-4bfb-9dcf-31ecf0888985">
+    <name>ЗаявкиМоегоФилиала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявки моего филиала</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="699484b0-1597-40b8-893f-bbd9728a171b">
+    <name>ПулЗаявокНовый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пул заявок</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

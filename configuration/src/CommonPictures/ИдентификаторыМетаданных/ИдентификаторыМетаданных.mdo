@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a3a0c010-bc4a-4b23-b7c9-65042dea4261">
+  <name>ИдентификаторыМетаданных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Идентификаторы метаданных</value>
+  </synonym>
+</mdclass:CommonPicture>

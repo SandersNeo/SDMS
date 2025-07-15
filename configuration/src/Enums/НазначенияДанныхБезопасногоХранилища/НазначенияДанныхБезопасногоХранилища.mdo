@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="56d6de85-5072-4a8b-9a4a-1552a07c57e8">
+  <producedTypes>
+    <refType typeId="842ce3ce-5105-4325-80e1-f83bf5f0d5a9" valueTypeId="2640941f-209f-47ab-9e28-1ae2370e807a"/>
+    <listType typeId="c70b04cd-7236-4378-935c-523a31888ca5" valueTypeId="92a61aae-ff3c-48fe-bc3b-6e161e5ff42c"/>
+    <managerType typeId="728218f9-9a88-4dba-afb7-5a5f4a0edfe6" valueTypeId="f03eb39d-c824-4a56-872a-771a62964f6f"/>
+  </producedTypes>
+  <name>НазначенияДанныхБезопасногоХранилища</name>
+  <synonym>
+    <key>ru</key>
+    <value>Назначения данных безопасного хранилища</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <choiceMode>BothWays</choiceMode>
+  <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
+  <enumValues uuid="046280a1-2e81-4102-b44c-a5ef0e027e1d">
+    <name>ЗаголовкиЗапросаRocketChatАдминистратора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заголовки запроса rocket chat администратора</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="516e2614-0212-42d6-866a-9f2cb37f904b">
+    <name>КлючПодписиДляВыпускаТокенаПользователя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ключ подписи для выпуска токена пользователя</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="88ea1bad-1ff7-4faf-8741-6606357780b2">
+    <name>НастройкиПодключенияКMattermost</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки подключения к mattermost</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="380a1c68-f508-4769-a649-f1c695095c92">
+    <name>НастройкиПодключенияКRocketChat</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки подключения к rocket chat</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="14ee2767-fbb4-4826-a338-b3397928f745">
+    <name>НастройкиПодключенияКСерверуАдминистрирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки подключения к серверу администрирования</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

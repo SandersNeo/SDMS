@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:StyleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4e248953-46de-4879-bdeb-eb3ce016eace">
+  <name>ЦветПроблемнойЗадачи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Цвет проблемной задачи</value>
+  </synonym>
+  <value xsi:type="core:ColorValue">
+    <value xsi:type="core:ColorRef">
+      <color>Web.Pink</color>
+    </value>
+  </value>
+</mdclass:StyleItem>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="705b5a16-ffdc-4aa2-9227-edbce19c271e">
+  <name>Приложение</name>
+  <synonym>
+    <key>ru</key>
+    <value>Приложение</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>CommonModule.ГлобальныйПоискКлиент</content>
+  <content>CommonModule.ГлобальныйПоискВызовСервера</content>
+  <content>CommonModule.ГлобальныйПоискКлиентПовтИсп</content>
+  <content>CommonModule.ПолнотекстовыйПоискВызовСервера</content>
+  <content>CommonModule.ПолнотекстовыйПоискКлиент</content>
+  <content>CommonModule.Приложение</content>
+  <content>CommonModule.ПриложениеВызовСервера</content>
+  <content>CommonModule.ПриложениеКлиент</content>
+  <content>SessionParameter.АдресаWebОкружения</content>
+  <content>SessionParameter.РазрабатываемыеСистемы</content>
+  <content>SessionParameter.РольВОтделеIT</content>
+  <content>SessionParameter.СвязанныеФилиалы</content>
+  <content>SessionParameter.ТекущийПользователь</content>
+  <content>SessionParameter.Филиал</content>
+  <content>CommonModule.ПриложениеКлиентГлобальный</content>
+  <content>CommonModule.ПриложениеКлиентСервер</content>
+  <content>CommonModule.WebОкружениеВызовСервера</content>
+  <content>CommonModule.УправлениеДоступом</content>
+  <content>CommonModule.УправлениеДоступомВызовСервера</content>
+  <content>CommonModule.УправлениеДоступомКлиент</content>
+  <content>CommonModule.УправлениеДоступомПовтИсп</content>
+  <content>Constant.КорневойURL</content>
+  <content>Constant.КаталогПубликацииБазы</content>
+  <content>Constant.КаталогСлужебныхДанных</content>
+  <content>Constant.АдресПродуктовойБазы</content>
+  <content>Constant.ДоменСервераИнформационнойБазы</content>
+  <content>InformationRegister.СтатистикаВходовПользователей</content>
+  <content>InformationRegister.ОтслеживаниеИспользованияФункциональности</content>
+  <content>SessionParameter.ДокументHTMLСформирован</content>
+  <content>SessionParameter.ДоступенВнешнийСайт</content>
+  <content>SessionParameter.ДоступныеФилиалыРуководителя</content>
+  <parentSubsystem>Subsystem.БазоваяФункциональность</parentSubsystem>
+</mdclass:Subsystem>

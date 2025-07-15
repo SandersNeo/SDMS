@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="41e6560e-3492-4171-8e8e-af7fad1b52ed">
+  <name>Комментарии</name>
+  <synonym>
+    <key>ru</key>
+    <value>Комментарии</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>InformationRegister.Комментарии</content>
+  <content>InformationRegister.СвязиКомментариев</content>
+  <content>DefinedType.ИсточникКомментариев</content>
+  <content>InformationRegister.НепросмотренныеКомментарии</content>
+  <parentSubsystem>Subsystem.БазоваяФункциональность</parentSubsystem>
+</mdclass:Subsystem>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3c23c166-c9a9-4f63-b154-162645d57d97">
+  <producedTypes>
+    <managerType typeId="d7e93ddb-7552-432d-b7c1-07d1ba9ce47f" valueTypeId="26b5122a-e692-44ab-86fc-a4b1297bb690"/>
+    <valueManagerType typeId="a36abf47-32db-40c0-a792-9ab701ac50af" valueTypeId="37a35107-0bcf-4af3-945e-08f6b5c20c89"/>
+    <valueKeyType typeId="2d25149d-99b5-45da-b659-e5ed68d7a991" valueTypeId="60f77a68-a1e6-4139-a8c5-d7c85f8f1bcf"/>
+  </producedTypes>
+  <name>ЗапретитьДоступВебКлиент</name>
+  <synonym>
+    <key>ru</key>
+    <value>Запретить доступ веб-клиент</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

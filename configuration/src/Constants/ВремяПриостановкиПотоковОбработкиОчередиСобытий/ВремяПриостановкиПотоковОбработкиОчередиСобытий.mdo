@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="45f3c0c4-4121-44ef-88ab-df840ebe7971">
+  <producedTypes>
+    <managerType typeId="b263265d-cf28-458c-8b2d-a949b1d5866d" valueTypeId="36c2bab5-e1d4-4ffd-a00f-41496e71cb19"/>
+    <valueManagerType typeId="bdd3a3f6-3d05-4d81-8c80-8f0358da93fd" valueTypeId="f5951709-924c-4850-a080-1a8aa7dc3c34"/>
+    <valueKeyType typeId="5d432b7f-62c5-5e0a-894d-56868fe98906" valueTypeId="d370747a-3531-5a3a-b380-e80faf7037b3"/>
+  </producedTypes>
+  <name>ВремяПриостановкиПотоковОбработкиОчередиСобытий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Время приостановки потоков обработки очереди событий (сек)</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>3</precision>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

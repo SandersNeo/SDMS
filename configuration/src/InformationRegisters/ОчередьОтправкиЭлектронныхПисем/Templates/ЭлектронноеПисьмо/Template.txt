@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Автоматическое уведомление - Система задач SDMS</title>
+<style type="text/css">
+@media only screen and (max-width: 550px), screen and (max-device-width: 550px){
+body[yahoo] .buttonwrapper {background-color: transparent!important;}
+body[yahoo] .button {padding: 0px!important;}
+body[yahoo] .button a {background-color: #e05443; padding: 15px 15px 13px!important;}}
+</style>
+</head>
+<body yahoo bgcolor="#f6f8f1" style="margin: 0; padding: 0; min-width: 100%!important;">
+<table width="100%" bgcolor="#f6f8f1" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td>
+<!--[if (gte mso 9)|(IE)]>
+<table width="600" align="center" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td>
+<![endif]-->     
+<table bgcolor="#ffffff" align="center" cellpadding="0" cellspacing="0" border="0" style="width: 100%; max-width: 600px;">
+<tr>
+<td bgcolor="#c7d8a7" style="padding: 40px 30px 20px 30px;">
+<table width="70" align="left" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="70" style="padding: 0 20px 20px 0;">
+<img src="%IconImage%" width="70" height="70" border="0" alt="" style="height: auto;"/>
+</td>
+</tr>
+</table>
+<!--[if (gte mso 9)|(IE)]>
+<table width="425" align="left" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td>
+<![endif]-->
+<table class="col425" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; max-width: 425px;">
+<tr>
+<td height="70">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td style="font-size: 15px; color: #ffffff; font-family: sans-serif; letter-spacing: 10px; padding: 0 0 0 3px;">
+Система задач SDMS
+</td>
+</tr>
+<tr>
+<td style="font-size: 33px; line-height: 38px; font-weight: bold; color: #153643; font-family: sans-serif; padding: 5px 0 0 0;">
+Уведомление
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!--[if (gte mso 9)|(IE)]>
+</td>
+</tr>
+</table>
+<![endif]-->
+</td>
+</tr>
+<tr>
+<td style="padding: 30px 30px 30px 30px; border-bottom: 1px solid #f2eeed;">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td style="font-family: sans-serif; font-size: 16px; line-height: 22px; color: #153643;">
+%MessageText%
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="padding: 30px 30px 30px 30px; border-bottom: 1px solid #f2eeed;">
+<table width="115" align="left" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="115" style="padding: 0 20px 20px 0;">
+<img class="fix" src="%ArticleImage%" width="115" height="115" border="0" alt=""/>
+</td>
+</tr>
+</table>
+<!--[if (gte mso 9)|(IE)]>
+<table width="380" align="left" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td>
+<![endif]-->
+<table class="col380" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; max-width: 380px;">
+<tr>
+<td>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td style="font-family: sans-serif; font-size: 16px; line-height: 22px; color: #153643;">
+Более подробную информацию можно посмотреть на %publicationURL%.
+</td>
+</tr>
+<tr>
+<td style="padding: 20px 0 0 0;">
+<table bgcolor="#e05443" border="0" cellspacing="0" cellpadding="0" style="">
+<tr>
+<td height="45" style="text-align: center; font-size: 18px; font-family: sans-serif; font-weight: bold; padding: 0 30px 0 30px;">
+<a href="%publicationURL%" target="_blank" style="text-align: center; font-size: 18px; font-family: sans-serif; font-weight: bold; padding: 0 30px 0 30px; color: #ffffff; text-decoration: none;">Перейти</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!--[if (gte mso 9)|(IE)]>
+</td>
+</tr>
+</table>
+<![endif]-->
+</td>
+</tr>
+<tr>
+<td style="padding: 30px 30px 30px 30px; font-family: sans-serif; font-size: 16px; line-height: 22px;">
+Это сообщение отправлено автоматически. Пожалуйста, не отвечайте на него.
+</td>
+</tr>
+<tr>
+<td bgcolor="#44525f" style="padding: 20px 30px 15px 30px;">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td align="center" style="font-family: sans-serif; font-size: 14px; color: #ffffff;">
+&reg; 2002-%CurrentYear% <a href="http://www.dns-shop.ru/" target="_blank" style="color: #ffffff;">Компания DNS</a><br/>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!--[if (gte mso 9)|(IE)]>
+</td>
+</tr>
+</table>
+<![endif]-->
+</td>
+</tr>
+</table>
+</body>
+</html>

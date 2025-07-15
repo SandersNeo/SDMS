@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9c0e7f58-076c-4804-9021-580159d18a1d">
+  <producedTypes>
+    <managerType typeId="ecf7125a-fa56-46ed-9fba-83b854c03118" valueTypeId="ef6be878-473d-4886-a885-ff0f7342d2f8"/>
+    <valueManagerType typeId="854dd914-8986-44a2-a26a-b34d1e6cb54a" valueTypeId="d7e5590a-dd59-4492-b64c-30bdd34495c6"/>
+    <valueKeyType typeId="45c66c85-271f-575f-b398-e45101d3eb3c" valueTypeId="58ac6d8b-845c-5feb-9b13-83032203ca95"/>
+  </producedTypes>
+  <name>ЗапрещатьЗагрузкуФайловПоРасширению</name>
+  <synonym>
+    <key>ru</key>
+    <value>Запрещать загрузку файлов по расширению</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

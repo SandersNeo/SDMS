@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="63249156-41d3-4d34-8b08-ec02315c4999">
+  <producedTypes>
+    <containerType typeId="e39e275b-4427-4ca0-b623-bd0fad512d05" valueTypeId="9d64a892-ef42-43e2-8555-ddf8b38e6d96"/>
+  </producedTypes>
+  <name>ВладелецДополнительныхРеквизитов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Владелец дополнительных реквизитов</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.КлассификаторИспользованияРабочегоВремени</types>
+    <types>CatalogRef.Пользователи</types>
+    <types>CatalogRef.ЮридическиеЛица</types>
+    <types>DocumentRef.ВнутреннееЗадание</types>
+    <types>CatalogRef.Проекты</types>
+    <types>DocumentRef.Трудозатраты</types>
+    <types>CatalogRef.ВидыДеятельности</types>
+    <types>CatalogRef.НаправленияРазработки</types>
+    <types>DocumentRef.Задача</types>
+    <types>DocumentRef.ЗаявкаНаРазработку</types>
+    <types>CatalogRef.СистемыУчета</types>
+  </type>
+</mdclass:DefinedType>

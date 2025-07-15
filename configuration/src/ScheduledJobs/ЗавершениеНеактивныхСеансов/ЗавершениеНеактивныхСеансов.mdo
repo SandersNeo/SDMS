@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5b76327b-609f-4546-a0b8-326f07bd91c0">
+  <name>ЗавершениеНеактивныхСеансов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Завершение неактивных сеансов</value>
+  </synonym>
+  <methodName>CommonModule.РегламентныеЗаданияСервер.ЗавершениеНеактивныхСеансов</methodName>
+  <description>Завершение неактивных сеансов</description>
+  <key>ЗавершениеНеактивныхСеансов</key>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

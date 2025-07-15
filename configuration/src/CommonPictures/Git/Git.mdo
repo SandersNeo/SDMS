@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f5bd51dc-0c5b-4a2a-ac6a-7cadb91d5a7b">
+  <name>Git</name>
+  <synonym>
+    <key>ru</key>
+    <value>Git</value>
+  </synonym>
+</mdclass:CommonPicture>

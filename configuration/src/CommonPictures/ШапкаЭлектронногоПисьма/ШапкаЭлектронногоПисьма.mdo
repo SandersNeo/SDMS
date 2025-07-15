@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2d4c8611-1a1f-4512-86cf-60e6a61f03d6">
+  <name>ШапкаЭлектронногоПисьма</name>
+  <synonym>
+    <key>ru</key>
+    <value>Шапка электронного письма</value>
+  </synonym>
+  <comment>Используется для заполнения шаблона электронного письма в ПолучитьКартинкуШапкиПисьма()</comment>
+</mdclass:CommonPicture>

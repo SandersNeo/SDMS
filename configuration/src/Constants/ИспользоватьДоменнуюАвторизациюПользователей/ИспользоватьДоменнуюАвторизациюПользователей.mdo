@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f4c5ec83-fb2b-4968-a239-b0446bc052ca">
+  <producedTypes>
+    <managerType typeId="402fb996-b23b-4a7c-81cd-6ae76a8c56df" valueTypeId="deaa4149-35a1-45a8-a043-c5277bc35c5e"/>
+    <valueManagerType typeId="8617c9f7-ebef-4194-9b98-7637b7aca10e" valueTypeId="cf95e3cb-d243-4ede-b317-e44cfed5116d"/>
+    <valueKeyType typeId="7c7bcb65-d18f-5dca-be24-c7727e9c2662" valueTypeId="83daef20-c79a-577d-92d4-d3496a93e854"/>
+  </producedTypes>
+  <name>ИспользоватьДоменнуюАвторизациюПользователей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать доменную авторизацию пользователей</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

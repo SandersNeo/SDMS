@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fd47b593-41dd-4419-b77b-4051b6aaed31">
+  <name>Спринты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Спринты</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>CommonPicture.Отборы</content>
+  <content>CommonPicture.СпринтЗадания</content>
+  <content>CommonPicture.СпринтПланирование</content>
+  <content>Document.Спринт</content>
+  <content>Enum.ВидыСпринта</content>
+  <content>InformationRegister.ПланируемыеТрудозатратыПоСпринтам</content>
+  <content>InformationRegister.СоставСпринтов</content>
+  <content>InformationRegister.ИсторияСоставаСпринтов</content>
+  <content>CommonPicture.ИмпортироватьОписание</content>
+  <content>Report.ДоступноеВремяСпринта</content>
+  <parentSubsystem>Subsystem.БазоваяФункциональность</parentSubsystem>
+</mdclass:Subsystem>

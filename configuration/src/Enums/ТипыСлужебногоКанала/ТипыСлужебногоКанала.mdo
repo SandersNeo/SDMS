@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b4df6e5b-c5bf-4a52-a9d0-6dbd8c341199">
+  <producedTypes>
+    <refType typeId="eea37d4f-5558-41ee-abe4-f3f4e4278907" valueTypeId="1f0f569a-c883-4e84-8d5e-aee26079da23"/>
+    <listType typeId="d556d06f-ea6e-4d79-ad38-b668a81073ae" valueTypeId="b9f7bb39-1c96-422f-a0c1-62e16c3190f4"/>
+    <managerType typeId="22199513-cbb1-4cf0-b597-d19ad61f97b3" valueTypeId="308acac4-3692-4c43-81d4-df31c9026b63"/>
+  </producedTypes>
+  <name>ТипыСлужебногоКанала</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы служебного канала</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="05e16c38-82f7-4545-ad6d-2783c2d0cc4c">
+    <name>СообщениеОбОшибках</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сообщение об ошибках</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f1a12405-3e7b-4bea-97be-f92c6f305172">
+    <name>ТехническаяПроблема</name>
+    <synonym>
+      <key>ru</key>
+      <value>Техническая проблема</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cce6fae3-d6a5-4532-8280-ae4603b4e0b7">
+  <producedTypes>
+    <selectionType typeId="d1378949-8f10-4bf0-b90d-e5337117074c" valueTypeId="46213f53-cb83-4608-bdff-58eb6dd13370"/>
+    <listType typeId="303120c5-4152-4e42-9382-4fbcd7326a46" valueTypeId="1ac00a64-1a4d-4b5e-af39-b595772bc876"/>
+    <managerType typeId="6d58acb1-379a-4ffd-8269-80c4b0dd6333" valueTypeId="49c82f19-4b29-46d4-a593-e79cca8bb286"/>
+    <recordSetType typeId="d582adeb-c60f-479a-a344-e53136241099" valueTypeId="844f9a0a-e695-4f07-abd0-7b11b004e8ff"/>
+    <recordKeyType typeId="44d905e4-b16b-47b1-a475-85a14f412f41" valueTypeId="0a1837a4-032a-45d3-aa12-829527725796"/>
+    <recordType typeId="415783a6-75e4-4915-9e8d-413d099051ba" valueTypeId="dd04388f-1910-4849-a487-c88c7e6740c3"/>
+    <recordManagerType typeId="bfd1a6a4-523c-4a08-924a-e7c9c532a35a" valueTypeId="bbc9fc68-72b9-4c08-b25d-4254bac1463e"/>
+  </producedTypes>
+  <name>ДокументыПланаПроекта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы плана проекта</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="7284196c-b37d-4047-b090-4c584ac1a62a">
+    <name>КлючСобытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ключ события</value>
+    </synonym>
+    <type>
+      <types>UUID</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="93407283-4ed7-4888-bfbe-3b1ec198fb67">
+    <name>Документ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ВнутреннееЗадание</types>
+      <types>CatalogRef.Проекты</types>
+      <types>DocumentRef.ЗаявкаНаРазработку</types>
+      <types>CatalogRef.Файлы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

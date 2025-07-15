@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="985997b7-2dca-4951-b5e4-ecfea97ea770">
+  <producedTypes>
+    <managerType typeId="021f508e-b13b-432e-a4a6-ece7d5f82828" valueTypeId="c207565a-c81d-4c49-a115-2f7520b03463"/>
+    <valueManagerType typeId="6297803b-254f-4a41-9d64-16bcfca3debb" valueTypeId="77a01792-5eec-43b2-a6ae-b4d7672d9cdd"/>
+    <valueKeyType typeId="3a993534-edfe-5092-89f8-ad7940f3c074" valueTypeId="3414dea8-9615-5a94-bd21-85908f74c45c"/>
+  </producedTypes>
+  <name>КоэффициентМинимальногоВремениТрудозатрат</name>
+  <synonym>
+    <key>ru</key>
+    <value>Коэффициент минимального времени трудозатрат</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>3</precision>
+      <scale>2</scale>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <toolTip>
+    <key>ru</key>
+    <value>SDMS будет подсвечивать время в отчетах и отправлять оповещения, если трудоатрат внесено менее ПлановоеВремя * ЭтотКоэффициент</value>
+  </toolTip>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

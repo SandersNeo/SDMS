@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="892c591c-0ddf-48ca-adfb-86d599aca37e">
+  <name>ПросмотрТекстыОбъектовДляСемантическогоАнализа</name>
+  <synonym>
+    <key>ru</key>
+    <value>Просмотр регистра &quot;Тексты объектов для семантического анализа&quot;</value>
+  </synonym>
+  <comment>Нужен для того, что бы отрабатывал програмный полнотекстовый поиск по данному конкретному регистру</comment>
+</mdclass:Role>

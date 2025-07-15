@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f2786fe7-4550-4dac-bc81-7b714eae867c">
+  <name>РуководительНаправления</name>
+  <synonym>
+    <key>ru</key>
+    <value>Руководитель направления</value>
+  </synonym>
+</mdclass:Role>

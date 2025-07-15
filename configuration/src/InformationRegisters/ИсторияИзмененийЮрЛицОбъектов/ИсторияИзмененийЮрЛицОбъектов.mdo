@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5c7a13c5-1d47-4ca2-a71e-c329b4c70adb">
+  <producedTypes>
+    <selectionType typeId="f47108be-0f14-47ab-a505-654b0026cbe8" valueTypeId="b8e57ee2-9906-49fb-8615-59b05dc803c3"/>
+    <listType typeId="5f9bdcb5-6a1b-428a-a858-50aeb819cc1d" valueTypeId="fa4c9c6e-b074-4a96-999a-29a64b8333d4"/>
+    <managerType typeId="bcf67054-3791-4aff-9088-b80af4948b8c" valueTypeId="3e5217ff-4883-4fb4-a559-7c4b5c59258a"/>
+    <recordSetType typeId="10ecf36d-f192-47f5-b8a9-81348e4f53c9" valueTypeId="8b5fc463-4119-494f-beb7-68185791a5f6"/>
+    <recordKeyType typeId="741e88cc-24f1-46ef-9a73-910fc25ce9d3" valueTypeId="34f1d688-ef30-4ed7-b7fb-220910a6f311"/>
+    <recordType typeId="08d84e12-854d-44c4-b4b4-273051cb1084" valueTypeId="aac35956-a91d-4076-9b35-51831b89b392"/>
+    <recordManagerType typeId="8ec5f7e2-b7fc-407b-a665-1ec05569c04c" valueTypeId="9b1f9b75-5d62-47bb-b087-9b9dc03a046d"/>
+  </producedTypes>
+  <name>ИсторияИзмененийЮрЛицОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>История изменений юридических лиц объектов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <attributes uuid="6e2e6d9e-3d91-4729-bbc9-9c6e9a6f9e9b">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="6ed6629e-1836-478d-bb7b-008b3e5b41aa">
+    <name>ЮридическоеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Юридическое лицо</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЮридическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="dbe3dac8-558b-4063-b4c8-69a948b8413b">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ВнутреннееЗадание</types>
+      <types>CatalogRef.Проекты</types>
+      <types>DocumentRef.ЗаявкаНаРазработку</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

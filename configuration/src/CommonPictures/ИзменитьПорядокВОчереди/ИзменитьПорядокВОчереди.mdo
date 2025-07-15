@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b120c40a-eaa0-4966-b222-ce171f9d9e26">
+  <name>ИзменитьПорядокВОчереди</name>
+  <synonym>
+    <key>ru</key>
+    <value>Изменить порядок в очереди</value>
+  </synonym>
+</mdclass:CommonPicture>

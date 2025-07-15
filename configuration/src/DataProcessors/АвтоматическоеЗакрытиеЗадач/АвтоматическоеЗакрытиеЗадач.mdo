@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4c6c59c4-4ae2-4897-8b64-d061766e22c9">
+  <producedTypes>
+    <objectType typeId="d0720445-1cb8-4ad5-93b7-b076700ff8e3" valueTypeId="046425bf-ec0b-4435-a044-c4ef239f3169"/>
+    <managerType typeId="bd2abcee-c87b-4fe3-b5c4-c8c3423ea7af" valueTypeId="718a9b10-8697-457d-bdc9-52e4de2ef3a9"/>
+  </producedTypes>
+  <name>АвтоматическоеЗакрытиеЗадач</name>
+  <synonym>
+    <key>ru</key>
+    <value>Автоматическое закрытие задач</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.АвтоматическоеЗакрытиеЗадач.Form.ФормаОбработки</defaultForm>
+  <forms uuid="7725d2e8-1b7e-4020-a713-1f1d4ae002d1">
+    <name>ФормаОбработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма обработки</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ebf718f0-7da7-4b82-ae64-4568ee54c1ec">
+  <name>ОценкаПроизводительности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Оценка производительности</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>CommonModule.ОценкаПроизводительностиСлужебный</content>
+  <content>CommonModule.ОценкаПроизводительностиПовтИсп</content>
+  <content>CommonModule.ОценкаПроизводительностиКлиентСервер</content>
+  <content>CommonModule.ОценкаПроизводительностиКлиент</content>
+  <content>CommonModule.ОценкаПроизводительностиГлобальный</content>
+  <content>CommonModule.ОценкаПроизводительностиВызовСервера</content>
+  <content>CommonModule.ОценкаПроизводительности</content>
+  <content>SessionParameter.КомментарийЗамераВремени</content>
+  <content>Constant.ВыполнятьЗамерыПроизводительности</content>
+  <content>Constant.ДатаПоследнейВыгрузкиЗамеровПроизводительностиUTC</content>
+  <content>Constant.КоличествоЗамеровВПакетеЭкспорта</content>
+  <content>Constant.ОценкаПроизводительностиПериодЗаписи</content>
+  <content>Constant.ПериодХраненияЗамеров</content>
+  <content>Catalog.КлючевыеОперации</content>
+  <content>Catalog.ПрофилиКлючевыхОпераций</content>
+  <content>Enum.УровниПроизводительности</content>
+  <content>DataProcessor.ОценкаПроизводительности</content>
+  <content>InformationRegister.ЗамерыВремениТехнологические</content>
+  <content>InformationRegister.ЗамерыВремени</content>
+  <parentSubsystem>Subsystem.БазоваяФункциональность</parentSubsystem>
+</mdclass:Subsystem>

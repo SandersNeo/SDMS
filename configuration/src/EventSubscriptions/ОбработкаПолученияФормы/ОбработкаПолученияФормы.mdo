@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="86f0e7c0-c484-40b4-aa5d-a482bafd02d6">
+  <name>ОбработкаПолученияФормы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обработка получения формы</value>
+  </synonym>
+  <source>
+    <types>DataProcessorManager</types>
+    <types>ReportManager</types>
+  </source>
+  <event>FormGetProcessing</event>
+  <handler>CommonModule.ОбщегоНазначения.ОбработкаПолученияФормы</handler>
+</mdclass:EventSubscription>

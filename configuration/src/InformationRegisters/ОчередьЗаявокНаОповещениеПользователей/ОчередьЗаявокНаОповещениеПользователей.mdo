@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c8fd9e1a-8bec-4bc0-a73e-0da2707bda9b">
+  <producedTypes>
+    <selectionType typeId="b66fab31-92a0-4e82-8e4c-f01fe6a6f048" valueTypeId="d47c3146-545d-42ea-8c17-8c3c17382b88"/>
+    <listType typeId="64740546-e6a4-4546-8551-58f9d516043a" valueTypeId="e75162fe-7a05-4c59-b8c6-79b5ff1db7c2"/>
+    <managerType typeId="06ad7122-6272-41fe-9ba9-a802526eb670" valueTypeId="15f7085b-b272-44f9-aea2-23a951bb8459"/>
+    <recordSetType typeId="47792702-c155-48d6-a8e9-cc9043dd3b7e" valueTypeId="1e758232-db68-48c2-a43f-fda57b972273"/>
+    <recordKeyType typeId="3746fc43-4967-4241-b17b-ba5dae4d7c84" valueTypeId="926006e0-bfc2-49a5-aaaf-0b03070f5e57"/>
+    <recordType typeId="1fbca7f7-dc7a-4c93-ae8b-a7fa185d4099" valueTypeId="40af57fb-4932-45f4-b0f6-761b5919ee7f"/>
+    <recordManagerType typeId="982c48ae-3303-4324-bebc-eda033c8a4a1" valueTypeId="a0d852fa-7750-48b3-b699-c6c1ae7007b2"/>
+  </producedTypes>
+  <name>ОчередьЗаявокНаОповещениеПользователей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Очередь заявок на оповещение пользователей</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="9274a099-620a-429e-81de-a598a4aed522">
+    <name>Заявка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявка</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ЗаявкаНаРазработку</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

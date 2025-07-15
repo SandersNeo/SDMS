@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f16f6734-bfb1-40d5-85fa-af05e84d0280">
+  <producedTypes>
+    <managerType typeId="677bf2d8-3fe3-4e25-8df3-6098a0251320" valueTypeId="3f0c5ead-9dcc-4a05-879a-29aa045c6b2b"/>
+    <valueManagerType typeId="d4738bc0-a036-4585-a952-7fa20ce38aa8" valueTypeId="cf3e6492-d01a-4e0e-86d2-e4357f111a6f"/>
+    <valueKeyType typeId="969c4549-eaf4-55cc-b0ba-154fbcd51e5c" valueTypeId="6c474d9e-f6f1-555d-8805-b95e57dc6d95"/>
+  </producedTypes>
+  <name>КаталогСлужебныхДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Каталог служебных данных</value>
+  </synonym>
+  <comment>Каталог, в котором расположены служебные данные (js, css и прочее)</comment>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>100</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

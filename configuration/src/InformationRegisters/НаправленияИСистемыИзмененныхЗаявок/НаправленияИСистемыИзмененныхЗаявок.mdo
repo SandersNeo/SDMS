@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c904aea2-8107-4223-970f-e5907f9fbf45">
+  <producedTypes>
+    <selectionType typeId="39a08f97-88c9-4e47-bbad-f4498530f169" valueTypeId="1e962dfd-2d34-49a7-9181-9ed9668c6f99"/>
+    <listType typeId="68daee46-44ad-41ba-a294-80a82fdff7cc" valueTypeId="c794ac0c-10a9-4f74-b9f2-b5dda9b63486"/>
+    <managerType typeId="242cbf0a-efa1-4975-8bf7-c0c7e7fa61d5" valueTypeId="bada4776-3db9-4611-9f6b-e9447173ac20"/>
+    <recordSetType typeId="874b8362-9445-4720-aeec-e100f6389ae4" valueTypeId="474c8142-5465-4976-8971-daad0ad5c4a3"/>
+    <recordKeyType typeId="f664b8d1-a720-43ea-9bcf-85d83788bb2e" valueTypeId="bc1c450d-9f0b-47ca-a9ed-3e1b0dadd79d"/>
+    <recordType typeId="f78e945a-b029-4c1f-a032-d47f1e08b48a" valueTypeId="5c5c7e54-ddf8-4bf6-9142-2eb4671b0309"/>
+    <recordManagerType typeId="e7e1fb84-25ec-488b-8ac1-2bb817918973" valueTypeId="4ddd49de-e8ae-4e5e-8d9f-9c805d5ec19a"/>
+  </producedTypes>
+  <name>НаправленияИСистемыИзмененныхЗаявок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Направления и системы измененных заявок</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="4adcabfc-1e8a-4cc0-84a1-831b5c16071a">
+    <name>ДатаОбновления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата обновления</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="319a6ff5-9e73-479a-b3e9-c90aa0ee315d">
+    <name>Направление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Направление</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НаправленияРазработки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="09c45c28-400c-4c1c-9e72-2d9a5d51706c">
+    <name>Система</name>
+    <synonym>
+      <key>ru</key>
+      <value>Система</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СистемыУчета</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="03e247cc-6adf-4181-9e3a-d79beca5bc5e">
+    <name>КлючЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ключ записи</value>
+    </synonym>
+    <type>
+      <types>UUID</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

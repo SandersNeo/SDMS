@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0625ada0-aa1c-4ef3-9c2c-b568fc759a19">
+  <name>ОчисткаИБД</name>
+  <synonym>
+    <key>ru</key>
+    <value>Очистка ИБД</value>
+  </synonym>
+  <methodName>CommonModule.РегламентныеЗаданияСервер.ОчисткаИБД</methodName>
+  <description>Очистка ИБД</description>
+  <key>ОчисткаИБД</key>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

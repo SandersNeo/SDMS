@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="129cda5a-17d1-416f-8c04-0d4f5a798542">
+  <producedTypes>
+    <objectType typeId="73a71c10-22e0-401a-87bb-1e4352a6e3e6" valueTypeId="45db2a45-95a1-4f5d-b60e-50f04cc2ea75"/>
+    <managerType typeId="acbadf93-38c1-448a-9d68-f3497e8da7a1" valueTypeId="98df12b3-8260-4760-849c-e1f3e46f4ac0"/>
+  </producedTypes>
+  <name>АнализЗадачПоФилиалу</name>
+  <synonym>
+    <key>ru</key>
+    <value>Анализ задач по филиалу</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.АнализЗадачПоФилиалу.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.АнализЗадачПоФилиалу.Template.ЗадачиНаДень</mainDataCompositionSchema>
+  <defaultSettingsForm>Report.АнализЗадачПоФилиалу.Form.ФормаНастроек</defaultSettingsForm>
+  <forms uuid="e64b9621-7354-44ff-8eed-0807e6611e18">
+    <name>НастройкиОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c2d90186-9173-4371-976c-ab59a2781f27">
+    <name>ФормаНастроек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма настроек</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0fb04a12-63e2-4078-9d05-a5862e543b93">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2b6bafab-ebf4-48c6-93be-04e29fbfd2dd">
+    <name>ФормаРасшифровкиПоСтатусу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задачи в статусе на день</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="aa76ec4f-c0c9-4119-b647-ad9edf26ef58">
+    <name>ЗадачиНаДень</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задачи на день</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

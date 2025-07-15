@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5cd589b9-478c-4981-9283-36fde5e02163">
+  <name>Безопасность</name>
+  <synonym>
+    <key>ru</key>
+    <value>Безопасность</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>CommonModule.БезопасностьВызовСервера</content>
+  <content>CommonModule.Безопасность</content>
+  <content>CommonModule.БезопасностьИнтерфейсПриложения</content>
+  <content>CommonModule.БезопасностьКлиентСервер</content>
+  <content>CommonModule.БезопасностьПовтИсп</content>
+  <content>InformationRegister.ЗначенияРолейДляГруппДоступа</content>
+  <content>Catalog.ГруппыДоступа</content>
+  <content>Catalog.ПрограммноВычисляемыеРоли</content>
+  <content>Catalog.ПрограммныеРоли</content>
+  <content>Catalog.ИдентификаторыОбъектовМетаданных</content>
+  <content>CommonPicture.БезопасностьГруппДоступа</content>
+  <content>CommonPicture.ГруппаПользователей</content>
+  <content>CommonPicture.Информация16</content>
+  <content>Enum.ВидыПравДоступа</content>
+  <content>InformationRegister.СвязьОбъектовИРолей</content>
+  <content>InformationRegister.НастройкиПравОбъектов</content>
+  <content>DefinedType.ОбъектОграниченийДоступа</content>
+  <content>CommonModule.БезопасностьПереопределяемый</content>
+  <content>InformationRegister.БезопасноеХранилищеДанных</content>
+  <content>Enum.НазначенияДанныхБезопасногоХранилища</content>
+  <content>Enum.ТипыМетаданных</content>
+  <parentSubsystem>Subsystem.БазоваяФункциональность</parentSubsystem>
+</mdclass:Subsystem>

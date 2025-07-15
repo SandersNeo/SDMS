@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="966ee177-ae67-4327-840b-5e9559083679">
+  <producedTypes>
+    <selectionType typeId="051030a0-9369-4daa-9f2f-e3ca7672371e" valueTypeId="6f9624a9-3be0-43f1-89a8-3b421f58397a"/>
+    <listType typeId="032425ce-2ceb-47d6-86fe-51051ef99fb7" valueTypeId="4804c98e-4461-4135-8c81-ab05cca3c9f4"/>
+    <managerType typeId="0cf98b65-8d0e-4dc0-9d75-55197d571493" valueTypeId="154779ad-7a7a-4ff2-b9ea-70a0d97fb9f7"/>
+    <recordSetType typeId="b8fb436a-c6e8-4ea6-9b17-172cb637d728" valueTypeId="edc0ecac-9c17-4522-93d6-3e2eef63ce96"/>
+    <recordKeyType typeId="09d1f36c-679c-4589-bb45-5f472dc1f263" valueTypeId="d4394b13-8da7-4f25-b55a-95d1113623d6"/>
+    <recordType typeId="d0671550-dbfe-46e2-801d-18fce4e70155" valueTypeId="a825f50c-c09b-4c13-9743-4800907d4a93"/>
+    <recordManagerType typeId="b16816cf-d6a0-4159-804a-5354389d6009" valueTypeId="9b1b9947-542d-47bf-8db3-903b6431530e"/>
+  </producedTypes>
+  <name>Комментарии</name>
+  <synonym>
+    <key>ru</key>
+    <value>Комментарии</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="25f3a8ee-6e4e-4f76-a999-ac037e95cd52">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <comment>Текст комментария в HTML</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="51d4b0f8-384d-4b9e-8ec1-c89bca77c2af">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <comment>Автор комментария</comment>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="8e2c8775-314d-4332-8273-20bcac44b099">
+    <name>Важный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Важный</value>
+    </synonym>
+    <comment>Комментарий является важным</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="bdf7912d-d809-4a61-9ed8-e756f8f1290a">
+    <name>ДатаИзменения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата изменения</value>
+    </synonym>
+    <comment>Дата и время последнего изменения комментария</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="4db32752-1bd3-4c7b-8d60-0fc1cfd5ec3d">
+    <name>ИдентификаторJira</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор jira</value>
+    </synonym>
+    <comment>Используется для хранения идентификатора комментария из Jira</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>7</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="572d823c-c7cd-4981-b662-b200e6eae83a">
+    <name>Общедоступный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Общедоступный</value>
+    </synonym>
+    <comment>Истина - комментарий виден всем, Ложь - виден только группе разработки автора комментария</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="7b5298f1-548a-4a62-a120-05921f4c1ec1">
+    <name>ПочтаJira</name>
+    <synonym>
+      <key>ru</key>
+      <value>Почта jira</value>
+    </synonym>
+    <comment>Используется для хранения почты автора комментария из Jira</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <attributes uuid="ce9d3f1e-7424-4f55-84d0-7dbd64f7e20a">
+    <name>Служебный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Служебный</value>
+    </synonym>
+    <comment>Комментарий является служебным</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="55424279-41b6-4f92-9244-d98fd2e4fd8d">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <comment>Объект-владелец комментария</comment>
+    <type>
+      <types>DefinedType.ИсточникКомментариев</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="27b40852-a81a-42e8-b1ec-cce227e68861">
+    <name>ИдентификаторКомментария</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор комментария</value>
+    </synonym>
+    <comment>Идентификатор комментария</comment>
+    <type>
+      <types>UUID</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="4dc907cf-90aa-4f77-b841-1c932671ae9a">
+    <name>Идентификатор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+        <fixed>true</fixed>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value>                                    </value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="23946155-f155-4c37-ad1a-9eed6e599dd0">
+    <name>Комментарии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарии</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+  </forms>
+  <templates uuid="a6e9f6d8-4455-4c45-9e51-6114f52a8d28">
+    <name>ШаблонHTML</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон HTML</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+</mdclass:InformationRegister>

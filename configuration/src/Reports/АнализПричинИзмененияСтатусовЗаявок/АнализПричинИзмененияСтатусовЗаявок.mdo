@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d9e091f6-63f4-41d8-9b00-31a288c7cbc4">
+  <producedTypes>
+    <objectType typeId="2a72b39a-385f-4894-8403-34503906054c" valueTypeId="edb6622c-2000-421a-af45-063a89e2281b"/>
+    <managerType typeId="27e3e275-18fe-4907-a3e7-6e11597e6fd9" valueTypeId="88fca374-0795-4c49-9c83-3b64342665ec"/>
+  </producedTypes>
+  <name>АнализПричинИзмененияСтатусовЗаявок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Анализ причин изменения статусов заявок</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.АнализПричинИзмененияСтатусовЗаявок.Form.ФормаОтчета</defaultForm>
+  <forms uuid="646c5bfb-fbfe-4f03-b80d-fb6644061445">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Report>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3b5526a6-fcb0-4235-8750-02e808d859e8">
+  <producedTypes>
+    <selectionType typeId="5232fdb0-ac8e-46d7-aaab-1942f9904e36" valueTypeId="192fe845-f87c-47e9-ad59-37a7adc43e2d"/>
+    <listType typeId="c5236fcc-a939-4981-b30d-138906003c66" valueTypeId="b7044757-0df6-4e48-b4a9-f7f3e5be4eba"/>
+    <managerType typeId="1c32513f-184e-4b49-8ebe-50bd2864609d" valueTypeId="3dff3bb2-3601-4cf0-97be-47205a52fc19"/>
+    <recordSetType typeId="a446b029-f3d8-41cf-bec4-31894fe18d3f" valueTypeId="58643eba-a56d-4297-b893-9891fe4a1517"/>
+    <recordKeyType typeId="c6089543-7434-464b-be6d-4e8869821f0e" valueTypeId="042de0e7-4b72-4edb-acf0-6c7b1243fd4a"/>
+    <recordType typeId="8c5f3138-d1b6-4ef5-9969-37f9c04ae4fb" valueTypeId="da15b4df-e70d-497c-b7e9-40c9c70ebf94"/>
+    <recordManagerType typeId="0fab8c6b-ab0f-43fc-80a3-180f648fef37" valueTypeId="dad7f649-4845-4c9c-921d-54c0b787195f"/>
+  </producedTypes>
+  <name>ПриостановленныеЗадачи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Приостановленные задачи</value>
+  </synonym>
+  <comment>Статистика приостановки задач</comment>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала</value>
+    </synonym>
+    <comment>Дата, с которой задаче был присвоен статус &quot;Приостановлена&quot;</comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="265a5cf3-d34b-4d84-b90a-9e1a63033534">
+    <name>ДатаОкончания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания</value>
+    </synonym>
+    <comment>Дата, с которой статус &quot;Приостановлена&quot; был изменен на любой другой</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="69c0a4c5-b3e4-43ac-ae99-32a5f4a2bcff">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <attributes uuid="0e75f902-cead-4faf-bf6e-199fbb0782b0">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="33f05312-9676-4438-b13a-3089792836f5">
+    <name>Задача</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задача</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ВнутреннееЗадание</types>
+      <types>DocumentRef.Задача</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="fbc59567-40fa-4bbd-82c0-bd04a1f5518f">
+    <name>ПриостановкаЗадачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приостановка задачи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

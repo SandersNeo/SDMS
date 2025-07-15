@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4e6c4eb0-40ee-4426-9831-ad3fc12c217a">
+  <producedTypes>
+    <refType typeId="4a3c8189-3941-476f-8d96-ac2d829430d6" valueTypeId="2c5a8566-230e-4214-b531-6bb7ad7f7d48"/>
+    <listType typeId="aee9eb60-52bf-4d7b-a476-0e73feaa981d" valueTypeId="cda861d0-2976-47b5-9645-f15f1047249b"/>
+    <managerType typeId="682baa33-fe15-474a-b0d6-a025d991dabb" valueTypeId="a8024bc8-4354-458c-87bc-cce66944c754"/>
+  </producedTypes>
+  <name>КатегорииСообщенийПользователя</name>
+  <synonym>
+    <key>ru</key>
+    <value>Категории сообщений пользователя</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="0584d1a4-3996-47ef-9cf9-ccac0f29bd1f">
+    <name>АвтоматическоеЗакрытиеЗадач</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автоматическое закрытие задач</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="085abbf4-3559-44f6-83b6-297eed4a526f">
+    <name>ВажныеИзмененияОбъекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Важные изменения объекта</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d378cd2f-4d0e-4ab7-b3f9-802207b39340">
+    <name>ДобавлениеЗадачиВПул</name>
+    <synonym>
+      <key>ru</key>
+      <value>Добавление задачи в пул</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="57160a11-9b53-4d37-af54-a079d32fbbc6">
+    <name>ДоступКОбъекту</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доступ к объекту</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1bb4d9af-9a39-4190-80e8-bb4deb2ec091">
+    <name>ИзменениеДатВОбъекте</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменение дат в объекте</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="fc31bcb3-f15e-46d7-a6c6-008104732109">
+    <name>ИзменениеЗнанийИВопросов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменение знаний и вопросов</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="21ecb157-67ac-4f47-89a2-05704fa08b3e">
+    <name>ИзменениеНаправленияОбъекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменение направления объекта</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="90bd5424-9b7e-43db-8f63-78c9798494a2">
+    <name>ИзменениеОписанияИлиНазванияОбъекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменение описания или названия объекта</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e90bee60-4eb5-4a4d-a054-76c403018bc4">
+    <name>ИзменениеПользователейВОбъекте</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменение пользователей в объекте</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b02d128e-db6d-494e-96fa-23de1806a99c">
+    <name>ИзменениеСтатусаОбъекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменение статуса объекта</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8ed6389c-3aac-497f-b54c-4aeaed290777">
+    <name>Комментарии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарии</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="00394a2f-91d6-4c9a-a255-379bbd87732a">
+    <name>ОповещениеОНаличииСтопСлов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоп-слова в описании</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="bdadbcf1-c49e-4eaf-9733-5680a19df1d0">
+    <name>ПрочиеИзмененияОбъекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прочие изменения объекта</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="72155095-e2c9-468a-ac1d-60cefebb4c3d">
+    <name>СозданиеОбъектов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Создание объектов</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

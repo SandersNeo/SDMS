@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="897ca445-f2d9-4720-b394-81519900c8fc">
+  <name>ОбновлениеДатыЗапретаИзмененияДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обновление даты запрета изменения данных</value>
+  </synonym>
+  <methodName>CommonModule.РегламентныеЗаданияСервер.ОбновлениеДатыЗапретаИзмененияДанных</methodName>
+  <description>Обновление даты запрета изменения данных</description>
+  <key>ОбновлениеДатыЗапретаИзмененияДанных</key>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

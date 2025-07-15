@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="88746cf9-3ede-454f-ad65-999d25819040">
+  <producedTypes>
+    <selectionType typeId="44d4a9c7-1c13-47d4-9e18-f3b87c530079" valueTypeId="63e55557-40ca-4b4c-ac0e-572735310454"/>
+    <listType typeId="5465e63e-16ae-4485-bb0b-eb8835a0b16b" valueTypeId="b66a6f1c-d9bb-4c38-91bc-674c5123082d"/>
+    <managerType typeId="eb734e74-29d8-4756-a14a-5b42b73c2dd7" valueTypeId="22ede936-61f9-4bdd-9304-4d3437c86b44"/>
+    <recordSetType typeId="20f32694-93e3-40c8-8edb-1b9476ef8c6e" valueTypeId="d247d306-7d98-4af9-a6aa-a8ed7abc7775"/>
+    <recordKeyType typeId="be06f914-60d5-4d7f-8da2-336c189cb629" valueTypeId="65c26326-25cf-49aa-a8c4-b746ae0146c8"/>
+    <recordType typeId="a1487ce9-7f65-47f2-82e9-bca9de4e2840" valueTypeId="3b82e982-3d0e-4a8f-8736-4a7928cf9015"/>
+    <recordManagerType typeId="5cc6043b-0062-455f-a3c2-93d16f1574cd" valueTypeId="91eeb3b1-281d-4732-a835-986adf689fa3"/>
+  </producedTypes>
+  <name>СвязьОбъектовИРолей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Связь объектов и ролей</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.СвязьОбъектовИРолей.Form.ФормаЗаписи</defaultRecordForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="a4430d25-db3b-44a8-bb57-24cdd92f15dc">
+    <name>ЗначениеПоУмолчанию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение по умолчанию</value>
+    </synonym>
+    <comment>Используется если свойство РассчитыватьПраво не установлено</comment>
+    <type>
+      <types>EnumRef.ВидыПравДоступа</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0e413507-da3f-4bb2-bd30-aae8d81a0239">
+    <name>ИмяМетода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя метода</value>
+    </synonym>
+    <comment>Имя метода для расчета значения права</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="1c5b01f9-3e7f-4865-8180-c56d1f1e50bf">
+    <name>ИмяМетодаНастройки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя метода настройки</value>
+    </synonym>
+    <comment>Имя метода для применения разрешений</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="6048627e-778b-4f3f-8baf-1a3283d868fc">
+    <name>РассчитыватьПраво</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рассчитывать право</value>
+    </synonym>
+    <comment>Определяет способ расчета права: Истина - право будет расчитано методом из свойства ИмяМетода, Ложь - будет использовано значение по умолчанию</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="f5250ef8-0202-48f5-9eb7-1b1b792bef12">
+    <name>Использование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использование</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="f4206fc3-f1b0-4dda-be68-6bd8e832605e">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <comment>Идентификатор объекта метаданных</comment>
+    <type>
+      <types>CatalogRef.ИдентификаторыОбъектовМетаданных</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="172a7626-72d7-470b-88ec-2e72e367d41f">
+    <name>Роль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Роль</value>
+    </synonym>
+    <comment>Программная роль или роль конфигурации</comment>
+    <type>
+      <types>CatalogRef.ПрограммныеРоли</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="78f0cae7-f053-4f4b-a2fc-ed279a91d341">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

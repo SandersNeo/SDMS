@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="73a799d3-0cad-44a8-be94-21e62f984ea9">
+  <producedTypes>
+    <selectionType typeId="e5f3b191-8396-49e7-90b6-dd0191341242" valueTypeId="d407d5e7-0c6a-4035-a244-9ff4cceb61b6"/>
+    <listType typeId="eee4571b-f56b-4e92-8401-3719496b8a77" valueTypeId="44c0a04f-dbc6-4883-b94b-a7e6f18283b4"/>
+    <managerType typeId="81f60c5f-11ba-4f7d-b4eb-ae220c64c23f" valueTypeId="2ec09ef7-d4ac-4512-b95d-04545abf7232"/>
+    <recordSetType typeId="48ea6462-b586-4b1b-a9d3-656ffa95b19e" valueTypeId="4c7c7123-395a-48f7-a58d-b40715d08355"/>
+    <recordKeyType typeId="a8a07692-acc4-4427-b34d-d7a2d3099691" valueTypeId="85209d17-c146-4d04-8045-d3925d06a992"/>
+    <recordType typeId="3d1bdffe-8c28-4997-8895-52ca79032f4b" valueTypeId="65a9c02f-b6db-42c9-a0f5-eebbfb788f67"/>
+    <recordManagerType typeId="c3b84ebc-145d-4d17-aef9-990b4ab97370" valueTypeId="b5d91c58-44ef-4f85-bc49-e73b5ada2583"/>
+  </producedTypes>
+  <name>ОбсужденияПользователей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обсуждения пользователей</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="e42ecf76-e17a-4025-b717-182dc3bbd86e">
+    <name>Идентификатор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="7b864551-5eab-4408-a17f-4d57aa67c2b3">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="d3d1217e-9bf0-4ef6-a8d4-7a7bc1182388">
+    <name>Назначение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Назначение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НазначенияОбсуждений</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

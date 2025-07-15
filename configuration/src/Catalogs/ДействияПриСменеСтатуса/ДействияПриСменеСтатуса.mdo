@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="036b8ed6-fab5-4345-b287-da63e7b780c9">
+  <producedTypes>
+    <objectType typeId="b8a6439d-2b2e-480c-aaf9-d77a1013e45a" valueTypeId="9e6e7333-54e6-4e8f-a1f3-162308bc9ce1"/>
+    <refType typeId="55a16d15-0bcd-4aa6-b935-4f39d9f931e7" valueTypeId="268299ef-f752-4704-b59f-6786780ce2cd"/>
+    <selectionType typeId="dfaac31d-f317-46fd-8e31-0ab5e196c05e" valueTypeId="8fde97fb-92b3-4a0c-87ee-ad0d5a5b9239"/>
+    <listType typeId="5ed05937-51f1-44e1-8844-dc0b1a2f1fa1" valueTypeId="6ff91185-0b6a-456f-b0cc-2a96e4d82405"/>
+    <managerType typeId="94544017-4f9d-46da-a865-008c1f6e720b" valueTypeId="925c5e13-3d62-4a08-a444-654a66e8f4f8"/>
+  </producedTypes>
+  <name>ДействияПриСменеСтатуса</name>
+  <synonym>
+    <key>ru</key>
+    <value>Действия при смене статуса</value>
+  </synonym>
+  <comment>Используется для описания действий, которые будут использоваться при смене статуса</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ДействияПриСменеСтатуса.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ДействияПриСменеСтатуса.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="ac415ea8-d06d-4067-8a00-b9da105e10b8">
+      <name>ДобавлениеВОчередьТестирования</name>
+      <description>Добавление в очередь тестирования</description>
+      <code xsi:type="core:StringValue">
+        <value>000000006</value>
+      </code>
+    </items>
+    <items id="3026bc8c-04c5-4131-bb99-3923405ffac5">
+      <name>ОставитьТекущегоИсполнителя</name>
+      <description>Оставить текущего исполнителя</description>
+      <code xsi:type="core:StringValue">
+        <value>000000010</value>
+      </code>
+    </items>
+    <items id="f525c46b-0ded-469e-9888-91bbeb3e5076">
+      <name>СменаИсполнителяНаАвтораЗадачи</name>
+      <description>Смена исполнителя на автора задачи</description>
+      <code xsi:type="core:StringValue">
+        <value>000000009</value>
+      </code>
+    </items>
+    <items id="e82d443f-a823-42c0-8c26-c0cbee3f2583">
+      <name>СменаИсполнителяНаЗаказчика</name>
+      <description>Смена исполнителя на заказчика</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="179cc0d3-95d6-468e-b296-05b9a9964d86">
+      <name>СменаИсполнителяНаНезаполненноеЗначение</name>
+      <description>Смена исполнителя на незаполненное значение</description>
+      <code xsi:type="core:StringValue">
+        <value>000000005</value>
+      </code>
+    </items>
+    <items id="96470a72-dec3-4384-877b-ae7112fdc382">
+      <name>СменаИсполнителяНаПоследнегоРазработчика</name>
+      <description>Смена исполнителя на последнего разработчика</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="72a6eb60-d636-4aeb-84ea-05efe9566751">
+      <name>СменаИсполнителяНаПоследнегоРевьюера</name>
+      <description>Смена исполнителя на последнего ревьюера</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+    </items>
+    <items id="4ff1df24-c61c-4102-bcb7-d14d5d90889d">
+      <name>СменаИсполнителяНаПоследнегоТестировщика</name>
+      <description>Смена исполнителя на последнего тестировщика</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="067ae6db-4821-470e-92db-95124cfc4797">
+      <name>СменаИсполнителяНаПредыдущегоИсполнителя</name>
+      <description>Смена исполнителя на предыдущего исполнителя</description>
+      <code xsi:type="core:StringValue">
+        <value>000000008</value>
+      </code>
+    </items>
+    <items id="fcb10045-0ce2-46c3-a909-9375ec701c9e">
+      <name>УдалениеИзОчередиТестирования</name>
+      <description>Удаление из очереди тестирования</description>
+      <code xsi:type="core:StringValue">
+        <value>000000007</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ДействияПриСменеСтатуса.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="7ee4d13e-e52a-436e-8d2b-0f36673dd3a8">
+    <name>ВидДействия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид действия</value>
+    </synonym>
+    <comment>Вид действия</comment>
+    <type>
+      <types>EnumRef.ВидыДействий</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c8d60339-4d45-48aa-83a7-c529573491d4">
+    <name>ОбратноеДействие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обратное действие</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ДействияПриСменеСтатуса</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="fe172038-04aa-4c26-997f-c8a50504395b">
+    <name>Служебный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Служебный</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a9c8d05c-30ab-4eb8-80b8-9886c11a6f6f">
+    <name>УдалитьТипОбъекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) тип объекта</value>
+    </synonym>
+    <comment>Тип объекта, к которому относится данное действие</comment>
+    <type>
+      <types>CatalogRef.ТипыОбъектовВладельцев</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="4ae23e61-269f-4270-aef8-fa65d8ab8080">
+    <producedTypes>
+      <objectType typeId="a2e0d954-77b2-4363-bc20-b807aa057bd9" valueTypeId="e2c5ea20-c0c5-4f83-8fb8-2e45a13e7b69"/>
+      <rowType typeId="bae14e6e-21cf-4401-8de2-1dc647d8f5a4" valueTypeId="decc4fec-5459-4de1-a4e1-a1b965a53423"/>
+    </producedTypes>
+    <name>ТипыОбъектов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Типы объектов</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="96056e34-8de0-4748-a085-d66ae8fbba6d">
+      <name>ТипОбъекта</name>
+      <synonym>
+        <key>ru</key>
+        <value>Тип объекта</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ТипыОбъектовВладельцев</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="dd3ef24c-2c8b-42c1-b0e1-d744729474aa">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

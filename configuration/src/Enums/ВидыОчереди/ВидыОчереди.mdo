@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="50e46393-7405-46b0-9c82-649cfb1f5a45">
+  <producedTypes>
+    <refType typeId="0a25df4c-a736-400a-a458-2924866a86b6" valueTypeId="0b25fc89-5949-4498-9a16-fec3764660f6"/>
+    <listType typeId="6c2623bf-6927-4e41-9253-0f70253eccef" valueTypeId="ab4b6ff7-7603-43e1-975c-f922ebaa8d7d"/>
+    <managerType typeId="2b25cf0f-ff4f-4dcc-9a5a-6f81c5cf2e8c" valueTypeId="84b2e6b1-2dda-4c17-b69c-0d7d192ef5ba"/>
+  </producedTypes>
+  <name>ВидыОчереди</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды очереди</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="33c523f1-739a-4fbd-aba4-f148f09106f2">
+    <name>ГабаритноеПланирование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Габаритное планирование</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0102f121-64eb-4279-b65a-0588f0f1320e">
+    <name>НаправлениеСистема</name>
+    <synonym>
+      <key>ru</key>
+      <value>Система</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="33b1f565-4981-4a4e-a42c-3ac929fc5e08">
+    <name>НаправлениеСистемаГруппаЗаказчиков</name>
+    <synonym>
+      <key>ru</key>
+      <value>Система, Группа заказчиков</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="dc0e466e-e68c-4d1d-a52f-7151dee98953">
+    <name>ОчередьВТестировании</name>
+    <synonym>
+      <key>ru</key>
+      <value>Очередь в тестировании</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="005a6811-61f6-445d-a443-c2880672d05a">
+    <name>ОчередьГруппыТестирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Очередь группы тестирования</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="befc7c78-090e-46f2-a848-4e7a50009a22">
+    <name>Продукт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Продукт</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8624c70c-c697-4456-9802-34fcfe2b320a">
+    <name>ПродуктСистема</name>
+    <synonym>
+      <key>ru</key>
+      <value>Продукт, Система</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="fb02764e-a042-4fcd-81d3-0e9f9c892308">
+    <name>Филиал</name>
+    <synonym>
+      <key>ru</key>
+      <value>Филиал</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9a10c64a-12d0-4a6a-8f12-8bc770b2b34c">
+    <name>Канбан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Канбан</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

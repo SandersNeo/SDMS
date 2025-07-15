@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6de253aa-faf4-4806-bd39-20eaf8d7ddcb">
+  <producedTypes>
+    <objectType typeId="88f1d950-b83e-4a3c-a40f-d598f8b4f832" valueTypeId="26a99f6b-3cf5-4394-bb3c-ee123112ea8a"/>
+    <refType typeId="f1041c7e-b650-4071-ab8e-e832aef1c711" valueTypeId="86e78cc5-1343-4163-91b5-64d91307196f"/>
+    <selectionType typeId="2ef18c23-b2cd-4cda-920b-fc77e1500ee0" valueTypeId="a92b4f4a-d05d-4e5e-82fc-47778e826ff4"/>
+    <listType typeId="15a91367-0d22-4781-98a7-8d24a5595690" valueTypeId="8848c98f-d9b3-4d5d-b4b3-6439ae8a8920"/>
+    <managerType typeId="7cf841c8-df54-412b-bb8a-4c991c31c71a" valueTypeId="3ed1c3da-96d7-4b46-9983-ebd070cd6f5f"/>
+  </producedTypes>
+  <name>РолиУчастников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Роли участников</value>
+  </synonym>
+  <comment>Список возможных ролей участников</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.РолиУчастников.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Роль участника</value>
+  </objectPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Предназначен для хранения предопределенных значений ролей пользователей относительно объектов.</value>
+  </explanation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>80</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="f75260cd-61e3-488f-8d5b-69426ae0cf83">
+      <name>Автор</name>
+      <description>Автор</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="aa66a3db-10af-469c-88db-ba0fa7ed099e">
+      <name>ВладелецПродукта</name>
+      <description>Владелец продукта</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="c71205a6-75a8-4f41-b479-5b260d903549">
+      <name>ВсеРоли</name>
+      <description>Все роли</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="3fd92d34-30dd-4e5d-86b7-f4580213f05b">
+      <name>Заказчик</name>
+      <description>Заказчик</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="ecfb4d72-5ced-45ed-a050-a8b52d315833">
+      <name>Исполнитель</name>
+      <description>Исполнитель</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="a68bbdc9-2041-4f7d-840a-04d397143999">
+      <name>Наблюдатель</name>
+      <description>Наблюдатель</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="05acf59d-45a8-4be7-aa83-f8d4185fdeee">
+      <name>Подписчик</name>
+      <description>Подписчик</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="667f6eb6-7e9e-48fe-b9d7-e9ad14efc1e9">
+      <name>ПредыдущийАвтор</name>
+      <description>Предыдущий автор</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="239896ef-cf2f-4841-98f9-002cd8af0e18">
+      <name>Ревьюер</name>
+      <description>Ревьюер</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="705765b6-fe3e-48d1-86d9-84997a8c268e">
+      <name>РуководительПроекта</name>
+      <description>Руководитель проекта</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="901c0db1-75e5-4449-a4ee-b3b59685859c">
+      <name>Тестировщик</name>
+      <description>Тестировщик</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="6153b1a6-4ebe-4b5d-815a-42039945bcd3">
+      <name>УчастникКомандыУправленияПроектом</name>
+      <description>Участник команды управления проектом</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

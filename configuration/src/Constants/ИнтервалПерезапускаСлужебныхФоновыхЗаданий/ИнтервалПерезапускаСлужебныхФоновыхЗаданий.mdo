@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a21cb0b5-66cb-4cab-8a96-d66ec3c7bcf9">
+  <producedTypes>
+    <managerType typeId="0d3bef05-a45b-411e-89e2-c29de1357b2b" valueTypeId="e6723cbf-169f-4109-8b51-237e283cc22e"/>
+    <valueManagerType typeId="078dc542-6614-49d4-9250-ae5ad2ae0c95" valueTypeId="7d026230-0712-40a5-85a7-3a7b94358654"/>
+    <valueKeyType typeId="3dbc378d-386b-4d91-8578-e9e60f6938dc" valueTypeId="6ddeb2c5-4f72-4e6f-a490-c0ddc81f7942"/>
+  </producedTypes>
+  <name>ИнтервалПерезапускаСлужебныхФоновыхЗаданий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Интервал перезапуска служебных фоновых заданий (в секундах)</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>10</precision>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

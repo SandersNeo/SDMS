@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="70f2134c-3bf3-419a-abab-142e5e7054d8">
+  <producedTypes>
+    <refType typeId="5c372c50-d232-4953-8c65-bc6e58392757" valueTypeId="a9f8d5e8-7532-45e1-a681-70e375ddcc26"/>
+    <listType typeId="f99e6558-34ff-4419-aa29-ea90c7d42e2b" valueTypeId="a9053324-f2cd-4483-962d-4052c33a3617"/>
+    <managerType typeId="c1bc884b-9ef6-4ee4-8c5c-bc5176b48c7c" valueTypeId="324ff668-e1cd-4562-bb34-ebb27d917b0c"/>
+  </producedTypes>
+  <name>ВидыДействий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды действий</value>
+  </synonym>
+  <comment>Используется для определения типа действия</comment>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="24d2557c-ff2f-43cc-8e83-a29ab31d59e0">
+    <name>СменаИсполнителя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Смена исполнителя</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8dcb5169-4c6e-4ff4-916b-ebf26239e974">
+    <name>ДобавлениеВОчередь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Добавление в очередь</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

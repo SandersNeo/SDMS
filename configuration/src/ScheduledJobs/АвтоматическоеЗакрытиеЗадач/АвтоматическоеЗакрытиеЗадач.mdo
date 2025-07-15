@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="abcc3ecd-57ee-4e67-9783-728e8a821411">
+  <name>АвтоматическоеЗакрытиеЗадач</name>
+  <synonym>
+    <key>ru</key>
+    <value>Автоматическое закрытие задач</value>
+  </synonym>
+  <methodName>CommonModule.РегламентныеЗаданияСервер.АвтоматическоеЗакрытиеЗадач</methodName>
+  <description>Автоматическое закрытие задач</description>
+  <key>АвтоматическоеЗакрытиеЗадач</key>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

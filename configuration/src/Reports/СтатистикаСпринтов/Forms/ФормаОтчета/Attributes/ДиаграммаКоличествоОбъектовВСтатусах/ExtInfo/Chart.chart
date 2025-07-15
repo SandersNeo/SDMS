@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chart:Chart xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:chart="http://g5.1c.ru/v8/dt/chart/model" xmlns:core="http://g5.1c.ru/v8/dt/mcore">
+  <seriesCurId>1</seriesCurId>
+  <isSeriesDesign>true</isSeriesDesign>
+  <realExSeriesData>
+    <properties>
+      <id>1</id>
+      <valInfo xsi:type="core:UndefinedValue"/>
+      <color xsi:type="core:ColorDef">
+        <red>153</red>
+        <green>25</green>
+        <blue>25</blue>
+      </color>
+      <line>
+        <width>2</width>
+        <style>Solid</style>
+      </line>
+      <marker>Rhomb</marker>
+      <text>
+        <key>#</key>
+        <value>Сводная</value>
+      </text>
+      <key xsi:type="core:UndefinedValue"/>
+    </properties>
+  </realExSeriesData>
+  <isPointsDesign>true</isPointsDesign>
+  <curSeries>-1</curSeries>
+  <chartType>Bar</chartType>
+  <labelsDelimiter>, </labelsDelimiter>
+  <labelsColor xsi:type="core:ColorRef">
+    <color>Style.FormTextColor</color>
+  </labelsColor>
+  <labelsFont xsi:type="core:AutoFont"/>
+  <transparentLabelsBkg>true</transparentLabelsBkg>
+  <labelsBorder xsi:type="core:BorderDef">
+    <style>Single</style>
+    <width>1</width>
+  </labelsBorder>
+  <title>
+    <key>ru</key>
+    <value>Количество объектов спринта в статусах</value>
+  </title>
+  <isShowTitle>true</isShowTitle>
+  <isShowLegend>true</isShowLegend>
+  <ttlBorder xsi:type="core:BorderDef"/>
+  <ttlBorderColor xsi:type="core:ColorRef">
+    <color>Style.BorderColor</color>
+  </ttlBorderColor>
+  <lgBorder xsi:type="core:BorderDef"/>
+  <lgBorderColor xsi:type="core:ColorRef">
+    <color>Style.BorderColor</color>
+  </lgBorderColor>
+  <chBorder xsi:type="core:BorderDef"/>
+  <chBorderColor xsi:type="core:ColorRef">
+    <color>Style.BorderColor</color>
+  </chBorderColor>
+  <bkgColor xsi:type="core:ColorRef">
+    <color>Style.FieldBackColor</color>
+  </bkgColor>
+  <ttlColor xsi:type="core:ColorRef">
+    <color>Style.FieldBackColor</color>
+  </ttlColor>
+  <legColor xsi:type="core:ColorRef">
+    <color>Style.FieldBackColor</color>
+  </legColor>
+  <chColor xsi:type="core:ColorRef">
+    <color>Style.FieldBackColor</color>
+  </chColor>
+  <ttlTxtColor xsi:type="core:ColorRef">
+    <color>Style.FormTextColor</color>
+  </ttlTxtColor>
+  <legTxtColor xsi:type="core:ColorRef">
+    <color>Style.FormTextColor</color>
+  </legTxtColor>
+  <chTxtColor xsi:type="core:ColorRef">
+    <color>Style.FormTextColor</color>
+  </chTxtColor>
+  <ttlFont xsi:type="core:FontRef">
+    <font>Style.TextFont</font>
+    <height>11.0</height>
+    <bold>true</bold>
+    <italic>false</italic>
+    <underline>false</underline>
+    <strikeout>false</strikeout>
+  </ttlFont>
+  <legFont xsi:type="core:FontRef">
+    <font>Style.TextFont</font>
+  </legFont>
+  <chFont xsi:type="core:FontRef">
+    <font>Style.TextFont</font>
+  </chFont>
+  <isShowScale>true</isShowScale>
+  <isShowScaleVL>true</isShowScaleVL>
+  <isShowSeriesScale>true</isShowSeriesScale>
+  <isShowPointsScale>true</isShowPointsScale>
+  <isShowValuesScale>true</isShowValuesScale>
+  <xLabelsOrientation>Auto</xLabelsOrientation>
+  <scaleLine>
+    <width>1</width>
+    <style>Solid</style>
+  </scaleLine>
+  <scaleColor xsi:type="core:ColorDef">
+    <red>169</red>
+    <green>169</green>
+    <blue>169</blue>
+  </scaleColor>
+  <isAutoSeriesName>true</isAutoSeriesName>
+  <maxSeries>4</maxSeries>
+  <maxSeriesPrc>30</maxSeriesPrc>
+  <spaceMode>Half</spaceMode>
+  <baseVal>0</baseVal>
+  <isLight>true</isLight>
+  <hideBaseVal>true</hideBaseVal>
+  <dtVerLines>true</dtVerLines>
+  <dtHorLines>true</dtHorLines>
+  <dtHAlign>Center</dtHAlign>
+  <dtKeys>true</dtKeys>
+  <paletteKind>Palette32</paletteKind>
+  <surfaceColor xsi:type="core:ColorDef">
+    <red>169</red>
+  </surfaceColor>
+  <gaugeQualityBands/>
+  <endGaugeAngle>180</endGaugeAngle>
+  <gaugeThickness>5</gaugeThickness>
+  <gaugeLabelsLocation>InsideScale</gaugeLabelsLocation>
+  <gaugeBushThickness>4</gaugeBushThickness>
+  <gaugeBushColor xsi:type="core:ColorDef">
+    <red>169</red>
+    <green>169</green>
+    <blue>169</blue>
+  </gaugeBushColor>
+  <autoMaxValue>true</autoMaxValue>
+  <autoMinValue>true</autoMinValue>
+  <titleIsInit>true</titleIsInit>
+  <legendIsInit>true</legendIsInit>
+  <chartIsInit>true</chartIsInit>
+  <elementsChart>
+    <left>0.0429184549356223</left>
+    <right>0.281115879828326</right>
+    <top>0.00952380952380952</top>
+    <bottom>0.112380952380952</bottom>
+  </elementsChart>
+  <elementsLegend>
+    <left>0.7460063897763578</left>
+    <right>0.06389776357827476</right>
+    <top>0.1630901287553648</top>
+    <bottom>0.11587982832618025</bottom>
+  </elementsLegend>
+  <elementsTitle>
+    <left>0.7252396166134185</left>
+    <right>0.025559105431309903</right>
+    <top>0.032188841201716736</top>
+    <bottom>0.8218884120171673</bottom>
+  </elementsTitle>
+  <borderColor xsi:type="core:ColorRef">
+    <color>Style.BorderColor</color>
+  </borderColor>
+  <border xsi:type="core:BorderDef">
+    <style>Single</style>
+    <width>1</width>
+  </border>
+  <splineStrain>95</splineStrain>
+  <translucenceMode>Auto</translucenceMode>
+  <funnelNeckHeightPercent>10.0</funnelNeckHeightPercent>
+  <funnelNeckWidthPercent>10.0</funnelNeckWidthPercent>
+  <funnelGapSumPercent>3.0</funnelGapSumPercent>
+  <multiStageLinkLine>
+    <width>1</width>
+    <style>Solid</style>
+  </multiStageLinkLine>
+  <multiStageLinkColor xsi:type="core:ColorDef"/>
+  <rebuildTime>2280720</rebuildTime>
+  <valuesAxis>
+    <interval>
+      <leftIsNum>true</leftIsNum>
+      <rightIsNum>true</rightIsNum>
+    </interval>
+  </valuesAxis>
+  <pointsAxis>
+    <interval>
+      <leftIsNum>true</leftIsNum>
+      <rightIsNum>true</rightIsNum>
+    </interval>
+  </pointsAxis>
+  <bubbleSizeValueSource>NextSeries</bubbleSizeValueSource>
+  <bubbleSizeCommonSeries>-2</bubbleSizeCommonSeries>
+  <bubbleSizing>IncreaseArea</bubbleSizing>
+  <pointsScale>
+    <titleArea>
+      <location>Auto</location>
+      <font xsi:type="core:AutoFont"/>
+      <transparent>true</transparent>
+      <border xsi:type="core:BorderDef">
+        <width>1</width>
+      </border>
+      <marker>Auto</marker>
+      <orientation>Auto</orientation>
+    </titleArea>
+    <titlePlacement>SpecialArea</titlePlacement>
+    <scaleLabelLocation>None</scaleLabelLocation>
+    <labelOrientation>Auto</labelOrientation>
+  </pointsScale>
+  <valuesScale>
+    <titleArea>
+      <location>Auto</location>
+      <transparent>true</transparent>
+      <border xsi:type="core:BorderDef">
+        <width>1</width>
+      </border>
+      <marker>Auto</marker>
+      <orientation>Auto</orientation>
+    </titleArea>
+    <titlePlacement>SpecialArea</titlePlacement>
+    <labelOrientation>Auto</labelOrientation>
+  </valuesScale>
+  <seriesScale>
+    <titleArea>
+      <location>Auto</location>
+      <transparent>true</transparent>
+      <border xsi:type="core:BorderDef">
+        <width>1</width>
+      </border>
+      <marker>Auto</marker>
+      <orientation>Auto</orientation>
+    </titleArea>
+    <titlePlacement>SpecialArea</titlePlacement>
+    <labelOrientation>Auto</labelOrientation>
+  </seriesScale>
+  <colorPaletteDescription>
+    <colorPalette>Palette32</colorPalette>
+  </colorPaletteDescription>
+  <referenceBandsColorPaletteDescription>
+    <colorPalette>Auto</colorPalette>
+  </referenceBandsColorPaletteDescription>
+  <valuesReferenceLines/>
+  <pointsReferenceLines/>
+  <valuesReferenceBands/>
+  <pointsReferenceBands/>
+  <legendPlacement>UseCoordinates</legendPlacement>
+  <plotAreaPlacement>UseCoordinates</plotAreaPlacement>
+  <titleAreaPlacement>UseCoordinates</titleAreaPlacement>
+  <additionalValuesScale>
+    <titleArea>
+      <location>Auto</location>
+      <transparent>true</transparent>
+      <border xsi:type="core:BorderDef">
+        <width>1</width>
+      </border>
+      <marker>Auto</marker>
+      <orientation>Auto</orientation>
+    </titleArea>
+    <titlePlacement>SpecialArea</titlePlacement>
+    <labelOrientation>Auto</labelOrientation>
+  </additionalValuesScale>
+  <additionalValuesAxis>
+    <interval>
+      <leftIsNum>true</leftIsNum>
+      <rightIsNum>true</rightIsNum>
+    </interval>
+  </additionalValuesAxis>
+</chart:Chart>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6e50adf3-76ac-453f-a6b6-f9df21cfc1da">
+  <producedTypes>
+    <objectType typeId="28043f1b-f19d-4bca-9099-493dcb2c5abb" valueTypeId="93df5a43-1b98-497d-b40c-053be6a2d815"/>
+    <managerType typeId="06f29456-dcd9-4ce2-9d82-ca1faa88bfb8" valueTypeId="26f9b7ff-1bfb-4eaf-adb7-303a0537e13e"/>
+  </producedTypes>
+  <name>ОчередьЗаявок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Очередь заявок</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ОчередьЗаявок.Form.ФормаОбработки</defaultForm>
+  <forms uuid="84fa800f-eacb-41ef-878d-1e958ad72678">
+    <name>ФормаОбработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма обработки</value>
+    </synonym>
+    <comment>Ширину группы СтраницыИнформационнойПанели не изменять! Едет оформление</comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5ad594d1-d993-4525-bc5b-9fd333b4072f">
+  <producedTypes>
+    <objectType typeId="17ebc53e-58df-492a-add7-a459ee83ecae" valueTypeId="284f4a8a-073a-4b72-8556-08b4b7b9468c"/>
+    <managerType typeId="fc33dff2-bac5-4959-aedc-a06ca6f3e284" valueTypeId="fabdc72b-e7ae-4c84-9422-251ad6cab84b"/>
+  </producedTypes>
+  <name>ИсторияУчастияВЗадачах</name>
+  <synonym>
+    <key>ru</key>
+    <value>История участия в задачах</value>
+  </synonym>
+  <defaultForm>Report.ИсторияУчастияВЗадачах.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ИсторияУчастияВЗадачах.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="90510eab-4a11-4dde-97fe-a3edef7f6537">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="a73ac4b3-70f7-4b3e-8fcb-d3e57eee7431">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="c01241b0-1ddb-412b-8a0a-ef5bea81d886">
+    <name>ОткрытьИсториюУчастия</name>
+    <synonym>
+      <key>ru</key>
+      <value>История участия</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType/>
+    <representation>PictureAndText</representation>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.СписокПоПользователю</picture>
+    </picture>
+  </commands>
+</mdclass:Report>

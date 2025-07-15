@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ae838370-2f5b-46ae-adf4-c242185f9739">
+  <producedTypes>
+    <selectionType typeId="f290a21b-7f8e-460e-91e0-9e3807fd55a3" valueTypeId="bd241cb4-31a4-4ca1-aea3-c47e49b16f70"/>
+    <listType typeId="fdd49a6b-be82-41d2-a838-ca81c999e3ee" valueTypeId="63e6889f-dde4-4a93-83f1-c12a1ce4d3a0"/>
+    <managerType typeId="5294669c-1d7d-43a6-ba9a-8678fb867776" valueTypeId="43d87674-ded6-434b-873e-9e69848b11d6"/>
+    <recordSetType typeId="520fbef2-8891-4fcc-9e74-b61ef6bfadd9" valueTypeId="b1057a46-bad7-432d-ac39-788308342284"/>
+    <recordKeyType typeId="22655ef5-8aa8-43ec-90a7-88bf62f88c5d" valueTypeId="cd841e60-ef42-49a2-be0e-039648f8fbc9"/>
+    <recordType typeId="38d5d978-3287-4f67-a5e7-ca2c30df6ab4" valueTypeId="c1d80eee-2386-4023-9d75-dc186f7c2f62"/>
+    <recordManagerType typeId="3937e194-b4ae-484a-b808-bcf0a19314ec" valueTypeId="236ce78e-4bd5-42fa-a5c4-ae9f5973c7b4"/>
+  </producedTypes>
+  <name>ПланируемыеТрудозатраты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Планируемые трудозатраты</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="8f69354b-3334-4b18-84bb-46a8641b27d1">
+    <name>Трудозатраты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Трудозатраты</value>
+    </synonym>
+    <type>
+      <types>DefinedType.Трудозатрата</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="d710ed3b-eebf-463a-8416-e720119a90bd">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.Пользователи.EmptyRef</value>
+    </fillValue>
+  </attributes>
+  <attributes uuid="e427b91c-4d78-4d71-86e6-477f30200cf5">
+    <name>ДатаДобавления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата добавления</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="38abb917-afc6-4ea5-b62a-d00f0afd47c9">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ВнутреннееЗадание</types>
+      <types>DocumentRef.Задача</types>
+      <types>DocumentRef.ЗаявкаНаРазработку</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f16dcdcd-fc55-4634-9605-c47ed6e9419a">
+    <name>ТипТрудозатрат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип трудозатрат</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипыТрудозатрат</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

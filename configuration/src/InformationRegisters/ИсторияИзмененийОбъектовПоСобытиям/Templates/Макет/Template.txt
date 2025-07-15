@@ -1,0 +1,201 @@
+#Область Страница
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SDMS Object History</title>
+	<link rel="stylesheet" href="%1/assets/css/styles.css?v2" charset="utf-8">
+	<style>
+		%2
+	</style>
+</head>
+
+<body style='overflow:hidden'>
+	<div style='height:100%%; overflow:auto'>
+		<nav>
+			<button id="refresh" type="button" title="Обновить"><span class="icon refresh-icon"></span></button>
+			<label for="onlyMainChangesCheckbox"><input type="checkbox" id="onlyMainChangesCheckbox" checked><span>Только главные</span></label>
+			<button id="sortButton" type="button" title="Упорядочить"><span class="icon sort-icon"></span></button>
+			<button id="collapseButton" type="button" title="Свернуть все"><span class="icon collapse-icon reversed"></span></button>
+		</nav>
+
+		<main class="only-main-changes" id="main">
+			%3
+		</main>
+	</div>
+
+	<script>
+		var setBottomPadding = function (mainEl) {
+			document.querySelectorAll(".history-object-events").forEach(el => {
+				let lastEl = [...el.querySelectorAll(".history-event:not(.additional-change)>.history-event-content")].pop()
+				lastEl.style.paddingBottom = ((mainEl.classList.contains("only-main-changes") && !mainEl.classList.contains("desc-sorting")) ? "0px" : null)
+			})
+		}
+		
+		onlyMainChangesCheckbox.addEventListener('change', function () {
+			let mainEl = document.getElementById('main')
+			mainEl.classList.toggle('only-main-changes')
+			setBottomPadding(mainEl)
+
+			mainEl.querySelectorAll('.history-object:not(.collapsed)>div.collapsible').forEach(el => {
+				collapseArea(el)
+			})
+		})
+
+		sortButton.addEventListener('click', function () {
+			this.classList.toggle('desc')
+			let mainEl = document.getElementById('main')
+			mainEl.classList.toggle('desc-sorting')
+			setBottomPadding(mainEl)
+		})
+
+		collapseButton.addEventListener('click', function () {
+			this.classList.toggle('reversed')
+			let collapseAll = this.classList.contains('reversed')
+			this.title = collapseAll ? 'Развернуть все' : 'Свернуть все'
+			document.querySelectorAll('main > div.history-object > div.collapsible').forEach(el => {
+				if (collapseAll) {
+					el.parentNode.classList.add('collapsed')
+				} else {
+					el.parentNode.classList.remove('collapsed')
+				}
+				collapseArea(el)
+			})
+		})
+
+		var collapseArea = function (collapsibleDiv) {
+			if (collapsibleDiv.parentNode.classList.contains("collapsed")) {
+				collapsibleDiv.style.maxHeight = `0px`
+			} else {
+				collapsibleDiv.style.maxHeight = `${collapsibleDiv.scrollHeight}px`
+			}
+		}
+
+		document.querySelectorAll('main>div.history-object>div.history-object-title').forEach(el => {
+			let collapsibleDiv = el.parentNode.querySelector('div.collapsible')
+			collapseArea(collapsibleDiv)
+
+			el.addEventListener('click', function () {
+				let historyObject = this.parentNode
+				historyObject.classList.toggle('collapsed')
+
+				let collapsibleDiv = historyObject.querySelector('div.collapsible')
+				collapseArea(collapsibleDiv)
+
+				let historyObjects = document.querySelectorAll('main > div.history-object')
+				var collapsedObjects = 0
+				let collapsedObjectsForChange = collapseButton.classList.contains('reversed') ? 0 : historyObjects.length
+				historyObjects.forEach(el => { if (el.classList.contains('collapsed')) { collapsedObjects += 1 } })
+				if (collapsedObjects == collapsedObjectsForChange) {
+					collapseButton.classList.toggle('reversed')
+					collapseButton.title = collapseButton.classList.contains('reversed') ? 'Развернуть все' : 'Свернуть все'
+				}
+			})
+		})
+	</script>
+</body>
+
+</html>
+#КонецОбласти
+
+#Область Объект
+<div class="history-object%4">
+	<div class="history-object-title">
+		<div>
+			%3
+			<span>%1</span>
+		</div>
+		<span class="icon collapse-icon"></span>
+	</div>
+	<div class="collapsible">
+		<div class="history-object-events">
+			<div class="history-event"><div class="history-event-timeline"><div class="line"></div></div></div>
+			%2
+		</div>
+	</div>
+</div>
+#КонецОбласти
+
+#Область ИзмененияОбъектаЗаПериод
+<div class="history-event%1">
+	<div class="history-event-timeline">
+		<div class="dot"></div>
+		<div class="line"></div>
+	</div>
+	<div class="history-event-content">
+		<div class="history-event-title">
+			<span class="history-event-date">%2</span>
+			<span>в</span>
+			<span>%3</span>
+			<a href="sdms_user_%4" class="history-event-author">%5</a>
+		</div>
+		%6
+	</div>
+</div>
+#КонецОбласти
+
+#Область РеквизитСтароеНовое
+<div class="event%1">
+	<span>%2:</span>
+	<span class="old-value">%3</span>
+	<span class="icon arrow-icon"></span>
+	<span class="new-value">%4</span>
+</div>
+#КонецОбласти
+
+#Область РеквизитСтарое
+<div class="event%1">
+	<span>%2:</span>
+	<span class="old-value">%3</span>
+</div>
+#КонецОбласти
+
+#Область РеквизитСтароеБезЛинии
+<div class="event%1">
+	<span>%2:</span>
+	<span class="old-value-noneline">%3</span>
+</div>
+#КонецОбласти
+
+#Область РеквизитНовое
+<div class="event%1">
+	<span>%2:</span>
+	<span>%3</span>
+	<span>%4</span>
+</div>
+#КонецОбласти
+
+#Область РеквизитНовоеЗначение
+<div class="event%1">
+	<span>%2:</span>
+	<span class="new-value">%3</span>
+</div>
+#КонецОбласти
+
+#Область ТабличнаяЧасть
+<div class="event%1">
+	<p>%2:</p>
+	<ul>
+		%3
+	</ul>
+</div>
+#КонецОбласти
+
+#Область ИзмененияТЧ
+<li>%1</li>
+#КонецОбласти
+
+#Область ТЧСтароеНовое
+	<span>%1</span>
+	<span class="old-value">%2</span>
+	<span> - </span>
+	<span class="new-value">%3</span>
+#КонецОбласти
+
+#Область Событие
+<div class="event%1">
+	<span>%2</span>
+</div>
+#КонецОбласти

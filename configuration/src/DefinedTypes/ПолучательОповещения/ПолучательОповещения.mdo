@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="501d4074-2851-4f9f-8d9a-d957a73efba0">
+  <producedTypes>
+    <containerType typeId="893e9a32-a65a-41db-ad6f-75e56bed3536" valueTypeId="99b9cedc-6883-4101-ad5c-05475de64a8d"/>
+  </producedTypes>
+  <name>ПолучательОповещения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Получатель оповещения</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.Пользователи</types>
+    <types>CatalogRef.Подписчики</types>
+  </type>
+</mdclass:DefinedType>

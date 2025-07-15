@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="042ea334-560a-4266-b36a-da414835a5da">
+  <producedTypes>
+    <objectType typeId="7c220dd4-ead7-4a26-8f94-864635c32d05" valueTypeId="c9bdf2cd-ba85-4405-9fae-f05b2f177ffa"/>
+    <managerType typeId="ac6054b7-b3e2-4a6c-b6b2-d47f069bfce6" valueTypeId="55fd45db-815c-4423-802d-8e1f9439d1ad"/>
+  </producedTypes>
+  <name>АнализЛожныхОшибок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Анализ ложных ошибок</value>
+  </synonym>
+  <defaultForm>Report.АнализЛожныхОшибок.Form.ФормаОтчета</defaultForm>
+  <forms uuid="e5a9c3d3-0dc5-4c2d-817a-52b0f93d58d9">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Report>

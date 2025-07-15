@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="846aa0cd-9cb0-48ae-8db5-0c8a25f50a2e">
+  <producedTypes>
+    <selectionType typeId="6c2ff4b6-f3fd-4055-aeb5-8b0c14095dca" valueTypeId="2b3faa80-d918-4242-9a3b-f1ead4f86cf9"/>
+    <listType typeId="9ae30a6d-d208-4f24-9116-509c773c152c" valueTypeId="fa557eb2-c17d-41d2-ad61-b710158ce4f8"/>
+    <managerType typeId="15770a41-e64c-4200-ab3a-3f78ae64e84f" valueTypeId="2a751ddb-1441-4ca2-8e49-c7b2e24ef6d3"/>
+    <recordSetType typeId="2be3a89c-fc5c-47c8-9dd1-48360fe73d90" valueTypeId="4d9dc3bf-8b2a-456a-982f-2d05691d2285"/>
+    <recordKeyType typeId="c8b23c7b-64e1-4751-b1a7-a427e6383743" valueTypeId="bb1f01f7-6576-4106-91e4-ff9a27a7dda8"/>
+    <recordType typeId="847c9daf-8bfa-4694-a6ed-afec14ba3e62" valueTypeId="b23cfac7-f9d3-485b-8b44-59fb32b1bc25"/>
+    <recordManagerType typeId="2f2a45e4-ddd6-4697-af16-d092d49ba1e1" valueTypeId="2925c1b6-0c65-499d-99f6-3f3f693b8f10"/>
+  </producedTypes>
+  <name>НастройкиПереходаСтатусовОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки перехода статусов объектов</value>
+  </synonym>
+  <comment>Настройки очередности перехода статусов объектов и их доступность по ролям пользователей</comment>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="fe5155d6-088f-45b7-8537-71a4e4fa6c36">
+    <name>Порядок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порядок</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="483f9627-9088-42b8-aa76-9b331d708659">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <comment>Объект, для которого настраивается переход</comment>
+    <type>
+      <types>CatalogRef.ТипыОбъектовВладельцев</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f7748ba1-b6a8-444e-97cc-43b0624cd425">
+    <name>ТекущийСтатус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текущий статус</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтатусыОбъектов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="da84f513-604c-4df4-8882-0054b3e0bc44">
+    <name>РольПользователя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Роль пользователя</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.РолиПользователей</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="eb33d85c-32c6-4972-8f1b-1578ed562ed4">
+    <name>НовыйСтатус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Новый статус</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтатусыОбъектов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="2b4280af-e6b7-4ea8-8a5c-5f9dcb9ee157">
+    <name>НастройкаПереходаСтатусов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка перехода статусов</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="edc316cc-c405-4326-b420-532d252730c4">
+    <name>НастройкиПереходаСтатусов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки перехода статусов</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:InformationRegister>

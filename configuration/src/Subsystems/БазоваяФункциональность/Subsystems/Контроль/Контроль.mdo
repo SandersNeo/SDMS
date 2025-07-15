@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9518ad31-3d8c-4560-b3d7-e0145cd95c52">
+  <name>Контроль</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контроль</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>DataProcessor.АктуализацияЗаявок</content>
+  <content>InformationRegister.ДатыАктуальностиЗаявокНаРазработку</content>
+  <content>DataProcessor.ВернутсяНаТестирование</content>
+  <content>DataProcessor.КонтрольЗадач</content>
+  <content>Report.ПроектыПоСпециалисту</content>
+  <content>DataProcessor.Разработка</content>
+  <content>DataProcessor.ТекущиеРаботыПоЗаявкам</content>
+  <content>DataProcessor.УправлениеНагрузкой</content>
+  <content>CommonPicture.АктивныеЗадачиОтсутствуют</content>
+  <parentSubsystem>Subsystem.БазоваяФункциональность</parentSubsystem>
+</mdclass:Subsystem>

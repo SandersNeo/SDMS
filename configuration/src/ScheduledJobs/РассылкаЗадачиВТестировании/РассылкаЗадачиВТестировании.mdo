@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="87a3a67e-119d-4e8c-832b-523e801e78a8">
+  <name>РассылкаЗадачиВТестировании</name>
+  <synonym>
+    <key>ru</key>
+    <value>Рассылка задачи в тестировании</value>
+  </synonym>
+  <methodName>CommonModule.РегламентныеЗаданияСервер.РассылкаЗадачиВТестировании</methodName>
+  <description>Рассылка задачи в тестировании</description>
+  <key>РассылкаЗадачиВТестировании</key>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

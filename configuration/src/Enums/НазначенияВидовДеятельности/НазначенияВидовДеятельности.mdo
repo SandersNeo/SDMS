@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1d1471ad-8d20-4b63-a560-1cc90193c2fe">
+  <producedTypes>
+    <refType typeId="12f838f9-5986-4b79-98ae-4e8349d2e14b" valueTypeId="5e665570-7bc4-4e87-bf35-476fd349ad82"/>
+    <listType typeId="a1724d49-fee2-48df-bd47-6f93e07dad53" valueTypeId="c86ac999-2187-49b6-95b5-b5a6399c8724"/>
+    <managerType typeId="61291078-c16c-4328-acfb-34aee05cc9bd" valueTypeId="00e416c6-ce58-40df-a75c-4b51a9ee04b5"/>
+  </producedTypes>
+  <name>НазначенияВидовДеятельности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Назначения видов деятельности</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="5eb845d3-6d02-488a-a65f-b167ec546472">
+    <name>Общее</name>
+    <synonym>
+      <key>ru</key>
+      <value>Общее</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b9d7c3cd-bbf8-4fcd-a02c-d1d2cfcad9cd">
+    <name>ITПодразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>IT-подразделение</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c9526b7a-721a-41f8-a93d-afe1059401e3">
+    <name>ВнутренниеТрудозатраты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Внутренние трудозатраты</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

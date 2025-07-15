@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="614ce014-5086-4b1c-835d-fda54f169164">
+  <producedTypes>
+    <containerType typeId="31ca9c1f-5c6e-4a71-96b3-9e6b53d1d641" valueTypeId="7faffc9a-19a4-4c3f-884e-dbc1f6e696e8"/>
+  </producedTypes>
+  <name>ОбъектИзбранного</name>
+  <synonym>
+    <key>ru</key>
+    <value>Объект избранного</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.ГруппыЗаказчиковНаправлений</types>
+    <types>CatalogRef.Пользователи</types>
+    <types>CatalogRef.Филиалы</types>
+    <types>CatalogRef.Продукты</types>
+    <types>CatalogRef.НаправленияРазработки</types>
+    <types>CatalogRef.СистемыУчета</types>
+  </type>
+</mdclass:DefinedType>

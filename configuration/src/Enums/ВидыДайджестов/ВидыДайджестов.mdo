@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8a2481ef-3a5c-4263-ae3f-b9f4dd875a31">
+  <producedTypes>
+    <refType typeId="c5c27ad1-134d-4a91-8bec-14b16d744313" valueTypeId="a1ed8d13-38bd-4083-a537-f5b9ef151362"/>
+    <listType typeId="50974739-c769-403b-b880-9935dc6c0e4f" valueTypeId="e1784689-6e55-49ed-b22a-e1681a7bdf93"/>
+    <managerType typeId="03d2ad50-67e3-4172-8518-ca262777af8d" valueTypeId="f9095f0b-3c80-4197-9972-5363c470e40b"/>
+  </producedTypes>
+  <name>ВидыДайджестов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды дайджестов</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="082810ca-d79f-4a55-8efb-cc9c3ecf9797">
+    <name>Внеплановый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Внеплановый</value>
+    </synonym>
+    <comment>Описание изменений по задаче нужно опубликовать сразу после обновления базы, не дожидаясь планового дайджеста</comment>
+  </enumValues>
+  <enumValues uuid="c68d18e7-2c86-4ce8-977a-69e911115614">
+    <name>Плановый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Плановый</value>
+    </synonym>
+    <comment>Дайджест будет сформирован вручную по нескольким задачами за период и будет опубликован в указанный день</comment>
+  </enumValues>
+</mdclass:Enum>

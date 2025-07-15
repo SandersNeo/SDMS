@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e5d4741d-7a48-4ff5-907d-f69c8a8ca2cf">
+  <name>Участники</name>
+  <synonym>
+    <key>ru</key>
+    <value>Участники</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>Catalog.РолиУчастников</content>
+  <content>InformationRegister.Участники</content>
+  <content>DefinedType.ОбъектНаблюдения</content>
+  <content>DefinedType.ПолучательОповещения</content>
+  <content>InformationRegister.УчастникиВнутреннихТрудозатрат</content>
+  <content>CommonPicture.ДоступКЧерновику</content>
+  <content>CommonPicture.ПолучатьОповещения</content>
+  <content>Catalog.Подписчики</content>
+  <parentSubsystem>Subsystem.БазоваяФункциональность</parentSubsystem>
+</mdclass:Subsystem>

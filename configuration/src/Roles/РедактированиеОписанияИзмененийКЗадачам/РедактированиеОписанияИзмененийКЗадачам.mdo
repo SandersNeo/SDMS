@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="13976f6b-8bc0-4a8e-842e-1be3984a3a36">
+  <name>РедактированиеОписанияИзмененийКЗадачам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Редактирование описания изменений к задачам</value>
+  </synonym>
+  <comment>Позволяет описывать изменения по задачам для дайджеста новостей</comment>
+</mdclass:Role>

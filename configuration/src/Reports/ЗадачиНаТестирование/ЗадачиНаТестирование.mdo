@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="57006259-9857-4264-8ab1-2533b319109d">
+  <producedTypes>
+    <objectType typeId="fddfe4e2-36a7-4094-83c0-1bec99284e7e" valueTypeId="2604d1c3-62ae-4ef8-a78b-97446214d3fa"/>
+    <managerType typeId="0c92c166-ac9e-428e-8837-2c0d6e062ac6" valueTypeId="a4b36666-8bfe-4e3c-945f-5c7dbe95f14d"/>
+  </producedTypes>
+  <name>ЗадачиНаТестирование</name>
+  <synonym>
+    <key>ru</key>
+    <value>Задачи на тестирование</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ЗадачиНаТестирование.Form.ФормаОтчета</defaultForm>
+  <forms uuid="40aa373b-0786-4df1-affd-15687334bae0">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Report>

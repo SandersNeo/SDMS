@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="55ed097c-ca33-4156-9aed-0715a1250231">
+  <name>СтруктураПодчиненности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Структура подчиненности</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>InformationRegister.СтруктураПодчиненности</content>
+  <content>CommonForm.СтруктураПодчиненности</content>
+  <content>CommonPicture.ДлительнаяОперация48</content>
+  <content>DefinedType.ОбъектСтруктурыПодчиненности</content>
+  <content>InformationRegister.ОбъектыВерхнегоУровняСтруктурыПодчиненности</content>
+  <content>DefinedType.ОбъектНаблюдения</content>
+  <parentSubsystem>Subsystem.БазоваяФункциональность</parentSubsystem>
+</mdclass:Subsystem>

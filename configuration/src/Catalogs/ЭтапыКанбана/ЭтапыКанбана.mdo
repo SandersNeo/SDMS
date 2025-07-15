@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="763c6f93-1897-431d-94d5-a8bae46d8bdd">
+  <producedTypes>
+    <objectType typeId="a14e8e04-d7f0-4f9e-94bf-1a855de48363" valueTypeId="0445e939-81d2-4afb-a730-984606ac5f65"/>
+    <refType typeId="aa78ba21-3995-4af6-8bc8-a2612778b690" valueTypeId="36ee78b2-e5a1-46de-ba47-315e6b3cca0e"/>
+    <selectionType typeId="f8956b10-5b43-4b8e-ae47-c82164b0d024" valueTypeId="364fe54a-5097-4bad-8bd6-f36579690c44"/>
+    <listType typeId="f4499af7-0c47-446a-967e-fe976d404776" valueTypeId="c52eaee5-83a5-4da4-b745-9188be1a1e94"/>
+    <managerType typeId="24066d7d-2f2c-46a3-bd5a-88d543d3f2a7" valueTypeId="41e08727-4562-41dd-91d1-456611994afd"/>
+  </producedTypes>
+  <name>ЭтапыКанбана</name>
+  <synonym>
+    <key>ru</key>
+    <value>Этапы канбана</value>
+  </synonym>
+  <inputByString>Catalog.ЭтапыКанбана.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ЭтапыКанбана.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.Филиалы</owners>
+  <owners>Catalog.Процессы</owners>
+  <codeLength>5</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="ae5bfc9a-183f-4fe6-bfd9-05ac9d1783fe">
+    <name>ПорядокОтображения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порядок отображения</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3650b993-f110-4434-a829-7b20f86ae3e7">
+    <name>ТипКанбана</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип канбана</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипыКанбана</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7d7a4c90-8966-4727-8576-1754fd4a34c3">
+    <name>УдалитьМаксимальноеКоличествоЗадач</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Максимальное количество задач</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ffb9e5e9-cff8-4e34-9871-a3d27f0ac8ac">
+    <name>УдалитьМинимальноеКоличествоЗадач</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Минимальное количество задач</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="670340ab-5e7e-4bce-a274-3f2916fabb12">
+    <producedTypes>
+      <objectType typeId="307f79d9-1819-4a99-acc5-4d4b8a94d272" valueTypeId="f5bba650-307a-4240-bc38-ba67a7474122"/>
+      <rowType typeId="d0a150ea-ecf7-459a-be59-4260c996ff1f" valueTypeId="df8ff743-b0a5-4c20-9005-15f4bbe5b1de"/>
+    </producedTypes>
+    <name>Переходы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Переходы</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="8a9bf20f-3d91-4b3c-a6df-1d73c9c01ccc">
+      <name>ЭлементПерехода</name>
+      <synonym>
+        <key>ru</key>
+        <value>Элемент перехода</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЭтапыКанбана</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="56318773-7605-4863-966c-ae2a83d5fcc8">
+    <producedTypes>
+      <objectType typeId="5624da54-a9c4-4dea-b4fb-e01e9f97f1a2" valueTypeId="c1aa3829-3239-491e-a671-ff325e67a443"/>
+      <rowType typeId="614ab491-f0ea-42cc-b186-8295a83efe29" valueTypeId="4830027b-c061-4599-9357-a9b1c49998fb"/>
+    </producedTypes>
+    <name>УдалитьВидыИсполнителей</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Виды исполнителей</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="11cc8414-baf3-4cef-ae1e-fd60405db382">
+      <name>ВидИсполнителя</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид исполнителя</value>
+      </synonym>
+      <type>
+        <types>EnumRef.ПринадлежностьИсполнителейКЗадаче</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="cbe6c12f-7e8e-4d4d-8661-b4f81f920454">
+    <producedTypes>
+      <objectType typeId="0725b3d5-22c3-4c7d-9c46-d0a71aca3f27" valueTypeId="031f0dd1-560e-492e-a3d5-84c4ba8eeae1"/>
+      <rowType typeId="4b6a4f99-2122-49dc-85ee-b3b05c5a0fb8" valueTypeId="472b896f-a2f1-4fd2-8b2a-b1a223a24326"/>
+    </producedTypes>
+    <name>ЭлементыЭтапа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Элементы этапа</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="d9b31f94-ff64-4679-ae20-5d1d326efecf">
+      <name>Элемент</name>
+      <synonym>
+        <key>ru</key>
+        <value>Элемент</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ВидыЗадач</types>
+        <types>CatalogRef.СтатусыОбъектов</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="f0ef0bac-62df-4f07-8ab1-b1de782938c6">
+    <name>УдалитьНастройкаОтборовИЭтапов</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Настройка отборов и этапов</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

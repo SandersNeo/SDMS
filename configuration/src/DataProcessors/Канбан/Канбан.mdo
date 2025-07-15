@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="07e5a470-84b7-4279-92d6-118b8d19ebab">
+  <producedTypes>
+    <objectType typeId="94d3b483-4b3d-4450-ada1-d8d28ff800e2" valueTypeId="a457272d-0075-45d5-ad8d-9b5f23c7df0a"/>
+    <managerType typeId="c34d5951-35b3-4d0c-aa46-aad541b0e3e7" valueTypeId="7905fd67-1c0c-4e77-9d1a-b5b7b7b72b6d"/>
+  </producedTypes>
+  <name>Канбан</name>
+  <synonym>
+    <key>ru</key>
+    <value>Канбан</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.Канбан.Form.ФормаОбработки</defaultForm>
+  <forms uuid="7cafbfa6-9b3a-4cf8-9b00-a14ee6ece89b">
+    <name>ФормаОбработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма обработки</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="594dad4b-03e5-44fa-80c2-78902349f2da">
+    <name>ШаблонHTML</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон HTML</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+</mdclass:DataProcessor>

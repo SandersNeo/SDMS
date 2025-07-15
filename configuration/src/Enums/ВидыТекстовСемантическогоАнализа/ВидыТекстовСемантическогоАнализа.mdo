@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="443a0fce-00b3-4e02-b63c-67a8f75c0358">
+  <producedTypes>
+    <refType typeId="78efeb52-1872-49dd-8524-e5358a3de5be" valueTypeId="bfbb4a35-ba1b-4d06-a019-9388c2dee75a"/>
+    <listType typeId="c6f047a8-fd70-4a12-aa47-be18fec8f20a" valueTypeId="7d146983-ae65-45a0-894b-387b790b54c5"/>
+    <managerType typeId="be3a13f9-724f-46ae-a81c-7715e6de1743" valueTypeId="8510772d-ee14-40f6-ba70-917da59a6f63"/>
+  </producedTypes>
+  <name>ВидыТекстовСемантическогоАнализа</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды текстов семантического анализа</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="dd979005-47dc-4f66-864f-875e50da3a2b">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="07dcdb6a-70b0-4090-b886-530e244a849f">
+    <name>Тема</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тема</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

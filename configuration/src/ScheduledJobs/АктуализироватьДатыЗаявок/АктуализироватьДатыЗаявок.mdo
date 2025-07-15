@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fb40c22a-4c1a-4936-9ab1-c9fd0eab703e">
+  <name>АктуализироватьДатыЗаявок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Актуализировать даты заявок</value>
+  </synonym>
+  <methodName>CommonModule.РегламентныеЗаданияСервер.АктуализироватьДатыЗаявок</methodName>
+  <description>АктуализироватьДатыЗаявок</description>
+  <key>Актуализировать даты заявок</key>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

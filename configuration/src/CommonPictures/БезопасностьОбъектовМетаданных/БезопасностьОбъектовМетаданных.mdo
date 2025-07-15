@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f8ccf898-a31b-49ea-8196-3ecb43d48849">
+  <name>БезопасностьОбъектовМетаданных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Безопасность объектов метаданных</value>
+  </synonym>
+</mdclass:CommonPicture>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="960ffb49-3f87-4668-81a9-a5192bca0c25">
+  <producedTypes>
+    <objectType typeId="affd2432-5dae-4c33-aaeb-67dd526609ef" valueTypeId="d7351089-0a26-487f-9f7d-88b3c370cb84"/>
+    <managerType typeId="b50d8178-51b7-4477-ac68-d159743b3f1e" valueTypeId="006f40e4-fe4e-4dbc-8ff5-670db98da4cc"/>
+  </producedTypes>
+  <name>ПулНаТестирование</name>
+  <synonym>
+    <key>ru</key>
+    <value>Пул на тестирование</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ПулНаТестирование.Form.ФормаОбработки</defaultForm>
+  <forms uuid="7c35d4c9-94b8-4e9a-8025-6eb05b024f78">
+    <name>ФормаОбработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма обработки</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

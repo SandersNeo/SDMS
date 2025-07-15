@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bb4d827a-246b-4093-80ae-356d2d92d1ea">
+  <name>ОшибкаСозданияЗаявки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ошибка создания заявки</value>
+  </synonym>
+</mdclass:CommonPicture>

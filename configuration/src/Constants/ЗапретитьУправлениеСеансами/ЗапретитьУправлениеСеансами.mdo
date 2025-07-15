@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d42d1ca0-df7f-4bda-8264-98f68b4faecd">
+  <producedTypes>
+    <managerType typeId="daeea768-8840-4847-bf30-ac6ba34dc01a" valueTypeId="811eac01-24c2-499c-9a04-8dfbabb5a6a3"/>
+    <valueManagerType typeId="d36bc476-17de-43af-8501-7a9ab49efb2d" valueTypeId="ff00fffd-1831-4244-8da8-482631db6a24"/>
+    <valueKeyType typeId="2a0fb591-42e2-5100-a589-0cba7018981a" valueTypeId="4f367646-4088-5d63-a5e5-ce234b03dff4"/>
+  </producedTypes>
+  <name>ЗапретитьУправлениеСеансами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Запретить управление сеансами</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

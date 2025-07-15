@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:SessionParameter xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4b740936-3848-4576-97e1-f7611e30ae58">
+  <name>РазрабатываемыеСистемы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Разрабатываемые системы</value>
+  </synonym>
+  <comment>Системы, в разработке которых участвует пользователь</comment>
+  <type>
+    <types>FixedArray</types>
+  </type>
+</mdclass:SessionParameter>

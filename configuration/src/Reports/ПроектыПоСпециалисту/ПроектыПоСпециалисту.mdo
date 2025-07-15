@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4edcd4b8-91b8-4af7-bb27-f0e395e83fe4">
+  <producedTypes>
+    <objectType typeId="140c8c0a-cdd8-4398-a1f4-15822ae6bd09" valueTypeId="929a983a-e410-4c40-83ee-c7ce65f11d16"/>
+    <managerType typeId="b71bc405-4adc-4f06-abdf-c0583fe8d21e" valueTypeId="ad73a08d-1844-4ea4-94ea-133d7b93b84e"/>
+  </producedTypes>
+  <name>ПроектыПоСпециалисту</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проекты по специалисту</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ПроектыПоСпециалисту.Form.ФормаОтчета</defaultForm>
+  <forms uuid="17afd650-77d0-45ae-9613-f8c26289f5d4">
+    <name>НастройкиСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="432210e9-2d53-49c2-96c2-9d8a3c95311f">
+    <name>НастройкиТаблиц</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки таблиц</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c887be68-412e-43aa-affa-69ff8d033770">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="dc07fce3-dc9e-446b-8c48-aac81e1452e3">
+    <name>МакетПланПроекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет план проекта</value>
+    </synonym>
+  </templates>
+  <templates uuid="8a581fd5-d220-4fd1-8c28-408a378d99f4">
+    <name>МакетТрудозатраты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет трудозатраты</value>
+    </synonym>
+  </templates>
+  <templates uuid="a041d884-53af-498f-a330-bb370816d104">
+    <name>ФормированиеСтруктурыПодчиненных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Формирование структуры подчиненных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

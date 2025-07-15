@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:SessionParameter xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="602e8459-80eb-4169-b379-047f09d3de85">
+  <name>РольВОтделеIT</name>
+  <synonym>
+    <key>ru</key>
+    <value>Роль в отделе IT</value>
+  </synonym>
+  <comment>Содержит значение одноименного реквизита из Справочник.Пользователи</comment>
+  <type>
+    <types>CatalogRef.РолиПользователей</types>
+  </type>
+</mdclass:SessionParameter>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3be6d753-0014-46f5-bb9c-85b3b7cf4b6f">
+  <producedTypes>
+    <managerType typeId="3f309efa-1cbf-42f4-ad75-142c6daa7c8a" valueTypeId="b0d4f02e-521e-437a-b964-aaa18cca096a"/>
+    <valueManagerType typeId="e6999bbf-4677-4d0b-8b1d-38a804afa252" valueTypeId="f57005dc-3d0d-4903-9704-9b3a6dba8d4d"/>
+    <valueKeyType typeId="1d84e4ba-b412-5adf-9629-db506a5a4c7a" valueTypeId="03398838-22f8-5f8c-b1a3-bedbe5a13260"/>
+  </producedTypes>
+  <name>ВремяПриостановкиСлужебныхФоновыхЗаданий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Время приостановки служебных фоновых заданий</value>
+  </synonym>
+  <comment>Время в секундах, на которое приостанавливаются служебные фоновые задания до начала следующего цикла выполнения</comment>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>5</precision>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a09ce92c-d5d5-4944-87bb-c4c9c622085d">
+  <name>УдалитьИнтервалОтсутствия</name>
+  <synonym>
+    <key>ru</key>
+    <value>Удалить интервал отсутствия</value>
+  </synonym>
+</mdclass:CommonPicture>

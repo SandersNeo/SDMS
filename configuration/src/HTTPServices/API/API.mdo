@@ -1,0 +1,1175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="671efbbe-4985-4ad2-9dcf-e650b4c18836">
+  <name>API</name>
+  <synonym>
+    <key>ru</key>
+    <value>API</value>
+  </synonym>
+  <rootURL>api</rootURL>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="de0b69b2-3e96-4d8a-9e85-2204935714b0">
+    <name>assetsVersion</name>
+    <synonym>
+      <key>ru</key>
+      <value>Assets version</value>
+    </synonym>
+    <template>/assetsversion</template>
+    <methods uuid="4705ffa6-7b95-40d3-afa6-8772faecce13">
+      <name>ANY</name>
+      <synonym>
+        <key>ru</key>
+        <value>ANY</value>
+      </synonym>
+      <httpMethod>Any</httpMethod>
+      <handler>apiANY</handler>
+    </methods>
+    <methods uuid="1753ec63-9208-48ef-a113-01ce5de5188c">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>assetsVersionGET</handler>
+    </methods>
+    <methods uuid="739097b6-3d54-461b-8ce8-93f4deb509bb">
+      <name>OPTIONS</name>
+      <synonym>
+        <key>ru</key>
+        <value>OPTIONS</value>
+      </synonym>
+      <httpMethod>OPTIONS</httpMethod>
+      <handler>apiOPTIONS</handler>
+    </methods>
+    <methods uuid="5b942e28-e3dd-4436-b9fb-1a4569ab981d">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>assetsVersionPOST</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="65ae25a7-50c9-4cab-8e74-b78c1e18f9e4">
+    <name>autosave</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автосохранение</value>
+    </synonym>
+    <template>/autosave</template>
+    <methods uuid="f7adbd38-0fce-4df4-b7f7-ee62b6633990">
+      <name>ANY</name>
+      <synonym>
+        <key>ru</key>
+        <value>ANY</value>
+      </synonym>
+      <httpMethod>Any</httpMethod>
+      <handler>apiANY</handler>
+    </methods>
+    <methods uuid="5df6f89d-cbdc-425c-bab3-7a91b6e9f674">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>autosavePOST</handler>
+    </methods>
+    <methods uuid="348fdfb3-741a-4049-94d9-06e3ef84b711">
+      <name>OPTIONS</name>
+      <synonym>
+        <key>ru</key>
+        <value>OPTIONS</value>
+      </synonym>
+      <httpMethod>OPTIONS</httpMethod>
+      <handler>apiOPTIONS</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="ea16aa3a-58b8-4e0c-a15c-be2b2db69432">
+    <name>branches</name>
+    <synonym>
+      <key>ru</key>
+      <value>Филиалы</value>
+    </synonym>
+    <template>/branches/{id}</template>
+    <methods uuid="5003e527-723c-4296-84fc-4b7e1b110f8e">
+      <name>ANY</name>
+      <synonym>
+        <key>ru</key>
+        <value>ANY</value>
+      </synonym>
+      <httpMethod>Any</httpMethod>
+      <handler>apiANY</handler>
+    </methods>
+    <methods uuid="a0cdb6a0-d510-4a4e-a41b-fbf4a1d1382d">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>branchesGET</handler>
+    </methods>
+    <methods uuid="271b6573-486a-49c3-be76-0cc8cc3060a5">
+      <name>OPTIONS</name>
+      <synonym>
+        <key>ru</key>
+        <value>OPTIONS</value>
+      </synonym>
+      <httpMethod>OPTIONS</httpMethod>
+      <handler>apiOPTIONS</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="c5e59cfa-3ca9-43e1-9410-4cce18475664">
+    <name>branchesId</name>
+    <synonym>
+      <key>ru</key>
+      <value>Филиалы</value>
+    </synonym>
+    <template>/branches/{id}/{method}</template>
+    <methods uuid="08b840c6-05b3-41de-813e-dceb876c7429">
+      <name>ANY</name>
+      <synonym>
+        <key>ru</key>
+        <value>ANY</value>
+      </synonym>
+      <httpMethod>Any</httpMethod>
+      <handler>apiANY</handler>
+    </methods>
+    <methods uuid="e9ca1760-12af-4e9f-b494-aa7c15c290ca">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>branchesIdGET</handler>
+    </methods>
+    <methods uuid="10c4321b-3cb5-4e8f-903d-6bee05e46b77">
+      <name>OPTIONS</name>
+      <synonym>
+        <key>ru</key>
+        <value>OPTIONS</value>
+      </synonym>
+      <httpMethod>OPTIONS</httpMethod>
+      <handler>apiOPTIONS</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="77796b3d-e0b8-4106-875d-637c3e44c8e4">
+    <name>comments</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарии</value>
+    </synonym>
+    <template>/comments/{method}</template>
+    <methods uuid="f2778e78-9a26-420f-a0e5-34f42e22c153">
+      <name>ANY</name>
+      <synonym>
+        <key>ru</key>
+        <value>ANY</value>
+      </synonym>
+      <httpMethod>Any</httpMethod>
+      <handler>apiANY</handler>
+    </methods>
+    <methods uuid="ec260802-3f95-4fd3-83c4-9fa3b9855cd7">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>commentsGET</handler>
+    </methods>
+    <methods uuid="6b1389e1-8171-44d6-ab32-e1a1f69931a4">
+      <name>OPTIONS</name>
+      <synonym>
+        <key>ru</key>
+        <value>OPTIONS</value>
+      </synonym>
+      <httpMethod>OPTIONS</httpMethod>
+      <handler>apiOPTIONS</handler>
+    </methods>
+    <methods uuid="9f5d24aa-6425-41da-a7db-7385c0927d93">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>commentsPOST</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="cf75a6cb-a212-45c9-9337-e636008220ee">
+    <name>customerGroup</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группы заказчиков</value>
+    </synonym>
+    <template>/customerGroup</template>
+    <methods uuid="ee8b8d25-3d76-4e6c-b485-e57c9bccdb47">
+      <name>ANY</name>
+      <synonym>
+        <key>ru</key>
+        <value>ANY</value>
+      </synonym>
+      <httpMethod>Any</httpMethod>
+      <handler>apiANY</handler>
+    </methods>
+    <methods uuid="8e88860d-7709-42c9-ac60-49776226dc99">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>customerGroupGET</handler>
+    </methods>
+    <methods uuid="ec113966-766c-4d6b-bba2-776668fa6cae">
+      <name>OPTIONS</name>
+      <synonym>
+        <key>ru</key>
+        <value>OPTIONS</value>
+      </synonym>
+      <httpMethod>OPTIONS</httpMethod>
+      <handler>apiOPTIONS</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="1f442bee-0caa-44f5-a1af-29fe4432818e">
+    <name>devRequests</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявки на разработку</value>
+    </synonym>
+    <template>/devrequests/{method}</template>
+    <methods uuid="2763e4db-56e5-486b-a754-8e910f3dd049">
+      <name>ANY</name>
+      <synonym>
+        <key>ru</key>
+        <value>ANY</value>
+      </synonym>
+      <httpMethod>Any</httpMethod>
+      <handler>apiANY</handler>
+    </methods>
+    <methods uuid="a1db9c00-6ce9-4865-b93a-c625eff34107">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>devRequestsGET</handler>
+    </methods>
+    <methods uuid="d7ea0344-9cff-4bfd-b39a-f4d039f60037">
+      <name>OPTIONS</name>
+      <synonym>
+        <key>ru</key>
+        <value>OPTIONS</value>
+      </synonym>
+      <httpMethod>OPTIONS</httpMethod>
+      <handler>apiOPTIONS</handler>
+    </methods>
+    <methods uuid="d3ce4df1-1bdb-41e4-9a5c-e5a8bbf4f0cd">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>devRequestsPOST</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="dee7b341-79e0-40a3-872d-d4f92fee5639">
+    <name>devRequestsId</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявки на разработку</value>
+    </synonym>
+    <template>/devrequests/{id}/{method}</template>
+    <methods uuid="1012a1f8-1eb6-44bb-97bc-5c2481b4b655">
+      <name>ANY</name>
+      <synonym>
+        <key>ru</key>
+        <value>ANY</value>
+      </synonym>
+      <httpMethod>Any</httpMethod>
+      <handler>apiANY</handler>
+    </methods>
+    <methods uuid="00439313-6cfb-47b3-977a-718bf3d428eb">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>devRequestsIdGET</handler>
+    </methods>
+    <methods uuid="2625526d-a06e-471e-9356-c7612acf92af">
+      <name>OPTIONS</name>
+      <synonym>
+        <key>ru</key>
+        <value>OPTIONS</value>
+      </synonym>
+      <httpMethod>OPTIONS</httpMethod>
+      <handler>apiOPTIONS</handler>
+    </methods>
+    <methods uuid="f4a36175-14c3-458e-a4b8-868432f3e022">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>devRequestsIdPOST</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="ae4ce445-9547-4ed3-b786-ac476cb0f37b">
+    <name>devRequestsOld</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявки на разработку</value>
+    </synonym>
+    <template>/devrequests</template>
+    <methods uuid="d0920f4b-869a-4800-ac84-7e721b23b94d">
+      <name>ANY</name>
+      <synonym>
+        <key>ru</key>
+        <value>ANY</value>
+      </synonym>
+      <httpMethod>Any</httpMethod>
+      <handler>apiANY</handler>
+    </methods>
+    <methods uuid="34b09513-bb54-4803-8d2f-b8acf4e7f035">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>devRequestsOldGET</handler>
+    </methods>
+    <methods uuid="bb902b1b-6d57-48cf-a1d0-c6c54c05caa6">
+      <name>OPTIONS</name>
+      <synonym>
+        <key>ru</key>
+        <value>OPTIONS</value>
+      </synonym>
+      <httpMethod>OPTIONS</httpMethod>
+      <handler>apiOPTIONS</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="87591e42-8099-47bc-86be-6fdbbbdf470d">
+    <name>digest</name>
+    <synonym>
+      <key>ru</key>
+      <value>digest</value>
+    </synonym>
+    <template>/digest</template>
+    <methods uuid="2494d96e-bc25-4ac3-b194-bc902c2d8c88">
+      <name>ANY</name>
+      <synonym>
+        <key>ru</key>
+        <value>ANY</value>
+      </synonym>
+      <httpMethod>Any</httpMethod>
+      <handler>apiANY</handler>
+    </methods>
+    <methods uuid="190b8892-d3b6-4dc0-8945-16b56e30221b">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>digestGET</handler>
+    </methods>
+    <methods uuid="ce874d9a-0c26-4c16-87e3-a422b89a22b2">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>digestPOST</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="6e18cd60-99bc-4988-8772-f53f19013a20">
+    <name>directions</name>
+    <synonym>
+      <key>ru</key>
+      <value>Направления</value>
+    </synonym>
+    <template>/directions</template>
+    <methods uuid="65d1ad83-c9aa-4ca7-8916-ec695f098135">
+      <name>ANY</name>
+      <synonym>
+        <key>ru</key>
+        <value>ANY</value>
+      </synonym>
+      <httpMethod>Any</httpMethod>
+      <handler>apiANY</handler>
+    </methods>
+    <methods uuid="5f912441-0060-465f-ad33-c944818af804">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>directionsGET</handler>
+    </methods>
+    <methods uuid="f9a8c535-f69b-4b71-8583-7ec3a47d8545">
+      <name>OPTIONS</name>
+      <synonym>
+        <key>ru</key>
+        <value>OPTIONS</value>
+      </synonym>
+      <httpMethod>OPTIONS</httpMethod>
+      <handler>apiOPTIONS</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="f62fc34f-372f-4087-8deb-6627e8239c18">
+    <name>directionsIdEntities</name>
+    <synonym>
+      <key>ru</key>
+      <value>Направления</value>
+    </synonym>
+    <template>/directions/{id}/entities</template>
+    <methods uuid="dbc08e54-add0-4f6f-a377-2cc25318c7be">
+      <name>ANY</name>
+      <synonym>
+        <key>ru</key>
+        <value>ANY</value>
+      </synonym>
+      <httpMethod>Any</httpMethod>
+      <handler>apiANY</handler>
+    </methods>
+    <methods uuid="69a3950b-b204-4a92-994d-2657e6f62218">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>directionsIdEntitiesGET</handler>
+    </methods>
+    <methods uuid="bbb3adaf-b66b-4cbc-9766-9460abee5ab8">
+      <name>OPTIONS</name>
+      <synonym>
+        <key>ru</key>
+        <value>OPTIONS</value>
+      </synonym>
+      <httpMethod>OPTIONS</httpMethod>
+      <handler>apiOPTIONS</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="4e083f06-bc90-46e1-ab38-2ed70059db6e">
+    <name>elapsedTime</name>
+    <synonym>
+      <key>ru</key>
+      <value>Трудозатраты</value>
+    </synonym>
+    <template>/elapsedTime/{method}</template>
+    <methods uuid="72133614-4390-4ae0-903c-06bb556247a9">
+      <name>ANY</name>
+      <synonym>
+        <key>ru</key>
+        <value>ANY</value>
+      </synonym>
+      <httpMethod>Any</httpMethod>
+      <handler>apiANY</handler>
+    </methods>
+    <methods uuid="29e65934-0b5f-4405-869a-d75a52501b9d">
+      <name>DELETE</name>
+      <synonym>
+        <key>ru</key>
+        <value>DELETE</value>
+      </synonym>
+      <httpMethod>DELETE</httpMethod>
+      <handler>elapsedTimeDELETE</handler>
+    </methods>
+    <methods uuid="c73cb2de-c3c8-490b-a303-bbdd70277271">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>elapsedTimeGET</handler>
+    </methods>
+    <methods uuid="0a12035b-9589-4b77-b4fd-c9a41e250b19">
+      <name>OPTIONS</name>
+      <synonym>
+        <key>ru</key>
+        <value>OPTIONS</value>
+      </synonym>
+      <httpMethod>OPTIONS</httpMethod>
+      <handler>apiOPTIONS</handler>
+    </methods>
+    <methods uuid="b105d0dd-5d1b-4686-a541-06c4085e0d5a">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>elapsedTimePOST</handler>
+    </methods>
+    <methods uuid="68b5708f-a9f5-4776-96c4-bc0e210507e3">
+      <name>PUT</name>
+      <synonym>
+        <key>ru</key>
+        <value>PUT</value>
+      </synonym>
+      <httpMethod>PUT</httpMethod>
+      <handler>elapsedTimePUT</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="41169514-f524-4e7a-9a1c-df6bee9c8b8e">
+    <name>files</name>
+    <synonym>
+      <key>ru</key>
+      <value>Файлы</value>
+    </synonym>
+    <template>/files/{id}</template>
+    <methods uuid="7f6a0dfa-ef0b-491b-8ad8-0b7b598b19fa">
+      <name>ANY</name>
+      <synonym>
+        <key>ru</key>
+        <value>ANY</value>
+      </synonym>
+      <httpMethod>Any</httpMethod>
+      <handler>apiANY</handler>
+    </methods>
+    <methods uuid="c50b6261-7141-44ee-8c42-44b78549bc38">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>filesGET</handler>
+    </methods>
+    <methods uuid="0fb89a6f-58d9-4a60-8135-46cb87732b6a">
+      <name>OPTIONS</name>
+      <synonym>
+        <key>ru</key>
+        <value>OPTIONS</value>
+      </synonym>
+      <httpMethod>OPTIONS</httpMethod>
+      <handler>apiOPTIONS</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="0d862c24-6cfc-421f-95ac-c63b35eba2f5">
+    <name>internalWorks</name>
+    <synonym>
+      <key>ru</key>
+      <value>Внутренние трудозатраты</value>
+    </synonym>
+    <template>/internalworks/{method}</template>
+    <methods uuid="0029d6e1-c48e-4e3f-a244-ae73829a00f2">
+      <name>ANY</name>
+      <synonym>
+        <key>ru</key>
+        <value>ANY</value>
+      </synonym>
+      <httpMethod>Any</httpMethod>
+      <handler>apiANY</handler>
+    </methods>
+    <methods uuid="69cd54be-a112-4089-9aed-f9e484c465c1">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>internalWorksGET</handler>
+    </methods>
+    <methods uuid="8f0c5388-79a0-4db7-8785-2d2a19b7d41d">
+      <name>OPTIONS</name>
+      <synonym>
+        <key>ru</key>
+        <value>OPTIONS</value>
+      </synonym>
+      <httpMethod>OPTIONS</httpMethod>
+      <handler>apiOPTIONS</handler>
+    </methods>
+    <methods uuid="ee2bc7dc-5116-4038-b8ad-5c6782c69d64">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>internalWorksPOST</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="303a2691-e05a-421e-b5e4-359c631127e2">
+    <name>kanban</name>
+    <synonym>
+      <key>ru</key>
+      <value>Канбан</value>
+    </synonym>
+    <template>/kanban/{method}</template>
+    <methods uuid="6cc2ad43-14a3-4f30-a4de-d118636051c0">
+      <name>ANY</name>
+      <synonym>
+        <key>ru</key>
+        <value>ANY</value>
+      </synonym>
+      <httpMethod>Any</httpMethod>
+      <handler>apiANY</handler>
+    </methods>
+    <methods uuid="32607897-906a-4026-ab5c-ab4c2b85234a">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>kanbanGET</handler>
+    </methods>
+    <methods uuid="a183590f-a17a-4771-8efb-dde645144b19">
+      <name>OPTIONS</name>
+      <synonym>
+        <key>ru</key>
+        <value>OPTIONS</value>
+      </synonym>
+      <httpMethod>OPTIONS</httpMethod>
+      <handler>apiOPTIONS</handler>
+    </methods>
+    <methods uuid="3464b9f5-c97d-4855-a027-6cb9240b0117">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>kanbanPOST</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="ef738c61-3f6c-448d-83ca-40df7d2182e8">
+    <name>kanbanCard</name>
+    <synonym>
+      <key>ru</key>
+      <value>Карточка канбана</value>
+    </synonym>
+    <template>/kanban/card/{method}</template>
+    <methods uuid="54bf9ffc-796f-41d6-902e-b51b39b6133b">
+      <name>ANY</name>
+      <synonym>
+        <key>ru</key>
+        <value>ANY</value>
+      </synonym>
+      <httpMethod>Any</httpMethod>
+      <handler>apiANY</handler>
+    </methods>
+    <methods uuid="72955c8c-84ef-42ef-917a-4502be16d001">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>kanbanCardGET</handler>
+    </methods>
+    <methods uuid="7e42cc81-8032-4fd7-84ee-765e610868d1">
+      <name>OPTIONS</name>
+      <synonym>
+        <key>ru</key>
+        <value>OPTIONS</value>
+      </synonym>
+      <httpMethod>OPTIONS</httpMethod>
+      <handler>apiOPTIONS</handler>
+    </methods>
+    <methods uuid="eb607245-d3d9-4d4a-9a17-0505f5ca60be">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>kanbanCardPOST</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="77669c92-8e90-47d6-9c14-c7b3ddf6fb62">
+    <name>kanbanFilter</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фильтры канбана</value>
+    </synonym>
+    <template>/kanban/filter/{method}</template>
+    <methods uuid="6c766cc3-cefe-4f5a-ba31-a7d53836f2c2">
+      <name>ANY</name>
+      <synonym>
+        <key>ru</key>
+        <value>ANY</value>
+      </synonym>
+      <httpMethod>Any</httpMethod>
+      <handler>apiANY</handler>
+    </methods>
+    <methods uuid="e8bb231e-52ff-4e0d-af9f-93d9de09aeb7">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>kanbanFilterGET</handler>
+    </methods>
+    <methods uuid="743b6872-4c09-475a-9f2e-e45fad74fd70">
+      <name>OPTIONS</name>
+      <synonym>
+        <key>ru</key>
+        <value>OPTIONS</value>
+      </synonym>
+      <httpMethod>OPTIONS</httpMethod>
+      <handler>apiOPTIONS</handler>
+    </methods>
+    <methods uuid="05892e64-0001-484a-927d-4fe3bcb8f98d">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>kanbanFilterPOST</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="e6c06968-7389-4578-8d30-9ab9c3d444af">
+    <name>kanbanList</name>
+    <synonym>
+      <key>ru</key>
+      <value>Этап канбана</value>
+    </synonym>
+    <template>/kanban/list/{method}</template>
+    <methods uuid="f6bfc1bb-e1d7-4ed4-b1c0-c27923b23e4e">
+      <name>ANY</name>
+      <synonym>
+        <key>ru</key>
+        <value>ANY</value>
+      </synonym>
+      <httpMethod>Any</httpMethod>
+      <handler>apiANY</handler>
+    </methods>
+    <methods uuid="3e5b05e4-2427-4a47-ba4c-41f8d3da4869">
+      <name>OPTIONS</name>
+      <synonym>
+        <key>ru</key>
+        <value>OPTIONS</value>
+      </synonym>
+      <httpMethod>OPTIONS</httpMethod>
+      <handler>apiOPTIONS</handler>
+    </methods>
+    <methods uuid="e1adc3c9-74d4-4eba-94d7-30072f28887a">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>kanbanListPOST</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="5fb22262-d0bf-4e3e-9eae-16700a054d29">
+    <name>metadata</name>
+    <synonym>
+      <key>ru</key>
+      <value>Metadata</value>
+    </synonym>
+    <template>/metadata</template>
+    <methods uuid="c88f2135-e2c6-49e2-9688-dcbed69a5ba5">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>metadataGET</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="87056d47-26e8-4ec3-a00d-b17ba6103d15">
+    <name>produсts</name>
+    <synonym>
+      <key>ru</key>
+      <value>Продукты</value>
+    </synonym>
+    <template>/products</template>
+    <methods uuid="c67c3dcf-3679-4ddc-8beb-292f44da16a4">
+      <name>ANY</name>
+      <synonym>
+        <key>ru</key>
+        <value>ANY</value>
+      </synonym>
+      <httpMethod>Any</httpMethod>
+      <handler>apiANY</handler>
+    </methods>
+    <methods uuid="20144d6d-d9ee-4885-a30e-4dfb8b0b4c6c">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>produсtsGET</handler>
+    </methods>
+    <methods uuid="4dfb7d91-0442-4a03-b598-888d1fb12b36">
+      <name>OPTIONS</name>
+      <synonym>
+        <key>ru</key>
+        <value>OPTIONS</value>
+      </synonym>
+      <httpMethod>OPTIONS</httpMethod>
+      <handler>apiOPTIONS</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="bed913e9-c52a-4b6f-aa0c-80d0f7ec66ea">
+    <name>publication</name>
+    <synonym>
+      <key>ru</key>
+      <value>Публикация</value>
+    </synonym>
+    <template>/publication/{method}</template>
+    <methods uuid="74f67d9d-2b68-41fd-9658-3d8eff9ba830">
+      <name>ANY</name>
+      <synonym>
+        <key>ru</key>
+        <value>ANY</value>
+      </synonym>
+      <httpMethod>Any</httpMethod>
+      <handler>apiANY</handler>
+    </methods>
+    <methods uuid="974f925b-bcce-4772-9020-e8fd8350d823">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>publicationPOST</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="e634a5d3-8b5e-4913-b50c-6347fa2c1834">
+    <name>repository</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хранилище</value>
+    </synonym>
+    <template>/repository/{method}</template>
+    <methods uuid="23acbbc0-70a1-4f76-b714-e4ae42f2c4f3">
+      <name>ANY</name>
+      <synonym>
+        <key>ru</key>
+        <value>ANY</value>
+      </synonym>
+      <httpMethod>Any</httpMethod>
+      <handler>apiANY</handler>
+    </methods>
+    <methods uuid="24403f4c-c51a-4394-a4e6-cd41fcf995e0">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>repositoryGET</handler>
+    </methods>
+    <methods uuid="a232c521-0d50-429c-bb6d-f398c35ae28e">
+      <name>OPTIONS</name>
+      <synonym>
+        <key>ru</key>
+        <value>OPTIONS</value>
+      </synonym>
+      <httpMethod>OPTIONS</httpMethod>
+      <handler>apiOPTIONS</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="f0cff963-a092-4e5b-844d-60adb4162ebe">
+    <name>sprint</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спринты</value>
+    </synonym>
+    <template>/sprint/{id}</template>
+    <methods uuid="2eece917-522f-4138-841b-180347d8f9dd">
+      <name>ANY</name>
+      <synonym>
+        <key>ru</key>
+        <value>ANY</value>
+      </synonym>
+      <httpMethod>Any</httpMethod>
+      <handler>apiANY</handler>
+    </methods>
+    <methods uuid="d8607d32-0854-4c46-b9c3-9e1d1c25146e">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>sprintGET</handler>
+    </methods>
+    <methods uuid="1020a832-ae34-4648-b79c-330ad69c8c69">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>sprintPOST</handler>
+    </methods>
+    <methods uuid="84ca701b-fb1b-4bf5-ace9-1d8d20f08686">
+      <name>DELETE</name>
+      <synonym>
+        <key>ru</key>
+        <value>DELETE</value>
+      </synonym>
+      <httpMethod>DELETE</httpMethod>
+      <handler>sprintDELETE</handler>
+    </methods>
+    <methods uuid="94322110-b5af-41f6-9c61-29e85be7aa57">
+      <name>OPTIONS</name>
+      <synonym>
+        <key>ru</key>
+        <value>OPTIONS</value>
+      </synonym>
+      <httpMethod>OPTIONS</httpMethod>
+      <handler>apiOPTIONS</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="117c9d8d-4041-4279-a1d8-57260bf899e8">
+    <name>sprintObjects</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объекты спринта</value>
+    </synonym>
+    <template>/sprint/{id}/objects</template>
+    <methods uuid="f143c28c-b4db-457f-94ed-e250beaa30d4">
+      <name>ANY</name>
+      <synonym>
+        <key>ru</key>
+        <value>ANY</value>
+      </synonym>
+      <httpMethod>Any</httpMethod>
+      <handler>apiANY</handler>
+    </methods>
+    <methods uuid="61c4b7cc-f0b4-4394-8450-b301228288c2">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>sprintObjectsGET</handler>
+    </methods>
+    <methods uuid="19f482ea-f741-46b4-a497-2c2b8bbe10ac">
+      <name>OPTIONS</name>
+      <synonym>
+        <key>ru</key>
+        <value>OPTIONS</value>
+      </synonym>
+      <httpMethod>OPTIONS</httpMethod>
+      <handler>apiOPTIONS</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="5ef90f5d-7dc3-496f-9ac0-274bf5dea0e9">
+    <name>systems</name>
+    <synonym>
+      <key>ru</key>
+      <value>Системы</value>
+    </synonym>
+    <template>/systems</template>
+    <methods uuid="98973730-560b-4541-aa59-173113c1e01e">
+      <name>ANY</name>
+      <synonym>
+        <key>ru</key>
+        <value>ANY</value>
+      </synonym>
+      <httpMethod>Any</httpMethod>
+      <handler>apiANY</handler>
+    </methods>
+    <methods uuid="ff392079-efee-48a0-b899-717f09a2c22f">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>systemsGET</handler>
+    </methods>
+    <methods uuid="50090c38-af3a-4bf3-a69c-565787627f47">
+      <name>OPTIONS</name>
+      <synonym>
+        <key>ru</key>
+        <value>OPTIONS</value>
+      </synonym>
+      <httpMethod>OPTIONS</httpMethod>
+      <handler>apiOPTIONS</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="69b93d4d-7749-4f29-921c-7b642f095be2">
+    <name>tasks</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задачи</value>
+    </synonym>
+    <template>/tasks/{method}</template>
+    <methods uuid="aa872e0c-e9e8-40cd-82fe-1acadd77a0ac">
+      <name>ANY</name>
+      <synonym>
+        <key>ru</key>
+        <value>ANY</value>
+      </synonym>
+      <httpMethod>Any</httpMethod>
+      <handler>apiANY</handler>
+    </methods>
+    <methods uuid="01c7cc87-9465-4667-9706-83a12eac74d3">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>tasksGET</handler>
+    </methods>
+    <methods uuid="89dae9d5-186c-464d-ad2d-ea426fd46658">
+      <name>OPTIONS</name>
+      <synonym>
+        <key>ru</key>
+        <value>OPTIONS</value>
+      </synonym>
+      <httpMethod>OPTIONS</httpMethod>
+      <handler>apiOPTIONS</handler>
+    </methods>
+    <methods uuid="91a6c6f3-2e16-454c-aa36-381f5e0d57a7">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>tasksPOST</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="b0b04e68-06bb-4b77-8e02-e62ae30232b9">
+    <name>tasksId</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задачи</value>
+    </synonym>
+    <template>/tasks/{id}/{method}</template>
+    <methods uuid="92cc7342-d3f3-430e-b86b-487732b20c7e">
+      <name>ANY</name>
+      <synonym>
+        <key>ru</key>
+        <value>ANY</value>
+      </synonym>
+      <httpMethod>Any</httpMethod>
+      <handler>apiANY</handler>
+    </methods>
+    <methods uuid="2b200fa2-73a8-4d49-a62c-9d35c48b21bd">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>tasksIdGET</handler>
+    </methods>
+    <methods uuid="821c0474-7b46-4a71-b4a6-e4220c6e787b">
+      <name>OPTIONS</name>
+      <synonym>
+        <key>ru</key>
+        <value>OPTIONS</value>
+      </synonym>
+      <httpMethod>OPTIONS</httpMethod>
+      <handler>apiOPTIONS</handler>
+    </methods>
+    <methods uuid="40feee17-e5e2-4d31-9687-1c829e0d438e">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>tasksIdPOST</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="74d48089-b47e-42cb-9e3c-791c38b7c5c5">
+    <name>toolCounters</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счетчики инструментов</value>
+    </synonym>
+    <template>/toolCounters</template>
+    <methods uuid="19a60dc4-75e9-4e22-b86c-abff2bbb48ca">
+      <name>ANY</name>
+      <synonym>
+        <key>ru</key>
+        <value>ANY</value>
+      </synonym>
+      <httpMethod>Any</httpMethod>
+      <handler>apiANY</handler>
+    </methods>
+    <methods uuid="3717023f-ab7c-4d35-bd65-5e02acac73bf">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>toolCountersGET</handler>
+    </methods>
+    <methods uuid="83e64ceb-a122-42b3-8df9-ad99155cbcbf">
+      <name>OPTIONS</name>
+      <synonym>
+        <key>ru</key>
+        <value>OPTIONS</value>
+      </synonym>
+      <httpMethod>OPTIONS</httpMethod>
+      <handler>apiOPTIONS</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="7821f5c4-a02c-4b8f-aa06-45e820aa5bbd">
+    <name>usersId</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователи</value>
+    </synonym>
+    <template>/users/{id}</template>
+    <methods uuid="de475c79-cc6c-422d-a212-f6d16e45dfb0">
+      <name>ANY</name>
+      <synonym>
+        <key>ru</key>
+        <value>ANY</value>
+      </synonym>
+      <httpMethod>Any</httpMethod>
+      <handler>apiANY</handler>
+    </methods>
+    <methods uuid="47766781-4776-40d3-a0b8-a19627074755">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>usersIdGET</handler>
+    </methods>
+    <methods uuid="7728de0c-7902-49fa-8ee4-3bd18d2a65ce">
+      <name>OPTIONS</name>
+      <synonym>
+        <key>ru</key>
+        <value>OPTIONS</value>
+      </synonym>
+      <httpMethod>OPTIONS</httpMethod>
+      <handler>apiOPTIONS</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="74475e10-8958-47b1-93f4-2eeb90d83033">
+    <name>usersUnsubscribe</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отписка от оповещений</value>
+    </synonym>
+    <template>/users/unsubscribe</template>
+    <methods uuid="646b32c2-3cb6-4e30-9edc-4132d2d2aa2e">
+      <name>ANY</name>
+      <synonym>
+        <key>ru</key>
+        <value>ANY</value>
+      </synonym>
+      <httpMethod>Any</httpMethod>
+      <handler>apiANY</handler>
+    </methods>
+    <methods uuid="e8a1d032-7035-4c5d-ac00-fe47874567d8">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>usersUnsubscribeGET</handler>
+    </methods>
+    <methods uuid="168f9511-d7c8-43ed-b83d-869ae6bc5857">
+      <name>OPTIONS</name>
+      <synonym>
+        <key>ru</key>
+        <value>OPTIONS</value>
+      </synonym>
+      <httpMethod>OPTIONS</httpMethod>
+      <handler>apiOPTIONS</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

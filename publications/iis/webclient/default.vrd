@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<point xmlns="http://v8.1c.ru/8.2/virtual-resource-system"
+		xmlns:xs="http://www.w3.org/2001/XMLSchema"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		base="/webclient"
+		ib="Srvr=localhost;Ref=sdms;">
+	<ws enable="false"
+			pointEnableCommon="false">
+	</ws>
+	<standardOdata enable="false"
+			reuseSessions="autouse"
+			sessionMaxAge="20"
+			poolSize="10"
+			poolTimeout="5"/>
+	<analytics enable="false"/>
+	<httpServices publishByDefault="false">
+		<service name="API"
+				rootUrl="api"
+				enable="false"
+				reuseSessions="autouse"
+				sessionMaxAge="20"
+				poolSize="10"
+				poolTimeout="5"/>
+	</httpServices>
+</point>

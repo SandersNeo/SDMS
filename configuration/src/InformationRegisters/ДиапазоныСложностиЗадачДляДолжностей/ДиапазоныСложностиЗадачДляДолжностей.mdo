@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="66e3247d-1edb-46c6-b50e-c08c43760326">
+  <producedTypes>
+    <selectionType typeId="766f8beb-4f38-40ff-b66a-b0cd318b725d" valueTypeId="579f6b84-bc3c-4fe1-ac9a-30f913d1ab94"/>
+    <listType typeId="f4cd618a-c16a-4758-b222-4ed6e5c5ba42" valueTypeId="d85a4251-9b62-4be2-af57-36f15e22e450"/>
+    <managerType typeId="36d3c653-0f2c-4830-b103-49bd0d58847a" valueTypeId="ac169ba7-248d-4902-8199-21cbe4579875"/>
+    <recordSetType typeId="2c93a873-d15b-4014-bd8f-da7a37aafd41" valueTypeId="338d9b8a-98fb-4fb1-82f7-7aa2141bfea1"/>
+    <recordKeyType typeId="c972e23f-66b6-4888-b9ef-4a741753836b" valueTypeId="8b11e7fc-afab-4d1e-a553-043b247a6a85"/>
+    <recordType typeId="fd9c785c-d234-479a-a32c-1aabc3eb07da" valueTypeId="e5bb56e9-f356-46ff-871f-de247d868f3a"/>
+    <recordManagerType typeId="23ad7528-a2b5-46c5-9ceb-9248a84ede7d" valueTypeId="0eaf54ae-9cb7-4b56-9281-f70f5cad8a58"/>
+  </producedTypes>
+  <name>ДиапазоныСложностиЗадачДляДолжностей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Диапазоны сложности задач для должностей</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="ba4a3af9-9241-406b-abc7-ac4f7b52a710">
+    <name>МаксимальнаяСложность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Максимальная сложность</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="1a77699d-9ffd-4701-83d8-605a6e9cc8f2">
+    <name>МинимальнаяСложность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Минимальная сложность</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="4298d976-5588-4221-9b2d-83cec4636459">
+    <name>Филиал</name>
+    <synonym>
+      <key>ru</key>
+      <value>Филиал</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Филиалы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="7edcbb12-473e-413d-830b-78eaf4361ba1">
+    <name>Должность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должность</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Должности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

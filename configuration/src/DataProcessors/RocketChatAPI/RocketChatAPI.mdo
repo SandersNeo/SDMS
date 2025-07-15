@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d89eb03a-1722-4597-a4b7-f2ca1e4dd9d4">
+  <producedTypes>
+    <objectType typeId="ba9ce7d7-b963-4dc9-9378-2210fc98ad09" valueTypeId="0ab04326-228e-4f64-8a1b-e474186a44b1"/>
+    <managerType typeId="e3d6aa51-a445-4ac7-a5fc-39f7dbb40706" valueTypeId="24f36468-5e50-48fb-a8bd-0d866f77b77b"/>
+  </producedTypes>
+  <name>RocketChatAPI</name>
+  <synonym>
+    <key>ru</key>
+    <value>Rocket chat API</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.RocketChatAPI.Form.ФормаОбработки</defaultForm>
+  <explanation>
+    <key>ru</key>
+    <value>Обработка-API для отправки сообщений в RocketChat для группы &quot;it-1c-web-client&quot;</value>
+  </explanation>
+  <forms uuid="f0d73ef5-4629-44ce-bcf6-2fea2a8ed587">
+    <name>ФормаОбработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма обработки</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

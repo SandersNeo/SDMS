@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bda41378-d8a0-4205-b50a-5c92ab00054d">
+  <name>СемантическийАнализПриЗаписи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Семантический анализ при записи</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.Задача</types>
+    <types>DocumentObject.ЗаявкаНаРазработку</types>
+    <types>DocumentObject.ВнутреннееЗадание</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.СемантическийАнализ.СемантическийАнализПриЗаписи</handler>
+</mdclass:EventSubscription>

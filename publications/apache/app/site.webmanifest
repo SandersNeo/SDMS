@@ -1,0 +1,22 @@
+{
+  "name": "SDMS",
+  "description": "Software Development Managment System",
+  "short_name": "SDMS",
+  "start_url": "/app",
+  "lang": "ru",
+  "theme_color": "#FFFFFF",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "icons": [
+    {
+      "src": "./img/favicon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "./img/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

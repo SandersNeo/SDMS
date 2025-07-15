@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2b07d2ab-4237-4664-b972-97364996aa39">
+  <producedTypes>
+    <objectType typeId="41d852de-144c-4f88-a344-2de9fc1c385c" valueTypeId="e68d9ad9-9389-487a-9815-ad79f3f9d517"/>
+    <managerType typeId="9e496076-3035-4d1a-8edc-be65721989d3" valueTypeId="e053193d-c22d-4da5-a780-21d5eeecc1a7"/>
+  </producedTypes>
+  <name>Разработка</name>
+  <synonym>
+    <key>ru</key>
+    <value>Разработка</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.Разработка.Form.ФормаОбработки</defaultForm>
+  <forms uuid="18f68a88-6667-4164-8d05-c203752a9d03">
+    <name>ФормаОбработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма обработки</value>
+    </synonym>
+    <comment>Ширину группы СтраницыИнформационнойПанели не изменять! Едет оформление</comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

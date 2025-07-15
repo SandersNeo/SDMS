@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="843327e8-ed08-4520-b9bf-05ae40f74142">
+  <name>УслугаАрхитектура</name>
+  <synonym>
+    <key>ru</key>
+    <value>Услуга архитектура</value>
+  </synonym>
+</mdclass:CommonPicture>

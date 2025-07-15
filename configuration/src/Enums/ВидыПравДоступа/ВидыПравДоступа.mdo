@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d07c8803-c588-4666-84a5-caabd4706b55">
+  <producedTypes>
+    <refType typeId="541fa1e8-3ac2-47eb-84ee-013211e9ef43" valueTypeId="c3df49c1-ef30-4ea2-963f-f252528d0b39"/>
+    <listType typeId="4c1f5171-e584-4f38-9cd8-87839838f80b" valueTypeId="0971486f-e6aa-4078-aaa4-83db87564a2a"/>
+    <managerType typeId="10b98737-acf0-4d69-985e-da4ae29f0de9" valueTypeId="4c43a51a-64c6-42a8-ad1d-c0f9192eb6ea"/>
+  </producedTypes>
+  <name>ВидыПравДоступа</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды прав доступа</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="0043b768-7dec-456b-8ed5-9b4bb33f28e6">
+    <name>Запрещено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрещено</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="84d54247-26bb-4bea-acca-0f61e7f40c89">
+    <name>Разрешено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разрешено</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

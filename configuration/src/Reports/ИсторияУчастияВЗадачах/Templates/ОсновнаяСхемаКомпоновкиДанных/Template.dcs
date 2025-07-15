@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТекущийСтатус</dataPath>
+			<field>ТекущийСтатус</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущий статус</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Спринт</dataPath>
+			<field>Спринт</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерЗадачи</dataPath>
+			<field>НомерЗадачи</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер задачи</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Период</dataPath>
+			<field>Период</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Объект</dataPath>
+			<field>Объект</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Исполнитель</dataPath>
+			<field>Исполнитель</field>
+			<presentationExpression>ИсполнительПредставление</presentationExpression>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтатусНаИсполнителе</dataPath>
+			<field>СтатусНаИсполнителе</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИндексКартинки</dataPath>
+			<field>ИндексКартинки</field>
+			<useRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИсполнительПредставление</dataPath>
+			<field>ИсполнительПредставление</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исполнитель представление</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Задача</dataPath>
+			<field>Задача</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задача</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	СвойстваЗадач.Объект КАК Объект,
+	СвойстваЗадач.Период КАК Период,
+	СвойстваЗадач.Исполнитель КАК Исполнитель,
+	ВЫБОР
+		КОГДА СвойстваЗадач.ПользовательскийСтатус &lt;&gt; ЗНАЧЕНИЕ(Справочник.СтатусыОбъектов.ПустаяСсылка)
+			ТОГДА СвойстваЗадач.ПользовательскийСтатус
+		ИНАЧЕ СвойстваЗадач.Статус
+	КОНЕЦ КАК СтатусНаИсполнителе
+ПОМЕСТИТЬ СвойстваЗадач
+ИЗ
+	РегистрСведений.СвойстваЗадач КАК СвойстваЗадач
+ГДЕ
+	СвойстваЗадач.Период МЕЖДУ &amp;ДатаНачала И &amp;ДатаОкончания
+
+ОБЪЕДИНИТЬ
+
+ВЫБРАТЬ
+	СвойстваЗадачСрезПоследних.Объект,
+	СвойстваЗадачСрезПоследних.Период,
+	СвойстваЗадачСрезПоследних.Исполнитель,
+	ВЫБОР
+		КОГДА СвойстваЗадачСрезПоследних.ПользовательскийСтатус &lt;&gt; ЗНАЧЕНИЕ(Справочник.СтатусыОбъектов.ПустаяСсылка)
+			ТОГДА СвойстваЗадачСрезПоследних.ПользовательскийСтатус
+		ИНАЧЕ СвойстваЗадачСрезПоследних.Статус
+	КОНЕЦ
+ИЗ
+	РегистрСведений.СвойстваЗадач.СрезПоследних(&amp;ДатаНачала, ) КАК СвойстваЗадачСрезПоследних
+ГДЕ
+	НЕ СвойстваЗадачСрезПоследних.Статус В (ЗНАЧЕНИЕ(Справочник.СтатусыОбъектов.ПустаяСсылка), ЗНАЧЕНИЕ(Справочник.СтатусыОбъектов.Решен), ЗНАЧЕНИЕ(Справочник.СтатусыОбъектов.Отклонен))
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	СвойстваЗадач.Объект КАК Объект
+ПОМЕСТИТЬ ОтобранныеЗадачи
+ИЗ
+	СвойстваЗадач КАК СвойстваЗадач
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ИсторияУчастияОбъектовВСпринтахСрезПоследних.Период КАК Период,
+	ИсторияУчастияОбъектовВСпринтахСрезПоследних.Объект КАК Объект,
+	ИсторияУчастияОбъектовВСпринтахСрезПоследних.Спринт КАК Спринт,
+	ИсторияУчастияОбъектовВСпринтахСрезПоследних.ВидДействия КАК ВидДействия
+ПОМЕСТИТЬ ИсторияУчастияОбъектовВСпринтах
+ИЗ
+	РегистрСведений.ИсторияУчастияОбъектовВСпринтах.СрезПоследних(
+			&amp;ДатаНачала,
+			Объект В
+				(ВЫБРАТЬ
+					ОтобранныеЗадачи.Объект
+				ИЗ
+					ОтобранныеЗадачи)) КАК ИсторияУчастияОбъектовВСпринтахСрезПоследних
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ИсторияУчастияОбъектовВСпринтах.Период,
+	ИсторияУчастияОбъектовВСпринтах.Объект,
+	ИсторияУчастияОбъектовВСпринтах.Спринт,
+	ИсторияУчастияОбъектовВСпринтах.ВидДействия
+ИЗ
+	ОтобранныеЗадачи КАК ОтобранныеЗадачи
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ИсторияУчастияОбъектовВСпринтах КАК ИсторияУчастияОбъектовВСпринтах
+		ПО (ИсторияУчастияОбъектовВСпринтах.Объект = ОтобранныеЗадачи.Объект)
+			И (ИсторияУчастияОбъектовВСпринтах.Период МЕЖДУ &amp;ДатаНачала И &amp;ДатаОкончания)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	СвойстваЗадач.Объект КАК Объект,
+	СвойстваЗадач.Период КАК Период,
+	МАКСИМУМ(ИсторияУчастияОбъектовВСпринтах.Период) КАК ПериодСпринта
+ПОМЕСТИТЬ СвойстваЗадачПериодСпринта
+ИЗ
+	СвойстваЗадач КАК СвойстваЗадач
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ИсторияУчастияОбъектовВСпринтах КАК ИсторияУчастияОбъектовВСпринтах
+		ПО (ИсторияУчастияОбъектовВСпринтах.Объект = СвойстваЗадач.Объект)
+			И (ИсторияУчастияОбъектовВСпринтах.Период &lt;= СвойстваЗадач.Период)
+
+СГРУППИРОВАТЬ ПО
+	СвойстваЗадач.Объект,
+	СвойстваЗадач.Период
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	СвойстваЗадачПериодСпринта.Объект КАК Объект,
+	СвойстваЗадачПериодСпринта.Период КАК Период,
+	ДокументСпринт.Ссылка КАК Спринт
+ПОМЕСТИТЬ СпринтыЗадач
+ИЗ
+	СвойстваЗадачПериодСпринта КАК СвойстваЗадачПериодСпринта
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ИсторияУчастияОбъектовВСпринтах КАК ИсторияУчастияОбъектовВСпринтах
+		ПО (ИсторияУчастияОбъектовВСпринтах.Объект = СвойстваЗадачПериодСпринта.Объект)
+			И (ИсторияУчастияОбъектовВСпринтах.Период = СвойстваЗадачПериодСпринта.ПериодСпринта)
+			И (ИсторияУчастияОбъектовВСпринтах.ВидДействия = 1)
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.Спринт КАК ДокументСпринт
+		ПО (ИсторияУчастияОбъектовВСпринтах.Спринт = ДокументСпринт.Ссылка)
+			И (СвойстваЗадачПериодСпринта.Период МЕЖДУ ДокументСпринт.ДатаНачала И ДокументСпринт.ДатаОкончания)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	СвойстваЗадач.Объект КАК Задача,
+	СвойстваЗадач.Период КАК Период,
+	СвойстваЗадач.Исполнитель КАК Исполнитель,
+	СвойстваЗадач.СтатусНаИсполнителе КАК СтатусНаИсполнителе,
+	ДокументЗадача.Номер КАК НомерЗадачи,
+	ДокументЗадача.Статус КАК ТекущийСтатус,
+	СтатусыОбъектов.ИндексКартинки КАК ИндексКартинки,
+	Пользователи.ФИО КАК ИсполнительПредставление,
+	ЕСТЬNULL(СпринтыЗадач.Спринт, ЗНАЧЕНИЕ(Документ.Спринт.ПустаяСсылка)) КАК Спринт
+ИЗ
+	СвойстваЗадач КАК СвойстваЗадач
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.Задача КАК ДокументЗадача
+		ПО СвойстваЗадач.Объект = ДокументЗадача.Ссылка
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.СтатусыОбъектов КАК СтатусыОбъектов
+		ПО (ДокументЗадача.Статус = СтатусыОбъектов.Ссылка)
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.Пользователи КАК Пользователи
+		ПО СвойстваЗадач.Исполнитель = Пользователи.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ СпринтыЗадач КАК СпринтыЗадач
+		ПО (СпринтыЗадач.Объект = СвойстваЗадач.Объект)
+			И (СпринтыЗадач.Период = СвойстваЗадач.Период)</query>
+	</dataSet>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;ПериодОтчета.ДатаНачала</expression>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>ДатаНачала</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата начала</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;ПериодОтчета.ДатаНачала</expression>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>ДатаОкончания</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата окончания</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;ПериодОтчета.ДатаОкончания</expression>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>ПериодОтчета</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период отчета</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">ThisMonth</v8:variant>
+		</value>
+		<useRestriction>false</useRestriction>
+		<availableAsField>false</availableAsField>
+		<use>Always</use>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Задача</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Период</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СтатусНаИсполнителе</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Исполнитель</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Спринт</dcsset:field>
+				</dcsset:item>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>b55d54a7-8bc7-4198-b929-d7b293fdee64</dcsset:userSettingID>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>599dee4a-b86b-4f6b-99d7-8d981b229aef</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ПериодОтчета</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">ThisMonth</v8:variant>
+					</dcscor:value>
+					<dcsset:userSettingID>ede4acbf-a26c-4c4e-ac0f-f31f201f768c</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период</v8:content>
+						</v8:item>
+					</dcsset:userSettingPresentation>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>4d98de35-f088-40c5-9d53-f76320498b57</dcsset:userSettingID>
+			</dcsset:order>
+			<dcsset:conditionalAppearance>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>bc7ebca8-145a-47ce-b8c2-9877d41274ea</dcsset:userSettingID>
+			</dcsset:conditionalAppearance>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ОсновнойМакетКомпоновкиНовый</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ГоризонтальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+			<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+			<dcsset:itemsUserSettingID>c64f418b-e3d5-455d-a2f9-252295b6d9f4</dcsset:itemsUserSettingID>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

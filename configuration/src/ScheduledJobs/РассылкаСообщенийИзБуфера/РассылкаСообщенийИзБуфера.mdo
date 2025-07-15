@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b22597e8-de7a-4541-8d5f-26b31e36d201">
+  <name>РассылкаСообщенийИзБуфера</name>
+  <synonym>
+    <key>ru</key>
+    <value>Рассылка сообщений из буфера</value>
+  </synonym>
+  <methodName>CommonModule.РегламентныеЗаданияСервер.РассылкаСообщенийИзБуфера</methodName>
+  <description>Рассылка сообщений из буфера</description>
+  <key>РассылкаСообщенийИзБуфера</key>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

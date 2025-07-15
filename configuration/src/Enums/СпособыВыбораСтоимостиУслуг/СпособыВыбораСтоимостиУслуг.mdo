@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="53776b06-2fd3-4b5a-863c-3528339d37d3">
+  <producedTypes>
+    <refType typeId="9cf5e2d8-5181-43f7-aa21-d4f00b24cadf" valueTypeId="db0ab31e-41aa-459c-b95a-baaec710961e"/>
+    <listType typeId="039249fb-080f-4e9f-9ef4-e4b4b3c4fa4d" valueTypeId="7e7afda6-9431-4d48-9cf1-a56e15a2ff5d"/>
+    <managerType typeId="15717e92-1aef-4994-856a-fde165168174" valueTypeId="9bb3377f-7918-4308-81b9-72dec20b94bb"/>
+  </producedTypes>
+  <name>СпособыВыбораСтоимостиУслуг</name>
+  <synonym>
+    <key>ru</key>
+    <value>Способы выбора стоимости услуг</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="7659f0b0-3616-4cdf-b2a5-99587f7e49fd">
+    <name>ПоЮридическомуЛицу</name>
+    <synonym>
+      <key>ru</key>
+      <value>По юридическому лицу</value>
+    </synonym>
+    <comment>Выбирать стоимость услуг строго в соответствии с юридическим лицом</comment>
+  </enumValues>
+  <enumValues uuid="f317d34a-0ddd-4f50-bf3e-e26bbd26977a">
+    <name>ПриоритетПоЮридическомуЛицу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приоритет по юридическому лицу</value>
+    </synonym>
+    <comment>Приоритет стоимости по юридическому лицу, если нет, стоимость без юридического лица</comment>
+  </enumValues>
+  <enumValues uuid="deb1562a-66aa-4d71-9d95-b25c2c10bf10">
+    <name>БезЮридическогоЛица</name>
+    <synonym>
+      <key>ru</key>
+      <value>Без юридического лица</value>
+    </synonym>
+    <comment>Выбирать стоимость услуг без учета юридического лица</comment>
+  </enumValues>
+</mdclass:Enum>

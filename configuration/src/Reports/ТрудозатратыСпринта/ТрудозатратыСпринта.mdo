@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="34bc5ae9-7c06-4b54-98c4-ca8c027dca81">
+  <producedTypes>
+    <objectType typeId="61eab853-f8ec-41db-974a-5917f817a77a" valueTypeId="1243989f-9211-4f74-bfc9-a0ae60e3321a"/>
+    <managerType typeId="19202a65-59d2-4750-b001-99922a33ccbc" valueTypeId="68fb3999-09a3-4570-bd50-ca2c8c6ca704"/>
+  </producedTypes>
+  <name>ТрудозатратыСпринта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Трудозатраты спринта</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ТрудозатратыСпринта.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ТрудозатратыСпринта.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>Report.ТрудозатратыСпринта.Form.ФормаНастроек</defaultSettingsForm>
+  <forms uuid="9243bbda-d3f4-40f3-a2c7-0954fad39fc4">
+    <name>ФормаНастроек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма настроек</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8ba209e5-8ea5-486c-b5b5-c70e5a1e76b3">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="183442c5-5859-4e77-82fd-4c70fd462df6">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

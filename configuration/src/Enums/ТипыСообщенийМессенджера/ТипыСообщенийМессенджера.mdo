@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6e3e6f31-5159-46e2-8520-72810697eaa6">
+  <producedTypes>
+    <refType typeId="d6b492b1-2618-4aab-8566-9fa817a9a6f1" valueTypeId="e987b8a1-5244-4802-a85c-5b3e0ad986ce"/>
+    <listType typeId="a56b5cf9-1cb1-4427-81d3-419d4a025f75" valueTypeId="178cb462-a6c5-4653-8955-69c584bd05e9"/>
+    <managerType typeId="80603b4c-dd32-46b7-a7dd-e82b93428ac4" valueTypeId="40f582a0-37bd-4381-99a1-b3db28eb948b"/>
+  </producedTypes>
+  <name>ТипыСообщенийМессенджера</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы сообщений мессенджера</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="8333d8d5-04eb-4825-ba88-2451dd2ca63f">
+    <name>АктуализацияСрокаСдачиЗадач</name>
+    <synonym>
+      <key>ru</key>
+      <value>Актуализация срока сдачи задач</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a3cedfcd-0633-42eb-95d8-b112e4288998">
+    <name>ВыгрузкаОшибокИзЖурнала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгрузка ошибок из журнала</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="64da027d-d997-4b8a-870f-7cc0e135a042">
+    <name>НапоминанияОЗанесенииТрудозатрат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Напоминания о занесении трудозатрат</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6b4c08e2-11fa-4cf9-8575-958af283603e">
+    <name>НезаполненныеУслугиВТрудозатратах</name>
+    <synonym>
+      <key>ru</key>
+      <value>Незаполненные услуги в трудозатратах</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c22f67ba-465c-4916-9922-6d7728e4e39b">
+    <name>ОбновлениеСистемы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обновление системы</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8b660f13-298c-41a0-9383-1b143e04293c">
+    <name>ОповещениеОНаличииСтопСлов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оповещение о наличии стоп слов</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c2ddb283-1f7f-4561-8c3d-bf374293be8b">
+    <name>ОповещениеФилиалаТестирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оповещение филиала тестирования</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c15c4b8b-281d-468b-9aa5-e117903c8bf9">
+    <name>ОтсутствуютДанныеПоПользователю</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отсутствуют данные по пользователю</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3bec45aa-2cab-4f19-86d0-322e8a9f1205">
+    <name>ПроблемаПриОбновленииДатыПубликации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проблема при обновлении даты публикации</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="53fb6f69-1458-4fe4-bf8d-dc3d3b0a2572">
+    <name>ПроблемаСДатойЗапрета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проблема с датой запрета</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="fcd0172b-8192-4388-b60a-052993da1a67">
+    <name>РассылкаЗадачиВТестировании</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рассылка задачи в тестировании</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="95cf6dd2-37b3-4b04-b276-ed2f4132e97e">
+    <name>РасхождениеКлючевыхИзмеренийТрудозатрат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расхождение ключевых измерений трудозатрат</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="746cb4a9-0896-4177-b37e-b80e7d83d992">
+    <name>РасхожденияВСправочникеФилиалы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расхождения в справочнике филиалы</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

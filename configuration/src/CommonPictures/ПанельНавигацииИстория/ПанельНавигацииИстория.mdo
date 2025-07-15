@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ad482756-ce94-4e17-b0d4-e1ebdf71ff74">
+  <name>ПанельНавигацииИстория</name>
+  <synonym>
+    <key>ru</key>
+    <value>Панель навигации история</value>
+  </synonym>
+</mdclass:CommonPicture>

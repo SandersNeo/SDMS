@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4eae2500-ebf7-4e84-bc3a-6643a0250082">
+  <name>ИспользованиеОтчетаЗаявкиЗаПериод</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использование отчета &quot;Заявки за период&quot;</value>
+  </synonym>
+</mdclass:Role>

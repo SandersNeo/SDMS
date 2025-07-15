@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a7ff2281-fc98-47f7-9f39-008107aa6545">
+  <name>ПолучениеОбщедоступныхДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Получение общедоступных данных</value>
+  </synonym>
+</mdclass:Role>

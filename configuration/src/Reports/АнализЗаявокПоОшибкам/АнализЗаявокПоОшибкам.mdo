@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5d0d0c37-4543-4942-9b02-87a39e239f02">
+  <producedTypes>
+    <objectType typeId="db4a1027-539b-429f-b750-921c25f3524b" valueTypeId="c46a4f13-24e7-4dfb-9c27-4709304ca8ba"/>
+    <managerType typeId="543bd13c-6260-4578-a122-79cdc70cba12" valueTypeId="5a0ddab2-7013-44d9-a95b-e01ff64a77b5"/>
+  </producedTypes>
+  <name>АнализЗаявокПоОшибкам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Анализ заявок по ошибкам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.АнализЗаявокПоОшибкам.Form.ФормаОтчета</defaultForm>
+  <forms uuid="55e9b6e1-e6fb-46d3-833c-959e8d0a33d0">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Report>

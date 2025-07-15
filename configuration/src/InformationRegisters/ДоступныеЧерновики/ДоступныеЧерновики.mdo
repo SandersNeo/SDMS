@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="aeb789d3-1055-441a-a3b1-f1e6107739b8">
+  <producedTypes>
+    <selectionType typeId="2f8921f2-dfb8-4995-88ac-6239f125513f" valueTypeId="bb2db44a-027a-451b-bd88-c847d415c1a3"/>
+    <listType typeId="5262d819-31db-45fa-864f-b78f562df66c" valueTypeId="622d6680-5e9f-4978-9535-1c96d2130bde"/>
+    <managerType typeId="337fd064-f124-4ed8-a471-be5acc576566" valueTypeId="8f02e081-6082-4721-a673-284ab9bc28e1"/>
+    <recordSetType typeId="c24dcc43-c0e9-467e-8d9d-1a7d8f4c6882" valueTypeId="e7d324a9-dade-481d-b903-e4d4250b8846"/>
+    <recordKeyType typeId="59f5ebda-bd7c-4922-a77d-2d4cf5662774" valueTypeId="9c4b5f95-0cf9-418f-82fd-fcac48e8c155"/>
+    <recordType typeId="8573d4cf-1367-4ba0-a1be-d7f464c13c84" valueTypeId="dbc8a4de-ef97-4740-ae06-83cb1c2af840"/>
+    <recordManagerType typeId="54787477-4500-4e56-80ad-8f2db501e415" valueTypeId="798605d2-2182-4597-9c36-28b4a4b96ac4"/>
+  </producedTypes>
+  <name>ДоступныеЧерновики</name>
+  <synonym>
+    <key>ru</key>
+    <value>Доступные черновики</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="995dfc15-5322-45ac-b525-8775027e9a03">
+    <name>ПолныйДоступ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Полный доступ</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="25084700-deb2-4dd5-ac36-fe7d336ef6ae">
+    <name>Заявка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявка</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ЗаявкаНаРазработку</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="7f0ac204-4545-4470-a96b-7a78c1532abb">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="7c0f6264-a6b1-4375-9757-52cd50490824">
+    <name>НастройкаДоступа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка доступа</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

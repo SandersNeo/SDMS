@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c09342a3-1e2a-400e-bfb2-cec036b3a3b2">
+  <producedTypes>
+    <selectionType typeId="51778782-023e-45a5-980d-340f7fca5834" valueTypeId="3c81b695-3575-4ecf-9e1e-034e07c1a363"/>
+    <listType typeId="a793e865-8c82-4a6e-8565-928a2dfd439a" valueTypeId="d731bacb-3348-4b14-985c-6b6cfe6c0907"/>
+    <managerType typeId="8de99fa2-fa6e-4900-962e-5a7b0a2dffa8" valueTypeId="80f176bd-d53e-49ae-9197-08f728fafeb5"/>
+    <recordSetType typeId="538e7d53-4c6f-4092-96ec-4707e74126f2" valueTypeId="0557adbe-6a6e-4438-a036-56ea042a7c05"/>
+    <recordKeyType typeId="e1a851e6-2336-4a59-91f0-e5d91634a85f" valueTypeId="e271cce1-4a21-4d39-9bf6-b41aebecb1c7"/>
+    <recordType typeId="33a6ae07-f3da-4a0a-80c2-79b1d4927752" valueTypeId="9111ed7b-0058-4a60-845f-dbf2ad1c894c"/>
+    <recordManagerType typeId="f5d53139-6cea-43af-a73a-a6328f71df80" valueTypeId="751c17c2-cc01-473f-8a85-f6b683225211"/>
+  </producedTypes>
+  <name>ОчередиЗаявок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Очереди заявок</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="edbb110c-365e-44ac-8b26-f14e03d7612e">
+    <name>Зафиксирован</name>
+    <synonym>
+      <key>ru</key>
+      <value>Зафиксирован</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="3d4f1c37-e02f-49b7-bb78-9021e334f01e">
+    <name>Порядок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порядок</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПорядокВОчереди</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="65b80567-619a-4f41-9d3b-08cfa18ab30b">
+    <name>Проект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проект</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Проекты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="35957641-51d2-46d2-9738-fe3a943a7916">
+    <name>Заявка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявка</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ЗаявкаНаРазработку</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="46bcfbe9-55d0-4ac5-a261-e114a71aed3e">
+    <name>КлючОчередиОбъекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ключ очереди объекта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КлючОчереди</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="35791695-0c17-45d2-b795-c8118d853933">
+    <name>ИзменениеПорядкаЗаявки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменение порядка заявки</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

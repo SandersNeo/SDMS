@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fcd99297-0f1d-48e1-97d5-6e63910a7133">
+  <producedTypes>
+    <selectionType typeId="8c2b7485-9652-41b4-a5e2-eee6ffeb8978" valueTypeId="4f7ee16d-0215-4df9-b23d-c88a8871b460"/>
+    <listType typeId="b946faa1-bd40-42d9-b7fb-85bcdff63828" valueTypeId="143ba70e-89be-4f97-9166-c355b54b0866"/>
+    <managerType typeId="c228b3ff-0f8e-4a94-a1ea-7f1a1c8ad9a1" valueTypeId="ab66068b-dca9-469a-bae1-02ef988dbd77"/>
+    <recordSetType typeId="d84481c6-c330-4ab8-9282-75e6d12bfffc" valueTypeId="1d736cec-5431-44e1-8946-3bc27cf32f6c"/>
+    <recordKeyType typeId="f136f1cb-8d1b-4668-9b5d-e413d247936a" valueTypeId="506eec2f-da7a-4200-887a-0b066b895b0b"/>
+    <recordType typeId="b3d65aff-fc5c-48f1-8478-9b4531ee98ca" valueTypeId="8709a16e-3d04-422d-ba89-9cfb5c8c5a36"/>
+    <recordManagerType typeId="a0077c8a-989a-4f19-a7d2-10bdf80417b7" valueTypeId="021a31c8-c25d-4fd7-84db-0ca77aee07ff"/>
+  </producedTypes>
+  <name>ОбъектыВерхнегоУровняСтруктурыПодчиненности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Объекты верхнего уровня структуры подчиненности</value>
+  </synonym>
+  <comment>Используется при открытии структуры подчиненности, для получения высшего родителя объекта.</comment>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="856040fd-8719-4389-a242-ec5d2ff9a2bb">
+    <name>ВысшийРодитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Высший родитель</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ОбъектНаблюдения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="1c053e9d-953c-4bc6-a445-26d5c5cf4619">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ВнутреннееЗадание</types>
+      <types>CatalogRef.Проекты</types>
+      <types>DocumentRef.Задача</types>
+      <types>DocumentRef.ЗаявкаНаРазработку</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="65d0c6f2-caf7-48c5-ad2f-398287db5d5c">
+  <producedTypes>
+    <containerType typeId="fef6ce31-9053-4b45-823f-5f3aca48b453" valueTypeId="8856a9fa-a13a-41c9-881b-b858e06590d2"/>
+  </producedTypes>
+  <name>Трудозатрата</name>
+  <synonym>
+    <key>ru</key>
+    <value>Трудозатрата</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>15</precision>
+      <scale>2</scale>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+</mdclass:DefinedType>

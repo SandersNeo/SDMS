@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5b3487ee-9314-441d-9f86-b4d8bfa0a6db">
+  <producedTypes>
+    <refType typeId="2f834736-8fba-4d5b-8cdf-2202d079c0e9" valueTypeId="4cb6231c-bccf-4a0d-ac5b-08766189d8bb"/>
+    <listType typeId="5e8c5c8f-0c7d-42d8-8923-0797aee70fde" valueTypeId="0d8c70f7-7937-4de6-894e-fd0df57c65ae"/>
+    <managerType typeId="7281a962-7be8-4c0e-ab84-5956fb804f26" valueTypeId="3df52729-767c-47aa-a7ac-6f4bf7aa1a27"/>
+  </producedTypes>
+  <name>СобытияПоЛичнымДелам</name>
+  <synonym>
+    <key>ru</key>
+    <value>События по личным делам</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="8dfc3475-8588-433c-8f2d-142640519927">
+    <name>МестоРаботыРегл</name>
+    <synonym>
+      <key>ru</key>
+      <value>Место работы регл</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8a5072f8-40f0-4819-af4f-10c7f8ca7af1">
+    <name>ПереведенВДругоеПодразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Переведен в другое подразделение</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="72580abf-106c-4a49-82bf-ef0da172d976">
+    <name>ПереведенВКастомнуюКоманду</name>
+    <synonym>
+      <key>ru</key>
+      <value>Переведен в кастомную команду</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="78727a5c-90d8-43a3-9341-e31e641bc4d5">
+    <name>ПереведенВКоманду</name>
+    <synonym>
+      <key>ru</key>
+      <value>Переведен в команду</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c6456cfa-ef35-4c62-bba6-80e7ab6babed">
+    <name>ПринятНаДолжность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Принят на должность</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a4191b78-6e1d-4c9a-bc2e-e2bad9258d0a">
+    <name>Уволен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уволен</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

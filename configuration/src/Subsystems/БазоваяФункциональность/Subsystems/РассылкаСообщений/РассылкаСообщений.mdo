@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="05248270-7c00-4672-9d8f-5cbfa6a3ba86">
+  <name>РассылкаСообщений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Рассылка сообщений</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>InformationRegister.АдресаПолучателей</content>
+  <content>Catalog.Мессенджеры</content>
+  <content>Enum.ТипыСлужебногоКанала</content>
+  <content>Enum.ТипыСообщенийМессенджера</content>
+  <content>InformationRegister.БуферСообщений</content>
+  <content>Enum.ВажностьСообщения</content>
+  <content>Enum.СпособыОтправкиСообщений</content>
+  <content>InformationRegister.ОчередьЗаявокНаОповещениеПользователей</content>
+  <content>Constant.ОсновнойМессенджер</content>
+  <parentSubsystem>Subsystem.БазоваяФункциональность</parentSubsystem>
+</mdclass:Subsystem>

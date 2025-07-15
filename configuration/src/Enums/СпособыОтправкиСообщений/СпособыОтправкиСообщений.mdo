@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9b10d418-9d04-4b2c-aa19-8e4ef376a8c6">
+  <producedTypes>
+    <refType typeId="57cbff89-b338-4665-8791-fba4bfe1236e" valueTypeId="a5f9efc1-d903-4e05-88a6-0c845f6861fd"/>
+    <listType typeId="90a1b31d-0a15-4af1-8a09-366ecc715645" valueTypeId="79ecea2d-0fd1-4663-b5e1-d7a7c97b2521"/>
+    <managerType typeId="e9bafb4e-f755-43a5-88a5-65ffa29b8bc1" valueTypeId="bbb49558-13f0-4329-aaf4-38f4ab053e3e"/>
+  </producedTypes>
+  <name>СпособыОтправкиСообщений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Способы отправки сообщений</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="69fb640e-cb57-401a-9844-72cb044ba3ab">
+    <name>ЭлектроннаяПочта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Электронная почта</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1a66f5cf-8dd7-4546-9a5d-ab0e392af730">
+    <name>Мессенджер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Мессенджер</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="866de7ed-56b9-4a60-9472-ee2f34d6e6b8">
+    <name>Trello</name>
+    <synonym>
+      <key>ru</key>
+      <value>Trello</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ea2de6ea-e392-4f31-94d0-e4ea3b8b22d9">
+  <producedTypes>
+    <objectType typeId="d89e2d49-44b7-40ec-ae0e-ae484cebe00e" valueTypeId="dd48c1ed-a86f-4df8-99d1-d13d06e97b7f"/>
+    <managerType typeId="0f2b8242-4875-4af1-ad88-204b7c361f0e" valueTypeId="0e44add5-abce-4e5d-83da-57c5dd1efde1"/>
+  </producedTypes>
+  <name>ПросмотрНастроекПользователей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Просмотр настроек пользователей</value>
+  </synonym>
+  <defaultForm>DataProcessor.ПросмотрНастроекПользователей.Form.Форма</defaultForm>
+  <forms uuid="7c11340b-d787-4632-bf18-6a0cde12ed3f">
+    <name>ПодборЗначений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подбор значений</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+  </forms>
+  <forms uuid="cd1137ce-5ed7-4efc-bacb-647c58c91bd5">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="006359db-9c6f-49b2-b17b-cb0bebff956a">
+    <name>ФормаОтображенияКоллекции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отображения коллекции</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

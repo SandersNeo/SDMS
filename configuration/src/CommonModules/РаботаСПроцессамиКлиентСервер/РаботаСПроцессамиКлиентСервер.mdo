@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="194692a8-d09c-44ef-a346-88cc16acea7d">
+  <name>РаботаСПроцессамиКлиентСервер</name>
+  <synonym>
+    <key>ru</key>
+    <value>Работа с процессами клиент сервер</value>
+  </synonym>
+  <comment>Содержит общие методы для клиента и сервера</comment>
+  <clientManagedApplication>true</clientManagedApplication>
+  <server>true</server>
+</mdclass:CommonModule>

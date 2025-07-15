@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>SDMS</title>
+		<link rel="manifest" href="site.webmanifest">
+
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="application-name" content="SDMS">
+		<meta name="apple-mobile-web-app-title" content="SDMS">
+		<meta name="theme-color" content="#ffffff">
+		<meta name="msapplication-navbutton-color" content="#ffffff">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="msapplication-starturl" content="/app">
+
+		<link rel="icon" type="image/png" href="./img/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/png" sizes="192x192" href="./img/web-app-manifest-192x192.png">
+		<link rel="icon" type="image/svg+xml" href="./img/favicon.svg" />
+		<link rel="shortcut icon" href="./favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/report-dropdown.css" />
+
+		<script src="../webclient/scripts/webclient1ce.js" type="text/javascript"></script>
+		<script src="./js/Sortable.min.js" type="text/javascript"></script>
+		<script src="./js/popper.min.js" type="text/javascript"></script>
+		<script src="./js/script.js" type="text/javascript"></script>
+		<script src="./js/report-dropdown.js" type="text/javascript"></script>
+	</head>
+
+	<body onload="init();">
+		<div class="main">
+			<div id="panel" class="panel close">
+				<div id="topPanel" class="top-panel">
+					<img class="icon" src="./img/favicon.svg" alt="sdms icon">
+					<span>SDMS</span>
+				</div>
+				<div id="toolsListsArea" class="tools-lists-area">
+					<div id="toolsLists" class="tools-lists"></div>
+				</div>
+				<div id="reportsListArea" class="reports-list-area">
+					<div class="reports-list">
+						<div class="title"><span>Все отчеты</span></div>
+						<div id="reportsListContent" class="reports-list-content"></div>
+						<div class="command-panel">
+							<button id="closeReportsList" type="reset">Отмена</button>
+							<button id="saveReports" type="submit" class="submit">Сохранить</button>
+						</div>
+					</div>
+				</div>
+				<nav id="sidebar" class="sidebar">
+					<header>
+						<a id="toolsListCollapseButton">
+							<div>
+								<div class="menu-icon"></div>
+							</div>
+							<span class="nav-text">Мои инструменты</span>
+						</a>
+					</header>
+					<div class="menu-bar">
+						<div id="panelMenu" class="menu">
+							<ul id="menuLinks" class="menu-links"></ul>
+							<ul class="menu-links">
+								<li id="reports" class="nav-link sub-menu">
+									<a onclick="menuLinkClick(event)">
+										<div>
+											<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M7 17H11C11.2833 17 11.5208 16.9042 11.7125 16.7125C11.9042 16.5208 12 16.2833 12 16C12 15.7167 11.9042 15.4792 11.7125 15.2875C11.5208 15.0958 11.2833 15 11 15H7C6.71667 15 6.47917 15.0958 6.2875 15.2875C6.09583 15.4792 6 15.7167 6 16C6 16.2833 6.09583 16.5208 6.2875 16.7125C6.47917 16.9042 6.71667 17 7 17ZM10 13H14C14.2833 13 14.5208 12.9042 14.7125 12.7125C14.9042 12.5208 15 12.2833 15 12C15 11.7167 14.9042 11.4792 14.7125 11.2875C14.5208 11.0958 14.2833 11 14 11H10C9.71667 11 9.47917 11.0958 9.2875 11.2875C9.09583 11.4792 9 11.7167 9 12C9 12.2833 9.09583 12.5208 9.2875 12.7125C9.47917 12.9042 9.71667 13 10 13ZM13 9H17C17.2833 9 17.5208 8.90417 17.7125 8.7125C17.9042 8.52083 18 8.28333 18 8C18 7.71667 17.9042 7.47917 17.7125 7.2875C17.5208 7.09583 17.2833 7 17 7H13C12.7167 7 12.4792 7.09583 12.2875 7.2875C12.0958 7.47917 12 7.71667 12 8C12 8.28333 12.0958 8.52083 12.2875 8.7125C12.4792 8.90417 12.7167 9 13 9ZM5 21C4.45 21 3.97917 20.8042 3.5875 20.4125C3.19583 20.0208 3 19.55 3 19V5C3 4.45 3.19583 3.97917 3.5875 3.5875C3.97917 3.19583 4.45 3 5 3H19C19.55 3 20.0208 3.19583 20.4125 3.5875C20.8042 3.97917 21 4.45 21 5V19C21 19.55 20.8042 20.0208 20.4125 20.4125C20.0208 20.8042 19.55 21 19 21H5ZM5 19H19V5H5V19Z" />
+											</svg>
+										</div>
+										<span class="nav-text">Отчеты</span>
+									</a>
+									<div class="sub-menu-list" style="display: none">
+										<ul id="reportsList"></ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="bottom-content">
+							<hr />
+							<ul id="fixedTools"></ul>
+							<hr />
+							<a id="panelCollapseButton">
+								<div data-title="Развернуть панель" class="toggle">
+									<div class="arrow-icon"></div>
+								</div>
+								<span class="nav-text">Свернуть панель</span>
+							</a>
+						</div>
+					</div>
+				</nav>
+			</div>
+			<div id="webClientContainer" class="container"></div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c59ddadd-5698-44a5-a748-44cf8ec4d22a">
+  <name>ДобавитьЗатратыВремениГрупповые</name>
+  <synonym>
+    <key>ru</key>
+    <value>Добавить затраты времени групповые</value>
+  </synonym>
+</mdclass:CommonPicture>

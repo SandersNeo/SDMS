@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8f0400f0-6ba8-4ebf-a505-fb42b9e0f925">
+  <producedTypes>
+    <managerType typeId="0f3053ab-af11-4aa7-8715-0f48fffb494d" valueTypeId="2ed3f0df-af80-4543-b6c4-3fb5503d6554"/>
+    <valueManagerType typeId="fe1d7a3a-e37b-4429-ad1e-f6b8fa1adc9b" valueTypeId="6e28b924-d8b0-4183-9d80-69e56bf21e37"/>
+    <valueKeyType typeId="ab6a6672-762f-5a88-9258-f8200240ebfc" valueTypeId="344c1264-9e89-5051-b159-0a1160b2228f"/>
+  </producedTypes>
+  <name>НомерПоследнейВерсииКонфигурацииХранилища</name>
+  <synonym>
+    <key>ru</key>
+    <value>Номер последней версии конфигурации хранилища</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>10</precision>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

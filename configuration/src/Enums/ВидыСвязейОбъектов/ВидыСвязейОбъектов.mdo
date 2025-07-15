@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d2e7f72d-0e10-4c21-ad16-66514c7ce77a">
+  <producedTypes>
+    <refType typeId="204134d5-3794-4fb1-9696-3b9a06e55127" valueTypeId="2f5aa21d-ea03-4ee5-81c4-9f4a0c39a650"/>
+    <listType typeId="8fb14479-7037-47df-9be0-1dcc953449d6" valueTypeId="ca911838-5387-42ab-8203-70f951258407"/>
+    <managerType typeId="bc444d5b-2fdd-410f-b30d-96983c418775" valueTypeId="3501eba0-6aad-4cce-92e9-0b94c536ebef"/>
+  </producedTypes>
+  <name>ВидыСвязейОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды связей объектов</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="4696b2ed-5d27-4d96-94ed-d59f46af50a2">
+    <name>СвязанаС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Связана с</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6533a109-3067-4928-a8a2-6b3e3cf6106e">
+    <name>Дублирует</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дублирует</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ae59489f-6ed3-41c5-9220-3e02a57f5bf1">
+    <name>Дублируется</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дублируется</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b4bea91f-8405-4b2e-b425-8d05a441712d">
+    <name>Блокирует</name>
+    <synonym>
+      <key>ru</key>
+      <value>Блокирует</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e0b8f441-633e-44bd-8c99-c55563968d46">
+    <name>Блокируется</name>
+    <synonym>
+      <key>ru</key>
+      <value>Блокируется</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="abce5647-d5c6-4da3-b2c1-cd14494fc5f9">
+    <name>Следующая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Следующая</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="49cebc0d-a7c4-4800-849e-ce50db3ecb73">
+    <name>Предыдущая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предыдущая</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

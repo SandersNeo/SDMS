@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ca2ff28d-927c-42a6-8ad5-01eb366f2ff6">
+  <producedTypes>
+    <objectType typeId="e3829fe6-5982-4b28-9f64-852f9bbca432" valueTypeId="57c87336-3d04-4065-b334-29b5cc8a7031"/>
+    <managerType typeId="d85fbd78-f637-4fa5-ae06-89e2bd7b00cd" valueTypeId="4d177280-9ba9-414a-8f63-454135069c57"/>
+  </producedTypes>
+  <name>ДоступноеВремяСпринта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Доступное время спринта</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ДоступноеВремяСпринта.Form.ФормаОтчета</defaultForm>
+  <forms uuid="8fe2433e-6e7c-4fd9-9a6a-324893a23f7d">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Report>

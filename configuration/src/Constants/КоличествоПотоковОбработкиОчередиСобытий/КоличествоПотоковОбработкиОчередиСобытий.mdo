@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a010fd4c-59f8-497f-928a-e60b76c0286f">
+  <producedTypes>
+    <managerType typeId="5c87b0a4-001a-4cbe-b26c-171ea0bb36f0" valueTypeId="986009c8-0d6c-4f43-9afd-31a3f879df32"/>
+    <valueManagerType typeId="88c68644-258a-4469-bfc2-979d0d779e65" valueTypeId="1dec7199-4cb5-4d6a-abbb-eb72d3990d1a"/>
+    <valueKeyType typeId="fe90378a-24b9-55b4-ac8e-f75862c9c9f2" valueTypeId="16ce79b0-5a91-5539-b345-9e6c7cda8991"/>
+  </producedTypes>
+  <name>КоличествоПотоковОбработкиОчередиСобытий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Количество потоков обработки очереди событий</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>3</precision>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

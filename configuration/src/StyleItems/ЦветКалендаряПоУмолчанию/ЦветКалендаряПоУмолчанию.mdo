@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:StyleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4d0111f6-37e2-45a2-a898-a5f17eab4a0a">
+  <name>ЦветКалендаряПоУмолчанию</name>
+  <synonym>
+    <key>ru</key>
+    <value>Цвет календаря по умолчанию</value>
+  </synonym>
+  <value xsi:type="core:ColorValue">
+    <value xsi:type="core:ColorDef">
+      <red>245</red>
+      <green>230</green>
+      <blue>205</blue>
+    </value>
+  </value>
+</mdclass:StyleItem>

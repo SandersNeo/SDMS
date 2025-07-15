@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3aca34cf-9234-441a-a452-e65eebda3049">
+  <producedTypes>
+    <objectType typeId="2739f624-0742-4fb3-8804-3deb8f84aee8" valueTypeId="964e1226-5fda-4c96-8001-e8729ad5beb7"/>
+    <managerType typeId="c7f01762-5db9-4c75-a0b6-bb71cf216ec7" valueTypeId="46e5c661-78f3-4962-a902-f1ec03917aa7"/>
+  </producedTypes>
+  <name>ОтключениеСеансов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отключение сеансов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ОтключениеСеансов.Form.ФормаОбработки</defaultForm>
+  <forms uuid="bf2573fb-ef77-4e88-a820-a38b69636bfd">
+    <name>ФормаОбработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма обработки</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

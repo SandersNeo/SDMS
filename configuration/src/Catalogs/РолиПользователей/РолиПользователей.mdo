@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0d43a04b-96ed-4e02-94bf-5981a128038c">
+  <producedTypes>
+    <objectType typeId="c381cfc2-f7c4-4118-9cf4-21c5210e98f2" valueTypeId="7bf54889-7b49-4b5c-b26c-9df2885c3843"/>
+    <refType typeId="79b99854-6dfc-458c-ad44-983ea722b5d1" valueTypeId="d0f7b6d9-570e-4860-8c56-80f3993ca113"/>
+    <selectionType typeId="5ae91bbf-0641-485d-a5b7-eeefef3bd3a5" valueTypeId="a7876ee8-2fc1-44f0-8893-78d80f043bb8"/>
+    <listType typeId="96f8b2c3-2f3b-427f-b7cb-7360ea66486a" valueTypeId="7f119860-369d-4e70-bb4d-0bd8f549ba52"/>
+    <managerType typeId="0dddda3f-75a4-4024-961e-6706b2fb8cfa" valueTypeId="a905b0b3-96d3-4090-b650-16997dbbe7d9"/>
+  </producedTypes>
+  <name>РолиПользователей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Роли пользователей</value>
+  </synonym>
+  <comment>Список возможных ролей пользователя</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.РолиПользователей.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Роль пользователя</value>
+  </objectPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>В предопределенных есть элемент &quot;Все роли&quot;. Он предназначен для настройки процесса перехода статусов для Проектов.</value>
+  </explanation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>80</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="f9eda921-319f-4c11-a773-f57c705d8801">
+      <name>Аналитик</name>
+      <description>Аналитик</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="db53844f-7ff3-4894-871a-c6580a3c186c">
+      <name>ВсеРоли</name>
+      <description>Все роли</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="fbb1a330-504f-4df9-9666-fb6438bb43d8">
+      <name>Гость</name>
+      <description>Гость</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="ca85da58-b6e5-41ec-9d7e-a0e524d44b9a">
+      <name>ДиректорIT</name>
+      <description>Директор IT</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="6707498a-4aff-40b3-9ef9-89ec79adaf7a">
+      <name>Заказчик</name>
+      <description>Заказчик</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="5414b5a5-00a4-4159-933c-8ffacad99ed8">
+      <name>Разработчик</name>
+      <description>Разработчик</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="2903af73-c0aa-4084-a97e-80feb3bbedac">
+      <name>РуководительIT</name>
+      <description>Руководитель ИТ-отдела</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="d48bd205-0d0f-4789-9738-470b704c7467">
+      <name>РуководительНаправления</name>
+      <description>Руководитель направления</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="a599d320-2ba6-4128-844b-2cc8763f52a5">
+      <name>РуководительНаправленияIT</name>
+      <description>Руководитель направления IT</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="3d063931-16ef-4b43-894c-ecb4dda5bf8d">
+      <name>СтаршийРазработчик</name>
+      <description>Старший разработчик</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="141fbf88-d437-408b-8377-f222d7c87e3e">
+      <name>СТО</name>
+      <description>СТО</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="3598b534-ed96-4bf6-bf3e-286c84360ab2">
+      <name>Тестировщик</name>
+      <description>Тестировщик</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.РолиПользователей.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="1e284001-bd07-479a-a675-3c1ac06235b8">
+    <name>ПринадлежитITОтделу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Принадлежит ITОтделу</value>
+    </synonym>
+    <comment>Истина - определяет роль пользователя в IT-структуре, Ложь - роль пользователя по отношению к объектам</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="246ff633-02ae-4c4c-af9d-b52d3643dbac">
+    <producedTypes>
+      <objectType typeId="a86517cc-c89f-4b95-b50a-4a58a4148e04" valueTypeId="d47a1cce-2fec-4e34-b047-00f7a0a19e22"/>
+      <rowType typeId="0379fe76-66c1-421c-a273-bb73c467916d" valueTypeId="d119f26f-546f-4df8-ac9e-6b2c4bcbf23e"/>
+    </producedTypes>
+    <name>ДоступныеИнструменты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доступные инструменты</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="ca38c023-ed3b-4306-ba69-355551f3ddba">
+      <name>Инструмент</name>
+      <synonym>
+        <key>ru</key>
+        <value>Инструмент</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ИнструментыСистемы</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="5802d2bd-87b2-4cc1-a7bb-0be3dab2663c">
+      <name>Порядок</name>
+      <synonym>
+        <key>ru</key>
+        <value>Порядок</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="5a63c7df-6e4b-40eb-b27c-3b068ed83a7b">
+      <name>ЭтоОтчет</name>
+      <synonym>
+        <key>ru</key>
+        <value>Это отчет</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="c7257cad-4096-4625-bb8e-733655554612">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

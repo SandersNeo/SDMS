@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="965e454c-2b47-403e-8799-c2eb3305fec3">
+  <name>РаботаСПроцессамиКлиент</name>
+  <synonym>
+    <key>ru</key>
+    <value>Работа с процессами клиент</value>
+  </synonym>
+  <comment>Содержит описания обработчиков оповещений и прочие процедуры для смены статуса, используемые на клиенте</comment>
+  <clientManagedApplication>true</clientManagedApplication>
+</mdclass:CommonModule>

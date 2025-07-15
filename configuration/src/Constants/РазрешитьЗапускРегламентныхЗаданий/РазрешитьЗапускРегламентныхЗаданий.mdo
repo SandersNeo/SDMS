@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9cfc4fb2-6b00-49e1-85ac-6962107d6eb4">
+  <producedTypes>
+    <managerType typeId="8358c4c6-3508-4835-8da6-131edecaaf09" valueTypeId="f5c375f8-e113-4582-81f2-906e1a1756d0"/>
+    <valueManagerType typeId="a6f454e9-9c34-40a2-b810-0fda5a2e6c25" valueTypeId="7c1b8a51-35d6-4cf5-a985-e1a2ef67c94d"/>
+    <valueKeyType typeId="8cc90bfd-223b-59e0-8660-9ca089598281" valueTypeId="c127725f-a667-564c-89dc-9810df09453a"/>
+  </producedTypes>
+  <name>РазрешитьЗапускРегламентныхЗаданий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Разрешить запуск регламентных заданий</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

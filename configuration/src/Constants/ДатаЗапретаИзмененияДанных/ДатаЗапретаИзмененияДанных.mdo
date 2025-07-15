@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="094c38f8-24a6-42b1-aaf8-e8d6afdcdcfb">
+  <producedTypes>
+    <managerType typeId="3c7b57d6-8152-47bf-a066-bb2b7b6a5b64" valueTypeId="31fd01ec-ca6e-43fe-9b88-934dd3b45e96"/>
+    <valueManagerType typeId="d17bf270-2825-4f71-8c78-546c94ddd6b1" valueTypeId="0b84d18d-44a8-41ea-9a21-c0f741911011"/>
+    <valueKeyType typeId="0ff32e76-5040-5a54-9c9a-86af6e1d2707" valueTypeId="87ca1f8c-72a2-5cc8-bd98-adeaf73ce0e7"/>
+  </producedTypes>
+  <name>ДатаЗапретаИзмененияДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дата запрета изменения данных</value>
+  </synonym>
+  <type>
+    <types>Date</types>
+    <dateQualifiers>
+      <dateFractions>Date</dateFractions>
+    </dateQualifiers>
+  </type>
+  <defaultForm>CommonForm.ДатаЗапретаИзмененияДанных</defaultForm>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

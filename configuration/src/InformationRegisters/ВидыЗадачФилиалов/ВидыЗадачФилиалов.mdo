@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fe994364-04df-4926-ad13-8162bc7ad0fc">
+  <producedTypes>
+    <selectionType typeId="feb102db-8937-43c3-86e2-d8d903539244" valueTypeId="1b9fed31-8119-4aa3-b60a-40720bf5594d"/>
+    <listType typeId="784c9593-6243-4df4-a10e-dd2c7da2ca50" valueTypeId="fb51e474-5c0c-47f6-b123-d1650ddcc6d4"/>
+    <managerType typeId="c0ce833b-e115-48b4-9be7-2f6abb47c59b" valueTypeId="a5015880-ba7b-4a34-856e-153880beb63d"/>
+    <recordSetType typeId="9c084de7-293e-4537-a157-4040e2431b02" valueTypeId="65f1d76a-c751-4d1f-95a1-4ccb24bc70fe"/>
+    <recordKeyType typeId="4bbf9483-800d-4235-b528-239363344b6c" valueTypeId="3cadeca8-42db-4929-ab32-85848f4965f8"/>
+    <recordType typeId="061949aa-2088-4061-a405-f6ce41d63ec0" valueTypeId="e42e4b1d-082e-42e7-ad17-ff454fc8bbca"/>
+    <recordManagerType typeId="47787421-aa12-4b06-8cf4-2e7fbbf8a0ee" valueTypeId="bf842828-5747-4cad-8547-52d521d02991"/>
+  </producedTypes>
+  <name>ВидыЗадачФилиалов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды задач филиалов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="3992b74f-2d81-44a3-90b6-7da4aa65420e">
+    <name>Филиал</name>
+    <synonym>
+      <key>ru</key>
+      <value>Филиал</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Филиалы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a07cf79d-c792-4fc3-af27-0585c03c09c2">
+    <name>ВидЗадачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид задачи</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыЗадач</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

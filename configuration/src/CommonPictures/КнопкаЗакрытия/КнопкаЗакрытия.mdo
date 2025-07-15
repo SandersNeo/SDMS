@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="63736055-e5a0-4b8b-b6bf-a253deb56bdf">
+  <name>КнопкаЗакрытия</name>
+  <synonym>
+    <key>ru</key>
+    <value>Кнопка закрытия</value>
+  </synonym>
+</mdclass:CommonPicture>

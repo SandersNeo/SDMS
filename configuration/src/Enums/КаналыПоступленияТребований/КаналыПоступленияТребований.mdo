@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f1fbab08-f788-415b-8369-be60f03ded95">
+  <producedTypes>
+    <refType typeId="c7e43ffd-55bc-45b1-8c7c-09b3e2246f06" valueTypeId="480155e4-20cc-4432-ad72-4f453cf00073"/>
+    <listType typeId="71255c10-4c37-4f78-99ac-af0eb1a4fa85" valueTypeId="9c62c99f-4733-4f83-90a4-9bcec34157c7"/>
+    <managerType typeId="5dd87649-03e1-47ac-83bf-beefe9cf1773" valueTypeId="c28f430f-ec67-4636-850d-d58228881228"/>
+  </producedTypes>
+  <name>КаналыПоступленияТребований</name>
+  <synonym>
+    <key>ru</key>
+    <value>Каналы поступления требований</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="602a8979-18af-444f-aa62-1816dccb28a7">
+    <name>Встреча</name>
+    <synonym>
+      <key>ru</key>
+      <value>Встреча</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0e73d85d-34cc-4b80-9c5f-05052a3f2699">
+    <name>Звонок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Звонок</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="54044d68-064f-414b-9884-6b336331f259">
+    <name>Мессенджер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Мессенджер</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="70b003f8-3610-4284-927b-838d4a58451c">
+    <name>ЭлектроннаяПочта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Электронная почта</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

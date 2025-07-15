@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a2dbbe36-63da-45b5-aa9c-9f9dd59910f9">
+  <name>НезначительнаяСерьезностьОшибки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Незначительная серьезность ошибки</value>
+  </synonym>
+</mdclass:CommonPicture>

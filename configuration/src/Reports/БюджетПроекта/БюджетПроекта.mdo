@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4dbcbfc3-c687-44b1-b027-530fc7ae1183">
+  <producedTypes>
+    <objectType typeId="0ed28262-2f88-4b9c-86a8-5c8e2f6f1e50" valueTypeId="ff869440-a79d-4d83-abb0-9a4d37dc2adf"/>
+    <managerType typeId="081625a0-30b3-45de-bed7-1993b6a78b93" valueTypeId="f17fcbe3-ec7c-44eb-aa7e-9dccc197738c"/>
+  </producedTypes>
+  <name>БюджетПроекта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Бюджет проекта</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.БюджетПроекта.Form.ФормаОтчета</defaultForm>
+  <forms uuid="5bd3b406-4bdc-4032-9823-229950f5aabf">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="d4980c7a-7390-4ad7-b8c5-134b8a10be77">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="0e81fb94-17b0-4564-ba77-00bb46170884">
+    <name>Отчет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет</value>
+    </synonym>
+  </templates>
+  <templates uuid="497e5ea1-bf6c-420a-aaa0-1799e10fe422">
+    <name>ОтчетВыгрузка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет выгрузка</value>
+    </synonym>
+  </templates>
+  <templates uuid="b8ec2ff2-686e-4d16-ae7a-3f5728fcfc16">
+    <name>СырыеДанные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сырые данные</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

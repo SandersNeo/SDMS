@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="01d8341d-cb41-4c75-922b-beb70c34c0b8">
+  <name>ОсновнойМакетКомпоновкиНовый</name>
+  <synonym>
+    <key>ru</key>
+    <value>Основной макет компоновки (новый дизайн системы)</value>
+  </synonym>
+  <templateType>DataCompositionAppearanceTemplate</templateType>
+</mdclass:CommonTemplate>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8fdedea6-a9ff-4cd7-87c2-38bed7e5bd63">
+  <name>CKEditorHTML</name>
+  <synonym>
+    <key>ru</key>
+    <value>CK editor</value>
+  </synonym>
+  <templateType>TextDocument</templateType>
+</mdclass:CommonTemplate>

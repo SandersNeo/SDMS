@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5a71e295-a850-49c7-8c0a-cd1b18e066ce">
+  <producedTypes>
+    <objectType typeId="5cfc2c95-d088-4763-8c00-edd03950f64d" valueTypeId="cf7c9515-7c0f-4fcd-b977-6658d088e3e1"/>
+    <managerType typeId="02ffd156-cba6-4938-8674-a1359233a742" valueTypeId="9e082fb8-4577-40cc-afc6-b4572bbb3a27"/>
+  </producedTypes>
+  <name>ЗанесениеТрудозатрат</name>
+  <synonym>
+    <key>ru</key>
+    <value>Занесение трудозатрат</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЗанесениеТрудозатрат.Form.ФормаОбработки</defaultForm>
+  <forms uuid="58ac1354-f72f-4a28-b31e-8226dea565c9">
+    <name>ФормаОбработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма обработки</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="18887330-31a1-4c0d-8640-5bf261d413ad">
+  <producedTypes>
+    <objectType typeId="f09d6990-7c75-46eb-b69e-6f3abbf847ad" valueTypeId="f6d2ffc6-27a9-453c-a763-e11fda95bcda"/>
+    <managerType typeId="a6cbabaa-b06e-4cb2-9344-7d6ff38a1bb4" valueTypeId="fb3c0b1a-63c3-4ba0-a2e9-4e1b5c9616ed"/>
+  </producedTypes>
+  <name>УправлениеДоступом</name>
+  <synonym>
+    <key>ru</key>
+    <value>Управление доступом</value>
+  </synonym>
+  <defaultForm>DataProcessor.УправлениеДоступом.Form.ПанельАдминистратора</defaultForm>
+  <forms uuid="253b8856-db7b-42c1-a922-0286db5b3af0">
+    <name>ВводПароляУчетнойЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ввод пароля учетной записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a2f7ec3b-2c8f-4a52-97c7-988636b345de">
+    <name>ПанельАдминистратора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Панель администратора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

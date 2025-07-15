@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Задача</dataPath>
+			<field>Задача</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задача</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Объект</dataPath>
+			<field>Объект</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Дата</dataPath>
+			<field>Дата</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Исполнитель</dataPath>
+			<field>Исполнитель</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исполнитель</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Поинты</dataPath>
+			<field>Поинты</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поинты</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Факт</dataPath>
+			<field>Факт</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Факт</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>План</dataPath>
+			<field>План</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>План</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	СвойстваЗадачСрезПоследних.Объект КАК Задача
+ПОМЕСТИТЬ ОтобранныеЗадачи
+ИЗ
+	РегистрСведений.СвойстваЗадач.СрезПоследних(&amp;ДатаНачала, ) КАК СвойстваЗадачСрезПоследних
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.Задача КАК Задача
+		ПО СвойстваЗадачСрезПоследних.Объект = Задача.Ссылка
+			И (Задача.Филиал = &amp;Филиал)
+ГДЕ
+	НЕ СвойстваЗадачСрезПоследних.Статус В (ЗНАЧЕНИЕ(Справочник.СтатусыОбъектов.Решен), ЗНАЧЕНИЕ(Справочник.СтатусыОбъектов.Отклонен))
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ДокументЗадача.Ссылка
+ИЗ
+	Документ.Задача КАК ДокументЗадача
+ГДЕ
+	ДокументЗадача.Дата МЕЖДУ &amp;ДатаНачала И &amp;ДатаРасшифровки
+	И ДокументЗадача.Филиал = &amp;Филиал
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	СвойстваЗадачСрезПоследних.Объект КАК Объект,
+	СвойстваЗадачСрезПоследних.Статус КАК Статус,
+	СвойстваЗадачСрезПоследних.Период КАК Период
+ПОМЕСТИТЬ СтатусыЗадачПоПериодам
+ИЗ
+	РегистрСведений.СвойстваЗадач.СрезПоследних(
+			&amp;ДатаНачала,
+			Объект В
+				(ВЫБРАТЬ
+					ОтобранныеЗадачи.Задача
+				ИЗ
+					ОтобранныеЗадачи)) КАК СвойстваЗадачСрезПоследних
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	СвойстваЗадач.Объект,
+	СвойстваЗадач.Статус,
+	СвойстваЗадач.Период
+ИЗ
+	ОтобранныеЗадачи КАК ОтобранныеЗадачи
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СвойстваЗадач КАК СвойстваЗадач
+		ПО ОтобранныеЗадачи.Задача = СвойстваЗадач.Объект
+ГДЕ
+	СвойстваЗадач.Период МЕЖДУ &amp;ДатаНачала И &amp;ДатаРасшифровки
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	СтатусыЗадачПоПериодам1.Объект КАК Объект,
+	СтатусыЗадачПоПериодам1.Статус КАК Статус,
+	МАКСИМУМ(СтатусыЗадачПоПериодам1.Период) КАК ДатаНачала
+ПОМЕСТИТЬ ДатаНахожденияВСтатусе
+ИЗ
+	СтатусыЗадачПоПериодам КАК СтатусыЗадачПоПериодам1
+		ЛЕВОЕ СОЕДИНЕНИЕ СтатусыЗадачПоПериодам КАК СтатусыЗадачПоПериодам2
+		ПО СтатусыЗадачПоПериодам1.Объект = СтатусыЗадачПоПериодам2.Объект
+			И СтатусыЗадачПоПериодам1.Статус &lt;&gt; СтатусыЗадачПоПериодам2.Статус
+			И СтатусыЗадачПоПериодам1.Период &lt; СтатусыЗадачПоПериодам2.Период
+ГДЕ
+	СтатусыЗадачПоПериодам1.Статус = &amp;Статус
+	И СтатусыЗадачПоПериодам2.Период ЕСТЬ NULL
+
+СГРУППИРОВАТЬ ПО
+	СтатусыЗадачПоПериодам1.Объект,
+	СтатусыЗадачПоПериодам1.Статус
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ДатаНахожденияВСтатусе.Объект КАК Задача,
+	ДатаНахожденияВСтатусе.Статус КАК Статус,
+	ДатаНахожденияВСтатусе.ДатаНачала КАК Дата,
+	ЕСТЬNULL(СвойстваЗадач.Исполнитель, ЗНАЧЕНИЕ(Справочник.Пользователи.ПустаяСсылка)) КАК Исполнитель,
+	СУММА(ЕСТЬNULL(Трудозатраты.Затрата, 0)) КАК Трудозатраты
+ПОМЕСТИТЬ ЗадачиСТрудозатратами
+ИЗ
+	ДатаНахожденияВСтатусе КАК ДатаНахожденияВСтатусе
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СвойстваЗадач.СрезПоследних(&amp;ДатаРасшифровки, Статус = ЗНАЧЕНИЕ(Справочник.СтатусыОбъектов.ВРаботе)) КАК СвойстваЗадач
+		ПО (СвойстваЗадач.Объект = ДатаНахожденияВСтатусе.Объект)
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.Трудозатраты КАК Трудозатраты
+		ПО (СвойстваЗадач.Объект = Трудозатраты.Объект)
+			И (СвойстваЗадач.Исполнитель = Трудозатраты.Пользователь)
+
+СГРУППИРОВАТЬ ПО
+	ДатаНахожденияВСтатусе.Объект,
+	ДатаНахожденияВСтатусе.Статус,
+	ДатаНахожденияВСтатусе.ДатаНачала,
+	ЕСТЬNULL(СвойстваЗадач.Исполнитель, ЗНАЧЕНИЕ(Справочник.Пользователи.ПустаяСсылка))
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ЗадачиСТрудозатратами.Задача КАК Задача,
+	ЗадачиСТрудозатратами.Дата КАК Дата,
+	ЗадачиСТрудозатратами.Исполнитель КАК Исполнитель,
+	ДокументЗадача.ОценкаStoryPoint КАК Поинты,
+	ЕСТЬNULL(ПланируемыеТрудозатраты.Трудозатраты, 0) КАК План,
+	ЗадачиСТрудозатратами.Трудозатраты КАК Факт
+ИЗ
+	ЗадачиСТрудозатратами КАК ЗадачиСТрудозатратами
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.Задача КАК ДокументЗадача
+		ПО ЗадачиСТрудозатратами.Задача = ДокументЗадача.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ПланируемыеТрудозатраты КАК ПланируемыеТрудозатраты
+		ПО ЗадачиСТрудозатратами.Задача = ПланируемыеТрудозатраты.Объект
+			И (ПланируемыеТрудозатраты.ТипТрудозатрат = ЗНАЧЕНИЕ(Перечисление.ТипыТрудозатрат.Разработка))</query>
+	</dataSet>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ДатаНачала</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата начала</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ДатаРасшифровки</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата расшифровки</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Статус</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Статус</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.СтатусыОбъектов</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Филиал</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Филиал</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Филиалы</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СистемныеПоля.НомерПоПорядку</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Задача</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Исполнитель</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Поинты</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Трудозатраты</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>План</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Факт</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Дата</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ДатаНачала</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ДатаРасшифровки</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Статус</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Филиал</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+			</dcsset:order>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ОсновнойМакетКомпоновки</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:filter>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+				</dcsset:filter>
+				<dcsset:order>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>3d91569b-04f0-4670-9062-5bae97d5cb13</dcsset:userSettingID>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

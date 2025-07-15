@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="83de3264-a8b6-4eb6-8cc3-c73530eaabef">
+  <producedTypes>
+    <selectionType typeId="ec7603ad-9696-4f3f-b41e-657c06a250f2" valueTypeId="b45d68f9-2483-4639-bfc1-97dea511a144"/>
+    <listType typeId="7f27a866-1ef8-4912-a259-b32ac77cf6ba" valueTypeId="df2d49b5-e25c-434a-b85c-5b79288dfcee"/>
+    <managerType typeId="7cbf5c71-466f-4764-8e3c-c9f2866320e8" valueTypeId="8cba072e-08f7-4d9f-aa87-acf0223d689d"/>
+    <recordSetType typeId="f88b7f4a-2422-403d-a05d-f789b1b81692" valueTypeId="138b3cf8-35f9-4644-b9e1-5afca6dc38a4"/>
+    <recordKeyType typeId="0ffc2af1-e39c-454b-a990-30efe2df6fa2" valueTypeId="d4c3b8f4-af73-492e-870c-adf657547932"/>
+    <recordType typeId="29d385e7-7473-4b88-9907-6bab0821c612" valueTypeId="263909fa-684f-40b9-828e-69c5ea2d124b"/>
+    <recordManagerType typeId="31fe4648-e533-4d74-b2c8-6f1e078888d1" valueTypeId="04af725e-8052-4c12-b567-c4e8987142ec"/>
+  </producedTypes>
+  <name>ИсторияАктуализацииЗаявокНаРазработку</name>
+  <synonym>
+    <key>ru</key>
+    <value>История актуализации заявок на разработку</value>
+  </synonym>
+  <comment>Хранит историю актуализации заявок: пользовательские и автоматические действия</comment>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.ИсторияАктуализацииЗаявокНаРазработку.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <explanation>
+    <key>ru</key>
+    <value>Значения ресурса &quot;Состояние&quot;: 0 - добавлена в список на актуализацию; 1 - актуальность подтверждена пользователем; 2 - заявка отклонена пользователем; 3 - заявка отклонена системой.</value>
+  </explanation>
+  <resources uuid="ad877d0c-3554-4e60-aa27-ad62a84547a0">
+    <name>Действие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Действие</value>
+    </synonym>
+    <comment>Действие над заявкой: 0 - добавлена в список на актуализацию; 1 - актуальность подтверждена пользователем; 2 - заявка отклонена пользователем; 3 - заявка отклонена системой; 4 - пользователь просмотрел информацию о необходимости актуализации</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="6cbb7e33-286c-40e9-a52a-05598438cab8">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="38ba9a3d-197a-4974-9ab2-0266faca0907">
+    <name>Заявка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявка</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ЗаявкаНаРазработку</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="4d6b126b-887f-4451-87a8-eb14cf91980f">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

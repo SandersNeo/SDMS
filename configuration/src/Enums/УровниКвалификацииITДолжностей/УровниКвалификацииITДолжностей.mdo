@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="45639a3a-7666-425b-a217-1f5895087bfb">
+  <producedTypes>
+    <refType typeId="294071a5-528d-42a6-9059-f00c672d4ac0" valueTypeId="49ff34e0-941a-4f72-b9bf-9a6070b89fba"/>
+    <listType typeId="5ddc4cc0-e433-4a68-ae59-ad22aaa2a856" valueTypeId="c109d2b7-dad9-4999-920f-9ebdfd2ab98a"/>
+    <managerType typeId="882e45dc-17c5-4507-a87c-719574d5ae6c" valueTypeId="ea13d721-50dd-4c74-a8ec-b8d055919cbf"/>
+  </producedTypes>
+  <name>УровниКвалификацииITДолжностей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Уровни квалификации IT должностей</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="a53b5c0a-9bd1-4645-ba28-c703d0fd2102">
+    <name>Junior</name>
+    <synonym>
+      <key>ru</key>
+      <value>Junior</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3fb1aa86-022a-4848-8e50-cbf88c35f1a7">
+    <name>Middle</name>
+    <synonym>
+      <key>ru</key>
+      <value>Middle</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b9dd0fd6-6d01-41c4-b034-72a49806eed1">
+    <name>Senior</name>
+    <synonym>
+      <key>ru</key>
+      <value>Senior</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="cac7ded2-8d26-4c3a-b059-40226b1d8ed7">
+    <name>Lead</name>
+    <synonym>
+      <key>ru</key>
+      <value>Lead</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

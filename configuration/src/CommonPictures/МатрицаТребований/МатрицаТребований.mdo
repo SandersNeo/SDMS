@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a43d1360-06de-498a-8472-8e5a72a5ea55">
+  <name>МатрицаТребований</name>
+  <synonym>
+    <key>ru</key>
+    <value>Матрица требований</value>
+  </synonym>
+</mdclass:CommonPicture>
