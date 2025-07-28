@@ -1,0 +1,4618 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "version": "1.2",
+    "title": "SDMS API",
+    "description": "API для работы с объектами SDMS",
+    "termsOfService": "",
+    "contact": {
+      "name": "",
+      "email": "",
+      "url": ""
+    },
+    "license": {
+      "url": "https://www.gnu.org/licenses/gpl-3.0.html",
+      "name": "GPL-3.0 license"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://localhost/services/hs/api",
+      "description": "SDMS API"
+    }
+  ],
+  "paths": {
+    "/branches/{id}": {
+      "get": {
+        "tags": [
+          "Филиалы"
+        ],
+        "summary": "Получение данных филиала",
+        "description": "Получение данных филиала и команд филиала",
+        "operationId": "get-branches-id",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "GUID филиала или номер",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "$ref": "#/components/schemas/code"
+                    },
+                    "message": {
+                      "$ref": "#/components/schemas/message"
+                    },
+                    "data": {
+                      "type": "object",
+                      "description": "Структура данных филиала",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "code": {
+                          "type": "string"
+                        },
+                        "description": {
+                          "type": "string"
+                        },
+                        "members": {
+                          "type": "array",
+                          "description": "Массив сотрудников филиала",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "name": {
+                                "type": "string"
+                              },
+                              "mail": {
+                                "type": "string"
+                              },
+                              "position": {
+                                "type": "object",
+                                "description": "Должность",
+                                "properties": {
+                                  "id": {
+                                    "type": "string"
+                                  },
+                                  "code": {
+                                    "type": "string"
+                                  },
+                                  "description": {
+                                    "type": "string"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "teams": {
+                          "type": "array",
+                          "description": "Массив команд филиала",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "description": {
+                                "type": "string"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "code",
+                        "description",
+                        "members"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "message",
+                    "data"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://localhost/services/hs/api",
+            "description": "SDMS API"
+          }
+        ]
+      }
+    },
+    "/branches/{id}/sprints": {
+      "get": {
+        "tags": [
+          "Филиалы"
+        ],
+        "summary": "Получение спринтов филиала",
+        "description": "Получение незавершенных спринтов филиала",
+        "operationId": "get-branches-id-sprints",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "GUID филиала или номер",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "$ref": "#/components/schemas/code"
+                    },
+                    "message": {
+                      "$ref": "#/components/schemas/message"
+                    },
+                    "data": {
+                      "type": "array",
+                      "description": "Массив данных спринтов",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "date_start": {
+                            "type": "string",
+                            "description": "Дата начала спринта"
+                          },
+                          "date_end ": {
+                            "type": "string",
+                            "description": "Дата окончания спринта"
+                          },
+                          "active": {
+                            "type": "boolean",
+                            "description": "Признак активности спринта"
+                          },
+                          "number": {
+                            "type": "integer"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://localhost/services/hs/api",
+            "description": "SDMS API"
+          }
+        ]
+      }
+    },
+    "/comments/add": {
+      "post": {
+        "tags": [
+          "Комментарии"
+        ],
+        "summary": "Добавить комментарий к задаче",
+        "description": "Добавления комментария в задачу",
+        "operationId": "post-comments-add",
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "task": {
+                    "type": "string",
+                    "description": "Номер задачи"
+                  },
+                  "comment": {
+                    "type": "string",
+                    "description": "Текст комментария"
+                  },
+                  "ad-user-guid": {
+                    "type": "string",
+                    "description": "Идентификатор пользователя AD.\r\nДоступно только при авторизации под служебным пользователем.",
+                    "format": "email"
+                  }
+                },
+                "required": [
+                  "task",
+                  "comment"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "$ref": "#/components/schemas/code"
+                    },
+                    "message": {
+                      "$ref": "#/components/schemas/message"
+                    },
+                    "data": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "message"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://localhost/services/hs/api",
+            "description": "SDMS API"
+          }
+        ]
+      }
+    },
+    "/comments/list": {
+      "get": {
+        "tags": [
+          "Комментарии"
+        ],
+        "summary": "Получить комментарии объекта",
+        "description": "Получить список комментариев объекта",
+        "operationId": "get-comments-list",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/objectType"
+          },
+          {
+            "$ref": "#/components/parameters/objectID"
+          }
+        ],
+        "requestBody": {
+          "content": {}
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "$ref": "#/components/schemas/code"
+                    },
+                    "message": {
+                      "$ref": "#/components/schemas/message"
+                    },
+                    "data": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "username": {
+                            "type": "string"
+                          },
+                          "usermail": {
+                            "type": "string",
+                            "format": "email"
+                          },
+                          "comment": {
+                            "type": "string"
+                          },
+                          "date": {
+                            "type": "string",
+                            "format": "date-time"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "message"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://localhost/services/hs/api",
+            "description": "SDMS API"
+          }
+        ]
+      }
+    },
+    "/devrequests/add": {
+      "post": {
+        "tags": [
+          "Заявка на разработку"
+        ],
+        "summary": "Создать заявку на разработку",
+        "description": "Создает заявку на разработку.",
+        "operationId": "post-devrequests-add",
+        "requestBody": {
+          "description": "Данные новой заявки",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "description": "Наименование",
+                    "maxLength": 250,
+                    "examples": [
+                      "Новая заявка"
+                    ]
+                  },
+                  "description": {
+                    "type": "string",
+                    "description": "Описание",
+                    "examples": [
+                      "Описание заявки"
+                    ]
+                  },
+                  "direction": {
+                    "type": "string",
+                    "description": "Направление разработки",
+                    "format": "uuid"
+                  },
+                  "systems": {
+                    "type": "array",
+                    "description": "Системы разработки",
+                    "format": "uuid",
+                    "minItems": 1,
+                    "items": {
+                      "type": "string",
+                      "format": "uuid"
+                    }
+                  },
+                  "due": {
+                    "type": "string",
+                    "description": "Срок реализации",
+                    "format": "date-time",
+                    "examples": [
+                      "2019-08-24T14:15:22"
+                    ]
+                  },
+                  "entity": {
+                    "type": "string",
+                    "description": "Юридическое лицо",
+                    "format": "uuid"
+                  },
+                  "function": {
+                    "type": "string",
+                    "description": "Назначение",
+                    "format": "uuid"
+                  },
+                  "process": {
+                    "type": "string",
+                    "description": "Вид процесса",
+                    "examples": [
+                      "Поддержка, Развитие"
+                    ]
+                  }
+                },
+                "required": [
+                  "name",
+                  "description",
+                  "direction",
+                  "systems"
+                ]
+              },
+              "examples": {
+                "Пример тела запроса": {
+                  "value": {
+                    "name": "Новая заявка",
+                    "description": "Описание заявки",
+                    "direction": "968704da-343a-4405-bece-877ca5eede1e",
+                    "systems": [
+                      "497f6eca-6276-4993-bfeb-53cbbbba6f08"
+                    ],
+                    "due": "2019-08-24T14:15:22",
+                    "entity": "01deb6b6-4a1d-47db-89a2-ffb77f46ad2a",
+                    "function": "4a6439c9-9520-421e-a181-7c7626fb665d",
+                    "process": "Поддержка, Развитие"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "$ref": "#/components/schemas/code"
+                    },
+                    "message": {
+                      "$ref": "#/components/schemas/message"
+                    },
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "minLength": 1,
+                          "examples": [
+                            "5dc023a5-15c6-11ec-a235-00155dd9e60b"
+                          ]
+                        },
+                        "number": {
+                          "type": "number",
+                          "examples": [
+                            98071
+                          ]
+                        },
+                        "name": {
+                          "type": "string",
+                          "minLength": 1,
+                          "examples": [
+                            "Новая задача для примера"
+                          ]
+                        },
+                        "date": {
+                          "type": "string",
+                          "minLength": 1,
+                          "examples": [
+                            "2021-09-15T11:43:47+10:00"
+                          ]
+                        },
+                        "systems": {
+                          "type": "array",
+                          "minItems": 1,
+                          "examples": [
+                            [
+                              "1С: SDMS"
+                            ]
+                          ],
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "direction": {
+                          "type": "string",
+                          "minLength": 1,
+                          "examples": [
+                            "Направление \"IT структура\""
+                          ]
+                        },
+                        "process": {
+                          "type": "string"
+                        },
+                        "author": {
+                          "type": "string",
+                          "minLength": 1,
+                          "examples": [
+                            "Иванов Иван Иванович"
+                          ]
+                        },
+                        "entity": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "number",
+                        "name",
+                        "date",
+                        "systems",
+                        "direction",
+                        "process",
+                        "author",
+                        "entity"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "message"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://localhost/services/hs/api",
+            "description": "SDMS API"
+          }
+        ]
+      }
+    },
+    "/devrequests/linkGUID": {
+      "get": {
+        "tags": [
+          "Заявка на разработку"
+        ],
+        "summary": "Получить GUID заявки",
+        "description": "Определяет GUID заявки по номеру документа",
+        "operationId": "get-devrequest-linkGUID",
+        "parameters": [
+          {
+            "name": "number",
+            "in": "query",
+            "description": "Номер заявки",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "examples": [
+                "elapsedTime"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "$ref": "#/components/schemas/code"
+                    },
+                    "message": {
+                      "$ref": "#/components/schemas/message"
+                    },
+                    "data": {
+                      "type": "string",
+                      "description": "Данные",
+                      "format": "uuid"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "message"
+                  ]
+                },
+                "examples": {
+                  "Успешно": {
+                    "value": {
+                      "code": 0,
+                      "message": "",
+                      "data": "497f6eca-6276-4993-bfeb-53cbbbba6f08"
+                    }
+                  },
+                  "Ошибка": {
+                    "value": {
+                      "code": 2,
+                      "message": "Не заполнены обязательные параметры."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://localhost/services/hs/api",
+            "description": "SDMS API"
+          }
+        ]
+      }
+    },
+    "/devrequests/list": {
+      "get": {
+        "tags": [
+          "Заявка на разработку"
+        ],
+        "summary": "Получить список заявок на разработку",
+        "description": "Возвращает список заявок на разработку",
+        "operationId": "get-devrequest",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/limit"
+          },
+          {
+            "$ref": "#/components/parameters/system"
+          },
+          {
+            "$ref": "#/components/parameters/skip"
+          },
+          {
+            "$ref": "#/components/parameters/filter"
+          },
+          {
+            "name": "performer",
+            "in": "query",
+            "description": "Почта исполнителя, назначенного по системе",
+            "schema": {
+              "type": "string",
+              "format": "email",
+              "examples": [
+                "ivanov@pochta.ru"
+              ]
+            }
+          },
+          {
+            "name": "tag",
+            "in": "query",
+            "description": "Фильтр по тэгам. Можно передать несколько тегов через запятую.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "include",
+            "in": "query",
+            "description": "Используется для включения в результирующий ответ дополнительной информации. Параметры разделяются запятой. Возможные варианты: date - включить дату заявки, elapsedTime - включить данные о трудозатратах, direction- включить направление заявки, status- включить текущий статус заявки, lastStatusChanged- включить последнее изменение статуса.",
+            "schema": {
+              "type": "string",
+              "examples": [
+                "elapsedTime"
+              ]
+            }
+          },
+          {
+            "name": "direction",
+            "in": "query",
+            "description": "ГУИД направления разработки",
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "examples": [
+                "a96e9e69-bc62-11e8-917d-00155d033631"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "$ref": "#/components/schemas/code"
+                    },
+                    "message": {
+                      "$ref": "#/components/schemas/message"
+                    },
+                    "data": {
+                      "type": "array",
+                      "description": "Данные",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "description": "GUID заявки на разработку",
+                            "format": "uuid"
+                          },
+                          "name": {
+                            "type": "string",
+                            "description": "Наименование заявки на разработку",
+                            "examples": [
+                              "Реализация разработанного API"
+                            ]
+                          },
+                          "number": {
+                            "type": "integer",
+                            "description": "Короткий номер заявки на разработку",
+                            "examples": [
+                              93460
+                            ]
+                          },
+                          "fullNumber": {
+                            "type": "string",
+                            "description": "Полный номер заявки на разработку",
+                            "examples": [
+                              "ЗР000093460"
+                            ]
+                          },
+                          "link": {
+                            "type": "string",
+                            "description": "Ссылка на заявку на разработку",
+                            "format": "iri",
+                            "examples": [
+                              "https://localhost/sdms#e1cib/data/Документ.Задача?ref=a23000155d42eb1b11ebeac30261a8c8"
+                            ]
+                          },
+                          "elapsedTime": {
+                            "type": "array",
+                            "description": "Трудозатраты",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "activityID": {
+                                  "type": "string",
+                                  "description": "Идентификатор вида деятельности",
+                                  "format": "uuid",
+                                  "examples": [
+                                    "84e8dc71-21c7-11ec-a233-00155dfc822f"
+                                  ]
+                                },
+                                "activityName": {
+                                  "type": "string",
+                                  "description": "Наименование вида деятельности",
+                                  "examples": [
+                                    "Разработка 1C (J): Изучение технической задачи"
+                                  ]
+                                },
+                                "comment": {
+                                  "type": "string",
+                                  "description": "Комментарий"
+                                },
+                                "date": {
+                                  "type": "string",
+                                  "description": "Дата внесения",
+                                  "format": "date-time"
+                                },
+                                "duration": {
+                                  "type": "number",
+                                  "description": "Длительность"
+                                },
+                                "id": {
+                                  "type": "string",
+                                  "description": "Идентификатор документа",
+                                  "format": "uuid"
+                                }
+                              }
+                            }
+                          },
+                          "date": {
+                            "type": "string",
+                            "description": "Дата создания"
+                          },
+                          "direction": {
+                            "type": "string",
+                            "description": "Направление"
+                          },
+                          "status": {
+                            "type": "string",
+                            "description": "Статус"
+                          },
+                          "lastStatusChanged": {
+                            "type": "string",
+                            "description": "Дата изменения статуса",
+                            "format": "date-time"
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "name",
+                          "number",
+                          "fullNumber",
+                          "link"
+                        ]
+                      }
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "message"
+                  ]
+                },
+                "examples": {
+                  "Успешно": {
+                    "value": {
+                      "code": 0,
+                      "message": "",
+                      "data": [
+                        {
+                          "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
+                          "name": "Подготовка архитектуры публичного API",
+                          "number": 93299,
+                          "fullNumber": "ЗР000093299",
+                          "link": "https://localhost/sdms#e1cib/data/Документ.ЗаявкаНаРазработку?ref=a23000155d42eb1b11ebe9e7577f7bf7"
+                        }
+                      ]
+                    }
+                  },
+                  "Успешно(include - elapsedTime)": {
+                    "value": {
+                      "code": 0,
+                      "message": "",
+                      "data": [
+                        {
+                          "name": "Новая мотивация КТУ+ Розница. Часть 2 (перенос настроек в карточку филиала, реализация рабочей обработки).",
+                          "id": "69d639f0-308e-11e7-be33-00155d033631",
+                          "number": 1,
+                          "fullNumber": "ЗР000000001",
+                          "link": "https://localhost/sdms#e1cib/data/Документ.ЗаявкаНаРазработку?ref=be3300155d03363111e7308e69d639f0",
+                          "elapsedTime": [
+                            {
+                              "activityID": "84e8dc71-21c7-11ec-a233-00155dfc822f",
+                              "activityName": "Разработка 1C (J): Изучение технической задачи",
+                              "comment": "",
+                              "date": "2022-01-27T18:57:41+10:00",
+                              "duration": 0.25,
+                              "id": "30f0a53a-7f4f-11ec-8edb-00155dd9e62e"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  "Ошибка": {
+                    "value": {
+                      "code": 2,
+                      "message": "Не заполнены обязательные параметры."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://localhost/services/hs/api",
+            "description": "SDMS API"
+          }
+        ]
+      }
+    },
+    "/devrequests/{id}/files": {
+      "get": {
+        "tags": [
+          "Заявка на разработку"
+        ],
+        "summary": "Получить список файлов заявки",
+        "description": "Получить список файлов заявки на разработку",
+        "operationId": "get-devrequests-id-files",
+        "parameters": [
+          {
+            "name": "archive",
+            "in": "query",
+            "description": "Отбор по архивности файла.",
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "description": "GUID заявки на разработку",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "$ref": "#/components/schemas/code"
+                    },
+                    "message": {
+                      "$ref": "#/components/schemas/message"
+                    },
+                    "data": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "name": {
+                            "type": "string"
+                          },
+                          "size": {
+                            "type": "integer"
+                          },
+                          "date": {
+                            "type": "string"
+                          },
+                          "extension": {
+                            "type": "string"
+                          },
+                          "id": {
+                            "type": "string"
+                          },
+                          "archive": {
+                            "type": "boolean"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "message",
+                    "data"
+                  ]
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "code": 0,
+                      "message": "string",
+                      "data": [
+                        {
+                          "name": "string",
+                          "size": 0,
+                          "date": "string",
+                          "extension": "string",
+                          "id": "string"
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://localhost/services/hs/api",
+            "description": "SDMS API"
+          }
+        ]
+      }
+    },
+    "/devrequests/{id}/tasks": {
+      "post": {
+        "tags": [
+          "Заявка на разработку"
+        ],
+        "summary": "Создать задачу по заявке",
+        "description": "Создать подчиненную задачу от заявки на разработку",
+        "operationId": "post-devrequests-id-tasks",
+        "parameters": [
+          {
+            "name": "system",
+            "in": "query",
+            "description": "GUID системы учета",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "due",
+            "in": "query",
+            "description": "Срок сдачи задачи",
+            "schema": {
+              "type": "string",
+              "format": "date-time",
+              "examples": [
+                "2021-09-23T18:25:43"
+              ]
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "description": "GUID заявки на разработку",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "$ref": "#/components/schemas/code"
+                    },
+                    "message": {
+                      "$ref": "#/components/schemas/message"
+                    },
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "number": {
+                          "type": "number"
+                        },
+                        "name": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "date": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "status": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "system": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "base": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "customer": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "direction": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "process": {
+                          "type": "string"
+                        },
+                        "author": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "department": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "number",
+                        "name",
+                        "date",
+                        "status",
+                        "system",
+                        "base",
+                        "customer",
+                        "direction",
+                        "process",
+                        "author",
+                        "department"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "message"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://localhost/services/hs/api",
+            "description": "SDMS API"
+          }
+        ]
+      },
+      "get": {
+        "tags": [
+          "Заявка на разработку"
+        ],
+        "summary": "Получить задачи заявки",
+        "description": "Получить список задач заявки с возможностью отбора по системе.",
+        "operationId": "get-devrequests-id-tasks",
+        "parameters": [
+          {
+            "name": "system",
+            "in": "query",
+            "description": "GUID системы",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "description": "GUID заявки на разработку",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "$ref": "#/components/schemas/code"
+                    },
+                    "message": {
+                      "$ref": "#/components/schemas/message"
+                    },
+                    "data": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "description": "GUID задачи",
+                            "format": "uuid"
+                          },
+                          "number": {
+                            "type": "string",
+                            "description": "Номер задачи"
+                          },
+                          "name": {
+                            "type": "string",
+                            "description": "Наименование задач"
+                          },
+                          "system": {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "string",
+                                "description": "GUID системы"
+                              },
+                              "name": {
+                                "type": "string",
+                                "description": "Наименование системы"
+                              }
+                            },
+                            "required": [
+                              "id",
+                              "name"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "number",
+                          "name",
+                          "system"
+                        ]
+                      }
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "message"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://localhost/services/hs/api",
+            "description": "SDMS API"
+          }
+        ]
+      }
+    },
+    "/devrequests/{id}/info": {
+      "get": {
+        "tags": [
+          "Заявка на разработку"
+        ],
+        "summary": "Получить данные заявки",
+        "description": "Получить данные заявки",
+        "operationId": "get-devrequests-id-info",
+        "parameters": [
+          {
+            "name": "include",
+            "in": "query",
+            "description": "Используется для получения выборочной информации по заявке. Параметры разделяются запятой. Возможные варианты: id - идентификатор объекта, number - номер, name - наименование, date - дата создания, description - описание, systems - массив систем, direction - направление, process - процесс, entity - юридическое лицо.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "description": "GUID или номер задачи",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "$ref": "#/components/schemas/code"
+                    },
+                    "message": {
+                      "$ref": "#/components/schemas/message"
+                    },
+                    "data": {
+                      "type": "object",
+                      "description": "Данные заявки",
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "description": "GUID заявки"
+                        },
+                        "number": {
+                          "type": "string",
+                          "description": "Номер заявки"
+                        },
+                        "name": {
+                          "type": "string",
+                          "description": "Наименование заявки"
+                        },
+                        "date": {
+                          "type": "string",
+                          "description": "Дата создания заявки"
+                        },
+                        "description": {
+                          "type": "string",
+                          "description": "Описание заявки"
+                        },
+                        "systems": {
+                          "type": "string",
+                          "description": "Список систем заявки"
+                        },
+                        "direction": {
+                          "type": "string",
+                          "description": "Направление заявки"
+                        },
+                        "process": {
+                          "type": "string",
+                          "description": "Процесс заявки"
+                        },
+                        "entity": {
+                          "type": "string",
+                          "description": "Юридическое лицо заявки"
+                        }
+                      }
+                    }
+                  }
+                },
+                "examples": {
+                  "Успешно": {
+                    "value": {
+                      "code": 0,
+                      "message": "",
+                      "data": {
+                        "id": "b2bd15fa-532a-11ef-a24f-0050569d7269",
+                        "number": "ЗР000205862",
+                        "name": "Расход КМ в УБД по док-ту КТ из WMS",
+                        "date": "2024-08-05T23:00:33+10:00",
+                        "description": "Описание",
+                        "systems": "1С: УБД Центральная",
+                        "direction": "Направление \"Форматы и трансформация сети\"",
+                        "process": "Развитие",
+                        "entity": "ООО \"ДНС Ритейл\""
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://localhost/services/hs/api",
+            "description": "SDMS API"
+          }
+        ]
+      }
+    },
+    "/devrequests/{id}/delegation": {
+      "post": {
+        "tags": [
+          "Заявка на разработку"
+        ],
+        "summary": "Делегировать заявку",
+        "description": "Перевести заявку на нового автора. Авторизованный пользователь должен иметь права на делегирование данной заявки (либо является автором заявки, либо руководителем автора, либо быть ответственным по направлению разработки заявки, либо быть пользователем с полными правами), а также заявка не должна быть черновиком, или иметь финальный статус.",
+        "operationId": "post-devrequests-id-delegation",
+        "parameters": [
+          {
+            "name": "newAuthor",
+            "in": "query",
+            "description": "GUID пользователя",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "description": "GUID заявки на разработку",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "$ref": "#/components/schemas/code"
+                    },
+                    "message": {
+                      "$ref": "#/components/schemas/message"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "message"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://localhost/services/hs/api",
+            "description": "SDMS API"
+          }
+        ]
+      }
+    },
+    "/digest": {
+      "get": {
+        "tags": [
+          "Дайджест"
+        ],
+        "summary": "Получить текст дайджеста",
+        "description": "Получает текст дайджеста по идентификаторам систем учета",
+        "operationId": "get-digest",
+        "parameters": [
+          {
+            "name": "guid",
+            "in": "query",
+            "description": "GUID систем учета строкой, разделенные символом \";\"",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "$ref": "#/components/schemas/code"
+                    },
+                    "message": {
+                      "$ref": "#/components/schemas/message"
+                    },
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "МассивЗадач": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "Задача": {
+                                "type": "string",
+                                "description": "GUID задачи"
+                              },
+                              "ДатаДобавления": {
+                                "type": "string",
+                                "description": "Дата создания дайджеста в формате ISO"
+                              }
+                            }
+                          }
+                        },
+                        "Описание": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "message",
+                    "data"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://localhost/services/hs/api",
+            "description": "SDMS API"
+          }
+        ]
+      },
+      "post": {
+        "tags": [
+          "Дайджест"
+        ],
+        "summary": "Отметить публикацию дайджестов",
+        "description": "Отмечает опубликованными дайджесты по задаче и дате создания дайджеста.",
+        "operationId": "post-digest",
+        "requestBody": {
+          "description": "Массив задач, по которым опубликован дайджест.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "tasks": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "Задача": {
+                          "type": "string",
+                          "description": "GUID задачи"
+                        },
+                        "ДатаДобавления": {
+                          "type": "string",
+                          "description": "Дата добавления в формате ISO"
+                        }
+                      },
+                      "required": [
+                        "Задача",
+                        "ДатаДобавления"
+                      ]
+                    }
+                  }
+                },
+                "required": [
+                  "tasks"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "$ref": "#/components/schemas/code"
+                    },
+                    "message": {
+                      "$ref": "#/components/schemas/message"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "message"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://localhost/services/hs/api",
+            "description": "SDMS API"
+          }
+        ]
+      }
+    },
+    "/directions/{id}/entities": {
+      "get": {
+        "tags": [
+          "Направления"
+        ],
+        "summary": "Получить юридические лица направления",
+        "description": "Получает струкутуру данных о юридических лица направления разработки",
+        "operationId": "get-directions-id-entities",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "GUID направления разработки",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "$ref": "#/components/schemas/code"
+                    },
+                    "message": {
+                      "$ref": "#/components/schemas/message"
+                    },
+                    "data": {
+                      "type": "array",
+                      "minItems": 1,
+                      "uniqueItems": true,
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "minLength": 1,
+                            "examples": [
+                              "c120a612-f31c-11ea-a22b-00155d033631"
+                            ]
+                          },
+                          "name": {
+                            "type": "string",
+                            "minLength": 1,
+                            "examples": [
+                              "ООО \"ДНС Технологии\""
+                            ]
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "name"
+                        ]
+                      }
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "message"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://localhost/services/hs/api",
+            "description": "SDMS API"
+          }
+        ]
+      }
+    },
+    "/directions": {
+      "get": {
+        "tags": [
+          "Направления"
+        ],
+        "summary": "Получить направления разработки",
+        "description": "Получает струкутуру данных о направлениях разработки",
+        "operationId": "get-directions",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "$ref": "#/components/schemas/code"
+                    },
+                    "message": {
+                      "$ref": "#/components/schemas/message"
+                    },
+                    "data": {
+                      "type": "array",
+                      "minItems": 1,
+                      "uniqueItems": true,
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "minLength": 1,
+                            "examples": [
+                              "26f9c06b-a845-4273-82bc-140239dc16b9"
+                            ]
+                          },
+                          "name": {
+                            "type": "string",
+                            "minLength": 1,
+                            "examples": [
+                              "Направление \"Реклама и контент\""
+                            ]
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "name"
+                        ]
+                      }
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "message"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://localhost/services/hs/api",
+            "description": "SDMS API"
+          }
+        ]
+      }
+    },
+    "/elapsedTime/activities": {
+      "get": {
+        "tags": [
+          "Трудозатраты"
+        ],
+        "summary": "Получить доступные виды деятельности",
+        "description": "Возвращает список доступных пользователю видов деятельности для объекта",
+        "operationId": "get-elapsedTime-activities",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/performer"
+          },
+          {
+            "$ref": "#/components/parameters/objectID"
+          },
+          {
+            "$ref": "#/components/parameters/objectType"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "$ref": "#/components/schemas/code"
+                    },
+                    "message": {
+                      "$ref": "#/components/schemas/message"
+                    },
+                    "data": {
+                      "type": "array",
+                      "description": "Массив доступных для объекта видов деятельности",
+                      "uniqueItems": true,
+                      "items": {
+                        "$ref": "#/components/schemas/ActivityType"
+                      }
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "message"
+                  ]
+                },
+                "examples": {
+                  "Успешно": {
+                    "value": {
+                      "code": 0,
+                      "message": "",
+                      "data": [
+                        {
+                          "id": "e5102a1f-0773-4455-aba7-154c7d42259d",
+                          "name": "Разработка 1C: Реализация изменений"
+                        }
+                      ]
+                    }
+                  },
+                  "Ошибка": {
+                    "value": {
+                      "code": 2,
+                      "message": "Не заполнены обязательные параметры."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://localhost/services/hs/api",
+            "description": "SDMS API"
+          }
+        ]
+      }
+    },
+    "/elapsedTime/get": {
+      "get": {
+        "tags": [
+          "Трудозатраты"
+        ],
+        "summary": "Получить трудозатраты по объекту",
+        "description": "Возвращает список внесенных трудозатрат по объекту",
+        "operationId": "get-elapsedTime-get",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/objectID"
+          },
+          {
+            "$ref": "#/components/parameters/objectType"
+          },
+          {
+            "name": "performer",
+            "in": "query",
+            "description": "Фильтр по автору трудозатраты",
+            "schema": {
+              "type": "string",
+              "format": "email",
+              "examples": [
+                "ivanov@pochta.ru"
+              ]
+            }
+          },
+          {
+            "name": "dateStart",
+            "in": "query",
+            "description": "Отбор трудозатрат с даты",
+            "schema": {
+              "type": "string",
+              "examples": [
+                "2022-11-02"
+              ]
+            }
+          },
+          {
+            "name": "dateEnd",
+            "in": "query",
+            "description": "Отбор трудозатрат до даты",
+            "schema": {
+              "type": "string",
+              "examples": [
+                "2022-11-02"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "$ref": "#/components/schemas/code"
+                    },
+                    "message": {
+                      "$ref": "#/components/schemas/message"
+                    },
+                    "data": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/ObjectActivity"
+                      }
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "message"
+                  ]
+                },
+                "examples": {
+                  "Успешно": {
+                    "value": {
+                      "code": 0,
+                      "message": "",
+                      "data": [
+                        {
+                          "activityID": "bdeaf72a-a324-4d3c-8d7a-927b16400660",
+                          "activityName": "Разработка 1C: Реализация изменений",
+                          "performer": "ivanov@pochta.ru",
+                          "comment": "Разработка API",
+                          "date": "2021-07-23T18:25:43Z",
+                          "duration": 1.5,
+                          "id": "5736d1b1-eddb-11eb-a235-00155dd9e60b"
+                        }
+                      ]
+                    }
+                  },
+                  "Ошибка": {
+                    "value": {
+                      "code": 2,
+                      "message": "Не заполнены обязательные параметры."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://localhost/services/hs/api",
+            "description": "SDMS API"
+          }
+        ]
+      }
+    },
+    "/elapsedTime/report": {
+      "get": {
+        "tags": [
+          "Трудозатраты"
+        ],
+        "summary": "Получить трудозатраты за период",
+        "description": "Получить трудозатраты за период",
+        "operationId": "get-elapsedTime-report",
+        "parameters": [
+          {
+            "name": "dateStart",
+            "in": "query",
+            "description": "Дата начала",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "examples": [
+                "2022-11-02"
+              ]
+            }
+          },
+          {
+            "name": "dateEnd",
+            "in": "query",
+            "description": "Дата окончания",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "examples": [
+                "2022-11-02"
+              ]
+            }
+          },
+          {
+            "name": "performer",
+            "in": "query",
+            "description": "Фильтр по автору трудозатраты",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "$ref": "#/components/schemas/code"
+                    },
+                    "message": {
+                      "$ref": "#/components/schemas/message"
+                    },
+                    "data": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "duration": {
+                            "type": "number"
+                          },
+                          "id": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "message",
+                    "data"
+                  ]
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "code": 0,
+                      "message": "string",
+                      "data": [
+                        {
+                          "duration": 0,
+                          "id": "string"
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://localhost/services/hs/api",
+            "description": "SDMS API"
+          }
+        ]
+      }
+    },
+    "/elapsedTime/add": {
+      "post": {
+        "tags": [
+          "Трудозатраты"
+        ],
+        "summary": "Записать трудозатраты",
+        "description": "Записать трудозатраты по объекту",
+        "operationId": "post-elapsedTime-add",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/objectID"
+          },
+          {
+            "$ref": "#/components/parameters/objectType"
+          },
+          {
+            "$ref": "#/components/parameters/performer"
+          }
+        ],
+        "requestBody": {
+          "description": "Описание трудозатраты",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Activity"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "$ref": "#/components/schemas/code"
+                    },
+                    "message": {
+                      "$ref": "#/components/schemas/message"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "message"
+                  ]
+                },
+                "examples": {
+                  "Успешно": {
+                    "value": {
+                      "code": 0,
+                      "message": ""
+                    }
+                  },
+                  "Ошибка": {
+                    "value": {
+                      "code": 2,
+                      "message": "Не заполнены обязательные параметры."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://localhost/services/hs/api",
+            "description": "SDMS API"
+          }
+        ]
+      }
+    },
+    "/elapsedTime/edit": {
+      "put": {
+        "tags": [
+          "Трудозатраты"
+        ],
+        "summary": "Изменить трудозатраты",
+        "description": "Изменить трудозатраты по GUID документа.",
+        "operationId": "put-elapsedTime-edit",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/objectID"
+          },
+          {
+            "$ref": "#/components/parameters/performer"
+          }
+        ],
+        "requestBody": {
+          "description": "Описание трудозатраты",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Activity"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "$ref": "#/components/schemas/code"
+                    },
+                    "message": {
+                      "$ref": "#/components/schemas/message"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "message"
+                  ]
+                },
+                "examples": {
+                  "Успешно": {
+                    "value": {
+                      "code": 0,
+                      "message": ""
+                    }
+                  },
+                  "Ошибка": {
+                    "value": {
+                      "code": 6,
+                      "message": "Объект не найден."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://localhost/services/hs/api",
+            "description": "SDMS API"
+          }
+        ]
+      }
+    },
+    "/elapsedTime/delete": {
+      "delete": {
+        "tags": [
+          "Трудозатраты"
+        ],
+        "summary": "Удалить трудозатраты",
+        "description": "Удалить трудозатраты по GUID документа",
+        "operationId": "delete-elapsedTime-delete",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/objectID"
+          },
+          {
+            "$ref": "#/components/parameters/performer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "$ref": "#/components/schemas/code"
+                    },
+                    "message": {
+                      "$ref": "#/components/schemas/message"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "message"
+                  ]
+                },
+                "examples": {
+                  "Успешно": {
+                    "value": {
+                      "code": 0,
+                      "message": ""
+                    }
+                  },
+                  "Ошибка": {
+                    "value": {
+                      "code": 19,
+                      "message": "Не удалось удалить трудозатраты по причине: нельзя удалять трудозатраты других пользователей."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://localhost/services/hs/api",
+            "description": "SDMS API"
+          }
+        ]
+      }
+    },
+    "/files/{id}": {
+      "get": {
+        "tags": [
+          "Файлы"
+        ],
+        "summary": "Получение файла",
+        "description": "Получить файл в виде base64 строки",
+        "operationId": "get-files-id",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "GUID файла",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "$ref": "#/components/schemas/code"
+                    },
+                    "message": {
+                      "$ref": "#/components/schemas/message"
+                    },
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "file": {
+                          "type": "string",
+                          "description": "Двоичные данные в base64"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "extension": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "message",
+                    "data"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://localhost/services/hs/api",
+            "description": "SDMS API"
+          }
+        ]
+      }
+    },
+    "/internalworks/add": {
+      "post": {
+        "tags": [
+          "Внутренние трудозатраты"
+        ],
+        "summary": "Создать внутренние трудозатраты",
+        "description": "Создает документ Внутренние трудозатраты",
+        "operationId": "post-internalworks-add",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "activityID": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
+                  "description": {
+                    "type": "string"
+                  },
+                  "autodeactivation": {
+                    "type": "boolean"
+                  },
+                  "participants": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "user": {
+                          "type": "string",
+                          "format": "email"
+                        },
+                        "active": {
+                          "type": "boolean"
+                        }
+                      },
+                      "required": [
+                        "user"
+                      ]
+                    }
+                  }
+                },
+                "required": [
+                  "name",
+                  "activityID"
+                ]
+              },
+              "examples": {
+                "Example 1": {
+                  "value": {
+                    "name": "наименование",
+                    "description": "описание",
+                    "autodeactivation": true,
+                    "activityID": "37d8e6b1-4a1b-11ed-a241-00155dfc8256",
+                    "participants": [
+                      {
+                        "user": "ivanov@pochta.ru",
+                        "active": true
+                      },
+                      {
+                        "user": "petrov@pochta.ru"
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "$ref": "#/components/schemas/code"
+                    },
+                    "message": {
+                      "$ref": "#/components/schemas/message"
+                    },
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "format": "uuid"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "number": {
+                          "type": "integer"
+                        },
+                        "date": {
+                          "type": "string",
+                          "format": "date-time"
+                        },
+                        "author": {
+                          "type": "string"
+                        },
+                        "activity": {
+                          "type": "string"
+                        },
+                        "autodeactivation": {
+                          "type": "boolean"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://localhost/services/hs/api",
+            "description": "SDMS API"
+          }
+        ]
+      }
+    },
+    "/internalworks/linkGUID": {
+      "get": {
+        "tags": [
+          "Внутренние трудозатраты"
+        ],
+        "summary": "Получить GUID внутренних трудозатрат",
+        "description": "Определяет GUID внутренних трудозатрат по номеру документа",
+        "operationId": "get-internalworks-linkGUID",
+        "parameters": [
+          {
+            "name": "number",
+            "in": "query",
+            "description": "Номер документа",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "$ref": "#/components/schemas/code"
+                    },
+                    "message": {
+                      "$ref": "#/components/schemas/message"
+                    },
+                    "data": {
+                      "type": "string",
+                      "format": "uuid"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "message",
+                    "data"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://localhost/services/hs/api",
+            "description": "SDMS API"
+          }
+        ]
+      }
+    },
+    "/internalworks/list": {
+      "get": {
+        "tags": [
+          "Внутренние трудозатраты"
+        ],
+        "summary": "Получить список внутренних трудозатрат",
+        "description": "Возвращает список внутренних трудозатрат, в которых пользователь является активным участником",
+        "operationId": "get-internalworks-list",
+        "parameters": [
+          {
+            "name": "participant",
+            "in": "query",
+            "description": "Почта участника. По умолчанию текущий пользователь. Требуется заполнять только при авторизации под служебным пользователем.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "include",
+            "in": "query",
+            "description": "Используется для включения в результирующий ответ дополнительных объектов. Параметры разделяются запятой. Возможные варианты: notActive - документы в которых с участника снята пометка активности",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "$ref": "#/components/schemas/code"
+                    },
+                    "message": {
+                      "$ref": "#/components/schemas/message"
+                    },
+                    "data": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "format": "uuid"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "number": {
+                            "type": "integer"
+                          },
+                          "fullNumber": {
+                            "type": "string"
+                          },
+                          "date": {
+                            "type": "string",
+                            "format": "date-time"
+                          },
+                          "link": {
+                            "type": "string",
+                            "format": "iri"
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "examples": {
+                  "Example 1": {
+                    "value": {
+                      "code": 0,
+                      "message": "Некорректные данные объекта",
+                      "data": [
+                        {
+                          "id": "8a861d18-0bfe-11ee-8ee3-00155dd9e62e",
+                          "name": "наименование",
+                          "number": 777,
+                          "fullNumber": "ВТ000000777",
+                          "date": "2019-08-24T14:15:22Z",
+                          "link": "https://localhost/app#e1cib/data/Документ.ВнутренниеТрудозатраты?ref=8ee300155dd9e62e11ee0bfe8a861d18"
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://localhost/services/hs/api",
+            "description": "SDMS API"
+          }
+        ]
+      }
+    },
+    "/publication/tasks": {
+      "post": {
+        "tags": [
+          "Задачи"
+        ],
+        "summary": "Обновить дату публикации",
+        "description": "Изменить дату публикации задач. Только для служебных пользователей.",
+        "operationId": "post-publication-tasks",
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "tasks": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "description": "Сначала выполняется попытка преобразования к уникальному идентификатору и поиск задачи по этому идентификатору. Если не получилось, то считается, что номер задачи передан в формате {sdms-task:000000000}. "
+                        },
+                        "date": {
+                          "type": "string",
+                          "description": "дата строкой в ISO формате"
+                        },
+                        "comment": {
+                          "type": "string",
+                          "description": "комментарий, добавленный при помещении в хранилище"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "date"
+                      ]
+                    }
+                  },
+                  "publication_date": {
+                    "type": "string",
+                    "description": "дата строкой в ISO формате"
+                  },
+                  "sender": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "tasks",
+                  "publication_date"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "$ref": "#/components/schemas/code"
+                    },
+                    "message": {
+                      "$ref": "#/components/schemas/message"
+                    },
+                    "data": {
+                      "type": "array",
+                      "description": "В массиве - ошибки при обработке задач",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "message"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://localhost/services/hs/api",
+            "description": "SDMS API"
+          }
+        ]
+      }
+    },
+    "/sprint/{id}": {
+      "get": {
+        "tags": [
+          "Спринты"
+        ],
+        "summary": "Получение данных спринта",
+        "description": "Получает структуру данных спринта",
+        "operationId": "get-sprint-id",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "GUID спринта или номер",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "$ref": "#/components/schemas/code"
+                    },
+                    "message": {
+                      "$ref": "#/components/schemas/message"
+                    },
+                    "data": {
+                      "type": "object",
+                      "description": "Структура данных спринта",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "active": {
+                          "type": "boolean",
+                          "description": "Признак активности спринта"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "date_start": {
+                          "type": "string",
+                          "description": "Дата начала спринта"
+                        },
+                        "date_end": {
+                          "type": "string",
+                          "description": "Дата окончания спринта"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "active",
+                        "name",
+                        "date_start",
+                        "date_end"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "message",
+                    "data"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://localhost/services/hs/api",
+            "description": "SDMS API"
+          }
+        ]
+      },
+      "post": {
+        "tags": [
+          "Спринты"
+        ],
+        "summary": "Добавление задачи в спринт",
+        "description": "Добавление задачи в спринт. Спринт должен быть активен.",
+        "operationId": "post-sprint-id",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "GUID спринта или номер",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "description": "GUID задачи"
+                  },
+                  "plan": {
+                    "type": "number",
+                    "description": "Плановое время задачи. \r\nЕсли филиал использует оценку в StoryPoint, то допустимо не заполнять или 0 значение.\r\nЕсли не использует, тогда 0 значение допустимо, когда у задачи уже заполнено плановое время. \r\n\r\n"
+                  },
+                  "plan_test": {
+                    "type": "number",
+                    "description": "Плановое время задачи на тестирование."
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "$ref": "#/components/schemas/code"
+                    },
+                    "message": {
+                      "$ref": "#/components/schemas/message"
+                    },
+                    "data": {
+                      "type": "object"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "message"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://localhost/services/hs/api",
+            "description": "SDMS API"
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "Спринты"
+        ],
+        "summary": "Удаление задачи из спринта",
+        "description": "Удаление задачи из спринта. Спринт должен быть активен.",
+        "operationId": "delete-sprint-id",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "GUID спринта или номер",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "description": "GUID задачи "
+                  }
+                },
+                "required": [
+                  "id"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "$ref": "#/components/schemas/code"
+                    },
+                    "message": {
+                      "$ref": "#/components/schemas/message"
+                    },
+                    "data": {
+                      "type": "object"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "message",
+                    "data"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://localhost/services/hs/api",
+            "description": "SDMS API"
+          }
+        ]
+      }
+    },
+    "/sprint/{id}/objects": {
+      "get": {
+        "tags": [
+          "Спринты"
+        ],
+        "summary": "Получение объектов спринта",
+        "description": "Получает массив объектов спринта",
+        "operationId": "get-sprint-objects",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "GUID спринта или номер",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {}
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "$ref": "#/components/schemas/code"
+                    },
+                    "message": {
+                      "$ref": "#/components/schemas/message"
+                    },
+                    "data": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "object": {
+                            "type": "object",
+                            "properties": {
+                              "name": {
+                                "type": "string",
+                                "description": "наименование объекта спринта",
+                                "examples": [
+                                  "Задача З0000218346. Добавить новый реквизит"
+                                ]
+                              },
+                              "id": {
+                                "type": "string",
+                                "description": "идентификатор объекта спринта",
+                                "examples": [
+                                  "dc2447a2-c49c-11ee-a24c-0050569d7269"
+                                ]
+                              },
+                              "type": {
+                                "type": "string",
+                                "description": "тип объекта спринта",
+                                "examples": [
+                                  "Задача"
+                                ]
+                              }
+                            }
+                          },
+                          "dateAdd": {
+                            "type": "string",
+                            "description": "Дата первого добавления задачи в спринт",
+                            "format": "date-time",
+                            "examples": [
+                              "2024-03-18T11:22:59+10:00"
+                            ]
+                          },
+                          "planDev": {
+                            "type": "number",
+                            "description": "Плановые трудозатраты разработки на спринт",
+                            "format": "float",
+                            "examples": [
+                              0.5
+                            ]
+                          },
+                          "planTest": {
+                            "type": "number",
+                            "description": "Плановые трудозатраты тестирования на спринт",
+                            "format": "float",
+                            "examples": [
+                              4
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "message",
+                    "data"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://localhost/services/hs/api",
+            "description": "SDMS API"
+          }
+        ]
+      }
+    },
+    "/systems": {
+      "get": {
+        "tags": [
+          "Системы учета"
+        ],
+        "summary": "Получить системы учета",
+        "description": "Получает струкутуру данных о системах учета",
+        "operationId": "get-systems",
+        "parameters": [
+          {
+            "name": "it",
+            "in": "query",
+            "description": "Признак отношения системы к IT. Может принимать значения \"true\" или \"false\"",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "examples": [
+                "true or false"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "$ref": "#/components/schemas/code"
+                    },
+                    "message": {
+                      "$ref": "#/components/schemas/message"
+                    },
+                    "data": {
+                      "type": "array",
+                      "minItems": 1,
+                      "uniqueItems": true,
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "minLength": 1,
+                            "examples": [
+                              "2c266d94-c2dd-11e9-8386-00155d033631"
+                            ]
+                          },
+                          "name": {
+                            "type": "string",
+                            "minLength": 1,
+                            "examples": [
+                              "1С:Портал поставщиков услуг"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "name"
+                        ]
+                      }
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "message"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://localhost/services/hs/api",
+            "description": "SDMS API"
+          }
+        ]
+      }
+    },
+    "/tasks/add": {
+      "post": {
+        "tags": [
+          "Задачи"
+        ],
+        "summary": "Создать задачу и заявку-основание",
+        "description": "Создает задачу и заявку-основание",
+        "operationId": "post-tasks-add",
+        "requestBody": {
+          "description": "Данные новой задачи",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "description": "Наименование",
+                    "maxLength": 250,
+                    "examples": [
+                      "Новая задача"
+                    ]
+                  },
+                  "description": {
+                    "type": "string",
+                    "description": "Описание",
+                    "examples": [
+                      "Описание задачи"
+                    ]
+                  },
+                  "direction": {
+                    "type": "string",
+                    "description": "Направление разработки",
+                    "format": "uuid"
+                  },
+                  "system": {
+                    "type": "string",
+                    "description": "Система учета",
+                    "format": "uuid"
+                  },
+                  "customer": {
+                    "type": "string",
+                    "description": "Заказчик(почта)",
+                    "format": "email"
+                  },
+                  "performer": {
+                    "type": "string",
+                    "description": "Исполнитель(почта)",
+                    "format": "email"
+                  },
+                  "due": {
+                    "type": "string",
+                    "description": "Срок реализации",
+                    "format": "date-time",
+                    "examples": [
+                      "2019-08-24T14:15:22"
+                    ]
+                  },
+                  "entity": {
+                    "type": "string",
+                    "description": "Юридическое лицо",
+                    "format": "uuid"
+                  },
+                  "function": {
+                    "type": "string",
+                    "description": "Назначение",
+                    "format": "uuid"
+                  },
+                  "status": {
+                    "type": "string",
+                    "description": "Статус",
+                    "examples": [
+                      "Новый, ВРеализацию, ВРаботе, Решен"
+                    ]
+                  },
+                  "process": {
+                    "type": "string",
+                    "description": "Вид процесса",
+                    "examples": [
+                      "Поддержка, Развитие"
+                    ]
+                  },
+                  "plan": {
+                    "type": "number",
+                    "description": "Плановое время"
+                  },
+                  "branch": {
+                    "type": "string",
+                    "description": "Филиал",
+                    "format": "uuid"
+                  }
+                },
+                "required": [
+                  "name",
+                  "description",
+                  "direction",
+                  "system"
+                ]
+              },
+              "examples": {
+                "Пример тела запроса": {
+                  "value": {
+                    "name": "Новая задача",
+                    "description": "Описание задачи",
+                    "direction": "968704da-343a-4405-bece-877ca5eede1e",
+                    "system": "7d0104a8-e884-44ac-ba85-e4abc31fd87d",
+                    "customer": "user@example.com",
+                    "performer": "user@example.com",
+                    "due": "2019-08-24T14:15:22",
+                    "entity": "01deb6b6-4a1d-47db-89a2-ffb77f46ad2a",
+                    "function": "4a6439c9-9520-421e-a181-7c7626fb665d",
+                    "status": "Новый, ВРеализацию, ВРаботе, Решен",
+                    "process": "Поддержка, Развитие"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "$ref": "#/components/schemas/code"
+                    },
+                    "message": {
+                      "$ref": "#/components/schemas/message"
+                    },
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "minLength": 1,
+                          "examples": [
+                            "5dc023a5-15c6-11ec-a235-00155dd9e60b"
+                          ]
+                        },
+                        "number": {
+                          "type": "number",
+                          "examples": [
+                            98071
+                          ]
+                        },
+                        "name": {
+                          "type": "string",
+                          "minLength": 1,
+                          "examples": [
+                            "Новая задача для примера"
+                          ]
+                        },
+                        "date": {
+                          "type": "string",
+                          "minLength": 1,
+                          "examples": [
+                            "2021-09-15T11:43:47+10:00"
+                          ]
+                        },
+                        "status": {
+                          "type": "string",
+                          "minLength": 1,
+                          "examples": [
+                            "Новый или ВРеализацию или ВРаботе или Тестирование или Решен"
+                          ]
+                        },
+                        "system": {
+                          "type": "string",
+                          "minLength": 1,
+                          "examples": [
+                            "1С: SDMS"
+                          ]
+                        },
+                        "base": {
+                          "type": "string",
+                          "minLength": 1,
+                          "examples": [
+                            "Заявка на разработку ЗР000082139. Новая задача для примера"
+                          ]
+                        },
+                        "customer": {
+                          "type": "string",
+                          "minLength": 1,
+                          "examples": [
+                            "Иванов Иван Иванович"
+                          ]
+                        },
+                        "direction": {
+                          "type": "string",
+                          "minLength": 1,
+                          "examples": [
+                            "Направление \"IT структура\""
+                          ]
+                        },
+                        "process": {
+                          "type": "string"
+                        },
+                        "author": {
+                          "type": "string",
+                          "minLength": 1,
+                          "examples": [
+                            "Иванов Иван Иванович"
+                          ]
+                        },
+                        "department": {
+                          "type": "string",
+                          "minLength": 1,
+                          "examples": [
+                            "IT-группа 1С - WEB клиент"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "number",
+                        "name",
+                        "date",
+                        "status",
+                        "system",
+                        "base",
+                        "customer",
+                        "direction",
+                        "process",
+                        "author",
+                        "department"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "message"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://localhost/services/hs/api",
+            "description": "SDMS API"
+          }
+        ]
+      }
+    },
+    "/tasks/linkGUID": {
+      "get": {
+        "tags": [
+          "Задачи"
+        ],
+        "summary": "Получить GUID задачи",
+        "description": "Определяет GUID задачи по номеру документа",
+        "operationId": "get-tasks-linkGUID",
+        "parameters": [
+          {
+            "name": "number",
+            "in": "query",
+            "description": "Номер задачи",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "examples": [
+                "elapsedTime"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "$ref": "#/components/schemas/code"
+                    },
+                    "message": {
+                      "$ref": "#/components/schemas/message"
+                    },
+                    "data": {
+                      "type": "string",
+                      "description": "Данные",
+                      "format": "uuid"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "message"
+                  ]
+                },
+                "examples": {
+                  "Успешно": {
+                    "value": {
+                      "code": 0,
+                      "message": "",
+                      "data": "497f6eca-6276-4993-bfeb-53cbbbba6f08"
+                    }
+                  },
+                  "Ошибка": {
+                    "value": {
+                      "code": 2,
+                      "message": "Не заполнены обязательные параметры."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://localhost/services/hs/api",
+            "description": "SDMS API"
+          }
+        ]
+      }
+    },
+    "/tasks/list": {
+      "get": {
+        "tags": [
+          "Задачи"
+        ],
+        "summary": "Получить список задач",
+        "description": "Возвращает список задач, назначенных на пользователя/на команду",
+        "operationId": "get-tasks-list",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/performer"
+          },
+          {
+            "name": "include",
+            "in": "query",
+            "description": "Используется для включения в результирующий ответ дополнительной информации. Параметры разделяются запятой. Возможные варианты elapsedTime (время трудозатрат), wherePreviousPerformer (был ли исполнителем) ",
+            "schema": {
+              "type": "string",
+              "examples": [
+                "elapsedTime"
+              ]
+            }
+          },
+          {
+            "name": "team",
+            "in": "query",
+            "description": "Идентификатор команды",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "$ref": "#/components/schemas/code"
+                    },
+                    "message": {
+                      "$ref": "#/components/schemas/message"
+                    },
+                    "data": {
+                      "type": "array",
+                      "description": "Данные",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "description": "guid задачи"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "number": {
+                            "type": "integer"
+                          },
+                          "fullNumber": {
+                            "type": "string"
+                          },
+                          "link": {
+                            "type": "string"
+                          },
+                          "elapsedTime": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "activityID": {
+                                  "type": "string",
+                                  "description": "guid вида деятельности"
+                                },
+                                "activityName": {
+                                  "type": "string"
+                                },
+                                "comment": {
+                                  "type": "string"
+                                },
+                                "date": {
+                                  "type": "string"
+                                },
+                                "duration": {
+                                  "type": "number"
+                                },
+                                "id": {
+                                  "type": "string",
+                                  "description": "guid документа Трудозатраты"
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "name",
+                          "number",
+                          "fullNumber",
+                          "link"
+                        ]
+                      }
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "message"
+                  ]
+                },
+                "examples": {
+                  "Успешно": {
+                    "value": {
+                      "code": 0,
+                      "message": "",
+                      "data": [
+                        {
+                          "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
+                          "name": "Подготовка архитектуры публичного API",
+                          "number": 93299,
+                          "fullNumber": "З0000093299",
+                          "link": "https://localhost/sdms#e1cib/data/Документ.Задача?ref=a23000155d42eb1b11ebe9e7577f7bf7"
+                        }
+                      ]
+                    }
+                  },
+                  "Успешно(include - elapsedTime)": {
+                    "value": {
+                      "code": 0,
+                      "message": "",
+                      "data": [
+                        {
+                          "id": "8fd86bdc-c913-485f-8c32-fd63c08dd637",
+                          "name": "Реализация разработанного API",
+                          "number": 93460,
+                          "fullNumber": "З0000093460",
+                          "link": "https://localhost/sdms#e1cib/data/Документ.Задача?ref=a23000155d42eb1b11ebeac30261a8c8",
+                          "elapsedTime": [
+                            {
+                              "activityID": "4d1fca95-1d41-11eb-a22b-00155d033631",
+                              "activityName": "Аналитика: Подготовка документации",
+                              "comment": "",
+                              "date": "2022-01-21T12:55:09+10:00",
+                              "duration": 0.5,
+                              "id": "89e86af0-7a65-11ec-8edb-00155dd9e62e"
+                            },
+                            {
+                              "activityID": "9cb8fbb7-21c7-11ec-a233-00155dfc822f",
+                              "activityName": "Разработка 1C (L): Подготовка документации",
+                              "comment": "",
+                              "date": "2022-01-21T12:55:02+10:00",
+                              "duration": 3,
+                              "id": "89e86aef-7a65-11ec-8edb-00155dd9e62e"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  "Ошибка": {
+                    "value": {
+                      "code": 2,
+                      "message": "Не заполнены обязательные параметры."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://localhost/services/hs/api",
+            "description": "SDMS API"
+          }
+        ]
+      }
+    },
+    "/tasks/{id}/files": {
+      "get": {
+        "tags": [
+          "Задачи"
+        ],
+        "summary": "Получить список файлов задачи",
+        "description": "Получить список файлов задачи",
+        "operationId": "get-tasks-id-files",
+        "parameters": [
+          {
+            "name": "archive",
+            "in": "query",
+            "description": "Отбор по архивности файла.",
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "description": "GUID или номер задачи",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "$ref": "#/components/schemas/code"
+                    },
+                    "message": {
+                      "$ref": "#/components/schemas/message"
+                    },
+                    "data": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "name": {
+                            "type": "string"
+                          },
+                          "size": {
+                            "type": "integer"
+                          },
+                          "date": {
+                            "type": "string"
+                          },
+                          "extension": {
+                            "type": "string"
+                          },
+                          "id": {
+                            "type": "string"
+                          },
+                          "archive": {
+                            "type": "boolean"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "message",
+                    "data"
+                  ]
+                },
+                "examples": {
+                  "Успешно": {
+                    "value": {
+                      "code": 0,
+                      "message": "",
+                      "data": [
+                        {
+                          "name": "sdms_file_6c615d2426304b169989882f0db0373c.csv",
+                          "size": 6287642,
+                          "date": "2022-11-03T10:37:04+10:00",
+                          "extension": "csv",
+                          "id": "a2cb5095-5b0f-11ed-8ede-00155dd9e62e"
+                        },
+                        {
+                          "name": "sdms_file_43ef20c74c3c45c2a994e4dbb8b618d5.png",
+                          "size": 19914,
+                          "date": "2022-11-03T10:37:04+10:00",
+                          "extension": "png",
+                          "id": "a2cb5096-5b0f-11ed-8ede-00155dd9e62e"
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://localhost/services/hs/api",
+            "description": "SDMS API"
+          }
+        ]
+      }
+    },
+    "/tasks/{id}/info": {
+      "get": {
+        "tags": [
+          "Задачи"
+        ],
+        "summary": "Получить данные задачи",
+        "description": "Получить данные задачи",
+        "operationId": "get-tasks-id-info",
+        "parameters": [
+          {
+            "name": "include",
+            "in": "query",
+            "description": "Используется для получения выборочной информации по задаче. Параметры разделяются запятой. Возможные варианты: subject - тема задачи, customer - заказчик, description - описание, create_date - дата создания, guid - идентификатор объекта, performer - объект с идентификатором и представлением назначенного, weblink - web-ссылка на задачу.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "description": "GUID или номер задачи",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "$ref": "#/components/schemas/code"
+                    },
+                    "message": {
+                      "$ref": "#/components/schemas/message"
+                    },
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "subject": {
+                          "type": "string"
+                        },
+                        "customer": {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "string",
+                              "description": "GUID заказчика"
+                            },
+                            "name": {
+                              "type": "string",
+                              "description": "ФИО заказчика"
+                            }
+                          }
+                        },
+                        "description": {
+                          "type": "string"
+                        },
+                        "create_date": {
+                          "type": "string"
+                        },
+                        "status": {
+                          "type": "string"
+                        },
+                        "guid": {
+                          "type": "string"
+                        },
+                        "weblink": {
+                          "type": "string"
+                        },
+                        "": {
+                          "$ref": "#/components/schemas/performer"
+                        }
+                      }
+                    }
+                  }
+                },
+                "examples": {
+                  "Успешно": {
+                    "value": {
+                      "code": 0,
+                      "message": "",
+                      "data": {
+                        "subject": "[ubd] Проверить актуальность хранимых значений, удалить устаревшие",
+                        "customer": {
+                          "id": "119f9552-55bb-11e9-af3c-00155d033631",
+                          "name": "Кожевников Дмитрий Вадимович"
+                        },
+                        "description": "Цель Удаление лишнего кодай, проверить наличие в конфигурации, в случае если использование не требуется - удалить.",
+                        "create_date": "2023-02-07T10:56:53+10:00",
+                        "status": "Приостановлен",
+                        "guid": "4eec137e-a682-11ed-a246-0050569d7269",
+                        "weblink": "https://localhost/app#e1cib/data/Документ.Задача?ref=a2460050569d726911eda6824eec137e"
+                      }
+                    }
+                  },
+                  "Ошибка": {
+                    "value": {
+                      "code": 2,
+                      "message": "Не заполнены обязательные параметры."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://localhost/services/hs/api",
+            "description": "SDMS API"
+          }
+        ]
+      }
+    },
+    "/tasks/{id}/plan": {
+      "post": {
+        "tags": [
+          "Задачи"
+        ],
+        "summary": "Записать story point",
+        "description": "Заполняет story point для задачи",
+        "operationId": "post-tasks-id-plan",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Номер задачи",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Story point задачи",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "plan": {
+                    "type": "number",
+                    "description": "story point",
+                    "examples": [
+                      "5"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "$ref": "#/components/schemas/code"
+                    },
+                    "message": {
+                      "$ref": "#/components/schemas/message"
+                    }
+                  }
+                },
+                "examples": {
+                  "Успешно": {
+                    "value": {
+                      "code": 0,
+                      "message": ""
+                    }
+                  },
+                  "Ошибка": {
+                    "value": {
+                      "code": 2,
+                      "message": "Не заполнены обязательные параметры."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://localhost/services/hs/api",
+            "description": "SDMS API"
+          }
+        ]
+      }
+    },
+    "/users/{id}": {
+      "get": {
+        "tags": [
+          "Пользователи"
+        ],
+        "summary": "Получить пользователя",
+        "description": "Получает структуру данных пользователя",
+        "operationId": "get-users-id",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "GUID пользователя или почта",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "description": "GUID пользователя или электронная почта",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "$ref": "#/components/schemas/code"
+                    },
+                    "message": {
+                      "$ref": "#/components/schemas/message"
+                    },
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "minLength": 1,
+                          "examples": [
+                            "bb171d13-eeeb-11e9-8386-00155d033631"
+                          ]
+                        },
+                        "name": {
+                          "type": "string",
+                          "minLength": 1,
+                          "examples": [
+                            "Иванов Иван Иванович"
+                          ]
+                        },
+                        "mail": {
+                          "type": "string",
+                          "minLength": 1,
+                          "examples": [
+                            "ivanov@pochta.ru"
+                          ]
+                        },
+                        "branch": {
+                          "type": "object",
+                          "description": "Данные филиала пользователя",
+                          "properties": {
+                            "id": {
+                              "type": "string"
+                            },
+                            "code": {
+                              "type": "string"
+                            },
+                            "description": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "subbranch": {
+                          "type": "object",
+                          "description": "Данные команды пользователя",
+                          "properties": {
+                            "id": {
+                              "type": "string"
+                            },
+                            "code": {
+                              "type": "string"
+                            },
+                            "description": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "name",
+                        "mail"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "message",
+                    "data"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://localhost/services/hs/api",
+            "description": "SDMS API"
+          }
+        ]
+      }
+    },
+    "/users/unsubscribe": {
+      "get": {
+        "tags": [
+          "Пользователи"
+        ],
+        "summary": "Отписать пользователя от оповещений",
+        "description": "Отписывает пользователя от оповещений",
+        "operationId": "get-users-unsubscribe",
+        "parameters": [
+          {
+            "name": "ObjectNumber",
+            "in": "query",
+            "description": "Номер задачи/заявки/проекта/внутреннего задания",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "examples": [
+                "elapsedTime"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "$ref": "#/components/schemas/code"
+                    },
+                    "message": {
+                      "$ref": "#/components/schemas/message"
+                    },
+                    "data": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "message"
+                  ]
+                },
+                "examples": {
+                  "Ошибка": {
+                    "value": {
+                      "code": 2,
+                      "message": "Не заполнены обязательные параметры."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ],
+        "servers": [
+          {
+            "url": "https://localhost/services/hs/api",
+            "description": "SDMS API"
+          }
+        ]
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Внутренние трудозатраты",
+      "description": "Внутренние трудозатраты"
+    },
+    {
+      "name": "Дайджест",
+      "description": "Дайджест"
+    },
+    {
+      "name": "Задачи",
+      "description": "Задачи"
+    },
+    {
+      "name": "Заявка на разработку",
+      "description": "Заявка на разработку"
+    },
+    {
+      "name": "Комментарии",
+      "description": "Комментарии"
+    },
+    {
+      "name": "Направления",
+      "description": "Направления"
+    },
+    {
+      "name": "Пользователи",
+      "description": "Пользователи"
+    },
+    {
+      "name": "Системы учета",
+      "description": "Системы учета"
+    },
+    {
+      "name": "Спринты",
+      "description": "Спринты"
+    },
+    {
+      "name": "Трудозатраты",
+      "description": "Трудозатраты"
+    },
+    {
+      "name": "Файлы",
+      "description": "Файлы"
+    },
+    {
+      "name": "Филиалы",
+      "description": "Филиалы"
+    }
+  ],
+  "components": {
+    "parameters": {
+      "objectID": {
+        "name": "objectID",
+        "in": "query",
+        "description": "GUID объекта",
+        "required": true,
+        "schema": {
+          "type": "string",
+          "format": "uuid",
+          "examples": [
+            "8fd86bdc-c913-485f-8c32-fd63c08dd637"
+          ]
+        }
+      },
+      "performer": {
+        "name": "performer",
+        "in": "query",
+        "description": "Почта исполнителя. Требуется заполнять при авторизации под служебным пользователем.",
+        "schema": {
+          "type": "string",
+          "format": "email",
+          "examples": [
+            "ivanov@pochta.ru"
+          ]
+        }
+      },
+      "objectType": {
+        "name": "objectType",
+        "in": "query",
+        "description": "Тип объекта",
+        "required": true,
+        "schema": {
+          "type": "string",
+          "enum": [
+            "task",
+            "devrequest",
+            "internalworks",
+            "internaltask",
+            "project"
+          ],
+          "examples": [
+            "task"
+          ]
+        }
+      },
+      "limit": {
+        "name": "limit",
+        "in": "query",
+        "description": "Максимальное количество заявок в ответе",
+        "required": false,
+        "schema": {
+          "type": "integer",
+          "format": "int32",
+          "default": 100
+        }
+      },
+      "system": {
+        "name": "system",
+        "in": "query",
+        "description": "ГУИД cистемы учета",
+        "required": false,
+        "schema": {
+          "type": "string",
+          "format": "uuid",
+          "examples": [
+            "bbae986b-2fd2-11e7-be33-00155d033631"
+          ]
+        }
+      },
+      "skip": {
+        "name": "skip",
+        "in": "query",
+        "description": "Пропускает указанное количество заявок",
+        "required": false,
+        "schema": {
+          "type": "integer"
+        }
+      },
+      "filter": {
+        "name": "filter",
+        "in": "query",
+        "description": "Указывает какие заявки выбирать. Значение open выбираются заявки не в статусе Решен и Закрыт, значение closed выбираются заявки в статусе Решен и Закрыт",
+        "required": false,
+        "schema": {
+          "type": "string",
+          "examples": [
+            "open"
+          ]
+        }
+      }
+    },
+    "securitySchemes": {
+      "Authorization": {
+        "type": "http",
+        "description": "Авторизация происходит по  JWT токенам. Токен можно получить через систему SDMS. Example: `Authorization: Bearer ZGVtbzpwQDU1dzByZA==`",
+        "scheme": "bearer"
+      }
+    },
+    "schemas": {
+      "code": {
+        "type": "integer",
+        "title": "code",
+        "description": "Код ответа сервиса",
+        "minimum": 0,
+        "examples": [
+          0
+        ]
+      },
+      "message": {
+        "type": "string",
+        "title": "message",
+        "description": "Сообщение в случае возникновения ошибки (code <> 0)",
+        "examples": [
+          "Некорректные данные объекта"
+        ]
+      },
+      "ActivityType": {
+        "type": "object",
+        "description": "Вид деятельности",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Идентификатор вида деятельности",
+            "format": "uuid",
+            "examples": [
+              "497f6eca-6276-4993-bfeb-53cbbbba6f08"
+            ]
+          },
+          "name": {
+            "type": "string",
+            "description": "Наименование вида деятельности",
+            "examples": [
+              "Разработка 1C: Реализация изменений"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "name"
+        ]
+      },
+      "ObjectActivity": {
+        "type": "object",
+        "description": "Трудозатрата, внесенная по объекту",
+        "properties": {
+          "activityID": {
+            "type": "string",
+            "description": "Идентификатор вида деятельности",
+            "format": "uuid",
+            "examples": [
+              "bdeaf72a-a324-4d3c-8d7a-927b16400660"
+            ]
+          },
+          "activityName": {
+            "type": "string",
+            "description": "Наименование вида деятельности",
+            "examples": [
+              "Разработка 1C: Реализация изменений"
+            ]
+          },
+          "performer": {
+            "type": "string",
+            "description": "Почта автора трудозатраты",
+            "format": "email",
+            "examples": [
+              "ivanov@pochta.ru"
+            ]
+          },
+          "comment": {
+            "type": "string",
+            "description": "Комментарий",
+            "examples": [
+              "Разработка API"
+            ]
+          },
+          "date": {
+            "type": "string",
+            "description": "Дата внесения трудозатрат",
+            "format": "date-time",
+            "examples": [
+              "2021-07-23T18:25:43Z"
+            ]
+          },
+          "duration": {
+            "type": "number",
+            "description": "Длительность в часах",
+            "format": "float"
+          },
+          "id": {
+            "type": "string",
+            "description": "GUID документа в котором зафиксированы трудозатраты",
+            "format": "uuid",
+            "examples": [
+              "5736d1b1-eddb-11eb-a235-00155dd9e60b"
+            ]
+          }
+        },
+        "required": [
+          "activityID",
+          "activityName",
+          "performer",
+          "comment",
+          "date",
+          "duration",
+          "id"
+        ]
+      },
+      "Activity": {
+        "type": "object",
+        "description": "Данные вносимой трудозатраты",
+        "properties": {
+          "activityID": {
+            "type": "string",
+            "description": "Идентификатор вида деятельности",
+            "format": "uuid",
+            "examples": [
+              "1c864e73-5d1b-4170-90a9-e20d29e642de"
+            ]
+          },
+          "duration": {
+            "type": "number",
+            "description": "Длительность в часах",
+            "format": "float",
+            "exclusiveMinimum": 0,
+            "maximum": 24
+          },
+          "comment": {
+            "type": "string",
+            "description": "Комментарий",
+            "examples": [
+              "Разработка API"
+            ]
+          },
+          "date": {
+            "type": "string",
+            "description": "Дата внесения трудозатрат (по-умолчанию устанавливается текущая дата/время)",
+            "format": "date-time",
+            "examples": [
+              "2021-07-23T18:25:43Z"
+            ]
+          }
+        },
+        "required": [
+          "activityID",
+          "duration"
+        ]
+      },
+      "performer": {
+        "type": "object",
+        "title": "performer",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "guid исполнителя"
+          },
+          "name": {
+            "type": "string",
+            "description": "наименование"
+          }
+        }
+      }
+    }
+  },
+  "security": [
+    {
+      "Authorization": []
+    }
+  ]
+}
