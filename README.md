@@ -1,4 +1,5 @@
 ![infostart](https://infostart.ru/bitrix/templates/sandbox_empty/assets/tpl/abo/img/logo.svg)
+
 [SDMS — корпоративная экосистема для IT-разработки: от идеи до релиза](https://infostart.ru/1c/articles/2437804/)
 
 # SDMS
@@ -80,7 +81,7 @@ SDMS (Software Development Management System) — это корпоративн�
 
 ### Адреса web-окружения
 
-![](/assets/images/env-settings.jpg)
+![](/assets/images/env-settings.png)
 
 * **Корневой URL** - адрес сервера на котором развернута система
 * **Каталог публикации базы** - имя публикации для пользователей
